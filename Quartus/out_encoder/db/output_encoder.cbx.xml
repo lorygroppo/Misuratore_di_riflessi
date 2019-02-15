@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="output_encoder">
+		<CBX_INST_ENTRY INSTANCE_NAME="|output_encoder|LPM_ROM:inst13|altrom:srom|altsyncram:rom_block" CBX_FILE_NAME="altsyncram_vf51.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|output_encoder|out_gen_lpm_counter0:inst12|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_ecj.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

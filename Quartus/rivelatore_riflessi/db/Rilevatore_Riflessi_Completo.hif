@@ -1,0 +1,4699 @@
+Quartus II 32-bit
+Version 11.1 Build 173 11/01/2011 SJ Web Edition
+14
+1330
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+|users|valer|desktop|rr_progetto|random_time_gen|
+|users|valer|desktop|rr_progetto|rilevatore riflessi|
+|users|valer|desktop|rr_progetto|pilotaggio_led2|
+|users|valer|desktop|rr_progetto|dec_command|
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Rilevatore_Riflessi_Completo
+# storage
+db|Rilevatore_Riflessi_Completo.(0).cnf
+db|Rilevatore_Riflessi_Completo.(0).cnf
+# case_insensitive
+# source_file
+rilevatore_riflessi_completo.bdf
+5e61c486d01abe5a0f6d754e3c48917
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+output_encoder
+# storage
+db|Rilevatore_Riflessi_Completo.(1).cnf
+db|Rilevatore_Riflessi_Completo.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+output_encoder.vhd
+3f7418505fad2822cc37ac94afa5959c
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+output_encoder:inst
+}
+# macro_sequence
+
+# end
+# entity
+out_gen_lpm_mux0
+# storage
+db|Rilevatore_Riflessi_Completo.(2).cnf
+db|Rilevatore_Riflessi_Completo.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+out_gen_lpm_mux0.vhd
+bf60b274b38c39b136e28c6d471e8091
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data0x)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(data1x)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(data2x)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(data3x)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(sel)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(result)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+output_encoder:inst|out_gen_lpm_mux0:b2v_inst
+}
+# macro_sequence
+
+# end
+# entity
+LPM_MUX
+# storage
+db|Rilevatore_Riflessi_Completo.(3).cnf
+db|Rilevatore_Riflessi_Completo.(3).cnf
+# case_insensitive
+# source_file
+lpm_mux.tdf
+934857657722f0c6df91ef2920faaf23
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+4
+PARAMETER_SIGNED_DEC
+USR
+LPM_SIZE
+4
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHS
+2
+PARAMETER_SIGNED_DEC
+USR
+LPM_PIPELINE
+0
+PARAMETER_SIGNED_DEC
+USR
+CBXI_PARAMETER
+mux_63e
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+SEL1
+-1
+3
+SEL0
+-1
+3
+RESULT3
+-1
+3
+RESULT2
+-1
+3
+RESULT1
+-1
+3
+RESULT0
+-1
+3
+DATA3_3
+-1
+3
+DATA3_2
+-1
+3
+DATA3_1
+-1
+3
+DATA3_0
+-1
+3
+DATA2_3
+-1
+3
+DATA2_2
+-1
+3
+DATA2_1
+-1
+3
+DATA2_0
+-1
+3
+DATA1_3
+-1
+3
+DATA1_2
+-1
+3
+DATA1_1
+-1
+3
+DATA1_0
+-1
+3
+DATA0_3
+-1
+3
+DATA0_2
+-1
+3
+DATA0_1
+-1
+3
+DATA0_0
+-1
+3
+}
+# include_file {
+muxlut.inc
+301e88484af1e8d67bcd099bb975882
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+altshift.inc
+5c767a29f11db3f131fc886ea42a52bd
+bypassff.inc
+42d08f243d3471f724fd61ea21a0eb9f
+}
+# hierarchies {
+output_encoder:inst|out_gen_lpm_mux0:b2v_inst|lpm_mux:LPM_MUX_component
+}
+# macro_sequence
+
+# end
+# entity
+mux_63e
+# storage
+db|Rilevatore_Riflessi_Completo.(4).cnf
+db|Rilevatore_Riflessi_Completo.(4).cnf
+# case_insensitive
+# source_file
+db|mux_63e.tdf
+d8c8acfbbae4479194637120c7d93129
+7
+# used_port {
+sel1
+-1
+3
+sel0
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+output_encoder:inst|out_gen_lpm_mux0:b2v_inst|lpm_mux:LPM_MUX_component|mux_63e:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+out_gen_lpm_counter0
+# storage
+db|Rilevatore_Riflessi_Completo.(5).cnf
+db|Rilevatore_Riflessi_Completo.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+out_gen_lpm_counter0.vhd
+ec72a6ae51cdf5657a8dc77d596e6060
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(q)
+2 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+output_encoder:inst|out_gen_lpm_counter0:b2v_inst12
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|Rilevatore_Riflessi_Completo.(6).cnf
+db|Rilevatore_Riflessi_Completo.(6).cnf
+# case_insensitive
+# source_file
+lpm_counter.tdf
+f5f9eadcf23402b6b654333b9b780ef
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+3
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+UP
+PARAMETER_UNKNOWN
+USR
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_PORT_UPDOWN
+PORT_UNUSED
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_ecj
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sclr
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+clk_en
+-1
+3
+}
+# include_file {
+alt_counter_stratix.inc
+3e1db420f0a6e888a1525f4eff14d5be
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+cmpconst.inc
+fe4bfdfa5310384231b99c696fe2e348
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+dffeea.inc
+f11711657cd42ee78437f4349496034
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+}
+# hierarchies {
+output_encoder:inst|out_gen_lpm_counter0:b2v_inst12|lpm_counter:LPM_COUNTER_component
+}
+# macro_sequence
+
+# end
+# entity
+cntr_ecj
+# storage
+db|Rilevatore_Riflessi_Completo.(7).cnf
+db|Rilevatore_Riflessi_Completo.(7).cnf
+# case_insensitive
+# source_file
+db|cntr_ecj.tdf
+c87a7a23ecbf17a8ddf33dd2d5bf97
+7
+# used_port {
+sclr
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+clk_en
+-1
+3
+}
+# hierarchies {
+output_encoder:inst|out_gen_lpm_counter0:b2v_inst12|lpm_counter:LPM_COUNTER_component|cntr_ecj:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+lpm_rom_0
+# storage
+db|Rilevatore_Riflessi_Completo.(8).cnf
+db|Rilevatore_Riflessi_Completo.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_rom_0.vhd
+e2ce19ac02b4219286c6027383ab366
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(address)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(q)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+output_encoder:inst|lpm_rom_0:b2v_inst13
+}
+# macro_sequence
+
+# end
+# entity
+LPM_ROM
+# storage
+db|Rilevatore_Riflessi_Completo.(9).cnf
+db|Rilevatore_Riflessi_Completo.(9).cnf
+# case_insensitive
+# source_file
+lpm_rom.tdf
+7df663ffb936927434a51d2563835
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHAD
+4
+PARAMETER_SIGNED_DEC
+USR
+LPM_NUMWORDS
+16
+PARAMETER_SIGNED_DEC
+USR
+LPM_ADDRESS_CONTROL
+REGISTERED
+PARAMETER_UNKNOWN
+USR
+LPM_OUTDATA
+UNREGISTERED
+PARAMETER_UNKNOWN
+USR
+LPM_FILE
+C:/Users/valer/Desktop/RR_Progetto/Rilevatore Riflessi/HEX2ASCII.hex
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+Q7
+-1
+3
+Q6
+-1
+3
+Q5
+-1
+3
+Q4
+-1
+3
+Q3
+-1
+3
+Q2
+-1
+3
+Q1
+-1
+3
+Q0
+-1
+3
+INCLOCK
+-1
+3
+ADDRESS3
+-1
+3
+ADDRESS2
+-1
+3
+ADDRESS1
+-1
+3
+ADDRESS0
+-1
+3
+}
+# include_file {
+altrom.inc
+192b74eafa8debf2248ea73881e77f91
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+}
+# hierarchies {
+output_encoder:inst|lpm_rom_0:b2v_inst13|lpm_rom:b2v_inst13
+}
+# macro_sequence
+
+# end
+# entity
+altrom
+# storage
+db|Rilevatore_Riflessi_Completo.(10).cnf
+db|Rilevatore_Riflessi_Completo.(10).cnf
+# case_insensitive
+# source_file
+altrom.tdf
+134480d988a6c0b3bf90e84142a63f4d
+7
+# user_parameter {
+WIDTH_BYTEENA_A
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTH_BYTEENA_B
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTH_ECCSTATUS
+3
+PARAMETER_UNKNOWN
+DEF
+WIDTH
+8
+PARAMETER_UNKNOWN
+USR
+AD_WIDTH
+4
+PARAMETER_UNKNOWN
+USR
+NUMWORDS
+16
+PARAMETER_UNKNOWN
+USR
+FILE
+C:/Users/valer/Desktop/RR_Progetto/Rilevatore Riflessi/HEX2ASCII.hex
+PARAMETER_UNKNOWN
+USR
+REGISTERINPUTMODE
+ADDRESS_CONTROL
+PARAMETER_UNKNOWN
+USR
+MAXIMUM_DEPTH
+2048
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+SUPPRESS_MEMORY_CONVERSION_WARNINGS
+OFF
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+clocki
+-1
+3
+address3
+-1
+3
+address2
+-1
+3
+address1
+-1
+3
+address0
+-1
+3
+}
+# include_file {
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+altsyncram.inc
+d3277a3930eb9e32e8de6e7e362698e0
+memmodes.inc
+f1581a4e2fdd56d7ebf54625d8eff819
+lpm_mux.inc
+dd87bed9959d6126db09970164b7ba6
+}
+# hierarchies {
+output_encoder:inst|lpm_rom_0:b2v_inst13|lpm_rom:b2v_inst13|altrom:srom
+}
+# macro_sequence
+
+# end
+# entity
+altsyncram
+# storage
+db|Rilevatore_Riflessi_Completo.(11).cnf
+db|Rilevatore_Riflessi_Completo.(11).cnf
+# case_insensitive
+# source_file
+altsyncram.tdf
+3d6528bd8ae96e3cccbd5d2b8c04d81
+7
+# user_parameter {
+BYTE_SIZE_BLOCK
+8
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+WIDTH_BYTEENA
+1
+PARAMETER_UNKNOWN
+DEF
+OPERATION_MODE
+ROM
+PARAMETER_UNKNOWN
+USR
+WIDTH_A
+8
+PARAMETER_UNKNOWN
+USR
+WIDTHAD_A
+4
+PARAMETER_UNKNOWN
+USR
+NUMWORDS_A
+16
+PARAMETER_UNKNOWN
+USR
+OUTDATA_REG_A
+UNREGISTERED
+PARAMETER_UNKNOWN
+USR
+ADDRESS_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+USR
+OUTDATA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+USR
+WRCONTROL_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+INDATA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+BYTEENA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+WIDTH_B
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTHAD_B
+1
+PARAMETER_UNKNOWN
+DEF
+NUMWORDS_B
+1
+PARAMETER_UNKNOWN
+DEF
+INDATA_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+WRCONTROL_WRADDRESS_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+RDCONTROL_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+ADDRESS_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+OUTDATA_REG_B
+UNREGISTERED
+PARAMETER_UNKNOWN
+DEF
+BYTEENA_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+INDATA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+WRCONTROL_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+ADDRESS_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+OUTDATA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+RDCONTROL_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+BYTEENA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+WIDTH_BYTEENA_A
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTH_BYTEENA_B
+1
+PARAMETER_UNKNOWN
+DEF
+RAM_BLOCK_TYPE
+AUTO
+PARAMETER_UNKNOWN
+DEF
+BYTE_SIZE
+8
+PARAMETER_UNKNOWN
+DEF
+READ_DURING_WRITE_MODE_MIXED_PORTS
+DONT_CARE
+PARAMETER_UNKNOWN
+DEF
+READ_DURING_WRITE_MODE_PORT_A
+NEW_DATA_NO_NBE_READ
+PARAMETER_UNKNOWN
+DEF
+READ_DURING_WRITE_MODE_PORT_B
+NEW_DATA_NO_NBE_READ
+PARAMETER_UNKNOWN
+DEF
+INIT_FILE
+C:/Users/valer/Desktop/RR_Progetto/Rilevatore Riflessi/HEX2ASCII.hex
+PARAMETER_UNKNOWN
+USR
+INIT_FILE_LAYOUT
+PORT_A
+PARAMETER_UNKNOWN
+DEF
+MAXIMUM_DEPTH
+0
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_INPUT_A
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_INPUT_B
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_OUTPUT_A
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_OUTPUT_B
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_CORE_A
+USE_INPUT_CLKEN
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_CORE_B
+USE_INPUT_CLKEN
+PARAMETER_UNKNOWN
+DEF
+ENABLE_ECC
+FALSE
+PARAMETER_UNKNOWN
+DEF
+WIDTH_ECCSTATUS
+3
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+altsyncram_vl51
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+q_a7
+-1
+3
+q_a6
+-1
+3
+q_a5
+-1
+3
+q_a4
+-1
+3
+q_a3
+-1
+3
+q_a2
+-1
+3
+q_a1
+-1
+3
+q_a0
+-1
+3
+clock0
+-1
+3
+address_a3
+-1
+3
+address_a2
+-1
+3
+address_a1
+-1
+3
+address_a0
+-1
+3
+}
+# include_file {
+altrom.inc
+192b74eafa8debf2248ea73881e77f91
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+stratix_ram_block.inc
+e3a03868917fb3dd57b6ed1dd195f22
+altram.inc
+ad5518b39ffd3cf1df377e6360d1c9b6
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+altdpram.inc
+2f9e6727b678ffd76e72bc5a95a2630
+a_rdenreg.inc
+3fcdce755959d5a8afbe64788d21fb
+lpm_mux.inc
+dd87bed9959d6126db09970164b7ba6
+}
+# hierarchies {
+output_encoder:inst|lpm_rom_0:b2v_inst13|lpm_rom:b2v_inst13|altrom:srom|altsyncram:rom_block
+}
+# macro_sequence
+
+# end
+# entity
+altsyncram_vl51
+# storage
+db|Rilevatore_Riflessi_Completo.(12).cnf
+db|Rilevatore_Riflessi_Completo.(12).cnf
+# case_insensitive
+# source_file
+db|altsyncram_vl51.tdf
+ab9cd6a3734d486e431a9d7d6e818fe
+7
+# used_port {
+q_a7
+-1
+3
+q_a6
+-1
+3
+q_a5
+-1
+3
+q_a4
+-1
+3
+q_a3
+-1
+3
+q_a2
+-1
+3
+q_a1
+-1
+3
+q_a0
+-1
+3
+clock0
+-1
+3
+address_a3
+-1
+3
+address_a2
+-1
+3
+address_a1
+-1
+3
+address_a0
+-1
+3
+}
+# memory_file {
+|users|valer|desktop|rr_progetto|rilevatore riflessi|hex2ascii.hex
+a64594f2d657ddcc710b18d6de9b85
+}
+# hierarchies {
+output_encoder:inst|lpm_rom_0:b2v_inst13|lpm_rom:b2v_inst13|altrom:srom|altsyncram:rom_block|altsyncram_vl51:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+Pilotaggio_LED2
+# storage
+db|Rilevatore_Riflessi_Completo.(13).cnf
+db|Rilevatore_Riflessi_Completo.(13).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+pilotaggio_led2.vhd
+3a80ed2bb82fd495c1904f9cb66a43b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Pilotaggio_LED2:inst3
+}
+# macro_sequence
+
+# end
+# entity
+fsm_pilotaggio_led
+# storage
+db|Rilevatore_Riflessi_Completo.(14).cnf
+db|Rilevatore_Riflessi_Completo.(14).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fsm_pilotaggio_led.vhd
+6a97981b267399203e33f7cede059
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(buttons)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(sel_led)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(leds_out)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Pilotaggio_LED2:inst3|FSM_Pilotaggio_LED:b2v_inst
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decoder_leds_pilot
+# storage
+db|Rilevatore_Riflessi_Completo.(15).cnf
+db|Rilevatore_Riflessi_Completo.(15).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_decoder_leds_pilot.vhd
+45ac99d394cbb09ff5c3ba96185542e
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+1 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Pilotaggio_LED2:inst3|lpm_decoder_LEDS_pilot:b2v_inst4
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode
+# storage
+db|Rilevatore_Riflessi_Completo.(16).cnf
+db|Rilevatore_Riflessi_Completo.(16).cnf
+# case_insensitive
+# source_file
+lpm_decode.tdf
+5df6cbf724b72df12440a1f68cfa8071
+7
+# user_parameter {
+LPM_WIDTH
+2
+PARAMETER_SIGNED_DEC
+USR
+LPM_DECODES
+4
+PARAMETER_SIGNED_DEC
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+decode_n6f
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+altshift.inc
+5c767a29f11db3f131fc886ea42a52bd
+declut.inc
+64cd55cba1c61523c3f4c888e3932d1
+}
+# hierarchies {
+Pilotaggio_LED2:inst3|lpm_decoder_LEDS_pilot:b2v_inst4|lpm_decode:LPM_DECODE_component
+}
+# macro_sequence
+
+# end
+# entity
+decode_n6f
+# storage
+db|Rilevatore_Riflessi_Completo.(17).cnf
+db|Rilevatore_Riflessi_Completo.(17).cnf
+# case_insensitive
+# source_file
+db|decode_n6f.tdf
+c0b74dae2b36e35e1c43cef747f60
+7
+# used_port {
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+Pilotaggio_LED2:inst3|lpm_decoder_LEDS_pilot:b2v_inst4|lpm_decode:LPM_DECODE_component|decode_n6f:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+Random_Time_Generator
+# storage
+db|Rilevatore_Riflessi_Completo.(18).cnf
+db|Rilevatore_Riflessi_Completo.(18).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+random_time_generator.vhd
+2d9db44e2b2a8634eef37b61dbcc436
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Random_Time_Generator:inst5
+}
+# macro_sequence
+
+# end
+# entity
+tc_tempo_attesa
+# storage
+db|Rilevatore_Riflessi_Completo.(54).cnf
+db|Rilevatore_Riflessi_Completo.(54).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+tc_tempo_attesa.vhd
+6d3b847c5c5e955cdbc151498a36462
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(numero_contato)
+29 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Random_Time_Generator:inst5|TC_tempo_attesa:b2v_inst
+}
+# macro_sequence
+
+# end
+# entity
+lpm_shiftreg0_lfsr_random
+# storage
+db|Rilevatore_Riflessi_Completo.(55).cnf
+db|Rilevatore_Riflessi_Completo.(55).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_shiftreg0_lfsr_random.vhd
+527ad151491936e5f3829d7c83ee6985
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(q)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Random_Time_Generator:inst5|lpm_shiftreg0_LFSR_RANDOM:b2v_inst4
+}
+# macro_sequence
+
+# end
+# entity
+lpm_shiftreg
+# storage
+db|Rilevatore_Riflessi_Completo.(56).cnf
+db|Rilevatore_Riflessi_Completo.(56).cnf
+# case_insensitive
+# source_file
+lpm_shiftreg.tdf
+1cb828929de01839eecc9e4a33dd4
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+RIGHT
+PARAMETER_UNKNOWN
+USR
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+shiftin
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+dffeea.inc
+f11711657cd42ee78437f4349496034
+}
+# hierarchies {
+Random_Time_Generator:inst5|lpm_shiftreg0_LFSR_RANDOM:b2v_inst4|lpm_shiftreg:LPM_SHIFTREG_component
+}
+# macro_sequence
+
+# end
+# entity
+xor_lfsr
+# storage
+db|Rilevatore_Riflessi_Completo.(57).cnf
+db|Rilevatore_Riflessi_Completo.(57).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+xor_lfsr.vhd
+7a8752887c3823dffe594f346a2528
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(numero_lsfr)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Random_Time_Generator:inst5|XOR_LFSR:b2v_inst5
+}
+# macro_sequence
+
+# end
+# entity
+lpm_mult0_random_number_gen
+# storage
+db|Rilevatore_Riflessi_Completo.(58).cnf
+db|Rilevatore_Riflessi_Completo.(58).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_mult0_random_number_gen.vhd
+8c792660d0d05e6d818a58b014ac3841
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(dataa)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(result)
+29 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6
+}
+# macro_sequence
+
+# end
+# entity
+lpm_mult
+# storage
+db|Rilevatore_Riflessi_Completo.(59).cnf
+db|Rilevatore_Riflessi_Completo.(59).cnf
+# case_insensitive
+# source_file
+lpm_mult.tdf
+de2e10955ec3c8dd57d7e43b2bb92359
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTHA
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHB
+22
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHP
+30
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHR
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_WIDTHS
+1
+PARAMETER_UNKNOWN
+DEF
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+LATENCY
+0
+PARAMETER_UNKNOWN
+DEF
+INPUT_A_IS_CONSTANT
+NO
+PARAMETER_UNKNOWN
+DEF
+INPUT_B_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+USE_EAB
+OFF
+PARAMETER_UNKNOWN
+DEF
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+APEX20K_TECHNOLOGY_MAPPER
+LUT
+TECH_MAPPER_APEX20K
+USR
+DEDICATED_MULTIPLIER_CIRCUITRY
+AUTO
+PARAMETER_UNKNOWN
+DEF
+DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO
+0
+PARAMETER_UNKNOWN
+DEF
+DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO
+0
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+INPUT_A_FIXED_VALUE
+Bx
+PARAMETER_UNKNOWN
+DEF
+INPUT_B_FIXED_VALUE
+Bx
+PARAMETER_UNKNOWN
+DEF
+USE_AHDL_IMPLEMENTATION
+OFF
+PARAMETER_UNKNOWN
+DEF
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result29
+-1
+3
+result28
+-1
+3
+result27
+-1
+3
+result26
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+datab9
+-1
+1
+datab7
+-1
+1
+datab4
+-1
+1
+datab3
+-1
+1
+datab21
+-1
+1
+datab17
+-1
+1
+datab13
+-1
+1
+datab12
+-1
+1
+datab1
+-1
+1
+datab8
+-1
+2
+datab6
+-1
+2
+datab5
+-1
+2
+datab20
+-1
+2
+datab2
+-1
+2
+datab19
+-1
+2
+datab18
+-1
+2
+datab16
+-1
+2
+datab15
+-1
+2
+datab14
+-1
+2
+datab11
+-1
+2
+datab10
+-1
+2
+datab0
+-1
+2
+}
+# include_file {
+multcore.inc
+ee598ea39a3d6bdc35b167eefc3ee3da
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+altshift.inc
+5c767a29f11db3f131fc886ea42a52bd
+bypassff.inc
+42d08f243d3471f724fd61ea21a0eb9f
+}
+# hierarchies {
+Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component
+}
+# macro_sequence
+
+# end
+# entity
+multcore
+# storage
+db|Rilevatore_Riflessi_Completo.(60).cnf
+db|Rilevatore_Riflessi_Completo.(60).cnf
+# case_insensitive
+# source_file
+multcore.tdf
+3e2ec5b5c9f848951e70f4366e71f0
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+widtha
+8
+PARAMETER_UNKNOWN
+USR
+widthb
+22
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LATENCY
+1
+PARAMETER_UNKNOWN
+USR
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+USE_EAB
+OFF
+PARAMETER_UNKNOWN
+USR
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+OP_MODE
+0
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEDICATED_MULTIPLIER_CIRCUITRY
+YES
+PARAMETER_UNKNOWN
+DEF
+SUB_DEDICATED_MULTIPLIER_CIRCUITRY
+NO
+PARAMETER_UNKNOWN
+USR
+DSP_BLOCK_BALANCING
+AUTO
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result29
+-1
+3
+result28
+-1
+3
+result27
+-1
+3
+result26
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab21
+-1
+3
+datab20
+-1
+3
+datab2
+-1
+3
+datab19
+-1
+3
+datab18
+-1
+3
+datab17
+-1
+3
+datab16
+-1
+3
+datab15
+-1
+3
+datab14
+-1
+3
+datab13
+-1
+3
+datab12
+-1
+3
+datab11
+-1
+3
+datab10
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+}
+# include_file {
+mul_boothc.inc
+865041f39baa34821d68d61a3e2fd457
+muleabz.inc
+9022d0f0ac610fb2fcbcdbf329d5b22
+csa_add.inc
+2817bc4fb699031583cb64b99d6e64b
+alt_ded_mult.inc
+ec98c2a73c1944d24ba8366fc29e8d4
+dffpipe.inc
+5471cd80ee441dd293deca0963c9aa0
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+alt_ded_mult_y.inc
+3e7ed647d36279c93ab781e67a0aeb0
+mul_lfrg.inc
+47f6e380151c8e526b62c6d1f8cd8ec
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+mpar_add.inc
+029862889cd5a4e65712a9cc002ab
+}
+# hierarchies {
+Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core
+}
+# macro_sequence
+
+# end
+# entity
+mpar_add
+# storage
+db|Rilevatore_Riflessi_Completo.(61).cnf
+db|Rilevatore_Riflessi_Completo.(61).cnf
+# case_insensitive
+# source_file
+mpar_add.tdf
+7cbf24afda73e2f88a1def44e2e3f4c0
+7
+# user_parameter {
+size
+26
+PARAMETER_UNKNOWN
+USR
+width
+2
+PARAMETER_UNKNOWN
+USR
+REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LEVEL
+3
+PARAMETER_UNKNOWN
+USR
+TOT_LEVELS
+4
+PARAMETER_UNKNOWN
+USR
+STAGE
+1
+PARAMETER_UNKNOWN
+USR
+TOT_STAGES
+2
+PARAMETER_UNKNOWN
+USR
+INT_LATENCY
+1
+PARAMETER_UNKNOWN
+USR
+PREV_SING_SIZE
+26
+PARAMETER_UNKNOWN
+USR
+BOOTH_ADDER
+NO
+PARAMETER_UNKNOWN
+DEF
+CREATE_MS_BOOTH_ADDER
+NO
+PARAMETER_UNKNOWN
+DEF
+MPARADD_OP_MODE
+0
+PARAMETER_UNKNOWN
+DEF
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result29
+-1
+3
+result28
+-1
+3
+result27
+-1
+3
+result26
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data1_9
+-1
+3
+data1_8
+-1
+3
+data1_7
+-1
+3
+data1_6
+-1
+3
+data1_5
+-1
+3
+data1_4
+-1
+3
+data1_3
+-1
+3
+data1_25
+-1
+3
+data1_24
+-1
+3
+data1_23
+-1
+3
+data1_22
+-1
+3
+data1_21
+-1
+3
+data1_20
+-1
+3
+data1_2
+-1
+3
+data1_19
+-1
+3
+data1_18
+-1
+3
+data1_17
+-1
+3
+data1_16
+-1
+3
+data1_15
+-1
+3
+data1_14
+-1
+3
+data1_13
+-1
+3
+data1_12
+-1
+3
+data1_11
+-1
+3
+data1_10
+-1
+3
+data1_1
+-1
+3
+data1_0
+-1
+3
+data0_9
+-1
+3
+data0_8
+-1
+3
+data0_7
+-1
+3
+data0_6
+-1
+3
+data0_5
+-1
+3
+data0_4
+-1
+3
+data0_3
+-1
+3
+data0_25
+-1
+3
+data0_24
+-1
+3
+data0_23
+-1
+3
+data0_22
+-1
+3
+data0_21
+-1
+3
+data0_20
+-1
+3
+data0_2
+-1
+3
+data0_19
+-1
+3
+data0_18
+-1
+3
+data0_17
+-1
+3
+data0_16
+-1
+3
+data0_15
+-1
+3
+data0_14
+-1
+3
+data0_13
+-1
+3
+data0_12
+-1
+3
+data0_11
+-1
+3
+data0_10
+-1
+3
+data0_1
+-1
+3
+data0_0
+-1
+3
+}
+# include_file {
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+mpar_add.inc
+029862889cd5a4e65712a9cc002ab
+}
+# hierarchies {
+Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder
+}
+# macro_sequence
+
+# end
+# entity
+lpm_add_sub
+# storage
+db|Rilevatore_Riflessi_Completo.(62).cnf
+db|Rilevatore_Riflessi_Completo.(62).cnf
+# case_insensitive
+# source_file
+lpm_add_sub.tdf
+fc9f60746bd74f69eb39c3d39610865e
+7
+# user_parameter {
+LPM_WIDTH
+26
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+DEFAULT
+PARAMETER_UNKNOWN
+DEF
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+USR
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+REGISTERED_AT_END
+1
+PARAMETER_UNKNOWN
+USR
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+DEF
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+USE_WYS
+OFF
+PARAMETER_UNKNOWN
+DEF
+STYLE
+FAST
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+add_sub_8ch
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab25
+-1
+3
+datab24
+-1
+3
+datab23
+-1
+3
+datab22
+-1
+3
+datab21
+-1
+3
+datab20
+-1
+3
+datab2
+-1
+3
+datab19
+-1
+3
+datab18
+-1
+3
+datab17
+-1
+3
+datab16
+-1
+3
+datab15
+-1
+3
+datab14
+-1
+3
+datab13
+-1
+3
+datab12
+-1
+3
+datab11
+-1
+3
+datab10
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa21
+-1
+3
+dataa20
+-1
+3
+dataa2
+-1
+3
+dataa19
+-1
+3
+dataa18
+-1
+3
+dataa17
+-1
+3
+dataa16
+-1
+3
+dataa15
+-1
+3
+dataa14
+-1
+3
+dataa13
+-1
+3
+dataa12
+-1
+3
+dataa11
+-1
+3
+dataa10
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+dataa25
+-1
+1
+dataa24
+-1
+1
+dataa23
+-1
+1
+dataa22
+-1
+1
+}
+# include_file {
+look_add.inc
+9091c394592369a07bdf7fbf1ce9ced6
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+alt_stratix_add_sub.inc
+16df31198e4f1dce2b8df944fbafaefe
+addcore.inc
+e15993f131a5367862d6283fbb5a133
+altshift.inc
+5c767a29f11db3f131fc886ea42a52bd
+bypassff.inc
+42d08f243d3471f724fd61ea21a0eb9f
+}
+# hierarchies {
+Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]
+}
+# macro_sequence
+
+# end
+# entity
+add_sub_8ch
+# storage
+db|Rilevatore_Riflessi_Completo.(63).cnf
+db|Rilevatore_Riflessi_Completo.(63).cnf
+# case_insensitive
+# source_file
+db|add_sub_8ch.tdf
+74fe827e5fbdd9b155bbcd193c13adb9
+7
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab25
+-1
+3
+datab24
+-1
+3
+datab23
+-1
+3
+datab22
+-1
+3
+datab21
+-1
+3
+datab20
+-1
+3
+datab2
+-1
+3
+datab19
+-1
+3
+datab18
+-1
+3
+datab17
+-1
+3
+datab16
+-1
+3
+datab15
+-1
+3
+datab14
+-1
+3
+datab13
+-1
+3
+datab12
+-1
+3
+datab11
+-1
+3
+datab10
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa25
+-1
+3
+dataa24
+-1
+3
+dataa23
+-1
+3
+dataa22
+-1
+3
+dataa21
+-1
+3
+dataa20
+-1
+3
+dataa2
+-1
+3
+dataa19
+-1
+3
+dataa18
+-1
+3
+dataa17
+-1
+3
+dataa16
+-1
+3
+dataa15
+-1
+3
+dataa14
+-1
+3
+dataa13
+-1
+3
+dataa12
+-1
+3
+dataa11
+-1
+3
+dataa10
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+}
+# hierarchies {
+Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_8ch:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+altshift
+# storage
+db|Rilevatore_Riflessi_Completo.(64).cnf
+db|Rilevatore_Riflessi_Completo.(64).cnf
+# case_insensitive
+# source_file
+altshift.tdf
+355a248b6866937fb8acb1195014674e
+7
+# user_parameter {
+WIDTH
+30
+PARAMETER_UNKNOWN
+USR
+DEPTH
+0
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result29
+-1
+3
+result28
+-1
+3
+result27
+-1
+3
+result26
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data29
+-1
+3
+data28
+-1
+3
+data27
+-1
+3
+data26
+-1
+3
+data25
+-1
+3
+data24
+-1
+3
+data23
+-1
+3
+data22
+-1
+3
+data21
+-1
+3
+data20
+-1
+3
+data2
+-1
+3
+data19
+-1
+3
+data18
+-1
+3
+data17
+-1
+3
+data16
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|altshift:external_latency_ffs
+}
+# macro_sequence
+
+# end
+# entity
+contatore_tempo_random
+# storage
+db|Rilevatore_Riflessi_Completo.(65).cnf
+db|Rilevatore_Riflessi_Completo.(65).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+contatore_tempo_random.vhd
+600a83673694ac70dc4eee3ff1eef2
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+29 downto 0
+PARAMETER_STRING
+USR
+ constraint(q)
+29 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Random_Time_Generator:inst5|Contatore_Tempo_random:b2v_inst8
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|Rilevatore_Riflessi_Completo.(66).cnf
+db|Rilevatore_Riflessi_Completo.(66).cnf
+# case_insensitive
+# source_file
+lpm_counter.tdf
+f5f9eadcf23402b6b654333b9b780ef
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+30
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+UP
+PARAMETER_UNKNOWN
+USR
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_PORT_UPDOWN
+PORT_UNUSED
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_84j
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sload
+-1
+3
+sclr
+-1
+3
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q29
+-1
+3
+q28
+-1
+3
+q27
+-1
+3
+q26
+-1
+3
+q25
+-1
+3
+q24
+-1
+3
+q23
+-1
+3
+q22
+-1
+3
+q21
+-1
+3
+q20
+-1
+3
+q2
+-1
+3
+q19
+-1
+3
+q18
+-1
+3
+q17
+-1
+3
+q16
+-1
+3
+q15
+-1
+3
+q14
+-1
+3
+q13
+-1
+3
+q12
+-1
+3
+q11
+-1
+3
+q10
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data29
+-1
+3
+data28
+-1
+3
+data27
+-1
+3
+data26
+-1
+3
+data25
+-1
+3
+data24
+-1
+3
+data23
+-1
+3
+data22
+-1
+3
+data21
+-1
+3
+data20
+-1
+3
+data2
+-1
+3
+data19
+-1
+3
+data18
+-1
+3
+data17
+-1
+3
+data16
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+alt_counter_stratix.inc
+3e1db420f0a6e888a1525f4eff14d5be
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+cmpconst.inc
+fe4bfdfa5310384231b99c696fe2e348
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+dffeea.inc
+f11711657cd42ee78437f4349496034
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+}
+# hierarchies {
+Random_Time_Generator:inst5|Contatore_Tempo_random:b2v_inst8|lpm_counter:LPM_COUNTER_component
+}
+# macro_sequence
+
+# end
+# entity
+cntr_84j
+# storage
+db|Rilevatore_Riflessi_Completo.(67).cnf
+db|Rilevatore_Riflessi_Completo.(67).cnf
+# case_insensitive
+# source_file
+db|cntr_84j.tdf
+ac9033e4a4ee90c5488db1bb46d41a
+7
+# used_port {
+sload
+-1
+3
+sclr
+-1
+3
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q29
+-1
+3
+q28
+-1
+3
+q27
+-1
+3
+q26
+-1
+3
+q25
+-1
+3
+q24
+-1
+3
+q23
+-1
+3
+q22
+-1
+3
+q21
+-1
+3
+q20
+-1
+3
+q2
+-1
+3
+q19
+-1
+3
+q18
+-1
+3
+q17
+-1
+3
+q16
+-1
+3
+q15
+-1
+3
+q14
+-1
+3
+q13
+-1
+3
+q12
+-1
+3
+q11
+-1
+3
+q10
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data29
+-1
+3
+data28
+-1
+3
+data27
+-1
+3
+data26
+-1
+3
+data25
+-1
+3
+data24
+-1
+3
+data23
+-1
+3
+data22
+-1
+3
+data21
+-1
+3
+data20
+-1
+3
+data2
+-1
+3
+data19
+-1
+3
+data18
+-1
+3
+data17
+-1
+3
+data16
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+clock
+-1
+3
+}
+# hierarchies {
+Random_Time_Generator:inst5|Contatore_Tempo_random:b2v_inst8|lpm_counter:LPM_COUNTER_component|cntr_84j:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+dec_command
+# storage
+db|Rilevatore_Riflessi_Completo.(68).cnf
+db|Rilevatore_Riflessi_Completo.(68).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+dec_command.vhd
+1da9cd48d5c5afce2ec50713479e7e3
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+dec_command:inst4
+}
+# macro_sequence
+
+# end
+# entity
+lpm_ff_0
+# storage
+db|Rilevatore_Riflessi_Completo.(69).cnf
+db|Rilevatore_Riflessi_Completo.(69).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_ff_0.vhd
+9e32a2ad3a24fdebd5bf6872149b5792
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(q)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+dec_command:inst4|lpm_ff_0:b2v_inst11
+}
+# macro_sequence
+
+# end
+# entity
+LPM_FF
+# storage
+db|Rilevatore_Riflessi_Completo.(70).cnf
+db|Rilevatore_Riflessi_Completo.(70).cnf
+# case_insensitive
+# source_file
+lpm_ff.tdf
+c2fe9dec76774b5afddc0725357be5
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_FFTYPE
+DFF
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+Q7
+-1
+3
+Q6
+-1
+3
+Q5
+-1
+3
+Q4
+-1
+3
+Q3
+-1
+3
+Q2
+-1
+3
+Q1
+-1
+3
+Q0
+-1
+3
+ENABLE
+-1
+3
+DATA7
+-1
+3
+DATA6
+-1
+3
+DATA5
+-1
+3
+DATA4
+-1
+3
+DATA3
+-1
+3
+DATA2
+-1
+3
+DATA1
+-1
+3
+DATA0
+-1
+3
+CLOCK
+-1
+3
+ACLR
+-1
+3
+}
+# include_file {
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+}
+# hierarchies {
+dec_command:inst4|lpm_ff_0:b2v_inst11|lpm_ff:b2v_inst11
+dec_command:inst4|lpm_ff_1:b2v_inst12|lpm_ff:b2v_inst12
+}
+# macro_sequence
+
+# end
+# entity
+lpm_ff_1
+# storage
+db|Rilevatore_Riflessi_Completo.(71).cnf
+db|Rilevatore_Riflessi_Completo.(71).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_ff_1.vhd
+8fa1915643c7c1b478b66289c69ef737
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(q)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+dec_command:inst4|lpm_ff_1:b2v_inst12
+}
+# macro_sequence
+
+# end
+# entity
+l_detect
+# storage
+db|Rilevatore_Riflessi_Completo.(72).cnf
+db|Rilevatore_Riflessi_Completo.(72).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+l_detect.vhd
+a618f5d61a76c4ffd22bf5a2987eacf0
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+dec_command:inst4|L_Detect:b2v_inst2
+}
+# macro_sequence
+
+# end
+# entity
+detect_1
+# storage
+db|Rilevatore_Riflessi_Completo.(73).cnf
+db|Rilevatore_Riflessi_Completo.(73).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+detect_1.vhd
+37407f899a4f389ee8bf22cc1e5fc25
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+dec_command:inst4|Detect_1:b2v_inst3
+}
+# macro_sequence
+
+# end
+# entity
+detect_2
+# storage
+db|Rilevatore_Riflessi_Completo.(74).cnf
+db|Rilevatore_Riflessi_Completo.(74).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+detect_2.vhd
+e8ad61549cd4543b62e87522848334b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+dec_command:inst4|Detect_2:b2v_inst4
+}
+# macro_sequence
+
+# end
+# entity
+detect_3
+# storage
+db|Rilevatore_Riflessi_Completo.(75).cnf
+db|Rilevatore_Riflessi_Completo.(75).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+detect_3.vhd
+a7b734c92bf59e7f27d475fb65811aaa
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+dec_command:inst4|Detect_3:b2v_inst5
+}
+# macro_sequence
+
+# end
+# entity
+detect_4
+# storage
+db|Rilevatore_Riflessi_Completo.(76).cnf
+db|Rilevatore_Riflessi_Completo.(76).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+detect_4.vhd
+de8a991015e889773dcb1be9b243caa
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+dec_command:inst4|Detect_4:b2v_inst6
+}
+# macro_sequence
+
+# end
+# entity
+fsm_dec_command
+# storage
+db|Rilevatore_Riflessi_Completo.(77).cnf
+db|Rilevatore_Riflessi_Completo.(77).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fsm_dec_command.vhd
+9a28a55469ebc6f1abf2250331f91be
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(sel_led)
+1 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+dec_command:inst4|FSM_dec_command:b2v_inst7
+}
+# macro_sequence
+
+# end
+# entity
+counter_tempo_riflessi
+# storage
+db|Rilevatore_Riflessi_Completo.(78).cnf
+db|Rilevatore_Riflessi_Completo.(78).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+counter_tempo_riflessi.vhd
+a9efc063147cc52d76ffd299c17bd
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+counter_tempo_riflessi:inst7
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|Rilevatore_Riflessi_Completo.(79).cnf
+db|Rilevatore_Riflessi_Completo.(79).cnf
+# case_insensitive
+# source_file
+lpm_counter.tdf
+f5f9eadcf23402b6b654333b9b780ef
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+16
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+UP
+PARAMETER_UNKNOWN
+USR
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_PORT_UPDOWN
+PORT_UNUSED
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_mpi
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sclr
+-1
+3
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q15
+-1
+3
+q14
+-1
+3
+q13
+-1
+3
+q12
+-1
+3
+q11
+-1
+3
+q10
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+alt_counter_stratix.inc
+3e1db420f0a6e888a1525f4eff14d5be
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+cmpconst.inc
+fe4bfdfa5310384231b99c696fe2e348
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+dffeea.inc
+f11711657cd42ee78437f4349496034
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+}
+# hierarchies {
+counter_tempo_riflessi:inst7|lpm_counter:LPM_COUNTER_component
+}
+# macro_sequence
+
+# end
+# entity
+cntr_mpi
+# storage
+db|Rilevatore_Riflessi_Completo.(80).cnf
+db|Rilevatore_Riflessi_Completo.(80).cnf
+# case_insensitive
+# source_file
+db|cntr_mpi.tdf
+d946d3b9c15a1ec2ff2b373195946d0
+7
+# used_port {
+sclr
+-1
+3
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q15
+-1
+3
+q14
+-1
+3
+q13
+-1
+3
+q12
+-1
+3
+q11
+-1
+3
+q10
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+}
+# hierarchies {
+counter_tempo_riflessi:inst7|lpm_counter:LPM_COUNTER_component|cntr_mpi:auto_generated
+}
+# macro_sequence
+
+# end
+# complete
+

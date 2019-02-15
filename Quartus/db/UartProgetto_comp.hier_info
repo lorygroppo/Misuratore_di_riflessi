@@ -1,0 +1,2685 @@
+|UartProgetto_comp
+CK => altpll_progetto_comp:inst5.inclk0
+Reset => inst3.IN0
+Reset => UART:inst.RESETn
+buttons_in[0] => Rilevatore_Riflessi_Completo:inst2.Buttons[0]
+buttons_in[1] => Rilevatore_Riflessi_Completo:inst2.Buttons[1]
+buttons_in[2] => Rilevatore_Riflessi_Completo:inst2.Buttons[2]
+buttons_in[3] => Rilevatore_Riflessi_Completo:inst2.Buttons[3]
+RX_in => UART:inst.RX_UART
+
+
+|UartProgetto_comp|UART:inst
+WR => tx:b2v_TX_BLOCK.WR
+RD => rx:b2v_RX_BLOCK.RD
+CK => rx:b2v_RX_BLOCK.CK
+CK => tx:b2v_TX_BLOCK.CK
+RESETn => rx:b2v_RX_BLOCK.RESETn
+RESETn => tx:b2v_TX_BLOCK.RESETn
+RX_UART => rx:b2v_RX_BLOCK.RX_UART
+RX_UART => Rx_sonda.DATAIN
+DIN[0] => tx:b2v_TX_BLOCK.DIN[0]
+DIN[1] => tx:b2v_TX_BLOCK.DIN[1]
+DIN[2] => tx:b2v_TX_BLOCK.DIN[2]
+DIN[3] => tx:b2v_TX_BLOCK.DIN[3]
+DIN[4] => tx:b2v_TX_BLOCK.DIN[4]
+DIN[5] => tx:b2v_TX_BLOCK.DIN[5]
+DIN[6] => tx:b2v_TX_BLOCK.DIN[6]
+DIN[7] => tx:b2v_TX_BLOCK.DIN[7]
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK
+RD => fsm_rx:b2v_FSM_RX.RD
+CK => lpm_counter_rx_mod_16:b2v_CNT_RX_MOD_16_BIT.clock
+CK => lpm_counter_rx_mod_16:b2v_CNT_RX_MOD_16_EDGE.clock
+CK => lpm_counter_rx_mod_32:b2v_CNT_RX_MOD_32.clock
+CK => fsm_rx:b2v_FSM_RX.CK
+CK => lpm_shiftreg_rx_right_9:b2v_inst2.clock
+CK => lpm_shiftreg_rx_left_edge:b2v_LEFT_SHIFT_RX_EDGE.clock
+CK => lpm_shiftreg_rx_right_8_bit:b2v_RIGHT_SHIFT_RX_BIT.clock
+RX_UART => lpm_shiftreg_rx_left_edge:b2v_LEFT_SHIFT_RX_EDGE.shiftin
+RX_UART => lpm_shiftreg_rx_right_8_bit:b2v_RIGHT_SHIFT_RX_BIT.shiftin
+RESETn => fsm_rx:b2v_FSM_RX.RESETn
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|and_edge_detector:b2v_AND_Edge_Detector
+data[0] => edge_detection.IN0
+data[1] => edge_detection.IN1
+data[2] => edge_detection.IN1
+data[3] => edge_detection.IN1
+data[4] => edge_detection.IN1
+data[5] => edge_detection.IN1
+data[6] => edge_detection.IN1
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_counter_rx_mod_16:b2v_CNT_RX_MOD_16_BIT
+clock => lpm_counter:LPM_COUNTER_component.clock
+cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
+sclr => lpm_counter:LPM_COUNTER_component.sclr
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_counter_rx_mod_16:b2v_CNT_RX_MOD_16_BIT|lpm_counter:LPM_COUNTER_component
+clock => cntr_3oi:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => cntr_3oi:auto_generated.cnt_en
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_3oi:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_counter_rx_mod_16:b2v_CNT_RX_MOD_16_BIT|lpm_counter:LPM_COUNTER_component|cntr_3oi:auto_generated
+clock => counter_reg_bit1a[3].CLK
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+cnt_en => _.IN1
+sclr => _.IN0
+sclr => _.IN0
+sclr => _.IN0
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_counter_rx_mod_16:b2v_CNT_RX_MOD_16_EDGE
+clock => lpm_counter:LPM_COUNTER_component.clock
+cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
+sclr => lpm_counter:LPM_COUNTER_component.sclr
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_counter_rx_mod_16:b2v_CNT_RX_MOD_16_EDGE|lpm_counter:LPM_COUNTER_component
+clock => cntr_3oi:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => cntr_3oi:auto_generated.cnt_en
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_3oi:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_counter_rx_mod_16:b2v_CNT_RX_MOD_16_EDGE|lpm_counter:LPM_COUNTER_component|cntr_3oi:auto_generated
+clock => counter_reg_bit1a[3].CLK
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+cnt_en => _.IN1
+sclr => _.IN0
+sclr => _.IN0
+sclr => _.IN0
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_counter_rx_mod_32:b2v_CNT_RX_MOD_32
+clock => lpm_counter:LPM_COUNTER_component.clock
+cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
+sclr => lpm_counter:LPM_COUNTER_component.sclr
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_counter_rx_mod_32:b2v_CNT_RX_MOD_32|lpm_counter:LPM_COUNTER_component
+clock => cntr_4oi:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => cntr_4oi:auto_generated.cnt_en
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_4oi:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data[4] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_counter_rx_mod_32:b2v_CNT_RX_MOD_32|lpm_counter:LPM_COUNTER_component|cntr_4oi:auto_generated
+clock => counter_reg_bit1a[4].CLK
+clock => counter_reg_bit1a[3].CLK
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+cnt_en => _.IN1
+sclr => _.IN0
+sclr => _.IN0
+sclr => _.IN0
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|decisore:b2v_Decisore
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data[4] => ~NO_FANOUT~
+data[5] => decisione.IN0
+data[5] => decisione.IN0
+data[6] => decisione.IN0
+data[6] => decisione.IN1
+data[7] => decisione.IN1
+data[7] => decisione.IN1
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|fsm_rx:b2v_FSM_RX
+RD => next_state.Uscita_letta.DATAB
+RD => Selector3.IN1
+TC_CNT_MOD_27 => next_state.Edge_detection.DATAB
+TC_CNT_MOD_27 => next_state.Decisore.DATAB
+TC_CNT_MOD_27 => Selector1.IN2
+TC_CNT_MOD_27 => Selector2.IN1
+TC_CNT_MOD_8_EDGE => next_state.Accumulo_output.DATAB
+TC_CNT_MOD_8_EDGE => Selector2.IN2
+TC_CNT_MOD_8_BIT => next_state.Ricezione_terminata.DATAB
+TC_CNT_MOD_8_BIT => Selector2.IN3
+START => Selector2.IN5
+START => Selector1.IN3
+CK => present_state~1.DATAIN
+RESETn => present_state~3.DATAIN
+STOP_BIT => Selector3.IN3
+STOP_BIT => Selector0.IN2
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_shiftreg_rx_right_9:b2v_inst2
+clock => lpm_shiftreg:LPM_SHIFTREG_component.clock
+enable => lpm_shiftreg:LPM_SHIFTREG_component.enable
+sclr => lpm_shiftreg:LPM_SHIFTREG_component.sclr
+shiftin => lpm_shiftreg:LPM_SHIFTREG_component.shiftin
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_shiftreg_rx_right_9:b2v_inst2|lpm_shiftreg:LPM_SHIFTREG_component
+data[0] => _.IN1
+data[1] => _.IN1
+data[2] => _.IN1
+data[3] => _.IN1
+data[4] => _.IN1
+data[5] => _.IN1
+data[6] => _.IN1
+data[7] => _.IN1
+data[8] => _.IN1
+clock => dffs[8].CLK
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[8].ENA
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+shiftin => _.IN1
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+sclr => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_shiftreg_rx_left_edge:b2v_LEFT_SHIFT_RX_EDGE
+clock => lpm_shiftreg:LPM_SHIFTREG_component.clock
+enable => lpm_shiftreg:LPM_SHIFTREG_component.enable
+sclr => lpm_shiftreg:LPM_SHIFTREG_component.sclr
+shiftin => lpm_shiftreg:LPM_SHIFTREG_component.shiftin
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_shiftreg_rx_left_edge:b2v_LEFT_SHIFT_RX_EDGE|lpm_shiftreg:LPM_SHIFTREG_component
+data[0] => _.IN1
+data[1] => _.IN1
+data[2] => _.IN1
+data[3] => _.IN1
+data[4] => _.IN1
+data[5] => _.IN1
+data[6] => _.IN1
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+shiftin => _.IN1
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+sclr => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_shiftreg_rx_right_8_bit:b2v_RIGHT_SHIFT_RX_BIT
+clock => lpm_shiftreg:LPM_SHIFTREG_component.clock
+enable => lpm_shiftreg:LPM_SHIFTREG_component.enable
+sclr => lpm_shiftreg:LPM_SHIFTREG_component.sclr
+shiftin => lpm_shiftreg:LPM_SHIFTREG_component.shiftin
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_shiftreg_rx_right_8_bit:b2v_RIGHT_SHIFT_RX_BIT|lpm_shiftreg:LPM_SHIFTREG_component
+data[0] => _.IN1
+data[1] => _.IN1
+data[2] => _.IN1
+data[3] => _.IN1
+data[4] => _.IN1
+data[5] => _.IN1
+data[6] => _.IN1
+data[7] => _.IN1
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+shiftin => _.IN1
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+sclr => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|and_num_bit:b2v_TC_CNT_9_BIT
+data[0] => output.IN1
+data[1] => output.IN1
+data[2] => output.IN0
+data[3] => output.IN1
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|and_clk_div:b2v_TC_CNT_MOD_27
+data[0] => output.IN1
+data[1] => output.IN1
+data[2] => output.IN1
+data[3] => output.IN0
+data[4] => output.IN1
+
+
+|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|and_decisore:b2v_TC_CNT_MOD_8_EDGE
+data[0] => output.IN1
+data[1] => output.IN1
+data[2] => output.IN0
+data[3] => output.IN1
+
+
+|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK
+WR => fsm_tx:b2v_FSM_TX.WR
+CK => lpm_counter_tx_mod_10:b2v_CNT_TX_MOD_10.clock
+CK => lpm_counter_tx:b2v_CNT_TX_MOD_217.clock
+CK => lpm_ff_0:b2v_DATA_FF.clock
+CK => fsm_tx:b2v_FSM_TX.CK
+CK => lpm_shiftreg0:b2v_TX_SHIFT_REG.clock
+RESETn => fsm_tx:b2v_FSM_TX.RESETn
+DIN[0] => lpm_ff_0:b2v_DATA_FF.data[0]
+DIN[1] => lpm_ff_0:b2v_DATA_FF.data[1]
+DIN[2] => lpm_ff_0:b2v_DATA_FF.data[2]
+DIN[3] => lpm_ff_0:b2v_DATA_FF.data[3]
+DIN[4] => lpm_ff_0:b2v_DATA_FF.data[4]
+DIN[5] => lpm_ff_0:b2v_DATA_FF.data[5]
+DIN[6] => lpm_ff_0:b2v_DATA_FF.data[6]
+DIN[7] => lpm_ff_0:b2v_DATA_FF.data[7]
+
+
+|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|and_gate_4:b2v_AND_GATE_4
+data[0] => result.IN0
+data[1] => result.IN1
+data[2] => result.IN1
+data[3] => result.IN1
+
+
+|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|and_gate_8:b2v_AND_GATE_8
+data[0] => result.IN0
+data[1] => result.IN1
+data[2] => result.IN1
+data[3] => result.IN1
+data[4] => result.IN1
+data[5] => result.IN1
+data[6] => result.IN1
+data[7] => result.IN1
+
+
+|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|lpm_counter_tx_mod_10:b2v_CNT_TX_MOD_10
+clock => lpm_counter:LPM_COUNTER_component.clock
+cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
+sclr => lpm_counter:LPM_COUNTER_component.sclr
+
+
+|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|lpm_counter_tx_mod_10:b2v_CNT_TX_MOD_10|lpm_counter:LPM_COUNTER_component
+clock => cntr_3oi:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => cntr_3oi:auto_generated.cnt_en
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_3oi:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+
+
+|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|lpm_counter_tx_mod_10:b2v_CNT_TX_MOD_10|lpm_counter:LPM_COUNTER_component|cntr_3oi:auto_generated
+clock => counter_reg_bit1a[3].CLK
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+cnt_en => _.IN1
+sclr => _.IN0
+sclr => _.IN0
+sclr => _.IN0
+
+
+|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|lpm_counter_tx:b2v_CNT_TX_MOD_217
+clock => lpm_counter:LPM_COUNTER_component.clock
+cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
+sclr => lpm_counter:LPM_COUNTER_component.sclr
+
+
+|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|lpm_counter_tx:b2v_CNT_TX_MOD_217|lpm_counter:LPM_COUNTER_component
+clock => cntr_7oi:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => cntr_7oi:auto_generated.cnt_en
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_7oi:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data[4] => ~NO_FANOUT~
+data[5] => ~NO_FANOUT~
+data[6] => ~NO_FANOUT~
+data[7] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+
+
+|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|lpm_counter_tx:b2v_CNT_TX_MOD_217|lpm_counter:LPM_COUNTER_component|cntr_7oi:auto_generated
+clock => counter_reg_bit1a[7].CLK
+clock => counter_reg_bit1a[6].CLK
+clock => counter_reg_bit1a[5].CLK
+clock => counter_reg_bit1a[4].CLK
+clock => counter_reg_bit1a[3].CLK
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+cnt_en => _.IN1
+sclr => _.IN0
+sclr => _.IN0
+sclr => _.IN0
+
+
+|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|lpm_ff_0:b2v_DATA_FF
+clock => LPM_FF:b2v_DATA_FF.CLOCK
+data[0] => LPM_FF:b2v_DATA_FF.DATA[0]
+data[1] => LPM_FF:b2v_DATA_FF.DATA[1]
+data[2] => LPM_FF:b2v_DATA_FF.DATA[2]
+data[3] => LPM_FF:b2v_DATA_FF.DATA[3]
+data[4] => LPM_FF:b2v_DATA_FF.DATA[4]
+data[5] => LPM_FF:b2v_DATA_FF.DATA[5]
+data[6] => LPM_FF:b2v_DATA_FF.DATA[6]
+data[7] => LPM_FF:b2v_DATA_FF.DATA[7]
+
+
+|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|lpm_ff_0:b2v_DATA_FF|LPM_FF:b2v_DATA_FF
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+
+
+|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|fsm_tx:b2v_FSM_TX
+CK => present_state~1.DATAIN
+TC => next_state.NEXT_BIT.DATAB
+TC => Selector1.IN2
+END_TX => Selector0.IN4
+END_TX => Selector1.IN3
+WR => next_state.LOAD_DATA.DATAB
+WR => Selector0.IN2
+RESETn => present_state~3.DATAIN
+
+
+|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|lpm_mux0:b2v_MUX_2_TO_1
+data0 => LPM_MUX:LPM_MUX_component.DATA[0][0]
+data1 => LPM_MUX:LPM_MUX_component.DATA[1][0]
+sel => LPM_MUX:LPM_MUX_component.SEL[0]
+
+
+|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|lpm_mux0:b2v_MUX_2_TO_1|LPM_MUX:LPM_MUX_component
+data[0][0] => mux_03e:auto_generated.data[0]
+data[1][0] => mux_03e:auto_generated.data[1]
+sel[0] => mux_03e:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+
+
+|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|lpm_mux0:b2v_MUX_2_TO_1|LPM_MUX:LPM_MUX_component|mux_03e:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|lpm_shiftreg0:b2v_TX_SHIFT_REG
+clock => lpm_shiftreg:LPM_SHIFTREG_component.clock
+data[0] => lpm_shiftreg:LPM_SHIFTREG_component.data[0]
+data[1] => lpm_shiftreg:LPM_SHIFTREG_component.data[1]
+data[2] => lpm_shiftreg:LPM_SHIFTREG_component.data[2]
+data[3] => lpm_shiftreg:LPM_SHIFTREG_component.data[3]
+data[4] => lpm_shiftreg:LPM_SHIFTREG_component.data[4]
+data[5] => lpm_shiftreg:LPM_SHIFTREG_component.data[5]
+data[6] => lpm_shiftreg:LPM_SHIFTREG_component.data[6]
+data[7] => lpm_shiftreg:LPM_SHIFTREG_component.data[7]
+data[8] => lpm_shiftreg:LPM_SHIFTREG_component.data[8]
+data[9] => lpm_shiftreg:LPM_SHIFTREG_component.data[9]
+enable => lpm_shiftreg:LPM_SHIFTREG_component.enable
+load => lpm_shiftreg:LPM_SHIFTREG_component.load
+
+
+|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|lpm_shiftreg0:b2v_TX_SHIFT_REG|lpm_shiftreg:LPM_SHIFTREG_component
+data[0] => _.IN1
+data[1] => _.IN1
+data[2] => _.IN1
+data[3] => _.IN1
+data[4] => _.IN1
+data[5] => _.IN1
+data[6] => _.IN1
+data[7] => _.IN1
+data[8] => _.IN1
+data[9] => _.IN1
+clock => dffs[9].CLK
+clock => dffs[8].CLK
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[9].ENA
+enable => dffs[8].ENA
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+shiftin => _.IN1
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+sclr => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2
+CLOCK => output_encoder:b2v_inst.clk
+CLOCK => lpm_counter_ms:b2v_inst1.clock
+CLOCK => pilotaggio_led2:b2v_inst3.clock
+CLOCK => dec_command:b2v_inst4.CK
+CLOCK => random_time_generator:b2v_inst5.CK_25MHz
+CLOCK => counter_tempo_riflessi:b2v_inst7.clock
+TX_RDY => output_encoder:b2v_inst.TX_Ready
+RESET => SYNTHESIZED_WIRE_19.IN1
+DAV => dec_command:b2v_inst4.DAV
+Buttons[0] => pilotaggio_led2:b2v_inst3.Buttons[0]
+Buttons[1] => pilotaggio_led2:b2v_inst3.Buttons[1]
+Buttons[2] => pilotaggio_led2:b2v_inst3.Buttons[2]
+Buttons[3] => pilotaggio_led2:b2v_inst3.Buttons[3]
+Command[0] => dec_command:b2v_inst4.DOUT[0]
+Command[1] => dec_command:b2v_inst4.DOUT[1]
+Command[2] => dec_command:b2v_inst4.DOUT[2]
+Command[3] => dec_command:b2v_inst4.DOUT[3]
+Command[4] => dec_command:b2v_inst4.DOUT[4]
+Command[5] => dec_command:b2v_inst4.DOUT[5]
+Command[6] => dec_command:b2v_inst4.DOUT[6]
+Command[7] => dec_command:b2v_inst4.DOUT[7]
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst
+clk => fsm_out_enc:b2v_inst10.clk
+clk => out_gen_lpm_counter0:b2v_inst12.clock
+clk => lpm_rom_0:b2v_inst13.inclock
+Start_TX => fsm_out_enc:b2v_inst10.start_TX
+TX_Ready => fsm_out_enc:b2v_inst10.TX_ready
+RST => SYNTHESIZED_WIRE_2.IN1
+RST => fsm_out_enc:b2v_inst10.rst
+Timer[0] => out_gen_lpm_mux0:b2v_inst.data3x[0]
+Timer[1] => out_gen_lpm_mux0:b2v_inst.data3x[1]
+Timer[2] => out_gen_lpm_mux0:b2v_inst.data3x[2]
+Timer[3] => out_gen_lpm_mux0:b2v_inst.data3x[3]
+Timer[4] => out_gen_lpm_mux0:b2v_inst.data2x[0]
+Timer[5] => out_gen_lpm_mux0:b2v_inst.data2x[1]
+Timer[6] => out_gen_lpm_mux0:b2v_inst.data2x[2]
+Timer[7] => out_gen_lpm_mux0:b2v_inst.data2x[3]
+Timer[8] => out_gen_lpm_mux0:b2v_inst.data1x[0]
+Timer[9] => out_gen_lpm_mux0:b2v_inst.data1x[1]
+Timer[10] => out_gen_lpm_mux0:b2v_inst.data1x[2]
+Timer[11] => out_gen_lpm_mux0:b2v_inst.data1x[3]
+Timer[12] => out_gen_lpm_mux0:b2v_inst.data0x[0]
+Timer[13] => out_gen_lpm_mux0:b2v_inst.data0x[1]
+Timer[14] => out_gen_lpm_mux0:b2v_inst.data0x[2]
+Timer[15] => out_gen_lpm_mux0:b2v_inst.data0x[3]
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|out_gen_lpm_mux0:b2v_inst
+data0x[0] => LPM_MUX:LPM_MUX_component.DATA[0][0]
+data0x[1] => LPM_MUX:LPM_MUX_component.DATA[0][1]
+data0x[2] => LPM_MUX:LPM_MUX_component.DATA[0][2]
+data0x[3] => LPM_MUX:LPM_MUX_component.DATA[0][3]
+data1x[0] => LPM_MUX:LPM_MUX_component.DATA[1][0]
+data1x[1] => LPM_MUX:LPM_MUX_component.DATA[1][1]
+data1x[2] => LPM_MUX:LPM_MUX_component.DATA[1][2]
+data1x[3] => LPM_MUX:LPM_MUX_component.DATA[1][3]
+data2x[0] => LPM_MUX:LPM_MUX_component.DATA[2][0]
+data2x[1] => LPM_MUX:LPM_MUX_component.DATA[2][1]
+data2x[2] => LPM_MUX:LPM_MUX_component.DATA[2][2]
+data2x[3] => LPM_MUX:LPM_MUX_component.DATA[2][3]
+data3x[0] => LPM_MUX:LPM_MUX_component.DATA[3][0]
+data3x[1] => LPM_MUX:LPM_MUX_component.DATA[3][1]
+data3x[2] => LPM_MUX:LPM_MUX_component.DATA[3][2]
+data3x[3] => LPM_MUX:LPM_MUX_component.DATA[3][3]
+sel[0] => LPM_MUX:LPM_MUX_component.SEL[0]
+sel[1] => LPM_MUX:LPM_MUX_component.SEL[1]
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|out_gen_lpm_mux0:b2v_inst|LPM_MUX:LPM_MUX_component
+data[0][0] => mux_63e:auto_generated.data[0]
+data[0][1] => mux_63e:auto_generated.data[1]
+data[0][2] => mux_63e:auto_generated.data[2]
+data[0][3] => mux_63e:auto_generated.data[3]
+data[1][0] => mux_63e:auto_generated.data[4]
+data[1][1] => mux_63e:auto_generated.data[5]
+data[1][2] => mux_63e:auto_generated.data[6]
+data[1][3] => mux_63e:auto_generated.data[7]
+data[2][0] => mux_63e:auto_generated.data[8]
+data[2][1] => mux_63e:auto_generated.data[9]
+data[2][2] => mux_63e:auto_generated.data[10]
+data[2][3] => mux_63e:auto_generated.data[11]
+data[3][0] => mux_63e:auto_generated.data[12]
+data[3][1] => mux_63e:auto_generated.data[13]
+data[3][2] => mux_63e:auto_generated.data[14]
+data[3][3] => mux_63e:auto_generated.data[15]
+sel[0] => mux_63e:auto_generated.sel[0]
+sel[1] => mux_63e:auto_generated.sel[1]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|out_gen_lpm_mux0:b2v_inst|LPM_MUX:LPM_MUX_component|mux_63e:auto_generated
+data[0] => _.IN0
+data[0] => _.IN0
+data[1] => _.IN0
+data[1] => _.IN0
+data[2] => _.IN0
+data[2] => _.IN0
+data[3] => _.IN0
+data[3] => _.IN0
+data[4] => _.IN0
+data[5] => _.IN0
+data[6] => _.IN0
+data[7] => _.IN0
+data[8] => _.IN1
+data[8] => _.IN1
+data[9] => _.IN1
+data[9] => _.IN1
+data[10] => _.IN1
+data[10] => _.IN1
+data[11] => _.IN1
+data[11] => _.IN1
+data[12] => _.IN0
+data[13] => _.IN0
+data[14] => _.IN0
+data[15] => _.IN0
+sel[0] => _.IN1
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN1
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN1
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN1
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[0] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+sel[1] => _.IN0
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|fsm_out_enc:b2v_inst10
+clk => present_state~1.DATAIN
+rst => present_state~3.DATAIN
+TC => present_state.DATAB
+TC => Selector1.IN3
+start_TX => present_state.DATAB
+start_TX => Selector0.IN2
+TX_ready => present_state.DATAB
+TX_ready => Selector1.IN2
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|out_gen_lpm_counter0:b2v_inst12
+clk_en => lpm_counter:LPM_COUNTER_component.clk_en
+clock => lpm_counter:LPM_COUNTER_component.clock
+cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
+sclr => lpm_counter:LPM_COUNTER_component.sclr
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|out_gen_lpm_counter0:b2v_inst12|lpm_counter:LPM_COUNTER_component
+clock => cntr_ecj:auto_generated.clock
+clk_en => cntr_ecj:auto_generated.clk_en
+cnt_en => cntr_ecj:auto_generated.cnt_en
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_ecj:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|out_gen_lpm_counter0:b2v_inst12|lpm_counter:LPM_COUNTER_component|cntr_ecj:auto_generated
+clk_en => counter_reg_bit1a[2].IN0
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+cnt_en => _.IN1
+sclr => _.IN0
+sclr => _.IN0
+sclr => _.IN0
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_rom_0:b2v_inst13
+inclock => LPM_ROM:b2v_inst13.INCLOCK
+address[0] => LPM_ROM:b2v_inst13.ADDRESS[0]
+address[1] => LPM_ROM:b2v_inst13.ADDRESS[1]
+address[2] => LPM_ROM:b2v_inst13.ADDRESS[2]
+address[3] => LPM_ROM:b2v_inst13.ADDRESS[3]
+address[4] => LPM_ROM:b2v_inst13.ADDRESS[4]
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_rom_0:b2v_inst13|LPM_ROM:b2v_inst13
+address[0] => altrom:srom.address[0]
+address[1] => altrom:srom.address[1]
+address[2] => altrom:srom.address[2]
+address[3] => altrom:srom.address[3]
+address[4] => altrom:srom.address[4]
+inclock => altrom:srom.clocki
+outclock => ~NO_FANOUT~
+memenab => otri[7].OE
+memenab => otri[6].OE
+memenab => otri[5].OE
+memenab => otri[4].OE
+memenab => otri[3].OE
+memenab => otri[2].OE
+memenab => otri[1].OE
+memenab => otri[0].OE
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_rom_0:b2v_inst13|LPM_ROM:b2v_inst13|altrom:srom
+address[0] => altsyncram:rom_block.address_a[0]
+address[1] => altsyncram:rom_block.address_a[1]
+address[2] => altsyncram:rom_block.address_a[2]
+address[3] => altsyncram:rom_block.address_a[3]
+address[4] => altsyncram:rom_block.address_a[4]
+clocki => altsyncram:rom_block.clock0
+clocko => ~NO_FANOUT~
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_rom_0:b2v_inst13|LPM_ROM:b2v_inst13|altrom:srom|altsyncram:rom_block
+wren_a => ~NO_FANOUT~
+rden_a => ~NO_FANOUT~
+wren_b => ~NO_FANOUT~
+rden_b => ~NO_FANOUT~
+data_a[0] => ~NO_FANOUT~
+data_a[1] => ~NO_FANOUT~
+data_a[2] => ~NO_FANOUT~
+data_a[3] => ~NO_FANOUT~
+data_a[4] => ~NO_FANOUT~
+data_a[5] => ~NO_FANOUT~
+data_a[6] => ~NO_FANOUT~
+data_a[7] => ~NO_FANOUT~
+data_b[0] => ~NO_FANOUT~
+address_a[0] => altsyncram_3t21:auto_generated.address_a[0]
+address_a[1] => altsyncram_3t21:auto_generated.address_a[1]
+address_a[2] => altsyncram_3t21:auto_generated.address_a[2]
+address_a[3] => altsyncram_3t21:auto_generated.address_a[3]
+address_a[4] => altsyncram_3t21:auto_generated.address_a[4]
+address_b[0] => ~NO_FANOUT~
+addressstall_a => ~NO_FANOUT~
+addressstall_b => ~NO_FANOUT~
+clock0 => altsyncram_3t21:auto_generated.clock0
+clock1 => ~NO_FANOUT~
+clocken0 => ~NO_FANOUT~
+clocken1 => ~NO_FANOUT~
+clocken2 => ~NO_FANOUT~
+clocken3 => ~NO_FANOUT~
+aclr0 => ~NO_FANOUT~
+aclr1 => ~NO_FANOUT~
+byteena_a[0] => ~NO_FANOUT~
+byteena_b[0] => ~NO_FANOUT~
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_rom_0:b2v_inst13|LPM_ROM:b2v_inst13|altrom:srom|altsyncram:rom_block|altsyncram_3t21:auto_generated
+address_a[0] => ram_block1a0.PORTAADDR
+address_a[0] => ram_block1a1.PORTAADDR
+address_a[0] => ram_block1a2.PORTAADDR
+address_a[0] => ram_block1a3.PORTAADDR
+address_a[0] => ram_block1a4.PORTAADDR
+address_a[0] => ram_block1a5.PORTAADDR
+address_a[0] => ram_block1a6.PORTAADDR
+address_a[0] => ram_block1a7.PORTAADDR
+address_a[1] => ram_block1a0.PORTAADDR1
+address_a[1] => ram_block1a1.PORTAADDR1
+address_a[1] => ram_block1a2.PORTAADDR1
+address_a[1] => ram_block1a3.PORTAADDR1
+address_a[1] => ram_block1a4.PORTAADDR1
+address_a[1] => ram_block1a5.PORTAADDR1
+address_a[1] => ram_block1a6.PORTAADDR1
+address_a[1] => ram_block1a7.PORTAADDR1
+address_a[2] => ram_block1a0.PORTAADDR2
+address_a[2] => ram_block1a1.PORTAADDR2
+address_a[2] => ram_block1a2.PORTAADDR2
+address_a[2] => ram_block1a3.PORTAADDR2
+address_a[2] => ram_block1a4.PORTAADDR2
+address_a[2] => ram_block1a5.PORTAADDR2
+address_a[2] => ram_block1a6.PORTAADDR2
+address_a[2] => ram_block1a7.PORTAADDR2
+address_a[3] => ram_block1a0.PORTAADDR3
+address_a[3] => ram_block1a1.PORTAADDR3
+address_a[3] => ram_block1a2.PORTAADDR3
+address_a[3] => ram_block1a3.PORTAADDR3
+address_a[3] => ram_block1a4.PORTAADDR3
+address_a[3] => ram_block1a5.PORTAADDR3
+address_a[3] => ram_block1a6.PORTAADDR3
+address_a[3] => ram_block1a7.PORTAADDR3
+address_a[4] => ram_block1a0.PORTAADDR4
+address_a[4] => ram_block1a1.PORTAADDR4
+address_a[4] => ram_block1a2.PORTAADDR4
+address_a[4] => ram_block1a3.PORTAADDR4
+address_a[4] => ram_block1a4.PORTAADDR4
+address_a[4] => ram_block1a5.PORTAADDR4
+address_a[4] => ram_block1a6.PORTAADDR4
+address_a[4] => ram_block1a7.PORTAADDR4
+clock0 => ram_block1a0.CLK0
+clock0 => ram_block1a1.CLK0
+clock0 => ram_block1a2.CLK0
+clock0 => ram_block1a3.CLK0
+clock0 => ram_block1a4.CLK0
+clock0 => ram_block1a5.CLK0
+clock0 => ram_block1a6.CLK0
+clock0 => ram_block1a7.CLK0
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_mux_addr:b2v_inst5
+data0x[0] => LPM_MUX:LPM_MUX_component.DATA[0][0]
+data0x[1] => LPM_MUX:LPM_MUX_component.DATA[0][1]
+data0x[2] => LPM_MUX:LPM_MUX_component.DATA[0][2]
+data0x[3] => LPM_MUX:LPM_MUX_component.DATA[0][3]
+data0x[4] => LPM_MUX:LPM_MUX_component.DATA[0][4]
+data1x[0] => LPM_MUX:LPM_MUX_component.DATA[1][0]
+data1x[1] => LPM_MUX:LPM_MUX_component.DATA[1][1]
+data1x[2] => LPM_MUX:LPM_MUX_component.DATA[1][2]
+data1x[3] => LPM_MUX:LPM_MUX_component.DATA[1][3]
+data1x[4] => LPM_MUX:LPM_MUX_component.DATA[1][4]
+sel => LPM_MUX:LPM_MUX_component.SEL[0]
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_mux_addr:b2v_inst5|LPM_MUX:LPM_MUX_component
+data[0][0] => mux_43e:auto_generated.data[0]
+data[0][1] => mux_43e:auto_generated.data[1]
+data[0][2] => mux_43e:auto_generated.data[2]
+data[0][3] => mux_43e:auto_generated.data[3]
+data[0][4] => mux_43e:auto_generated.data[4]
+data[1][0] => mux_43e:auto_generated.data[5]
+data[1][1] => mux_43e:auto_generated.data[6]
+data[1][2] => mux_43e:auto_generated.data[7]
+data[1][3] => mux_43e:auto_generated.data[8]
+data[1][4] => mux_43e:auto_generated.data[9]
+sel[0] => mux_43e:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_mux_addr:b2v_inst5|LPM_MUX:LPM_MUX_component|mux_43e:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[1].IN1
+data[2] => result_node[2].IN1
+data[3] => result_node[3].IN1
+data[4] => result_node[4].IN1
+data[5] => result_node[0].IN1
+data[6] => result_node[1].IN1
+data[7] => result_node[2].IN1
+data[8] => result_node[3].IN1
+data[9] => result_node[4].IN1
+sel[0] => result_node[4].IN0
+sel[0] => _.IN0
+sel[0] => result_node[3].IN0
+sel[0] => _.IN0
+sel[0] => result_node[2].IN0
+sel[0] => _.IN0
+sel[0] => result_node[1].IN0
+sel[0] => _.IN0
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|const:b2v_inst7
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|lpm_counter_ms:b2v_inst1
+aclr => lpm_counter:LPM_COUNTER_component.aclr
+clock => lpm_counter:LPM_COUNTER_component.clock
+cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
+sclr => lpm_counter:LPM_COUNTER_component.sclr
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|lpm_counter_ms:b2v_inst1|lpm_counter:LPM_COUNTER_component
+clock => cntr_n7j:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => cntr_n7j:auto_generated.cnt_en
+updown => ~NO_FANOUT~
+aclr => cntr_n7j:auto_generated.aclr
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_n7j:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data[4] => ~NO_FANOUT~
+data[5] => ~NO_FANOUT~
+data[6] => ~NO_FANOUT~
+data[7] => ~NO_FANOUT~
+data[8] => ~NO_FANOUT~
+data[9] => ~NO_FANOUT~
+data[10] => ~NO_FANOUT~
+data[11] => ~NO_FANOUT~
+data[12] => ~NO_FANOUT~
+data[13] => ~NO_FANOUT~
+data[14] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|lpm_counter_ms:b2v_inst1|lpm_counter:LPM_COUNTER_component|cntr_n7j:auto_generated
+aclr => counter_reg_bit1a[14].ACLR
+aclr => counter_reg_bit1a[13].ACLR
+aclr => counter_reg_bit1a[12].ACLR
+aclr => counter_reg_bit1a[11].ACLR
+aclr => counter_reg_bit1a[10].ACLR
+aclr => counter_reg_bit1a[9].ACLR
+aclr => counter_reg_bit1a[8].ACLR
+aclr => counter_reg_bit1a[7].ACLR
+aclr => counter_reg_bit1a[6].ACLR
+aclr => counter_reg_bit1a[5].ACLR
+aclr => counter_reg_bit1a[4].ACLR
+aclr => counter_reg_bit1a[3].ACLR
+aclr => counter_reg_bit1a[2].ACLR
+aclr => counter_reg_bit1a[1].ACLR
+aclr => counter_reg_bit1a[0].ACLR
+clock => counter_reg_bit1a[14].CLK
+clock => counter_reg_bit1a[13].CLK
+clock => counter_reg_bit1a[12].CLK
+clock => counter_reg_bit1a[11].CLK
+clock => counter_reg_bit1a[10].CLK
+clock => counter_reg_bit1a[9].CLK
+clock => counter_reg_bit1a[8].CLK
+clock => counter_reg_bit1a[7].CLK
+clock => counter_reg_bit1a[6].CLK
+clock => counter_reg_bit1a[5].CLK
+clock => counter_reg_bit1a[4].CLK
+clock => counter_reg_bit1a[3].CLK
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+cnt_en => _.IN1
+sclr => _.IN0
+sclr => _.IN0
+sclr => _.IN0
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|ms_detect:b2v_inst2
+data_in[0] => ms_out.IN1
+data_in[1] => ms_out.IN1
+data_in[2] => ms_out.IN1
+data_in[3] => ms_out.IN1
+data_in[4] => ms_out.IN1
+data_in[5] => ms_out.IN1
+data_in[6] => ms_out.IN1
+data_in[7] => ms_out.IN1
+data_in[8] => ms_out.IN1
+data_in[9] => ms_out.IN1
+data_in[10] => ms_out.IN1
+data_in[11] => ms_out.IN1
+data_in[12] => ms_out.IN1
+data_in[13] => ms_out.IN0
+data_in[14] => ms_out.IN1
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|pilotaggio_led2:b2v_inst3
+Enable_LEDS => fsm_pilotaggio_led:b2v_inst.enable_accensione
+reset => fsm_pilotaggio_led:b2v_inst.reset
+clock => fsm_pilotaggio_led:b2v_inst.clk
+Buttons[0] => fsm_pilotaggio_led:b2v_inst.buttons[0]
+Buttons[1] => fsm_pilotaggio_led:b2v_inst.buttons[1]
+Buttons[2] => fsm_pilotaggio_led:b2v_inst.buttons[2]
+Buttons[3] => fsm_pilotaggio_led:b2v_inst.buttons[3]
+SEL_LEDS_in[0] => lpm_decoder_leds_pilot:b2v_inst4.data[0]
+SEL_LEDS_in[1] => lpm_decoder_leds_pilot:b2v_inst4.data[1]
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|pilotaggio_led2:b2v_inst3|fsm_pilotaggio_led:b2v_inst
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+clk => state~1.DATAIN
+buttons[0] => Equal0.IN7
+buttons[1] => Equal0.IN6
+buttons[2] => Equal0.IN5
+buttons[3] => Equal0.IN4
+sel_LED[0] => Equal0.IN3
+sel_LED[0] => LEDS_out.DATAA
+sel_LED[1] => Equal0.IN2
+sel_LED[1] => LEDS_out.DATAA
+sel_LED[2] => Equal0.IN1
+sel_LED[2] => LEDS_out.DATAA
+sel_LED[3] => Equal0.IN0
+sel_LED[3] => LEDS_out.DATAA
+enable_accensione => next_state.Accensione_LED.DATAB
+enable_accensione => Selector0.IN2
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|pilotaggio_led2:b2v_inst3|lpm_decoder_leds_pilot:b2v_inst4
+data[0] => lpm_decode:LPM_DECODE_component.data[0]
+data[1] => lpm_decode:LPM_DECODE_component.data[1]
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|pilotaggio_led2:b2v_inst3|lpm_decoder_leds_pilot:b2v_inst4|lpm_decode:LPM_DECODE_component
+data[0] => decode_n6f:auto_generated.data[0]
+data[1] => decode_n6f:auto_generated.data[1]
+enable => ~NO_FANOUT~
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|pilotaggio_led2:b2v_inst3|lpm_decoder_leds_pilot:b2v_inst4|lpm_decode:LPM_DECODE_component|decode_n6f:auto_generated
+data[0] => w_anode15w[1].IN1
+data[0] => w_anode1w[1].IN0
+data[0] => w_anode24w[1].IN0
+data[0] => w_anode33w[1].IN1
+data[1] => w_anode15w[2].IN0
+data[1] => w_anode1w[2].IN0
+data[1] => w_anode24w[2].IN1
+data[1] => w_anode33w[2].IN1
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4
+CK => lpm_ff_2:b2v_inst11.clock
+CK => lpm_ff_1:b2v_inst12.clock
+CK => fsm_dec_command:b2v_inst7.CK
+DAV => fsm_dec_command:b2v_inst7.DAV
+RESETn => fsm_dec_command:b2v_inst7.RESETn
+END_TX => fsm_dec_command:b2v_inst7.END_TX
+DOUT[0] => lpm_ff_1:b2v_inst12.data[0]
+DOUT[1] => lpm_ff_1:b2v_inst12.data[1]
+DOUT[2] => lpm_ff_1:b2v_inst12.data[2]
+DOUT[3] => lpm_ff_1:b2v_inst12.data[3]
+DOUT[4] => lpm_ff_1:b2v_inst12.data[4]
+DOUT[5] => lpm_ff_1:b2v_inst12.data[5]
+DOUT[6] => lpm_ff_1:b2v_inst12.data[6]
+DOUT[7] => lpm_ff_1:b2v_inst12.data[7]
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|lpm_ff_2:b2v_inst11
+aclr => LPM_FF:b2v_inst11.ACLR
+clock => LPM_FF:b2v_inst11.CLOCK
+enable => LPM_FF:b2v_inst11.ENABLE
+data[0] => LPM_FF:b2v_inst11.DATA[0]
+data[1] => LPM_FF:b2v_inst11.DATA[1]
+data[2] => LPM_FF:b2v_inst11.DATA[2]
+data[3] => LPM_FF:b2v_inst11.DATA[3]
+data[4] => LPM_FF:b2v_inst11.DATA[4]
+data[5] => LPM_FF:b2v_inst11.DATA[5]
+data[6] => LPM_FF:b2v_inst11.DATA[6]
+data[7] => LPM_FF:b2v_inst11.DATA[7]
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|lpm_ff_2:b2v_inst11|LPM_FF:b2v_inst11
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => dffs[7].IN0
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|lpm_ff_1:b2v_inst12
+aclr => LPM_FF:b2v_inst12.ACLR
+clock => LPM_FF:b2v_inst12.CLOCK
+enable => LPM_FF:b2v_inst12.ENABLE
+data[0] => LPM_FF:b2v_inst12.DATA[0]
+data[1] => LPM_FF:b2v_inst12.DATA[1]
+data[2] => LPM_FF:b2v_inst12.DATA[2]
+data[3] => LPM_FF:b2v_inst12.DATA[3]
+data[4] => LPM_FF:b2v_inst12.DATA[4]
+data[5] => LPM_FF:b2v_inst12.DATA[5]
+data[6] => LPM_FF:b2v_inst12.DATA[6]
+data[7] => LPM_FF:b2v_inst12.DATA[7]
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|lpm_ff_1:b2v_inst12|LPM_FF:b2v_inst12
+data[0] => dffs[0].DATAIN
+data[1] => dffs[1].DATAIN
+data[2] => dffs[2].DATAIN
+data[3] => dffs[3].DATAIN
+data[4] => dffs[4].DATAIN
+data[5] => dffs[5].DATAIN
+data[6] => dffs[6].DATAIN
+data[7] => dffs[7].DATAIN
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+aclr => dffs[7].IN0
+aset => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|l_detect:b2v_inst2
+data_in[0] => L_out.IN1
+data_in[1] => L_out.IN1
+data_in[2] => L_out.IN1
+data_in[3] => L_out.IN1
+data_in[4] => L_out.IN1
+data_in[5] => L_out.IN1
+data_in[6] => L_out.IN0
+data_in[7] => L_out.IN1
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|detect_1:b2v_inst3
+data_in[0] => out_1.IN1
+data_in[1] => out_1.IN1
+data_in[2] => out_1.IN1
+data_in[3] => out_1.IN1
+data_in[4] => out_1.IN1
+data_in[5] => out_1.IN1
+data_in[6] => out_1.IN0
+data_in[7] => out_1.IN1
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|detect_2:b2v_inst4
+data_in[0] => out_2.IN1
+data_in[1] => out_2.IN1
+data_in[2] => out_2.IN1
+data_in[3] => out_2.IN1
+data_in[4] => out_2.IN1
+data_in[5] => out_2.IN1
+data_in[6] => out_2.IN0
+data_in[7] => out_2.IN1
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|detect_3:b2v_inst5
+data_in[0] => out_3.IN1
+data_in[1] => out_3.IN1
+data_in[2] => out_3.IN1
+data_in[3] => out_3.IN1
+data_in[4] => out_3.IN1
+data_in[5] => out_3.IN1
+data_in[6] => out_3.IN0
+data_in[7] => out_3.IN1
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|detect_4:b2v_inst6
+data_in[0] => out_4.IN1
+data_in[1] => out_4.IN1
+data_in[2] => out_4.IN1
+data_in[3] => out_4.IN1
+data_in[4] => out_4.IN1
+data_in[5] => out_4.IN1
+data_in[6] => out_4.IN0
+data_in[7] => out_4.IN1
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|fsm_dec_command:b2v_inst7
+CK => present_state~1.DATAIN
+DAV => Selector10.IN1
+DAV => Selector12.IN1
+DAV => Selector14.IN3
+DAV => Selector16.IN3
+L_correct => next_state.Led_4.OUTPUTSELECT
+L_correct => next_state.Led_3.OUTPUTSELECT
+L_correct => next_state.Led_2.OUTPUTSELECT
+L_correct => next_state.Led_1.OUTPUTSELECT
+L_correct => next_state.Led_3.IN1
+L_correct => Selector18.IN2
+Detect_1 => next_state.Led_4.OUTPUTSELECT
+Detect_1 => next_state.Led_3.OUTPUTSELECT
+Detect_1 => next_state.Led_3.IN1
+Detect_1 => next_state.Led_2.OUTPUTSELECT
+Detect_1 => next_state.Led_1.DATAB
+Detect_2 => next_state.Led_4.OUTPUTSELECT
+Detect_2 => next_state.Led_3.OUTPUTSELECT
+Detect_2 => next_state.Led_3.IN1
+Detect_2 => next_state.Led_2.DATAA
+Detect_3 => next_state.Led_3.IN0
+Detect_3 => next_state.Led_3.DATAA
+Detect_3 => next_state.Led_4.DATAA
+Detect_4 => next_state.Led_3.IN1
+RESETn => present_state~3.DATAIN
+END_TX => Selector18.IN3
+END_TX => Selector2.IN1
+END_TX => Selector1.IN1
+END_TX => Selector4.IN2
+END_TX => Selector6.IN1
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5
+Inizio_Attesa => fsm_attesa:b2v_inst1.inizio_attesa_fsm
+Inizio_Attesa => Inizio_attesa_in.DATAIN
+CK_25MHz => fsm_attesa:b2v_inst1.clk
+CK_25MHz => lpm_shiftreg0_lfsr_random:b2v_inst4.clock
+CK_25MHz => contatore_tempo_random:b2v_inst8.clock
+RESET => SYNTHESIZED_WIRE_6.IN1
+RESET => fsm_attesa:b2v_inst1.reset
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5|tc_tempo_attesa:b2v_inst
+numero_contato[0] => LessThan0.IN60
+numero_contato[1] => LessThan0.IN59
+numero_contato[2] => LessThan0.IN58
+numero_contato[3] => LessThan0.IN57
+numero_contato[4] => LessThan0.IN56
+numero_contato[5] => LessThan0.IN55
+numero_contato[6] => LessThan0.IN54
+numero_contato[7] => LessThan0.IN53
+numero_contato[8] => LessThan0.IN52
+numero_contato[9] => LessThan0.IN51
+numero_contato[10] => LessThan0.IN50
+numero_contato[11] => LessThan0.IN49
+numero_contato[12] => LessThan0.IN48
+numero_contato[13] => LessThan0.IN47
+numero_contato[14] => LessThan0.IN46
+numero_contato[15] => LessThan0.IN45
+numero_contato[16] => LessThan0.IN44
+numero_contato[17] => LessThan0.IN43
+numero_contato[18] => LessThan0.IN42
+numero_contato[19] => LessThan0.IN41
+numero_contato[20] => LessThan0.IN40
+numero_contato[21] => LessThan0.IN39
+numero_contato[22] => LessThan0.IN38
+numero_contato[23] => LessThan0.IN37
+numero_contato[24] => LessThan0.IN36
+numero_contato[25] => LessThan0.IN35
+numero_contato[26] => LessThan0.IN34
+numero_contato[27] => LessThan0.IN33
+numero_contato[28] => LessThan0.IN32
+numero_contato[29] => LessThan0.IN31
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5|FSM_attesa:b2v_inst1
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+clk => state~1.DATAIN
+inizio_attesa_fsm => Selector2.IN4
+inizio_attesa_fsm => next_state.wait_start3.DATAB
+inizio_attesa_fsm => Selector2.IN2
+inizio_attesa_fsm => next_state.wait_start2.DATAB
+tc => next_state.fine_attesa.DATAB
+tc => Selector3.IN2
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5|lpm_shiftreg0_lfsr_random:b2v_inst4
+clock => lpm_shiftreg:LPM_SHIFTREG_component.clock
+shiftin => lpm_shiftreg:LPM_SHIFTREG_component.shiftin
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5|lpm_shiftreg0_lfsr_random:b2v_inst4|lpm_shiftreg:LPM_SHIFTREG_component
+data[0] => _.IN1
+data[1] => _.IN1
+data[2] => _.IN1
+data[3] => _.IN1
+data[4] => _.IN1
+data[5] => _.IN1
+data[6] => _.IN1
+data[7] => _.IN1
+clock => dffs[7].CLK
+clock => dffs[6].CLK
+clock => dffs[5].CLK
+clock => dffs[4].CLK
+clock => dffs[3].CLK
+clock => dffs[2].CLK
+clock => dffs[1].CLK
+clock => dffs[0].CLK
+enable => dffs[7].ENA
+enable => dffs[6].ENA
+enable => dffs[5].ENA
+enable => dffs[4].ENA
+enable => dffs[3].ENA
+enable => dffs[2].ENA
+enable => dffs[1].ENA
+enable => dffs[0].ENA
+shiftin => _.IN1
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+load => _.IN0
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+sclr => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+sset => _.IN0
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5|xor_lfsr:b2v_inst5
+Numero_LSFR[0] => Shift_in_LSFR.IN0
+Numero_LSFR[1] => Shift_in_LSFR.IN1
+Numero_LSFR[2] => Shift_in_LSFR.IN0
+Numero_LSFR[3] => Shift_in_LSFR.IN1
+Numero_LSFR[4] => ~NO_FANOUT~
+Numero_LSFR[5] => ~NO_FANOUT~
+Numero_LSFR[6] => ~NO_FANOUT~
+Numero_LSFR[7] => ~NO_FANOUT~
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5|lpm_mult0_random_number_gen:b2v_inst6
+dataa[0] => lpm_mult:lpm_mult_component.dataa[0]
+dataa[1] => lpm_mult:lpm_mult_component.dataa[1]
+dataa[2] => lpm_mult:lpm_mult_component.dataa[2]
+dataa[3] => lpm_mult:lpm_mult_component.dataa[3]
+dataa[4] => lpm_mult:lpm_mult_component.dataa[4]
+dataa[5] => lpm_mult:lpm_mult_component.dataa[5]
+dataa[6] => lpm_mult:lpm_mult_component.dataa[6]
+dataa[7] => lpm_mult:lpm_mult_component.dataa[7]
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5|lpm_mult0_random_number_gen:b2v_inst6|lpm_mult:lpm_mult_component
+dataa[0] => multcore:mult_core.dataa[0]
+dataa[1] => multcore:mult_core.dataa[1]
+dataa[2] => multcore:mult_core.dataa[2]
+dataa[3] => multcore:mult_core.dataa[3]
+dataa[4] => multcore:mult_core.dataa[4]
+dataa[5] => multcore:mult_core.dataa[5]
+dataa[6] => multcore:mult_core.dataa[6]
+dataa[7] => multcore:mult_core.dataa[7]
+datab[0] => multcore:mult_core.datab[0]
+datab[1] => multcore:mult_core.datab[1]
+datab[2] => multcore:mult_core.datab[2]
+datab[3] => multcore:mult_core.datab[3]
+datab[4] => multcore:mult_core.datab[4]
+datab[5] => multcore:mult_core.datab[5]
+datab[6] => multcore:mult_core.datab[6]
+datab[7] => multcore:mult_core.datab[7]
+datab[8] => multcore:mult_core.datab[8]
+datab[9] => multcore:mult_core.datab[9]
+datab[10] => multcore:mult_core.datab[10]
+datab[11] => multcore:mult_core.datab[11]
+datab[12] => multcore:mult_core.datab[12]
+datab[13] => multcore:mult_core.datab[13]
+datab[14] => multcore:mult_core.datab[14]
+datab[15] => multcore:mult_core.datab[15]
+datab[16] => multcore:mult_core.datab[16]
+datab[17] => multcore:mult_core.datab[17]
+datab[18] => multcore:mult_core.datab[18]
+datab[19] => multcore:mult_core.datab[19]
+datab[20] => multcore:mult_core.datab[20]
+datab[21] => multcore:mult_core.datab[21]
+sum[0] => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clock => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5|lpm_mult0_random_number_gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core
+dataa[0] => _.IN0
+dataa[0] => _.IN3
+dataa[0] => _.IN0
+dataa[0] => _.IN3
+dataa[0] => _.IN0
+dataa[0] => _.IN3
+dataa[0] => _.IN0
+dataa[0] => _.IN3
+dataa[0] => _.IN0
+dataa[0] => _.IN3
+dataa[0] => _.IN0
+dataa[0] => _.IN3
+dataa[0] => _.IN0
+dataa[0] => _.IN3
+dataa[0] => _.IN0
+dataa[0] => _.IN3
+dataa[1] => _.IN0
+dataa[1] => _.IN0
+dataa[1] => _.IN2
+dataa[1] => _.IN2
+dataa[1] => _.IN0
+dataa[1] => _.IN0
+dataa[1] => _.IN2
+dataa[1] => _.IN2
+dataa[1] => _.IN0
+dataa[1] => _.IN0
+dataa[1] => _.IN2
+dataa[1] => _.IN2
+dataa[1] => _.IN0
+dataa[1] => _.IN0
+dataa[1] => _.IN2
+dataa[1] => _.IN2
+dataa[2] => _.IN0
+dataa[2] => _.IN0
+dataa[2] => _.IN0
+dataa[2] => _.IN0
+dataa[2] => _.IN1
+dataa[2] => _.IN1
+dataa[2] => _.IN1
+dataa[2] => _.IN1
+dataa[2] => _.IN0
+dataa[2] => _.IN0
+dataa[2] => _.IN0
+dataa[2] => _.IN0
+dataa[2] => _.IN1
+dataa[2] => _.IN1
+dataa[2] => _.IN1
+dataa[2] => _.IN1
+dataa[3] => _.IN0
+dataa[3] => _.IN0
+dataa[3] => _.IN0
+dataa[3] => _.IN0
+dataa[3] => _.IN0
+dataa[3] => _.IN0
+dataa[3] => _.IN0
+dataa[3] => _.IN0
+dataa[3] => _.IN0
+dataa[3] => _.IN0
+dataa[3] => _.IN0
+dataa[3] => _.IN0
+dataa[3] => _.IN0
+dataa[3] => _.IN0
+dataa[3] => _.IN0
+dataa[3] => _.IN0
+dataa[4] => _.IN0
+dataa[4] => _.IN3
+dataa[4] => _.IN0
+dataa[4] => _.IN3
+dataa[4] => _.IN0
+dataa[4] => _.IN3
+dataa[4] => _.IN0
+dataa[4] => _.IN3
+dataa[4] => _.IN0
+dataa[4] => _.IN3
+dataa[4] => _.IN0
+dataa[4] => _.IN3
+dataa[4] => _.IN0
+dataa[4] => _.IN3
+dataa[4] => _.IN0
+dataa[4] => _.IN3
+dataa[5] => _.IN0
+dataa[5] => _.IN0
+dataa[5] => _.IN2
+dataa[5] => _.IN2
+dataa[5] => _.IN0
+dataa[5] => _.IN0
+dataa[5] => _.IN2
+dataa[5] => _.IN2
+dataa[5] => _.IN0
+dataa[5] => _.IN0
+dataa[5] => _.IN2
+dataa[5] => _.IN2
+dataa[5] => _.IN0
+dataa[5] => _.IN0
+dataa[5] => _.IN2
+dataa[5] => _.IN2
+dataa[6] => _.IN0
+dataa[6] => _.IN0
+dataa[6] => _.IN0
+dataa[6] => _.IN0
+dataa[6] => _.IN1
+dataa[6] => _.IN1
+dataa[6] => _.IN1
+dataa[6] => _.IN1
+dataa[6] => _.IN0
+dataa[6] => _.IN0
+dataa[6] => _.IN0
+dataa[6] => _.IN0
+dataa[6] => _.IN1
+dataa[6] => _.IN1
+dataa[6] => _.IN1
+dataa[6] => _.IN1
+dataa[7] => _.IN0
+dataa[7] => _.IN0
+dataa[7] => _.IN0
+dataa[7] => _.IN0
+dataa[7] => _.IN0
+dataa[7] => _.IN0
+dataa[7] => _.IN0
+dataa[7] => _.IN0
+dataa[7] => _.IN0
+dataa[7] => _.IN0
+dataa[7] => _.IN0
+dataa[7] => _.IN0
+dataa[7] => _.IN0
+dataa[7] => _.IN0
+dataa[7] => _.IN0
+dataa[7] => _.IN0
+datab[0] => op_1.IN50
+datab[0] => op_2.IN51
+datab[0] => op_4.IN51
+datab[0] => op_5.IN51
+datab[0] => op_6.IN51
+datab[0] => op_7.IN51
+datab[0] => op_8.IN51
+datab[0] => op_9.IN51
+datab[0] => op_10.IN51
+datab[0] => op_11.IN51
+datab[0] => romout[0][0].IN1
+datab[0] => op_1.IN49
+datab[0] => op_3.IN49
+datab[0] => romout[0][1].IN1
+datab[0] => op_2.IN46
+datab[0] => op_3.IN46
+datab[0] => romout[0][2].IN1
+datab[0] => op_5.IN44
+datab[0] => romout[0][3].IN1
+datab[0] => romout[1][0].IN1
+datab[0] => romout[1][1].IN1
+datab[0] => romout[1][2].IN1
+datab[0] => romout[1][3].IN1
+datab[1] => op_1.IN48
+datab[1] => op_2.IN49
+datab[1] => op_4.IN49
+datab[1] => op_5.IN49
+datab[1] => op_6.IN49
+datab[1] => op_7.IN49
+datab[1] => op_8.IN49
+datab[1] => op_9.IN49
+datab[1] => op_10.IN49
+datab[1] => op_11.IN49
+datab[1] => romout[0][1].IN1
+datab[1] => op_1.IN47
+datab[1] => op_3.IN47
+datab[1] => romout[0][2].IN1
+datab[1] => op_2.IN44
+datab[1] => op_3.IN44
+datab[1] => romout[0][3].IN1
+datab[1] => op_5.IN42
+datab[1] => romout[0][4].IN1
+datab[1] => romout[1][1].IN1
+datab[1] => romout[1][2].IN1
+datab[1] => romout[1][3].IN1
+datab[1] => romout[1][4].IN1
+datab[2] => op_1.IN46
+datab[2] => op_2.IN47
+datab[2] => op_4.IN47
+datab[2] => op_5.IN47
+datab[2] => op_6.IN47
+datab[2] => op_7.IN47
+datab[2] => op_8.IN47
+datab[2] => op_9.IN47
+datab[2] => op_10.IN47
+datab[2] => op_11.IN47
+datab[2] => romout[0][2].IN1
+datab[2] => op_1.IN45
+datab[2] => op_3.IN45
+datab[2] => romout[0][3].IN1
+datab[2] => op_2.IN42
+datab[2] => op_3.IN42
+datab[2] => romout[0][4].IN1
+datab[2] => op_5.IN40
+datab[2] => romout[0][5].IN1
+datab[2] => romout[1][2].IN1
+datab[2] => romout[1][3].IN1
+datab[2] => romout[1][4].IN1
+datab[2] => romout[1][5].IN1
+datab[3] => op_1.IN44
+datab[3] => op_2.IN45
+datab[3] => op_4.IN45
+datab[3] => op_5.IN45
+datab[3] => op_6.IN45
+datab[3] => op_7.IN45
+datab[3] => op_8.IN45
+datab[3] => op_9.IN45
+datab[3] => op_10.IN45
+datab[3] => op_11.IN45
+datab[3] => romout[0][3].IN1
+datab[3] => op_1.IN43
+datab[3] => op_3.IN43
+datab[3] => romout[0][4].IN1
+datab[3] => op_2.IN40
+datab[3] => op_3.IN40
+datab[3] => romout[0][5].IN1
+datab[3] => op_5.IN38
+datab[3] => romout[0][6].IN1
+datab[3] => romout[1][3].IN1
+datab[3] => romout[1][4].IN1
+datab[3] => romout[1][5].IN1
+datab[3] => romout[1][6].IN1
+datab[4] => op_1.IN42
+datab[4] => op_2.IN43
+datab[4] => op_4.IN43
+datab[4] => op_5.IN43
+datab[4] => op_6.IN43
+datab[4] => op_7.IN43
+datab[4] => op_8.IN43
+datab[4] => op_9.IN43
+datab[4] => op_10.IN43
+datab[4] => op_11.IN43
+datab[4] => romout[0][4].IN1
+datab[4] => op_1.IN41
+datab[4] => op_3.IN41
+datab[4] => romout[0][5].IN1
+datab[4] => op_2.IN38
+datab[4] => op_3.IN38
+datab[4] => romout[0][6].IN1
+datab[4] => op_5.IN36
+datab[4] => romout[0][7].IN1
+datab[4] => romout[1][4].IN1
+datab[4] => romout[1][5].IN1
+datab[4] => romout[1][6].IN1
+datab[4] => romout[1][7].IN1
+datab[5] => op_1.IN40
+datab[5] => op_2.IN41
+datab[5] => op_4.IN41
+datab[5] => op_5.IN41
+datab[5] => op_6.IN41
+datab[5] => op_7.IN41
+datab[5] => op_8.IN41
+datab[5] => op_9.IN41
+datab[5] => op_10.IN41
+datab[5] => op_11.IN41
+datab[5] => romout[0][5].IN1
+datab[5] => op_1.IN39
+datab[5] => op_3.IN39
+datab[5] => romout[0][6].IN1
+datab[5] => op_2.IN36
+datab[5] => op_3.IN36
+datab[5] => romout[0][7].IN1
+datab[5] => op_5.IN34
+datab[5] => romout[0][8].IN1
+datab[5] => romout[1][5].IN1
+datab[5] => romout[1][6].IN1
+datab[5] => romout[1][7].IN1
+datab[5] => romout[1][8].IN1
+datab[6] => op_1.IN38
+datab[6] => op_2.IN39
+datab[6] => op_4.IN39
+datab[6] => op_5.IN39
+datab[6] => op_6.IN39
+datab[6] => op_7.IN39
+datab[6] => op_8.IN39
+datab[6] => op_9.IN39
+datab[6] => op_10.IN39
+datab[6] => op_11.IN39
+datab[6] => romout[0][6].IN1
+datab[6] => op_1.IN37
+datab[6] => op_3.IN37
+datab[6] => romout[0][7].IN1
+datab[6] => op_2.IN34
+datab[6] => op_3.IN34
+datab[6] => romout[0][8].IN1
+datab[6] => op_5.IN32
+datab[6] => romout[0][9].IN1
+datab[6] => romout[1][6].IN1
+datab[6] => romout[1][7].IN1
+datab[6] => romout[1][8].IN1
+datab[6] => romout[1][9].IN1
+datab[7] => op_1.IN36
+datab[7] => op_2.IN37
+datab[7] => op_4.IN37
+datab[7] => op_5.IN37
+datab[7] => op_6.IN37
+datab[7] => op_7.IN37
+datab[7] => op_8.IN37
+datab[7] => op_9.IN37
+datab[7] => op_10.IN37
+datab[7] => op_11.IN37
+datab[7] => romout[0][7].IN1
+datab[7] => op_1.IN35
+datab[7] => op_3.IN35
+datab[7] => romout[0][8].IN1
+datab[7] => op_2.IN32
+datab[7] => op_3.IN32
+datab[7] => romout[0][9].IN1
+datab[7] => op_5.IN30
+datab[7] => romout[0][10].IN1
+datab[7] => romout[1][7].IN1
+datab[7] => romout[1][8].IN1
+datab[7] => romout[1][9].IN1
+datab[7] => romout[1][10].IN1
+datab[8] => op_1.IN34
+datab[8] => op_2.IN35
+datab[8] => op_4.IN35
+datab[8] => op_5.IN35
+datab[8] => op_6.IN35
+datab[8] => op_7.IN35
+datab[8] => op_8.IN35
+datab[8] => op_9.IN35
+datab[8] => op_10.IN35
+datab[8] => op_11.IN35
+datab[8] => romout[0][8].IN1
+datab[8] => op_1.IN33
+datab[8] => op_3.IN33
+datab[8] => romout[0][9].IN1
+datab[8] => op_2.IN30
+datab[8] => op_3.IN30
+datab[8] => romout[0][10].IN1
+datab[8] => op_5.IN28
+datab[8] => romout[0][11].IN1
+datab[8] => romout[1][8].IN1
+datab[8] => romout[1][9].IN1
+datab[8] => romout[1][10].IN1
+datab[8] => romout[1][11].IN1
+datab[9] => op_1.IN32
+datab[9] => op_2.IN33
+datab[9] => op_4.IN33
+datab[9] => op_5.IN33
+datab[9] => op_6.IN33
+datab[9] => op_7.IN33
+datab[9] => op_8.IN33
+datab[9] => op_9.IN33
+datab[9] => op_10.IN33
+datab[9] => op_11.IN33
+datab[9] => romout[0][9].IN1
+datab[9] => op_1.IN31
+datab[9] => op_3.IN31
+datab[9] => romout[0][10].IN1
+datab[9] => op_2.IN28
+datab[9] => op_3.IN28
+datab[9] => romout[0][11].IN1
+datab[9] => op_5.IN26
+datab[9] => romout[0][12].IN1
+datab[9] => romout[1][9].IN1
+datab[9] => romout[1][10].IN1
+datab[9] => romout[1][11].IN1
+datab[9] => romout[1][12].IN1
+datab[10] => op_1.IN30
+datab[10] => op_2.IN31
+datab[10] => op_4.IN31
+datab[10] => op_5.IN31
+datab[10] => op_6.IN31
+datab[10] => op_7.IN31
+datab[10] => op_8.IN31
+datab[10] => op_9.IN31
+datab[10] => op_10.IN31
+datab[10] => op_11.IN31
+datab[10] => romout[0][10].IN1
+datab[10] => op_1.IN29
+datab[10] => op_3.IN29
+datab[10] => romout[0][11].IN1
+datab[10] => op_2.IN26
+datab[10] => op_3.IN26
+datab[10] => romout[0][12].IN1
+datab[10] => op_5.IN24
+datab[10] => romout[0][13].IN1
+datab[10] => romout[1][10].IN1
+datab[10] => romout[1][11].IN1
+datab[10] => romout[1][12].IN1
+datab[10] => romout[1][13].IN1
+datab[11] => op_1.IN28
+datab[11] => op_2.IN29
+datab[11] => op_4.IN29
+datab[11] => op_5.IN29
+datab[11] => op_6.IN29
+datab[11] => op_7.IN29
+datab[11] => op_8.IN29
+datab[11] => op_9.IN29
+datab[11] => op_10.IN29
+datab[11] => op_11.IN29
+datab[11] => romout[0][11].IN1
+datab[11] => op_1.IN27
+datab[11] => op_3.IN27
+datab[11] => romout[0][12].IN1
+datab[11] => op_2.IN24
+datab[11] => op_3.IN24
+datab[11] => romout[0][13].IN1
+datab[11] => op_5.IN22
+datab[11] => romout[0][14].IN1
+datab[11] => romout[1][11].IN1
+datab[11] => romout[1][12].IN1
+datab[11] => romout[1][13].IN1
+datab[11] => romout[1][14].IN1
+datab[12] => op_1.IN26
+datab[12] => op_2.IN27
+datab[12] => op_4.IN27
+datab[12] => op_5.IN27
+datab[12] => op_6.IN27
+datab[12] => op_7.IN27
+datab[12] => op_8.IN27
+datab[12] => op_9.IN27
+datab[12] => op_10.IN27
+datab[12] => op_11.IN27
+datab[12] => romout[0][12].IN1
+datab[12] => op_1.IN25
+datab[12] => op_3.IN25
+datab[12] => romout[0][13].IN1
+datab[12] => op_2.IN22
+datab[12] => op_3.IN22
+datab[12] => romout[0][14].IN1
+datab[12] => op_5.IN20
+datab[12] => romout[0][15].IN1
+datab[12] => romout[1][12].IN1
+datab[12] => romout[1][13].IN1
+datab[12] => romout[1][14].IN1
+datab[12] => romout[1][15].IN1
+datab[13] => op_1.IN24
+datab[13] => op_2.IN25
+datab[13] => op_4.IN25
+datab[13] => op_5.IN25
+datab[13] => op_6.IN25
+datab[13] => op_7.IN25
+datab[13] => op_8.IN25
+datab[13] => op_9.IN25
+datab[13] => op_10.IN25
+datab[13] => op_11.IN25
+datab[13] => romout[0][13].IN1
+datab[13] => op_1.IN23
+datab[13] => op_3.IN23
+datab[13] => romout[0][14].IN1
+datab[13] => op_2.IN20
+datab[13] => op_3.IN20
+datab[13] => romout[0][15].IN1
+datab[13] => op_5.IN18
+datab[13] => romout[0][16].IN1
+datab[13] => romout[1][13].IN1
+datab[13] => romout[1][14].IN1
+datab[13] => romout[1][15].IN1
+datab[13] => romout[1][16].IN1
+datab[14] => op_1.IN22
+datab[14] => op_2.IN23
+datab[14] => op_4.IN23
+datab[14] => op_5.IN23
+datab[14] => op_6.IN23
+datab[14] => op_7.IN23
+datab[14] => op_8.IN23
+datab[14] => op_9.IN23
+datab[14] => op_10.IN23
+datab[14] => op_11.IN23
+datab[14] => romout[0][14].IN1
+datab[14] => op_1.IN21
+datab[14] => op_3.IN21
+datab[14] => romout[0][15].IN1
+datab[14] => op_2.IN18
+datab[14] => op_3.IN18
+datab[14] => romout[0][16].IN1
+datab[14] => op_5.IN16
+datab[14] => romout[0][17].IN1
+datab[14] => romout[1][14].IN1
+datab[14] => romout[1][15].IN1
+datab[14] => romout[1][16].IN1
+datab[14] => romout[1][17].IN1
+datab[15] => op_1.IN20
+datab[15] => op_2.IN21
+datab[15] => op_4.IN21
+datab[15] => op_5.IN21
+datab[15] => op_6.IN21
+datab[15] => op_7.IN21
+datab[15] => op_8.IN21
+datab[15] => op_9.IN21
+datab[15] => op_10.IN21
+datab[15] => op_11.IN21
+datab[15] => romout[0][15].IN1
+datab[15] => op_1.IN19
+datab[15] => op_3.IN19
+datab[15] => romout[0][16].IN1
+datab[15] => op_2.IN16
+datab[15] => op_3.IN16
+datab[15] => romout[0][17].IN1
+datab[15] => op_5.IN14
+datab[15] => romout[0][18].IN1
+datab[15] => romout[1][15].IN1
+datab[15] => romout[1][16].IN1
+datab[15] => romout[1][17].IN1
+datab[15] => romout[1][18].IN1
+datab[16] => op_1.IN18
+datab[16] => op_2.IN19
+datab[16] => op_4.IN19
+datab[16] => op_5.IN19
+datab[16] => op_6.IN19
+datab[16] => op_7.IN19
+datab[16] => op_8.IN19
+datab[16] => op_9.IN19
+datab[16] => op_10.IN19
+datab[16] => op_11.IN19
+datab[16] => romout[0][16].IN1
+datab[16] => op_1.IN17
+datab[16] => op_3.IN17
+datab[16] => romout[0][17].IN1
+datab[16] => op_2.IN14
+datab[16] => op_3.IN14
+datab[16] => romout[0][18].IN1
+datab[16] => op_5.IN12
+datab[16] => romout[0][19].IN1
+datab[16] => romout[1][16].IN1
+datab[16] => romout[1][17].IN1
+datab[16] => romout[1][18].IN1
+datab[16] => romout[1][19].IN1
+datab[17] => op_1.IN16
+datab[17] => op_2.IN17
+datab[17] => op_4.IN17
+datab[17] => op_5.IN17
+datab[17] => op_6.IN17
+datab[17] => op_7.IN17
+datab[17] => op_8.IN17
+datab[17] => op_9.IN17
+datab[17] => op_10.IN17
+datab[17] => op_11.IN17
+datab[17] => romout[0][17].IN1
+datab[17] => op_1.IN15
+datab[17] => op_3.IN15
+datab[17] => romout[0][18].IN1
+datab[17] => op_2.IN12
+datab[17] => op_3.IN12
+datab[17] => romout[0][19].IN1
+datab[17] => op_5.IN10
+datab[17] => romout[0][20].IN1
+datab[17] => romout[1][17].IN1
+datab[17] => romout[1][18].IN1
+datab[17] => romout[1][19].IN1
+datab[17] => romout[1][20].IN1
+datab[18] => op_1.IN14
+datab[18] => op_2.IN15
+datab[18] => op_4.IN15
+datab[18] => op_5.IN15
+datab[18] => op_6.IN15
+datab[18] => op_7.IN15
+datab[18] => op_8.IN15
+datab[18] => op_9.IN15
+datab[18] => op_10.IN15
+datab[18] => op_11.IN15
+datab[18] => romout[0][18].IN1
+datab[18] => op_1.IN13
+datab[18] => op_3.IN13
+datab[18] => romout[0][19].IN1
+datab[18] => op_2.IN10
+datab[18] => op_3.IN10
+datab[18] => romout[0][20].IN1
+datab[18] => op_5.IN8
+datab[18] => romout[0][21].IN1
+datab[18] => romout[1][18].IN1
+datab[18] => romout[1][19].IN1
+datab[18] => romout[1][20].IN1
+datab[18] => romout[1][21].IN1
+datab[19] => op_1.IN12
+datab[19] => op_2.IN13
+datab[19] => op_4.IN13
+datab[19] => op_5.IN13
+datab[19] => op_6.IN13
+datab[19] => op_7.IN13
+datab[19] => op_8.IN13
+datab[19] => op_9.IN13
+datab[19] => op_10.IN13
+datab[19] => op_11.IN13
+datab[19] => romout[0][19].IN1
+datab[19] => op_1.IN11
+datab[19] => op_3.IN11
+datab[19] => romout[0][20].IN1
+datab[19] => op_2.IN8
+datab[19] => op_3.IN8
+datab[19] => romout[0][21].IN1
+datab[19] => op_5.IN6
+datab[19] => romout[0][22].IN1
+datab[19] => romout[1][19].IN1
+datab[19] => romout[1][20].IN1
+datab[19] => romout[1][21].IN1
+datab[19] => romout[1][22].IN1
+datab[20] => op_1.IN10
+datab[20] => op_2.IN11
+datab[20] => op_4.IN11
+datab[20] => op_5.IN11
+datab[20] => op_6.IN11
+datab[20] => op_7.IN11
+datab[20] => op_8.IN11
+datab[20] => op_9.IN11
+datab[20] => op_10.IN11
+datab[20] => op_11.IN11
+datab[20] => romout[0][20].IN1
+datab[20] => op_1.IN9
+datab[20] => op_3.IN9
+datab[20] => romout[0][21].IN1
+datab[20] => op_2.IN6
+datab[20] => op_3.IN6
+datab[20] => romout[0][22].IN1
+datab[20] => op_5.IN4
+datab[20] => romout[0][23].IN1
+datab[20] => romout[1][20].IN1
+datab[20] => romout[1][21].IN1
+datab[20] => romout[1][22].IN1
+datab[20] => romout[1][23].IN1
+datab[21] => op_1.IN8
+datab[21] => op_2.IN9
+datab[21] => op_4.IN9
+datab[21] => op_5.IN9
+datab[21] => op_6.IN9
+datab[21] => op_7.IN9
+datab[21] => op_8.IN9
+datab[21] => op_9.IN9
+datab[21] => op_10.IN9
+datab[21] => op_11.IN9
+datab[21] => romout[0][21].IN1
+datab[21] => op_1.IN7
+datab[21] => op_3.IN7
+datab[21] => romout[0][22].IN1
+datab[21] => op_2.IN4
+datab[21] => op_3.IN4
+datab[21] => romout[0][23].IN1
+datab[21] => op_5.IN2
+datab[21] => romout[0][24].IN1
+datab[21] => romout[1][21].IN1
+datab[21] => romout[1][22].IN1
+datab[21] => romout[1][23].IN1
+datab[21] => romout[1][24].IN1
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5|lpm_mult0_random_number_gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder
+data[0][0] => result[0].DATAIN
+data[0][1] => result[1].DATAIN
+data[0][2] => result[2].DATAIN
+data[0][3] => result[3].DATAIN
+data[0][4] => lpm_add_sub:adder[0].dataa[0]
+data[0][5] => lpm_add_sub:adder[0].dataa[1]
+data[0][6] => lpm_add_sub:adder[0].dataa[2]
+data[0][7] => lpm_add_sub:adder[0].dataa[3]
+data[0][8] => lpm_add_sub:adder[0].dataa[4]
+data[0][9] => lpm_add_sub:adder[0].dataa[5]
+data[0][10] => lpm_add_sub:adder[0].dataa[6]
+data[0][11] => lpm_add_sub:adder[0].dataa[7]
+data[0][12] => lpm_add_sub:adder[0].dataa[8]
+data[0][13] => lpm_add_sub:adder[0].dataa[9]
+data[0][14] => lpm_add_sub:adder[0].dataa[10]
+data[0][15] => lpm_add_sub:adder[0].dataa[11]
+data[0][16] => lpm_add_sub:adder[0].dataa[12]
+data[0][17] => lpm_add_sub:adder[0].dataa[13]
+data[0][18] => lpm_add_sub:adder[0].dataa[14]
+data[0][19] => lpm_add_sub:adder[0].dataa[15]
+data[0][20] => lpm_add_sub:adder[0].dataa[16]
+data[0][21] => lpm_add_sub:adder[0].dataa[17]
+data[0][22] => lpm_add_sub:adder[0].dataa[18]
+data[0][23] => lpm_add_sub:adder[0].dataa[19]
+data[0][24] => lpm_add_sub:adder[0].dataa[20]
+data[0][25] => lpm_add_sub:adder[0].dataa[21]
+data[1][0] => lpm_add_sub:adder[0].datab[0]
+data[1][1] => lpm_add_sub:adder[0].datab[1]
+data[1][2] => lpm_add_sub:adder[0].datab[2]
+data[1][3] => lpm_add_sub:adder[0].datab[3]
+data[1][4] => lpm_add_sub:adder[0].datab[4]
+data[1][5] => lpm_add_sub:adder[0].datab[5]
+data[1][6] => lpm_add_sub:adder[0].datab[6]
+data[1][7] => lpm_add_sub:adder[0].datab[7]
+data[1][8] => lpm_add_sub:adder[0].datab[8]
+data[1][9] => lpm_add_sub:adder[0].datab[9]
+data[1][10] => lpm_add_sub:adder[0].datab[10]
+data[1][11] => lpm_add_sub:adder[0].datab[11]
+data[1][12] => lpm_add_sub:adder[0].datab[12]
+data[1][13] => lpm_add_sub:adder[0].datab[13]
+data[1][14] => lpm_add_sub:adder[0].datab[14]
+data[1][15] => lpm_add_sub:adder[0].datab[15]
+data[1][16] => lpm_add_sub:adder[0].datab[16]
+data[1][17] => lpm_add_sub:adder[0].datab[17]
+data[1][18] => lpm_add_sub:adder[0].datab[18]
+data[1][19] => lpm_add_sub:adder[0].datab[19]
+data[1][20] => lpm_add_sub:adder[0].datab[20]
+data[1][21] => lpm_add_sub:adder[0].datab[21]
+data[1][22] => lpm_add_sub:adder[0].datab[22]
+data[1][23] => lpm_add_sub:adder[0].datab[23]
+data[1][24] => lpm_add_sub:adder[0].datab[24]
+data[1][25] => lpm_add_sub:adder[0].datab[25]
+cin => ~NO_FANOUT~
+clk => clk_out.IN0
+aclr => aclr_out.IN0
+clken => clken_out.IN0
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5|lpm_mult0_random_number_gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]
+dataa[0] => add_sub_8ch:auto_generated.dataa[0]
+dataa[1] => add_sub_8ch:auto_generated.dataa[1]
+dataa[2] => add_sub_8ch:auto_generated.dataa[2]
+dataa[3] => add_sub_8ch:auto_generated.dataa[3]
+dataa[4] => add_sub_8ch:auto_generated.dataa[4]
+dataa[5] => add_sub_8ch:auto_generated.dataa[5]
+dataa[6] => add_sub_8ch:auto_generated.dataa[6]
+dataa[7] => add_sub_8ch:auto_generated.dataa[7]
+dataa[8] => add_sub_8ch:auto_generated.dataa[8]
+dataa[9] => add_sub_8ch:auto_generated.dataa[9]
+dataa[10] => add_sub_8ch:auto_generated.dataa[10]
+dataa[11] => add_sub_8ch:auto_generated.dataa[11]
+dataa[12] => add_sub_8ch:auto_generated.dataa[12]
+dataa[13] => add_sub_8ch:auto_generated.dataa[13]
+dataa[14] => add_sub_8ch:auto_generated.dataa[14]
+dataa[15] => add_sub_8ch:auto_generated.dataa[15]
+dataa[16] => add_sub_8ch:auto_generated.dataa[16]
+dataa[17] => add_sub_8ch:auto_generated.dataa[17]
+dataa[18] => add_sub_8ch:auto_generated.dataa[18]
+dataa[19] => add_sub_8ch:auto_generated.dataa[19]
+dataa[20] => add_sub_8ch:auto_generated.dataa[20]
+dataa[21] => add_sub_8ch:auto_generated.dataa[21]
+dataa[22] => add_sub_8ch:auto_generated.dataa[22]
+dataa[23] => add_sub_8ch:auto_generated.dataa[23]
+dataa[24] => add_sub_8ch:auto_generated.dataa[24]
+dataa[25] => add_sub_8ch:auto_generated.dataa[25]
+datab[0] => add_sub_8ch:auto_generated.datab[0]
+datab[1] => add_sub_8ch:auto_generated.datab[1]
+datab[2] => add_sub_8ch:auto_generated.datab[2]
+datab[3] => add_sub_8ch:auto_generated.datab[3]
+datab[4] => add_sub_8ch:auto_generated.datab[4]
+datab[5] => add_sub_8ch:auto_generated.datab[5]
+datab[6] => add_sub_8ch:auto_generated.datab[6]
+datab[7] => add_sub_8ch:auto_generated.datab[7]
+datab[8] => add_sub_8ch:auto_generated.datab[8]
+datab[9] => add_sub_8ch:auto_generated.datab[9]
+datab[10] => add_sub_8ch:auto_generated.datab[10]
+datab[11] => add_sub_8ch:auto_generated.datab[11]
+datab[12] => add_sub_8ch:auto_generated.datab[12]
+datab[13] => add_sub_8ch:auto_generated.datab[13]
+datab[14] => add_sub_8ch:auto_generated.datab[14]
+datab[15] => add_sub_8ch:auto_generated.datab[15]
+datab[16] => add_sub_8ch:auto_generated.datab[16]
+datab[17] => add_sub_8ch:auto_generated.datab[17]
+datab[18] => add_sub_8ch:auto_generated.datab[18]
+datab[19] => add_sub_8ch:auto_generated.datab[19]
+datab[20] => add_sub_8ch:auto_generated.datab[20]
+datab[21] => add_sub_8ch:auto_generated.datab[21]
+datab[22] => add_sub_8ch:auto_generated.datab[22]
+datab[23] => add_sub_8ch:auto_generated.datab[23]
+datab[24] => add_sub_8ch:auto_generated.datab[24]
+datab[25] => add_sub_8ch:auto_generated.datab[25]
+cin => ~NO_FANOUT~
+add_sub => ~NO_FANOUT~
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5|lpm_mult0_random_number_gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_8ch:auto_generated
+dataa[0] => op_1.IN50
+dataa[1] => op_1.IN48
+dataa[2] => op_1.IN46
+dataa[3] => op_1.IN44
+dataa[4] => op_1.IN42
+dataa[5] => op_1.IN40
+dataa[6] => op_1.IN38
+dataa[7] => op_1.IN36
+dataa[8] => op_1.IN34
+dataa[9] => op_1.IN32
+dataa[10] => op_1.IN30
+dataa[11] => op_1.IN28
+dataa[12] => op_1.IN26
+dataa[13] => op_1.IN24
+dataa[14] => op_1.IN22
+dataa[15] => op_1.IN20
+dataa[16] => op_1.IN18
+dataa[17] => op_1.IN16
+dataa[18] => op_1.IN14
+dataa[19] => op_1.IN12
+dataa[20] => op_1.IN10
+dataa[21] => op_1.IN8
+dataa[22] => op_1.IN6
+dataa[23] => op_1.IN4
+dataa[24] => op_1.IN2
+dataa[25] => op_1.IN0
+datab[0] => op_1.IN51
+datab[1] => op_1.IN49
+datab[2] => op_1.IN47
+datab[3] => op_1.IN45
+datab[4] => op_1.IN43
+datab[5] => op_1.IN41
+datab[6] => op_1.IN39
+datab[7] => op_1.IN37
+datab[8] => op_1.IN35
+datab[9] => op_1.IN33
+datab[10] => op_1.IN31
+datab[11] => op_1.IN29
+datab[12] => op_1.IN27
+datab[13] => op_1.IN25
+datab[14] => op_1.IN23
+datab[15] => op_1.IN21
+datab[16] => op_1.IN19
+datab[17] => op_1.IN17
+datab[18] => op_1.IN15
+datab[19] => op_1.IN13
+datab[20] => op_1.IN11
+datab[21] => op_1.IN9
+datab[22] => op_1.IN7
+datab[23] => op_1.IN5
+datab[24] => op_1.IN3
+datab[25] => op_1.IN1
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5|lpm_mult0_random_number_gen:b2v_inst6|lpm_mult:lpm_mult_component|altshift:external_latency_ffs
+data[0] => result[0].DATAIN
+data[1] => result[1].DATAIN
+data[2] => result[2].DATAIN
+data[3] => result[3].DATAIN
+data[4] => result[4].DATAIN
+data[5] => result[5].DATAIN
+data[6] => result[6].DATAIN
+data[7] => result[7].DATAIN
+data[8] => result[8].DATAIN
+data[9] => result[9].DATAIN
+data[10] => result[10].DATAIN
+data[11] => result[11].DATAIN
+data[12] => result[12].DATAIN
+data[13] => result[13].DATAIN
+data[14] => result[14].DATAIN
+data[15] => result[15].DATAIN
+data[16] => result[16].DATAIN
+data[17] => result[17].DATAIN
+data[18] => result[18].DATAIN
+data[19] => result[19].DATAIN
+data[20] => result[20].DATAIN
+data[21] => result[21].DATAIN
+data[22] => result[22].DATAIN
+data[23] => result[23].DATAIN
+data[24] => result[24].DATAIN
+data[25] => result[25].DATAIN
+data[26] => result[26].DATAIN
+data[27] => result[27].DATAIN
+data[28] => result[28].DATAIN
+data[29] => result[29].DATAIN
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5|contatore_tempo_random:b2v_inst8
+clock => lpm_counter:LPM_COUNTER_component.clock
+data[0] => lpm_counter:LPM_COUNTER_component.data[0]
+data[1] => lpm_counter:LPM_COUNTER_component.data[1]
+data[2] => lpm_counter:LPM_COUNTER_component.data[2]
+data[3] => lpm_counter:LPM_COUNTER_component.data[3]
+data[4] => lpm_counter:LPM_COUNTER_component.data[4]
+data[5] => lpm_counter:LPM_COUNTER_component.data[5]
+data[6] => lpm_counter:LPM_COUNTER_component.data[6]
+data[7] => lpm_counter:LPM_COUNTER_component.data[7]
+data[8] => lpm_counter:LPM_COUNTER_component.data[8]
+data[9] => lpm_counter:LPM_COUNTER_component.data[9]
+data[10] => lpm_counter:LPM_COUNTER_component.data[10]
+data[11] => lpm_counter:LPM_COUNTER_component.data[11]
+data[12] => lpm_counter:LPM_COUNTER_component.data[12]
+data[13] => lpm_counter:LPM_COUNTER_component.data[13]
+data[14] => lpm_counter:LPM_COUNTER_component.data[14]
+data[15] => lpm_counter:LPM_COUNTER_component.data[15]
+data[16] => lpm_counter:LPM_COUNTER_component.data[16]
+data[17] => lpm_counter:LPM_COUNTER_component.data[17]
+data[18] => lpm_counter:LPM_COUNTER_component.data[18]
+data[19] => lpm_counter:LPM_COUNTER_component.data[19]
+data[20] => lpm_counter:LPM_COUNTER_component.data[20]
+data[21] => lpm_counter:LPM_COUNTER_component.data[21]
+data[22] => lpm_counter:LPM_COUNTER_component.data[22]
+data[23] => lpm_counter:LPM_COUNTER_component.data[23]
+data[24] => lpm_counter:LPM_COUNTER_component.data[24]
+data[25] => lpm_counter:LPM_COUNTER_component.data[25]
+data[26] => lpm_counter:LPM_COUNTER_component.data[26]
+data[27] => lpm_counter:LPM_COUNTER_component.data[27]
+data[28] => lpm_counter:LPM_COUNTER_component.data[28]
+data[29] => lpm_counter:LPM_COUNTER_component.data[29]
+sclr => lpm_counter:LPM_COUNTER_component.sclr
+sload => lpm_counter:LPM_COUNTER_component.sload
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5|contatore_tempo_random:b2v_inst8|lpm_counter:LPM_COUNTER_component
+clock => cntr_84j:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => ~NO_FANOUT~
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_84j:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => cntr_84j:auto_generated.sload
+data[0] => cntr_84j:auto_generated.data[0]
+data[1] => cntr_84j:auto_generated.data[1]
+data[2] => cntr_84j:auto_generated.data[2]
+data[3] => cntr_84j:auto_generated.data[3]
+data[4] => cntr_84j:auto_generated.data[4]
+data[5] => cntr_84j:auto_generated.data[5]
+data[6] => cntr_84j:auto_generated.data[6]
+data[7] => cntr_84j:auto_generated.data[7]
+data[8] => cntr_84j:auto_generated.data[8]
+data[9] => cntr_84j:auto_generated.data[9]
+data[10] => cntr_84j:auto_generated.data[10]
+data[11] => cntr_84j:auto_generated.data[11]
+data[12] => cntr_84j:auto_generated.data[12]
+data[13] => cntr_84j:auto_generated.data[13]
+data[14] => cntr_84j:auto_generated.data[14]
+data[15] => cntr_84j:auto_generated.data[15]
+data[16] => cntr_84j:auto_generated.data[16]
+data[17] => cntr_84j:auto_generated.data[17]
+data[18] => cntr_84j:auto_generated.data[18]
+data[19] => cntr_84j:auto_generated.data[19]
+data[20] => cntr_84j:auto_generated.data[20]
+data[21] => cntr_84j:auto_generated.data[21]
+data[22] => cntr_84j:auto_generated.data[22]
+data[23] => cntr_84j:auto_generated.data[23]
+data[24] => cntr_84j:auto_generated.data[24]
+data[25] => cntr_84j:auto_generated.data[25]
+data[26] => cntr_84j:auto_generated.data[26]
+data[27] => cntr_84j:auto_generated.data[27]
+data[28] => cntr_84j:auto_generated.data[28]
+data[29] => cntr_84j:auto_generated.data[29]
+cin => ~NO_FANOUT~
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5|contatore_tempo_random:b2v_inst8|lpm_counter:LPM_COUNTER_component|cntr_84j:auto_generated
+clock => counter_reg_bit1a[29].CLK
+clock => counter_reg_bit1a[28].CLK
+clock => counter_reg_bit1a[27].CLK
+clock => counter_reg_bit1a[26].CLK
+clock => counter_reg_bit1a[25].CLK
+clock => counter_reg_bit1a[24].CLK
+clock => counter_reg_bit1a[23].CLK
+clock => counter_reg_bit1a[22].CLK
+clock => counter_reg_bit1a[21].CLK
+clock => counter_reg_bit1a[20].CLK
+clock => counter_reg_bit1a[19].CLK
+clock => counter_reg_bit1a[18].CLK
+clock => counter_reg_bit1a[17].CLK
+clock => counter_reg_bit1a[16].CLK
+clock => counter_reg_bit1a[15].CLK
+clock => counter_reg_bit1a[14].CLK
+clock => counter_reg_bit1a[13].CLK
+clock => counter_reg_bit1a[12].CLK
+clock => counter_reg_bit1a[11].CLK
+clock => counter_reg_bit1a[10].CLK
+clock => counter_reg_bit1a[9].CLK
+clock => counter_reg_bit1a[8].CLK
+clock => counter_reg_bit1a[7].CLK
+clock => counter_reg_bit1a[6].CLK
+clock => counter_reg_bit1a[5].CLK
+clock => counter_reg_bit1a[4].CLK
+clock => counter_reg_bit1a[3].CLK
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+data[0] => _.IN1
+data[1] => _.IN1
+data[2] => _.IN1
+data[3] => _.IN1
+data[4] => _.IN1
+data[5] => _.IN1
+data[6] => _.IN1
+data[7] => _.IN1
+data[8] => _.IN1
+data[9] => _.IN1
+data[10] => _.IN1
+data[11] => _.IN1
+data[12] => _.IN1
+data[13] => _.IN1
+data[14] => _.IN1
+data[15] => _.IN1
+data[16] => _.IN1
+data[17] => _.IN1
+data[18] => _.IN1
+data[19] => _.IN1
+data[20] => _.IN1
+data[21] => _.IN1
+data[22] => _.IN1
+data[23] => _.IN1
+data[24] => _.IN1
+data[25] => _.IN1
+data[26] => _.IN1
+data[27] => _.IN1
+data[28] => _.IN1
+data[29] => _.IN1
+sclr => _.IN0
+sclr => _.IN0
+sclr => _.IN0
+sload => _.IN1
+sload => counter_reg_bit1a[29].IN1
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|counter_tempo_riflessi:b2v_inst7
+aclr => lpm_counter:LPM_COUNTER_component.aclr
+clock => lpm_counter:LPM_COUNTER_component.clock
+cnt_en => lpm_counter:LPM_COUNTER_component.cnt_en
+sclr => lpm_counter:LPM_COUNTER_component.sclr
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|counter_tempo_riflessi:b2v_inst7|lpm_counter:LPM_COUNTER_component
+clock => cntr_o7j:auto_generated.clock
+clk_en => ~NO_FANOUT~
+cnt_en => cntr_o7j:auto_generated.cnt_en
+updown => ~NO_FANOUT~
+aclr => cntr_o7j:auto_generated.aclr
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => cntr_o7j:auto_generated.sclr
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+data[1] => ~NO_FANOUT~
+data[2] => ~NO_FANOUT~
+data[3] => ~NO_FANOUT~
+data[4] => ~NO_FANOUT~
+data[5] => ~NO_FANOUT~
+data[6] => ~NO_FANOUT~
+data[7] => ~NO_FANOUT~
+data[8] => ~NO_FANOUT~
+data[9] => ~NO_FANOUT~
+data[10] => ~NO_FANOUT~
+data[11] => ~NO_FANOUT~
+data[12] => ~NO_FANOUT~
+data[13] => ~NO_FANOUT~
+data[14] => ~NO_FANOUT~
+data[15] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+
+
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|counter_tempo_riflessi:b2v_inst7|lpm_counter:LPM_COUNTER_component|cntr_o7j:auto_generated
+aclr => counter_reg_bit1a[15].ACLR
+aclr => counter_reg_bit1a[14].ACLR
+aclr => counter_reg_bit1a[13].ACLR
+aclr => counter_reg_bit1a[12].ACLR
+aclr => counter_reg_bit1a[11].ACLR
+aclr => counter_reg_bit1a[10].ACLR
+aclr => counter_reg_bit1a[9].ACLR
+aclr => counter_reg_bit1a[8].ACLR
+aclr => counter_reg_bit1a[7].ACLR
+aclr => counter_reg_bit1a[6].ACLR
+aclr => counter_reg_bit1a[5].ACLR
+aclr => counter_reg_bit1a[4].ACLR
+aclr => counter_reg_bit1a[3].ACLR
+aclr => counter_reg_bit1a[2].ACLR
+aclr => counter_reg_bit1a[1].ACLR
+aclr => counter_reg_bit1a[0].ACLR
+clock => counter_reg_bit1a[15].CLK
+clock => counter_reg_bit1a[14].CLK
+clock => counter_reg_bit1a[13].CLK
+clock => counter_reg_bit1a[12].CLK
+clock => counter_reg_bit1a[11].CLK
+clock => counter_reg_bit1a[10].CLK
+clock => counter_reg_bit1a[9].CLK
+clock => counter_reg_bit1a[8].CLK
+clock => counter_reg_bit1a[7].CLK
+clock => counter_reg_bit1a[6].CLK
+clock => counter_reg_bit1a[5].CLK
+clock => counter_reg_bit1a[4].CLK
+clock => counter_reg_bit1a[3].CLK
+clock => counter_reg_bit1a[2].CLK
+clock => counter_reg_bit1a[1].CLK
+clock => counter_reg_bit1a[0].CLK
+cnt_en => _.IN1
+sclr => _.IN0
+sclr => _.IN0
+sclr => _.IN0
+
+
+|UartProgetto_comp|altpll_progetto_comp:inst5
+areset => altpll:altpll_component.areset
+inclk0 => altpll:altpll_component.inclk[0]
+
+
+|UartProgetto_comp|altpll_progetto_comp:inst5|altpll:altpll_component
+inclk[0] => pll.CLK
+inclk[1] => ~NO_FANOUT~
+fbin => ~NO_FANOUT~
+pllena => ~NO_FANOUT~
+clkswitch => ~NO_FANOUT~
+areset => pll.ARESET
+pfdena => ~NO_FANOUT~
+clkena[0] => ~NO_FANOUT~
+clkena[1] => ~NO_FANOUT~
+clkena[2] => ~NO_FANOUT~
+clkena[3] => ~NO_FANOUT~
+clkena[4] => ~NO_FANOUT~
+clkena[5] => ~NO_FANOUT~
+extclkena[0] => ~NO_FANOUT~
+extclkena[1] => ~NO_FANOUT~
+extclkena[2] => ~NO_FANOUT~
+extclkena[3] => ~NO_FANOUT~
+scanclk => ~NO_FANOUT~
+scanclkena => ~NO_FANOUT~
+scanaclr => ~NO_FANOUT~
+scanread => ~NO_FANOUT~
+scanwrite => ~NO_FANOUT~
+scandata => ~NO_FANOUT~
+phasecounterselect[0] => ~NO_FANOUT~
+phasecounterselect[1] => ~NO_FANOUT~
+phasecounterselect[2] => ~NO_FANOUT~
+phasecounterselect[3] => ~NO_FANOUT~
+phaseupdown => ~NO_FANOUT~
+phasestep => ~NO_FANOUT~
+configupdate => ~NO_FANOUT~
+fbmimicbidir <> <GND>
+
+

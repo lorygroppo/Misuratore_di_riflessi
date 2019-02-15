@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Pilotaggio_LED2">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Pilotaggio_LED2|lpm_decoder_LEDS_pilot:inst4|lpm_decode:LPM_DECODE_component" CBX_FILE_NAME="decode_n6f.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

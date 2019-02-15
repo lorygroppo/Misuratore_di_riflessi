@@ -1,0 +1,7 @@
+
+State Machine - |Pilotaggio_LED2|FSM_Pilotaggio_LED:inst|state
+Name state.Bottone_Premuto state.Wait_for_BUTTON state.Accensione_LED state.Wait_Enable_LED 
+state.Wait_Enable_LED 0 0 0 0 
+state.Accensione_LED 0 0 1 1 
+state.Wait_for_BUTTON 0 1 0 1 
+state.Bottone_Premuto 1 0 0 1 

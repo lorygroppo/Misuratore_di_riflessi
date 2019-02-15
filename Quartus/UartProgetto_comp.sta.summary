@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'inst5|altpll_component|pll|clk[0]'
+Slack : -3.451
+TNS   : -79.825
+
+Type  : Slow Model Setup 'Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|FSM_dec_command:b2v_inst7|present_state.Decode_command'
+Slack : -0.018
+TNS   : -0.018
+
+Type  : Slow Model Setup 'Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|FSM_attesa:b2v_inst1|state.fine_attesa'
+Slack : 0.334
+TNS   : 0.000
+
+Type  : Slow Model Hold 'Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|FSM_dec_command:b2v_inst7|present_state.Decode_command'
+Slack : -2.724
+TNS   : -25.226
+
+Type  : Slow Model Hold 'Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|FSM_attesa:b2v_inst1|state.fine_attesa'
+Slack : -0.287
+TNS   : -0.287
+
+Type  : Slow Model Hold 'inst5|altpll_component|pll|clk[0]'
+Slack : 0.006
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'inst5|altpll_component|pll|clk[0]'
+Slack : 36.537
+TNS   : 0.000
+
+Type  : Slow Model Removal 'inst5|altpll_component|pll|clk[0]'
+Slack : 1.221
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|FSM_attesa:b2v_inst1|state.fine_attesa'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|FSM_dec_command:b2v_inst7|present_state.Decode_command'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CK'
+Slack : 10.000
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'inst5|altpll_component|pll|clk[0]'
+Slack : 18.077
+TNS   : 0.000
+
+Type  : Fast Model Setup 'inst5|altpll_component|pll|clk[0]'
+Slack : -1.353
+TNS   : -19.691
+
+Type  : Fast Model Setup 'Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|FSM_attesa:b2v_inst1|state.fine_attesa'
+Slack : 0.769
+TNS   : 0.000
+
+Type  : Fast Model Setup 'Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|FSM_dec_command:b2v_inst7|present_state.Decode_command'
+Slack : 0.912
+TNS   : 0.000
+
+Type  : Fast Model Hold 'Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|FSM_dec_command:b2v_inst7|present_state.Decode_command'
+Slack : -1.556
+TNS   : -14.541
+
+Type  : Fast Model Hold 'Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|FSM_attesa:b2v_inst1|state.fine_attesa'
+Slack : -0.161
+TNS   : -0.161
+
+Type  : Fast Model Hold 'inst5|altpll_component|pll|clk[0]'
+Slack : 0.064
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'inst5|altpll_component|pll|clk[0]'
+Slack : 38.322
+TNS   : 0.000
+
+Type  : Fast Model Removal 'inst5|altpll_component|pll|clk[0]'
+Slack : 0.667
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|FSM_attesa:b2v_inst1|state.fine_attesa'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|FSM_dec_command:b2v_inst7|present_state.Decode_command'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CK'
+Slack : 10.000
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'inst5|altpll_component|pll|clk[0]'
+Slack : 18.077
+TNS   : 0.000
+
+------------------------------------------------------------

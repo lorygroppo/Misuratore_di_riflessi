@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jan 10 21:29:01 2019
+Quartus II 32-bit Version : 11.1 Build 173 11/01/2011 SJ Web Edition
+Revision Name : Random_Time_Generator
+Top-level Entity Name : Random_Time_Generator
+Family : Cyclone II
+Total logic elements : 151
+    Total combinational functions : 144
+    Dedicated logic registers : 38
+Total registers : 38
+Total pins : 41
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

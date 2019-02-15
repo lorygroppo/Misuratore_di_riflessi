@@ -1,0 +1,63 @@
+
+State Machine - |UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|FSM_attesa:b2v_inst1|state
+Name state.fine_attesa state.wait_tc state.wait_start3 state.wait_start2 state.wait_start state.reset_state 
+state.reset_state 0 0 0 0 0 0 
+state.wait_start 0 0 0 0 1 1 
+state.wait_start2 0 0 0 1 0 1 
+state.wait_start3 0 0 1 0 0 1 
+state.wait_tc 0 1 0 0 0 1 
+state.fine_attesa 1 0 0 0 0 1 
+
+State Machine - |UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|FSM_dec_command:b2v_inst7|present_state
+Name present_state.Led_4 present_state.Led_3 present_state.Led_2 present_state.Led_1 present_state.Decode_command present_state.Led_command present_state.L_command present_state.Wait_led present_state.Wait_L present_state.Reset 
+present_state.Reset 0 0 0 0 0 0 0 0 0 0 
+present_state.Wait_L 0 0 0 0 0 0 0 0 1 1 
+present_state.Wait_led 0 0 0 0 0 0 0 1 0 1 
+present_state.L_command 0 0 0 0 0 0 1 0 0 1 
+present_state.Led_command 0 0 0 0 0 1 0 0 0 1 
+present_state.Decode_command 0 0 0 0 1 0 0 0 0 1 
+present_state.Led_1 0 0 0 1 0 0 0 0 0 1 
+present_state.Led_2 0 0 1 0 0 0 0 0 0 1 
+present_state.Led_3 0 1 0 0 0 0 0 0 0 1 
+present_state.Led_4 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|Pilotaggio_LED2:b2v_inst3|FSM_Pilotaggio_LED:b2v_inst|state
+Name state.Bottone_Premuto state.Wait_for_BUTTON state.Accensione_LED state.Wait_Enable_LED 
+state.Wait_Enable_LED 0 0 0 0 
+state.Accensione_LED 0 0 1 1 
+state.Wait_for_BUTTON 0 1 0 1 
+state.Bottone_Premuto 1 0 0 1 
+
+State Machine - |UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|FSM_out_enc:b2v_inst10|present_state
+Name present_state.Done present_state.TC_ctrl present_state.wrt present_state.Count_up present_state.Wait_TX present_state.Send_T present_state.Wait_Start present_state.Reset 
+present_state.Reset 0 0 0 0 0 0 0 0 
+present_state.Wait_Start 0 0 0 0 0 0 1 1 
+present_state.Send_T 0 0 0 0 0 1 0 1 
+present_state.Wait_TX 0 0 0 0 1 0 0 1 
+present_state.Count_up 0 0 0 1 0 0 0 1 
+present_state.wrt 0 0 1 0 0 0 0 1 
+present_state.TC_ctrl 0 1 0 0 0 0 0 1 
+present_state.Done 1 0 0 0 0 0 0 1 
+
+State Machine - |UartProgetto_comp|UART:inst|TX:b2v_TX_BLOCK|FSM_TX:b2v_FSM_TX|present_state
+Name present_state.CONTROL_END_BIT present_state.NEXT_BIT present_state.TX_BIT present_state.LOAD_DATA present_state.WAIT_WR present_state.RESET 
+present_state.RESET 0 0 0 0 0 0 
+present_state.WAIT_WR 0 0 0 0 1 1 
+present_state.LOAD_DATA 0 0 0 1 0 1 
+present_state.TX_BIT 0 0 1 0 0 1 
+present_state.NEXT_BIT 0 1 0 0 0 1 
+present_state.CONTROL_END_BIT 1 0 0 0 0 1 
+
+State Machine - |UartProgetto_comp|UART:inst|RX:b2v_RX_BLOCK|FSM_RX:b2v_FSM_RX|present_state
+Name present_state.Wait_read present_state.Uscita_letta present_state.Ricezione_terminata present_state.Accumulo_Output2 present_state.Accumulo_output present_state.Decisore2 present_state.Decisore present_state.Clk_divider_decisore present_state.Edge_detection present_state.Clk_divider_ED present_state.Reset 
+present_state.Reset 0 0 0 0 0 0 0 0 0 0 0 
+present_state.Clk_divider_ED 0 0 0 0 0 0 0 0 0 1 1 
+present_state.Edge_detection 0 0 0 0 0 0 0 0 1 0 1 
+present_state.Clk_divider_decisore 0 0 0 0 0 0 0 1 0 0 1 
+present_state.Decisore 0 0 0 0 0 0 1 0 0 0 1 
+present_state.Decisore2 0 0 0 0 0 1 0 0 0 0 1 
+present_state.Accumulo_output 0 0 0 0 1 0 0 0 0 0 1 
+present_state.Accumulo_Output2 0 0 0 1 0 0 0 0 0 0 1 
+present_state.Ricezione_terminata 0 0 1 0 0 0 0 0 0 0 1 
+present_state.Uscita_letta 0 1 0 0 0 0 0 0 0 0 1 
+present_state.Wait_read 1 0 0 0 0 0 0 0 0 0 1 

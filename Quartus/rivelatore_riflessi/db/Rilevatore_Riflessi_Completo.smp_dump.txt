@@ -1,0 +1,20 @@
+
+State Machine - |Rilevatore_Riflessi_Completo|dec_command:inst4|FSM_dec_command:b2v_inst7|present_state
+Name present_state.Led_4 present_state.Led_3 present_state.Led_2 present_state.Led_1 present_state.Decode_command present_state.Led_command present_state.L_command present_state.Wait_led present_state.Wait_L present_state.Reset 
+present_state.Reset 0 0 0 0 0 0 0 0 0 0 
+present_state.Wait_L 0 0 0 0 0 0 0 0 1 1 
+present_state.Wait_led 0 0 0 0 0 0 0 1 0 1 
+present_state.L_command 0 0 0 0 0 0 1 0 0 1 
+present_state.Led_command 0 0 0 0 0 1 0 0 0 1 
+present_state.Decode_command 0 0 0 0 1 0 0 0 0 1 
+present_state.Led_1 0 0 0 1 0 0 0 0 0 1 
+present_state.Led_2 0 0 1 0 0 0 0 0 0 1 
+present_state.Led_3 0 1 0 0 0 0 0 0 0 1 
+present_state.Led_4 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Rilevatore_Riflessi_Completo|Pilotaggio_LED2:inst3|FSM_Pilotaggio_LED:b2v_inst|state
+Name state.Bottone_Premuto state.Wait_for_BUTTON state.Accensione_LED state.Wait_Enable_LED 
+state.Wait_Enable_LED 0 0 0 0 
+state.Accensione_LED 0 0 1 1 
+state.Wait_for_BUTTON 0 1 0 1 
+state.Bottone_Premuto 1 0 0 1 

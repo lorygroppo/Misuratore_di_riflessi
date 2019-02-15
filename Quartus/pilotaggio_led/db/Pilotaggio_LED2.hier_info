@@ -1,0 +1,63 @@
+|Pilotaggio_LED2
+reset => FSM_Pilotaggio_LED:inst.reset
+clock => FSM_Pilotaggio_LED:inst.clk
+Enable_LEDS => FSM_Pilotaggio_LED:inst.enable_accensione
+Buttons[0] => FSM_Pilotaggio_LED:inst.buttons[0]
+Buttons[0] => BOUT[0].DATAIN
+Buttons[1] => FSM_Pilotaggio_LED:inst.buttons[1]
+Buttons[1] => BOUT[1].DATAIN
+Buttons[2] => FSM_Pilotaggio_LED:inst.buttons[2]
+Buttons[2] => BOUT[2].DATAIN
+Buttons[3] => FSM_Pilotaggio_LED:inst.buttons[3]
+Buttons[3] => BOUT[3].DATAIN
+SEL_LEDS_in[0] => lpm_decoder_LEDS_pilot:inst4.data[0]
+SEL_LEDS_in[1] => lpm_decoder_LEDS_pilot:inst4.data[1]
+
+
+|Pilotaggio_LED2|FSM_Pilotaggio_LED:inst
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+reset => state.OUTPUTSELECT
+clk => state~1.DATAIN
+buttons[0] => Equal0.IN7
+buttons[1] => Equal0.IN6
+buttons[2] => Equal0.IN5
+buttons[3] => Equal0.IN4
+sel_LED[0] => Equal0.IN3
+sel_LED[0] => LEDS_out.DATAA
+sel_LED[1] => Equal0.IN2
+sel_LED[1] => LEDS_out.DATAA
+sel_LED[2] => Equal0.IN1
+sel_LED[2] => LEDS_out.DATAA
+sel_LED[3] => Equal0.IN0
+sel_LED[3] => LEDS_out.DATAA
+enable_accensione => next_state.Accensione_LED.DATAB
+enable_accensione => Selector0.IN2
+
+
+|Pilotaggio_LED2|lpm_decoder_LEDS_pilot:inst4
+data[0] => lpm_decode:LPM_DECODE_component.data[0]
+data[1] => lpm_decode:LPM_DECODE_component.data[1]
+
+
+|Pilotaggio_LED2|lpm_decoder_LEDS_pilot:inst4|lpm_decode:LPM_DECODE_component
+data[0] => decode_n6f:auto_generated.data[0]
+data[1] => decode_n6f:auto_generated.data[1]
+enable => ~NO_FANOUT~
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+
+
+|Pilotaggio_LED2|lpm_decoder_LEDS_pilot:inst4|lpm_decode:LPM_DECODE_component|decode_n6f:auto_generated
+data[0] => w_anode15w[1].IN1
+data[0] => w_anode1w[1].IN0
+data[0] => w_anode24w[1].IN0
+data[0] => w_anode33w[1].IN1
+data[1] => w_anode15w[2].IN0
+data[1] => w_anode1w[2].IN0
+data[1] => w_anode24w[2].IN1
+data[1] => w_anode33w[2].IN1
+
+
