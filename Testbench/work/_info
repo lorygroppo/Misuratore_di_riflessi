@@ -1,0 +1,2396 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Lorenzo\Desktop\Misuratore_di_riflessi\Testbench
+Ealtpll0
+Z1 w1549810414
+Z2 DPx3 std 6 textio 0 22 G^o2zK;Vh4eVdKTVo98653
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\Lorenzo\Desktop\Misuratore_di_riflessi\Testbench
+Z5 8../Quartus/uart/quartus/UART/altpll0.vhd
+Z6 F../Quartus/uart/quartus/UART/altpll0.vhd
+l0
+L42
+VQPzOQ:^EYB]e=RQ<CF[Al2
+Z7 OV;C;10.0c;49
+32
+Z8 !s108 1550243010.774000
+Z9 !s90 ../Quartus/uart/quartus/UART/altpll0.vhd|
+Z10 !s107 ../Quartus/uart/quartus/UART/altpll0.vhd|
+o-O0
+Z11 tExplicit 1
+!s100 c;^AVB37YG>LhfkT:;4W81
+Asyn
+R2
+R3
+DEx4 work 7 altpll0 0 22 QPzOQ:^EYB]e=RQ<CF[Al2
+l121
+L51
+Vj1f3M1M`edYVWjbC4JFCG2
+R7
+32
+R8
+R9
+R10
+o-O0
+R11
+!s100 I:Vm?L8_o[m81HY2;WAB83
+Ealtpll_progetto_comp
+Z12 w1549810405
+R2
+R3
+R4
+Z13 8../Quartus/altpll_progetto_comp.vhd
+Z14 F../Quartus/altpll_progetto_comp.vhd
+l0
+L42
+VRfPT^CflCSO]Db;Nnl[9B2
+R7
+32
+Z15 !s108 1550242997.471000
+Z16 !s90 ../Quartus/altpll_progetto_comp.vhd|
+Z17 !s107 ../Quartus/altpll_progetto_comp.vhd|
+o-O0
+R11
+!s100 ZQnTKiB]E6gZJcjWYgM^X1
+Asyn
+R2
+R3
+DEx4 work 20 altpll_progetto_comp 0 22 RfPT^CflCSO]Db;Nnl[9B2
+l130
+L53
+VXo`]neI]X_eVc@Vb>8VMK1
+R7
+32
+R15
+R16
+R17
+o-O0
+R11
+!s100 _g`SkW01jHaXj1KK7jmaW1
+Eand_clk_div
+Z18 w1549810412
+Z19 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z20 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R2
+R3
+R4
+Z21 8../Quartus/uart/quartus/RX/AND_clk_div.vhd
+Z22 F../Quartus/uart/quartus/RX/AND_clk_div.vhd
+l0
+L6
+VMB[Bf4mQid?ebcAdeDHM[3
+R7
+32
+Z23 !s108 1550243005.785000
+Z24 !s90 ../Quartus/uart/quartus/RX/AND_clk_div.vhd|
+Z25 !s107 ../Quartus/uart/quartus/RX/AND_clk_div.vhd|
+o-O0
+R11
+!s100 Q2;HFMXENGd:UHHeVb0B=2
+Abehavioural
+R19
+R20
+R2
+R3
+DEx4 work 11 and_clk_div 0 22 MB[Bf4mQid?ebcAdeDHM[3
+l14
+L13
+VO8XVBd`Nn>DR>bJ][UlP^1
+R7
+32
+R23
+R24
+R25
+o-O0
+R11
+!s100 URDcha?m0oB9I9olCI^F[3
+Eand_decisore
+R18
+R19
+R20
+R2
+R3
+R4
+Z26 8../Quartus/uart/quartus/RX/AND_Decisore.vhd
+Z27 F../Quartus/uart/quartus/RX/AND_Decisore.vhd
+l0
+L6
+VlU9^L<5Qi26?79bJlT4Cl2
+R7
+32
+Z28 !s108 1550243005.989000
+Z29 !s90 ../Quartus/uart/quartus/RX/AND_Decisore.vhd|
+Z30 !s107 ../Quartus/uart/quartus/RX/AND_Decisore.vhd|
+o-O0
+R11
+!s100 Gh`lPQLWSGhz:dD=o70A80
+Abehavioural
+R19
+R20
+R2
+R3
+DEx4 work 12 and_decisore 0 22 lU9^L<5Qi26?79bJlT4Cl2
+l14
+L13
+Vm@aYm^kJ4MDDI1oZ@f<i01
+R7
+32
+R28
+R29
+R30
+o-O0
+R11
+!s100 IUWV7_nCJ0d1bGhS3Pf>D1
+Eand_edge_detector
+Z31 w1549810413
+R19
+R20
+R2
+R3
+R4
+Z32 8../Quartus/uart/quartus/RX/AND_Edge_Detector.vhd
+Z33 F../Quartus/uart/quartus/RX/AND_Edge_Detector.vhd
+l0
+L6
+VD<Ke8CiQ`[dU[3ZVg6OID2
+R7
+32
+Z34 !s108 1550243006.175000
+Z35 !s90 ../Quartus/uart/quartus/RX/AND_Edge_Detector.vhd|
+Z36 !s107 ../Quartus/uart/quartus/RX/AND_Edge_Detector.vhd|
+o-O0
+R11
+!s100 0AA^Ic:JYc6V9@hmNmed91
+Abehavioural
+R19
+R20
+R2
+R3
+DEx4 work 17 and_edge_detector 0 22 D<Ke8CiQ`[dU[3ZVg6OID2
+l14
+L13
+VB6O8<45G>O^m5U[5E14J?3
+R7
+32
+R34
+R35
+R36
+o-O0
+R11
+!s100 =2Zb3=7g7Y[]JgUDe4R:z2
+Eand_gate_4
+R31
+R19
+Z37 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
+R2
+R3
+R4
+Z38 8../Quartus/uart/quartus/TX/and_gate_4.vhd
+Z39 F../Quartus/uart/quartus/TX/and_gate_4.vhd
+l0
+L5
+V>el0;Tz`ME70<V_XIm[K]1
+R7
+32
+Z40 !s108 1550243008.458000
+Z41 !s90 ../Quartus/uart/quartus/TX/and_gate_4.vhd|
+Z42 !s107 ../Quartus/uart/quartus/TX/and_gate_4.vhd|
+o-O0
+R11
+!s100 8Be>2c@?j80__7MB=KCL90
+Abehavioural
+R19
+R37
+R2
+R3
+DEx4 work 10 and_gate_4 0 22 >el0;Tz`ME70<V_XIm[K]1
+l16
+L15
+VVNOn1:Te[:76hZBN:T>E62
+R7
+32
+R40
+R41
+R42
+o-O0
+R11
+!s100 5P>>>1;47c7jNEG2c^Qf10
+Eand_gate_8
+R31
+R19
+R37
+R2
+R3
+R4
+Z43 8../Quartus/uart/quartus/TX/and_gate_8.vhd
+Z44 F../Quartus/uart/quartus/TX/and_gate_8.vhd
+l0
+L5
+VEzWa4KOc9SCI4@FnFRb4=1
+R7
+32
+Z45 !s108 1550243008.746000
+Z46 !s90 ../Quartus/uart/quartus/TX/and_gate_8.vhd|
+Z47 !s107 ../Quartus/uart/quartus/TX/and_gate_8.vhd|
+o-O0
+R11
+!s100 2DmY^Vm`IiSB:o[0L=;1;0
+Abehavioural
+R19
+R37
+R2
+R3
+DEx4 work 10 and_gate_8 0 22 EzWa4KOc9SCI4@FnFRb4=1
+l16
+L15
+V<IYMoeZhDBTUU_kMO=jhD1
+R7
+32
+R45
+R46
+R47
+o-O0
+R11
+!s100 zflP55G<45d;8jER[YgaM3
+Eand_num_bit
+R31
+R19
+R20
+R2
+R3
+R4
+Z48 8../Quartus/uart/quartus/RX/AND_NUM_BIT.vhd
+Z49 F../Quartus/uart/quartus/RX/AND_NUM_BIT.vhd
+l0
+L6
+VA]7<MYQ<9MG[OFB`Rm]Na3
+R7
+32
+Z50 !s108 1550243006.367000
+Z51 !s90 ../Quartus/uart/quartus/RX/AND_NUM_BIT.vhd|
+Z52 !s107 ../Quartus/uart/quartus/RX/AND_NUM_BIT.vhd|
+o-O0
+R11
+!s100 C][hKjOdKQiU=kLN5dHfi3
+Abehavioural
+R19
+R20
+R2
+R3
+DEx4 work 11 and_num_bit 0 22 A]7<MYQ<9MG[OFB`Rm]Na3
+l13
+L12
+V^UW;NXM_N@UHiCVk7UlMi3
+R7
+32
+R50
+R51
+R52
+o-O0
+R11
+!s100 ]DOR:N6SnI>Q]KHRSdRhk0
+Ccfg_output_encoder_tb
+Z53 abench
+Z54 eoutput_encoder_tb
+Z55 DEx4 work 14 output_encoder 0 22 VE@>X?dQ7oRlnk>h5Wchz3
+Z56 DAx4 work 17 output_encoder_tb 5 bench 22 em7[26i^_6WzziTg<:<JA3
+Z57 DPx4 ieee 11 numeric_std 0 22 k7B<7GmYYYmX;0X]XHFD10
+R2
+R3
+Z58 DEx4 work 17 output_encoder_tb 0 22 haH]k:H[M0G0M<I6<O7OW2
+Z59 w1549810407
+R4
+Z60 8../Quartus/out_encoder/tb_output_encoder.vhd
+Z61 F../Quartus/out_encoder/tb_output_encoder.vhd
+l0
+L102
+VkQE9@RU2D15kEOPl2NKS@3
+R7
+32
+Z62 !s108 1550243002.095000
+Z63 !s90 ../Quartus/out_encoder/tb_output_encoder.vhd|
+Z64 !s107 ../Quartus/out_encoder/tb_output_encoder.vhd|
+o-O0
+R11
+!s100 NgBVOCe@83gSS=8U8n09W0
+Ccfg_output_encoder_tb_bdf_type
+R53
+R54
+R55
+R56
+R57
+R2
+R3
+R58
+R59
+R4
+R60
+R61
+l0
+L110
+VT`24=fbi:UV`oKG9F0Y@11
+R7
+32
+R62
+R63
+R64
+o-O0
+R11
+!s100 0[md7mMYY513KWXf;5^oe3
+Econst
+R59
+R2
+R3
+R4
+Z65 8../Quartus/out_encoder/const.vhd
+Z66 F../Quartus/out_encoder/const.vhd
+l0
+L4
+V306MD^=6Im_o1YYPCm@9L0
+R7
+32
+Z67 !s108 1550243000.201000
+Z68 !s90 ../Quartus/out_encoder/const.vhd|
+Z69 !s107 ../Quartus/out_encoder/const.vhd|
+o-O0
+R11
+!s100 amVG0hXlXgn`>SK[H<0OA0
+Agate
+R2
+R3
+DEx4 work 5 const 0 22 306MD^=6Im_o1YYPCm@9L0
+l10
+L8
+VlNR464mg02jHBFbS?OP271
+R7
+32
+R67
+R68
+R69
+o-O0
+R11
+!s100 H6>3U>D5cdNYeHdz3^DbX2
+Econtatore_tempo_random
+Z70 w1549810409
+R2
+R3
+R4
+Z71 8../Quartus/random_time_gen/Contatore_Tempo_random.vhd
+Z72 F../Quartus/random_time_gen/Contatore_Tempo_random.vhd
+l0
+L42
+V8ENf_AGl<O8H?9RSXM`^:1
+R7
+32
+Z73 !s108 1550243003.636000
+Z74 !s90 ../Quartus/random_time_gen/Contatore_Tempo_random.vhd|
+Z75 !s107 ../Quartus/random_time_gen/Contatore_Tempo_random.vhd|
+o-O0
+R11
+!s100 O`YabKT95nORhg_ePUR^k3
+Asyn
+R2
+R3
+DEx4 work 22 contatore_tempo_random 0 22 8ENf_AGl<O8H?9RSXM`^:1
+l76
+L54
+V`nNm>eaC8FHSI^z_oMinK1
+R7
+32
+R73
+R74
+R75
+o-O0
+R11
+!s100 _ROlA0d@g>Q[Y>HzFnQAo0
+Ecounter_tempo_riflessi
+R70
+R2
+R3
+R4
+Z76 8../Quartus/rivelatore_riflessi/counter_tempo_riflessi.vhd
+Z77 F../Quartus/rivelatore_riflessi/counter_tempo_riflessi.vhd
+l0
+L42
+VmT_n?0MGbf2M2h5[9N1=R2
+R7
+32
+Z78 !s108 1550243004.795000
+Z79 !s90 ../Quartus/rivelatore_riflessi/counter_tempo_riflessi.vhd|
+Z80 !s107 ../Quartus/rivelatore_riflessi/counter_tempo_riflessi.vhd|
+o-O0
+R11
+!s100 l0VmgLD:EO0__3H<>?Ao51
+Asyn
+R2
+R3
+DEx4 work 22 counter_tempo_riflessi 0 22 mT_n?0MGbf2M2h5[9N1=R2
+l76
+L54
+V5GnG9DOBBVP?nSc3?<C5^2
+R7
+32
+R78
+R79
+R80
+o-O0
+R11
+!s100 fU3f^E?LOEFBLTMm7RV<d0
+Edec_command
+R59
+R2
+R3
+R4
+Z81 8../Quartus/dec_command/dec_command.vhd
+Z82 F../Quartus/dec_command/dec_command.vhd
+l0
+L24
+V@RFbOKJGAIha@@i[7`5Sb2
+R7
+32
+Z83 !s108 1550242998.021000
+Z84 !s90 ../Quartus/dec_command/dec_command.vhd|
+Z85 !s107 ../Quartus/dec_command/dec_command.vhd|
+o-O0
+R11
+!s100 SR<6::<c81Jk0KLQZF4H73
+Abdf_type
+R2
+R3
+DEx4 work 11 dec_command 0 22 @RFbOKJGAIha@@i[7`5Sb2
+l122
+L38
+VL?B<9lAQzNN2IWaGgjjZL2
+R7
+32
+R83
+R84
+R85
+o-O0
+R11
+!s100 ABFWDE:iDcfTPLh^dTeQ52
+Edecisore
+R31
+R19
+R20
+R2
+R3
+R4
+Z86 8../Quartus/uart/quartus/RX/Decisore.vhd
+Z87 F../Quartus/uart/quartus/RX/Decisore.vhd
+l0
+L6
+V@`[@K_Uf<=[^R@;ZoDAkl2
+R7
+32
+Z88 !s108 1550243006.549000
+Z89 !s90 ../Quartus/uart/quartus/RX/Decisore.vhd|
+Z90 !s107 ../Quartus/uart/quartus/RX/Decisore.vhd|
+o-O0
+R11
+!s100 4fJ?kcRUChXf2^4`Gbo_d0
+Abehavioural
+R19
+R20
+R2
+R3
+DEx4 work 8 decisore 0 22 @`[@K_Uf<=[^R@;ZoDAkl2
+l16
+L13
+Vm=_i>[dd7NX@9@1=I>gPS2
+R7
+32
+R88
+R89
+R90
+o-O0
+R11
+!s100 z0eI0DHaGFPPj56Ukb0fz3
+Edetect_1
+R59
+R19
+R20
+R2
+R3
+R4
+Z91 8../Quartus/dec_command/Detect_1.vhd
+Z92 F../Quartus/dec_command/Detect_1.vhd
+l0
+L5
+V6KAY7c833bfj<8VZzmJIZ2
+R7
+32
+Z93 !s108 1550242998.224000
+Z94 !s90 ../Quartus/dec_command/Detect_1.vhd|
+Z95 !s107 ../Quartus/dec_command/Detect_1.vhd|
+o-O0
+R11
+!s100 =jE?OcmHLJc0=GY6fUHGR3
+Abehavioural
+R19
+R20
+R2
+R3
+DEx4 work 8 detect_1 0 22 6KAY7c833bfj<8VZzmJIZ2
+l12
+L11
+V0FciIAnaPc:;XY^A7<h;W3
+R7
+32
+R93
+R94
+R95
+o-O0
+R11
+!s100 3TM0GbA0jiFS^HK9GEJHi1
+Edetect_2
+R59
+R19
+R20
+R2
+R3
+R4
+Z96 8../Quartus/dec_command/Detect_2.vhd
+Z97 F../Quartus/dec_command/Detect_2.vhd
+l0
+L5
+VG15;?5?Qm?2R<BGhk2D7n1
+R7
+32
+Z98 !s108 1550242998.416000
+Z99 !s90 ../Quartus/dec_command/Detect_2.vhd|
+Z100 !s107 ../Quartus/dec_command/Detect_2.vhd|
+o-O0
+R11
+!s100 zTd_ZIcZHkHS?1bzaC9mU0
+Abehavioural
+R19
+R20
+R2
+R3
+DEx4 work 8 detect_2 0 22 G15;?5?Qm?2R<BGhk2D7n1
+l12
+L11
+VVgmTezT2KYP8bQnL2VhhG1
+R7
+32
+R98
+R99
+R100
+o-O0
+R11
+!s100 UhU>@mA]bIScWT0mPkbhn2
+Edetect_3
+R59
+R19
+R20
+R2
+R3
+R4
+Z101 8../Quartus/dec_command/Detect_3.vhd
+Z102 F../Quartus/dec_command/Detect_3.vhd
+l0
+L5
+V]9OAA92V63@CKUKZ<bkoJ1
+R7
+32
+Z103 !s108 1550242998.617000
+Z104 !s90 ../Quartus/dec_command/Detect_3.vhd|
+Z105 !s107 ../Quartus/dec_command/Detect_3.vhd|
+o-O0
+R11
+!s100 fEB?42EbBJ>DCT@Dh>^A13
+Abehavioural
+R19
+R20
+R2
+R3
+DEx4 work 8 detect_3 0 22 ]9OAA92V63@CKUKZ<bkoJ1
+l12
+L11
+V;^<3a`Ul<KXPXkJ@nHGT_2
+R7
+32
+R103
+R104
+R105
+o-O0
+R11
+!s100 R^LP8dE<VCS=afjYOnf5J3
+Edetect_4
+R59
+R19
+R20
+R2
+R3
+R4
+Z106 8../Quartus/dec_command/Detect_4.vhd
+Z107 F../Quartus/dec_command/Detect_4.vhd
+l0
+L5
+Vhck8G]7hXe?T_C1]<DKn<0
+R7
+32
+Z108 !s108 1550242998.795000
+Z109 !s90 ../Quartus/dec_command/Detect_4.vhd|
+Z110 !s107 ../Quartus/dec_command/Detect_4.vhd|
+o-O0
+R11
+!s100 =[:96;R>faeLXQM@zcXQY2
+Abehavioural
+R19
+R20
+R2
+R3
+DEx4 work 8 detect_4 0 22 hck8G]7hXe?T_C1]<DKn<0
+l12
+L11
+VkM2ePhOhj1i4l`>M6Z6^:1
+R7
+32
+R108
+R109
+R110
+o-O0
+R11
+!s100 GfCBoTV^oFPHM2V5GgVPW3
+Efsm_attesa
+R12
+R19
+R20
+R2
+R3
+R4
+Z111 8../Quartus/FSM_attesa.vhd
+Z112 F../Quartus/FSM_attesa.vhd
+l0
+L6
+VWoE`HR94K[c:L3S6W=dA:0
+R7
+32
+Z113 !s108 1550242997.617000
+Z114 !s90 ../Quartus/FSM_attesa.vhd|
+Z115 !s107 ../Quartus/FSM_attesa.vhd|
+o-O0
+R11
+!s100 bWoeji3NjB]n0]@Eb?F^[2
+Abehavioral
+R19
+R20
+R2
+R3
+DEx4 work 10 fsm_attesa 0 22 WoE`HR94K[c:L3S6W=dA:0
+l22
+L16
+VT^MEC6Yko2oL]B[lcoLT03
+R7
+32
+R113
+R114
+R115
+o-O0
+R11
+!s100 h<Kf1GWQ^kjN@;Rja`m922
+Efsm_dec_command
+R59
+R19
+R37
+R2
+R3
+R4
+Z116 8../Quartus/dec_command/FSM_dec_command.vhd
+Z117 F../Quartus/dec_command/FSM_dec_command.vhd
+l0
+L5
+VJ][nVRBXVQ]lOHM;Xh9fL1
+R7
+32
+Z118 !s108 1550242999.022000
+Z119 !s90 ../Quartus/dec_command/FSM_dec_command.vhd|
+Z120 !s107 ../Quartus/dec_command/FSM_dec_command.vhd|
+o-O0
+R11
+!s100 nN6@0@Ofhlh<2@ZlFIEla1
+Abehavioural
+R19
+R37
+R2
+R3
+DEx4 work 15 fsm_dec_command 0 22 J][nVRBXVQ]lOHM;Xh9fL1
+l17
+L12
+V[`gh2:YX]J:10jGVfoe5`2
+R7
+32
+R118
+R119
+R120
+o-O0
+R11
+!s100 AYEU@4;3=Fj4na_YndV1C1
+Efsm_out_enc
+R59
+R2
+R3
+R4
+Z121 8../Quartus/out_encoder/FSM_out_enc.vhd
+Z122 F../Quartus/out_encoder/FSM_out_enc.vhd
+l0
+L4
+V7UfPZ3TSP5@X8c]glXi=i3
+R7
+32
+Z123 !s108 1550243000.478000
+Z124 !s90 ../Quartus/out_encoder/FSM_out_enc.vhd|
+Z125 !s107 ../Quartus/out_encoder/FSM_out_enc.vhd|
+o-O0
+R11
+!s100 b@8kSW0iMGg=^cZiG6;Vd0
+Afsm
+R2
+R3
+DEx4 work 11 fsm_out_enc 0 22 7UfPZ3TSP5@X8c]glXi=i3
+l16
+L11
+VUVg4c9YHnRY^b?N1zaK0d2
+R7
+32
+R123
+R124
+R125
+o-O0
+R11
+!s100 Nz;?42E;kA3O4c:LYVF]<1
+Efsm_pilotaggio_led
+Z126 w1549810408
+R19
+R20
+R2
+R3
+R4
+Z127 8../Quartus/pilotaggio_led/FSM_Pilotaggio_LED.vhd
+Z128 F../Quartus/pilotaggio_led/FSM_Pilotaggio_LED.vhd
+l0
+L6
+VBDXjehO=L?d]R_4X6hZW[2
+R7
+32
+Z129 !s108 1550243002.772000
+Z130 !s90 ../Quartus/pilotaggio_led/FSM_Pilotaggio_LED.vhd|
+Z131 !s107 ../Quartus/pilotaggio_led/FSM_Pilotaggio_LED.vhd|
+o-O0
+R11
+!s100 Y1lN]4Obk7c:Ae9TJWMDE0
+Abehavioral
+R19
+R20
+R2
+R3
+DEx4 work 18 fsm_pilotaggio_led 0 22 BDXjehO=L?d]R_4X6hZW[2
+l25
+L18
+V?IXR`]G4F2i4A_;H50H2P3
+R7
+32
+R129
+R130
+R131
+o-O0
+R11
+!s100 1=fn36JBP0:mj4NQj_Z]X0
+Efsm_rx
+R31
+R19
+R37
+R2
+R3
+R4
+Z132 8../Quartus/uart/quartus/RX/FSM_RX.vhd
+Z133 F../Quartus/uart/quartus/RX/FSM_RX.vhd
+l0
+L5
+VMFm0k75E_l<2Fm0MoX8_P0
+R7
+32
+Z134 !s108 1550243006.709000
+Z135 !s90 ../Quartus/uart/quartus/RX/FSM_RX.vhd|
+Z136 !s107 ../Quartus/uart/quartus/RX/FSM_RX.vhd|
+o-O0
+R11
+!s100 oQCS`e6<45cGRD12boN?<0
+Abehavioural
+R19
+R37
+R2
+R3
+DEx4 work 6 fsm_rx 0 22 MFm0k75E_l<2Fm0MoX8_P0
+l15
+L10
+VaDLGEYDBfLmgUVA]Z@i[;1
+R7
+32
+R134
+R135
+R136
+o-O0
+R11
+!s100 P<GNEI[WHM5J;7A>ZfzAG2
+Efsm_tx
+R31
+R19
+R37
+R2
+R3
+R4
+Z137 8../Quartus/uart/quartus/TX/FSM_TX.vhd
+Z138 F../Quartus/uart/quartus/TX/FSM_TX.vhd
+l0
+L5
+V5IY9@ZeiR:JDCG<:cP@W=3
+R7
+32
+Z139 !s108 1550243009.024000
+Z140 !s90 ../Quartus/uart/quartus/TX/FSM_TX.vhd|
+Z141 !s107 ../Quartus/uart/quartus/TX/FSM_TX.vhd|
+o-O0
+R11
+!s100 Po_a>@Q_f9a;3=FWoJcch2
+Abehavioural
+R19
+R37
+R2
+R3
+DEx4 work 6 fsm_tx 0 22 5IY9@ZeiR:JDCG<:cP@W=3
+l19
+L14
+VLJLh0cP8z>2SP50_Jm5E]0
+R7
+32
+R139
+R140
+R141
+o-O0
+R11
+!s100 Uezl<2g1LBWY]:F?L`4<b2
+Einvert
+R31
+R19
+R20
+R2
+R3
+R4
+Z142 8../Quartus/uart/quartus/RX/invert.vhd
+Z143 F../Quartus/uart/quartus/RX/invert.vhd
+l0
+L6
+VSC6Zz4H^N]B>UCg^MC::_3
+R7
+32
+Z144 !s108 1550243006.919000
+Z145 !s90 ../Quartus/uart/quartus/RX/invert.vhd|
+Z146 !s107 ../Quartus/uart/quartus/RX/invert.vhd|
+o-O0
+R11
+!s100 >DLGEj=<hE?L];Y`D0dh>0
+Abehavioural
+R19
+R20
+R2
+R3
+DEx4 work 6 invert 0 22 SC6Zz4H^N]B>UCg^MC::_3
+l14
+L13
+V3US=Q;?AE2?5aXUoB@HQY1
+R7
+32
+R144
+R145
+R146
+o-O0
+R11
+!s100 :2Dl<=lNGFBH>>LWII>ee1
+Einverter
+R1
+R2
+R3
+R4
+Z147 8../Quartus/uart/quartus/UART/inverter.vhd
+Z148 F../Quartus/uart/quartus/UART/inverter.vhd
+l0
+L4
+VU`eHB;b2Gh[U]8oB1?:^i3
+R7
+32
+Z149 !s108 1550243010.939000
+Z150 !s90 ../Quartus/uart/quartus/UART/inverter.vhd|
+Z151 !s107 ../Quartus/uart/quartus/UART/inverter.vhd|
+o-O0
+R11
+!s100 QF]e<cGlV`3BNQRIX@S2<3
+Abehavioural
+R2
+R3
+DEx4 work 8 inverter 0 22 U`eHB;b2Gh[U]8oB1?:^i3
+l12
+L11
+VBLZIIT1LBhma][zNT6J::0
+R7
+32
+R149
+R150
+R151
+o-O0
+R11
+!s100 L34H43XXN8^^>M]=JX@BN3
+El_detect
+R59
+R19
+R20
+R2
+R3
+R4
+Z152 8../Quartus/dec_command/L_Detect.vhd
+Z153 F../Quartus/dec_command/L_Detect.vhd
+l0
+L5
+V:a4clOdMF`E@_JLf`4jmR1
+R7
+32
+Z154 !s108 1550242999.858000
+Z155 !s90 ../Quartus/dec_command/L_Detect.vhd|
+Z156 !s107 ../Quartus/dec_command/L_Detect.vhd|
+o-O0
+R11
+!s100 0356j3WKe_k<D0miM4Ud42
+Abehavioural
+R19
+R20
+R2
+R3
+DEx4 work 8 l_detect 0 22 :a4clOdMF`E@_JLf`4jmR1
+l12
+L11
+V6jI;YEHMDFh5kC?HH4gYe1
+R7
+32
+R154
+R155
+R156
+o-O0
+R11
+!s100 3k>elgTlNE57BVXlBk3G]3
+Elpm_counter0
+R59
+R2
+R3
+R4
+Z157 8../Quartus/out_encoder/lpm_counter0.vhd
+Z158 F../Quartus/out_encoder/lpm_counter0.vhd
+l0
+L42
+VdDZaSjzSFC3=n`=kdMHcT1
+R7
+32
+Z159 !s108 1550243000.622000
+Z160 !s90 ../Quartus/out_encoder/lpm_counter0.vhd|
+Z161 !s107 ../Quartus/out_encoder/lpm_counter0.vhd|
+o-O0
+R11
+!s100 Eo>m64<jh8V4j9Nf6QR:G0
+Asyn
+R2
+R3
+DEx4 work 12 lpm_counter0 0 22 dDZaSjzSFC3=n`=kdMHcT1
+l76
+L54
+VP`OaA534i`zC_M1QXQCjM0
+R7
+32
+R159
+R160
+R161
+o-O0
+R11
+!s100 kYUkmk:6icSEigU6]Qhlk1
+Elpm_counter_ms
+R70
+R2
+R3
+R4
+Z162 8../Quartus/rivelatore_riflessi/lpm_counter_ms.vhd
+Z163 F../Quartus/rivelatore_riflessi/lpm_counter_ms.vhd
+l0
+L42
+Vk;TOU=M;=8@C5VJa7@Ul>1
+R7
+32
+Z164 !s108 1550243004.989000
+Z165 !s90 ../Quartus/rivelatore_riflessi/lpm_counter_ms.vhd|
+Z166 !s107 ../Quartus/rivelatore_riflessi/lpm_counter_ms.vhd|
+o-O0
+R11
+!s100 _8TUd@<PH`?98iQ8L0LBK0
+Asyn
+R2
+R3
+DEx4 work 14 lpm_counter_ms 0 22 k;TOU=M;=8@C5VJa7@Ul>1
+l76
+L54
+VCX=bZbTh4AEzRcmGljmSI0
+R7
+32
+R164
+R165
+R166
+o-O0
+R11
+!s100 mm1I>_Jn;:F30O?hGgBFd1
+Elpm_counter_rx_mod_16
+R31
+R2
+R3
+R4
+Z167 8../Quartus/uart/quartus/RX/lpm_counter_RX_MOD_16.vhd
+Z168 F../Quartus/uart/quartus/RX/lpm_counter_RX_MOD_16.vhd
+l0
+L42
+VnoomSP_5QHNR`[Ghn`V^R3
+R7
+32
+Z169 !s108 1550243007.081000
+Z170 !s90 ../Quartus/uart/quartus/RX/lpm_counter_RX_MOD_16.vhd|
+Z171 !s107 ../Quartus/uart/quartus/RX/lpm_counter_RX_MOD_16.vhd|
+o-O0
+R11
+!s100 kZkd?aV7mcCNcYXolFfkJ2
+Asyn
+R2
+R3
+DEx4 work 21 lpm_counter_rx_mod_16 0 22 noomSP_5QHNR`[Ghn`V^R3
+l74
+L53
+V1fP5PGDNS7?9d8^cEoDfH2
+R7
+32
+R169
+R170
+R171
+o-O0
+R11
+!s100 J@zK43edJe9jKh8?<f84N3
+Elpm_counter_rx_mod_32
+R31
+R2
+R3
+R4
+Z172 8../Quartus/uart/quartus/RX/lpm_counter_RX_MOD_32.vhd
+Z173 F../Quartus/uart/quartus/RX/lpm_counter_RX_MOD_32.vhd
+l0
+L42
+VkJLo`l5^E03L2ec52Thd42
+R7
+32
+Z174 !s108 1550243007.255000
+Z175 !s90 ../Quartus/uart/quartus/RX/lpm_counter_RX_MOD_32.vhd|
+Z176 !s107 ../Quartus/uart/quartus/RX/lpm_counter_RX_MOD_32.vhd|
+o-O0
+R11
+!s100 8GWPY2JmL=CDKUUU4kG6X1
+Asyn
+R2
+R3
+DEx4 work 21 lpm_counter_rx_mod_32 0 22 kJLo`l5^E03L2ec52Thd42
+l74
+L53
+VDB@7P;K9M2oMM7NzWXj]S3
+R7
+32
+R174
+R175
+R176
+o-O0
+R11
+!s100 ^deHKE?Y?RSmHSP_Q_1[D1
+Elpm_counter_tx
+R31
+R2
+R3
+R4
+Z177 8../Quartus/uart/quartus/TX/lpm_counter_TX.vhd
+Z178 F../Quartus/uart/quartus/TX/lpm_counter_TX.vhd
+l0
+L42
+VGel[Y_92lE>WRcfCWAF6m2
+R7
+32
+Z179 !s108 1550243009.306000
+Z180 !s90 ../Quartus/uart/quartus/TX/lpm_counter_TX.vhd|
+Z181 !s107 ../Quartus/uart/quartus/TX/lpm_counter_TX.vhd|
+o-O0
+R11
+!s100 8KU>3hhi9:nW0F@Ki6f3i0
+Asyn
+R2
+R3
+DEx4 work 14 lpm_counter_tx 0 22 Gel[Y_92lE>WRcfCWAF6m2
+l74
+L53
+VF?Y;Hi9G_a_baiBWj``:d0
+R7
+32
+R179
+R180
+R181
+o-O0
+R11
+!s100 OZGH2=?Y^BKFGbo]eLzoV3
+Elpm_counter_tx_mod_10
+R31
+R2
+R3
+R4
+Z182 8../Quartus/uart/quartus/TX/lpm_counter_TX_MOD_10.vhd
+Z183 F../Quartus/uart/quartus/TX/lpm_counter_TX_MOD_10.vhd
+l0
+L42
+V[SKe@5if_fo=A@;^Cfl632
+R7
+32
+Z184 !s108 1550243009.587000
+Z185 !s90 ../Quartus/uart/quartus/TX/lpm_counter_TX_MOD_10.vhd|
+Z186 !s107 ../Quartus/uart/quartus/TX/lpm_counter_TX_MOD_10.vhd|
+o-O0
+R11
+!s100 cAiQPgoZMJ@NC4G46W@M41
+Asyn
+R2
+R3
+DEx4 work 21 lpm_counter_tx_mod_10 0 22 [SKe@5if_fo=A@;^Cfl632
+l74
+L53
+VfTNVKSgSe37:O9714jGBP2
+R7
+32
+R184
+R185
+R186
+o-O0
+R11
+!s100 K4U<NBk6K4;WzClg3PN6;2
+Elpm_decoder_leds_pilot
+R70
+R2
+R3
+R4
+Z187 8../Quartus/pilotaggio_led/lpm_decoder_LEDS_pilot.vhd
+Z188 F../Quartus/pilotaggio_led/lpm_decoder_LEDS_pilot.vhd
+l0
+L42
+V4TV;`I8^mL]f_n_:6V[h60
+R7
+32
+Z189 !s108 1550243002.933000
+Z190 !s90 ../Quartus/pilotaggio_led/lpm_decoder_LEDS_pilot.vhd|
+Z191 !s107 ../Quartus/pilotaggio_led/lpm_decoder_LEDS_pilot.vhd|
+o-O0
+R11
+!s100 HQPDdm?NKGV<A^mANL02J3
+Asyn
+R2
+R3
+DEx4 work 22 lpm_decoder_leds_pilot 0 22 4TV;`I8^mL]f_n_:6V[h60
+l76
+L54
+Vm681mRUB]NNCQ@jOSh:1C2
+R7
+32
+R189
+R190
+R191
+o-O0
+R11
+!s100 m6[]4e6c7RHOBFE3<]=E[3
+Elpm_ff_0
+R31
+Z192 DPx3 lpm 14 lpm_components 0 22 mRRNnLG1BL;^5k5IEBX593
+R2
+R3
+R4
+Z193 8../Quartus/uart/quartus/TX/lpm_ff_0.vhd
+Z194 F../Quartus/uart/quartus/TX/lpm_ff_0.vhd
+l0
+L30
+V>z9Dz;DZiN<KE1MFDCPzQ0
+R7
+32
+Z195 !s108 1550243009.864000
+Z196 !s90 ../Quartus/uart/quartus/TX/lpm_ff_0.vhd|
+Z197 !s107 ../Quartus/uart/quartus/TX/lpm_ff_0.vhd|
+o-O0
+R11
+!s100 =S[BV@IK[D7;MednMjNDl3
+Abdf_type
+R192
+R2
+R3
+DEx4 work 8 lpm_ff_0 0 22 >z9Dz;DZiN<KE1MFDCPzQ0
+l40
+L39
+V7YKFo8NQW]8?LN8XaOL0`0
+R7
+32
+R195
+R196
+R197
+o-O0
+R11
+!s100 QJTPbE?XOF?S@[jB4>R@M3
+Elpm_ff_1
+R59
+R192
+R2
+R3
+R4
+Z198 8../Quartus/dec_command/lpm_ff_1.vhd
+Z199 F../Quartus/dec_command/lpm_ff_1.vhd
+l0
+L30
+VT<znfQ3^k0A:[?ai2cBTT0
+R7
+32
+Z200 !s108 1550242999.294000
+Z201 !s90 ../Quartus/dec_command/lpm_ff_1.vhd|
+Z202 !s107 ../Quartus/dec_command/lpm_ff_1.vhd|
+o-O0
+R11
+!s100 HBTo8iU?e=`QMXabn8QA32
+Abdf_type
+R192
+R2
+R3
+DEx4 work 8 lpm_ff_1 0 22 T<znfQ3^k0A:[?ai2cBTT0
+l42
+L41
+VN6H9Sl5RRZAR4]4S94Hde1
+R7
+32
+R200
+R201
+R202
+o-O0
+R11
+!s100 XLamZIL5>J<LX[5GQB6m32
+Elpm_ff_2
+R59
+R192
+R2
+R3
+R4
+Z203 8../Quartus/dec_command/lpm_ff_2.vhd
+Z204 F../Quartus/dec_command/lpm_ff_2.vhd
+l0
+L30
+VRIRbShQY2j^gjgIMdJ5ZV0
+R7
+32
+Z205 !s108 1550242999.585000
+Z206 !s90 ../Quartus/dec_command/lpm_ff_2.vhd|
+Z207 !s107 ../Quartus/dec_command/lpm_ff_2.vhd|
+o-O0
+R11
+!s100 P>>5J5iGbWHoM37VdV@[C0
+Abdf_type
+R192
+R2
+R3
+DEx4 work 8 lpm_ff_2 0 22 RIRbShQY2j^gjgIMdJ5ZV0
+l42
+L41
+V;kk;g1L@J8EF=2[[[7ezH2
+R7
+32
+R205
+R206
+R207
+o-O0
+R11
+!s100 ?11@A]Vkk?]BE[:0cU>lz2
+Elpm_mult0_random_number_gen
+R70
+R2
+R3
+R4
+Z208 8../Quartus/random_time_gen/lpm_mult0_Random_Number_Gen.vhd
+Z209 F../Quartus/random_time_gen/lpm_mult0_Random_Number_Gen.vhd
+l0
+L42
+VNG?RaOU]P3fdOG?jBa^@72
+R7
+32
+Z210 !s108 1550243003.775000
+Z211 !s90 ../Quartus/random_time_gen/lpm_mult0_Random_Number_Gen.vhd|
+Z212 !s107 ../Quartus/random_time_gen/lpm_mult0_Random_Number_Gen.vhd|
+o-O0
+R11
+!s100 bFc6OVd0@g;UM4o8YNfD:2
+Asyn
+R2
+R3
+DEx4 work 27 lpm_mult0_random_number_gen 0 22 NG?RaOU]P3fdOG?jBa^@72
+l75
+L51
+Vkl1zl>SjaFLAk3WIgknJ`0
+R7
+32
+R210
+R211
+R212
+o-O0
+R11
+!s100 76EmblYE]DP<3DX=>ni?T2
+Elpm_mux0
+R31
+R192
+R2
+R3
+R4
+Z213 8../Quartus/uart/quartus/TX/lpm_mux0.vhd
+Z214 F../Quartus/uart/quartus/TX/lpm_mux0.vhd
+l0
+L42
+VaoSIGO9^gh`0nMhNERbLo1
+R7
+32
+Z215 !s108 1550243010.080000
+Z216 !s90 ../Quartus/uart/quartus/TX/lpm_mux0.vhd|
+Z217 !s107 ../Quartus/uart/quartus/TX/lpm_mux0.vhd|
+o-O0
+R11
+!s100 @`=F2K4mXA8m?HP3OGbQ21
+Asyn
+R192
+R2
+R3
+DEx4 work 8 lpm_mux0 0 22 aoSIGO9^gh`0nMhNERbLo1
+l65
+L53
+VLHJgzlQGaTR9bHcL6VPSl2
+R7
+32
+R215
+R216
+R217
+o-O0
+R11
+!s100 OzE3<RkN@`3Cm>[J<g3Y51
+Elpm_mux_addr
+R59
+R192
+R2
+R3
+R4
+Z218 8../Quartus/out_encoder/lpm_mux_addr.vhd
+Z219 F../Quartus/out_encoder/lpm_mux_addr.vhd
+l0
+L42
+VF@5zndhEAzF_AnmmGe<[e0
+R7
+32
+Z220 !s108 1550243000.857000
+Z221 !s90 ../Quartus/out_encoder/lpm_mux_addr.vhd|
+Z222 !s107 ../Quartus/out_encoder/lpm_mux_addr.vhd|
+o-O0
+R11
+!s100 J8;f>`YazochHU_h=a3FL3
+Asyn
+R192
+R2
+R3
+DEx4 work 12 lpm_mux_addr 0 22 F@5zndhEAzF_AnmmGe<[e0
+l64
+L53
+VTbGW<m5Z<oXCd45=P:oj71
+R7
+32
+R220
+R221
+R222
+o-O0
+R11
+!s100 o@Fo9nZFLzUVZG<jc6;M52
+Elpm_rom_0
+R59
+R192
+R2
+R3
+R4
+Z223 8../Quartus/out_encoder/lpm_rom_0.vhd
+Z224 F../Quartus/out_encoder/lpm_rom_0.vhd
+l0
+L30
+VKPgZkogg5lo_ThidWAE1_3
+R7
+32
+Z225 !s108 1550243001.122000
+Z226 !s90 ../Quartus/out_encoder/lpm_rom_0.vhd|
+Z227 !s107 ../Quartus/out_encoder/lpm_rom_0.vhd|
+o-O0
+R11
+!s100 ;6K^KHCEIzkl7NoPXbVke3
+Abdf_type
+R192
+R2
+R3
+DEx4 work 9 lpm_rom_0 0 22 KPgZkogg5lo_ThidWAE1_3
+l40
+L39
+V8GYJ`J^AglBTUco0gecS02
+R7
+32
+R225
+R226
+R227
+o-O0
+R11
+!s100 U5z;01P4MFG]<cogC;?Y=1
+Elpm_shiftreg0
+R31
+R2
+R3
+R4
+Z228 8../Quartus/uart/quartus/TX/lpm_shiftreg0.vhd
+Z229 F../Quartus/uart/quartus/TX/lpm_shiftreg0.vhd
+l0
+L42
+VhR6dYINgbOJg`?CE_Gb@61
+R7
+32
+Z230 !s108 1550243010.241000
+Z231 !s90 ../Quartus/uart/quartus/TX/lpm_shiftreg0.vhd|
+Z232 !s107 ../Quartus/uart/quartus/TX/lpm_shiftreg0.vhd|
+o-O0
+R11
+!s100 m8VA]zenN=J>NIkCZ<@m63
+Asyn
+R2
+R3
+DEx4 work 13 lpm_shiftreg0 0 22 hR6dYINgbOJg`?CE_Gb@61
+l75
+L54
+VBTMP7[i^6RRoRVfJM;MgZ1
+R7
+32
+R230
+R231
+R232
+o-O0
+R11
+!s100 UnPCIQjYhF5A<K_;f3_<=1
+Elpm_shiftreg0_lfsr_random
+R70
+R2
+R3
+R4
+Z233 8../Quartus/random_time_gen/lpm_shiftreg0_LFSR_RANDOM.vhd
+Z234 F../Quartus/random_time_gen/lpm_shiftreg0_LFSR_RANDOM.vhd
+l0
+L42
+VF_>X45IUEU69iFP[8:IO=1
+R7
+32
+Z235 !s108 1550243003.937000
+Z236 !s90 ../Quartus/random_time_gen/lpm_shiftreg0_LFSR_RANDOM.vhd|
+Z237 !s107 ../Quartus/random_time_gen/lpm_shiftreg0_LFSR_RANDOM.vhd|
+o-O0
+R11
+!s100 3=ePXmaPb?;BogT>fSbYB3
+Asyn
+R2
+R3
+DEx4 work 25 lpm_shiftreg0_lfsr_random 0 22 F_>X45IUEU69iFP[8:IO=1
+l71
+L52
+Vk9zGbi8TCV[gGLBRWm@7O1
+R7
+32
+R235
+R236
+R237
+o-O0
+R11
+!s100 6mZVF7m^aDL^1996kK?oi2
+Elpm_shiftreg_rx_left_edge
+R31
+R2
+R3
+R4
+Z238 8../Quartus/uart/quartus/RX/lpm_shiftreg_RX_LEFT_EDGE.vhd
+Z239 F../Quartus/uart/quartus/RX/lpm_shiftreg_RX_LEFT_EDGE.vhd
+l0
+L42
+VUTZ<<hBV1Z`o;@85g_0G42
+R7
+32
+Z240 !s108 1550243007.553000
+Z241 !s90 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_LEFT_EDGE.vhd|
+Z242 !s107 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_LEFT_EDGE.vhd|
+o-O0
+R11
+!s100 ^MCaJM7YWce32SNfFVm6W0
+Asyn
+R2
+R3
+DEx4 work 25 lpm_shiftreg_rx_left_edge 0 22 UTZ<<hBV1Z`o;@85g_0G42
+l75
+L54
+VlSQ7fU4ne^HQ8ez7Bflck1
+R7
+32
+R240
+R241
+R242
+o-O0
+R11
+!s100 `CN7iR?F5Qa;zT3al7nAo0
+Elpm_shiftreg_rx_right_8_bit
+R31
+R2
+R3
+R4
+Z243 8../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd
+Z244 F../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd
+l0
+L42
+V8fUHlZ4WL<XAP1Hb_;3[01
+R7
+32
+Z245 !s108 1550243007.781000
+Z246 !s90 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd|
+Z247 !s107 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd|
+o-O0
+R11
+!s100 2i81D7:9jlO]k^e;_;ag@0
+Asyn
+R2
+R3
+DEx4 work 27 lpm_shiftreg_rx_right_8_bit 0 22 8fUHlZ4WL<XAP1Hb_;3[01
+l75
+L54
+VLe;PDCBGH[Bfd>eRQVCnO1
+R7
+32
+R245
+R246
+R247
+o-O0
+R11
+!s100 ``0DR]F?AiTY2<MI>_bZ20
+Elpm_shiftreg_rx_right_9
+R31
+R2
+R3
+R4
+Z248 8../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd
+Z249 F../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd
+l0
+L42
+VFag56cja:g9=eF2SS^L8L2
+R7
+32
+Z250 !s108 1550243007.946000
+Z251 !s90 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd|
+Z252 !s107 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd|
+o-O0
+R11
+!s100 oSIU0ViY;7j`=FQfmJK7`1
+Asyn
+R2
+R3
+DEx4 work 23 lpm_shiftreg_rx_right_9 0 22 Fag56cja:g9=eF2SS^L8L2
+l75
+L54
+Vg;[DEJhek[`CGd238m=Gj0
+R7
+32
+R250
+R251
+R252
+o-O0
+R11
+!s100 d:9C=cmL0FFH1O@gh5jVR3
+Ems_detect
+R70
+R19
+R20
+R2
+R3
+R4
+Z253 8../Quartus/rivelatore_riflessi/ms_detect.vhd
+Z254 F../Quartus/rivelatore_riflessi/ms_detect.vhd
+l0
+L5
+Vl5Ii2Eo7_eTWIf>kao7e61
+R7
+32
+Z255 !s108 1550243005.179000
+Z256 !s90 ../Quartus/rivelatore_riflessi/ms_detect.vhd|
+Z257 !s107 ../Quartus/rivelatore_riflessi/ms_detect.vhd|
+o-O0
+R11
+!s100 f^HHET1FK>LRZDG=AAlD=3
+Abehavioural
+R19
+R20
+R2
+R3
+DEx4 work 9 ms_detect 0 22 l5Ii2Eo7_eTWIf>kao7e61
+l12
+L11
+VmAYR6glbH46l0Si1g[;4H2
+R7
+32
+R255
+R256
+R257
+o-O0
+R11
+!s100 m26ULQXiCnSWa[QJlO1DL3
+Eout_gen_lpm_counter0
+R59
+R2
+R3
+R4
+Z258 8../Quartus/out_encoder/out_gen_lpm_counter0.vhd
+Z259 F../Quartus/out_encoder/out_gen_lpm_counter0.vhd
+l0
+L42
+V4g1DaK5YGaEAfO>5hZiHN1
+R7
+32
+Z260 !s108 1550243001.679000
+Z261 !s90 ../Quartus/out_encoder/out_gen_lpm_counter0.vhd|
+Z262 !s107 ../Quartus/out_encoder/out_gen_lpm_counter0.vhd|
+o-O0
+R11
+!s100 eJU9JCJjhFlB3P_;d2^oO3
+Asyn
+R2
+R3
+DEx4 work 20 out_gen_lpm_counter0 0 22 4g1DaK5YGaEAfO>5hZiHN1
+l76
+L54
+V1NOK;RBa>c0ReX;k;4o;O1
+R7
+32
+R260
+R261
+R262
+o-O0
+R11
+!s100 zjL<[n>J=>VRaFzl>EU6<0
+Eout_gen_lpm_mux0
+R59
+R192
+R2
+R3
+R4
+Z263 8../Quartus/out_encoder/out_gen_lpm_mux0.vhd
+Z264 F../Quartus/out_encoder/out_gen_lpm_mux0.vhd
+l0
+L42
+V`iGkO^CO3mc`I3dL2_<Ym0
+R7
+32
+Z265 !s108 1550243001.884000
+Z266 !s90 ../Quartus/out_encoder/out_gen_lpm_mux0.vhd|
+Z267 !s107 ../Quartus/out_encoder/out_gen_lpm_mux0.vhd|
+o-O0
+R11
+!s100 G47CfNW[CW_5UV]ohHB0U1
+Asyn
+R192
+R2
+R3
+DEx4 work 16 out_gen_lpm_mux0 0 22 `iGkO^CO3mc`I3dL2_<Ym0
+l66
+L55
+VZ89b9^O6K`I9Un[16CLH?0
+R7
+32
+R265
+R266
+R267
+o-O0
+R11
+!s100 M33EF4nOC:9<[HGR];I3S0
+Eoutput_encoder
+R126
+Z268 DPx7 verilog 8 vl_types 0 22 ]G>2izW1V4dcRR@F[keS10
+R4
+8../Quartus/out_encoder/simulation/qsim/work/output_encoder/_primary.vhd
+F../Quartus/out_encoder/simulation/qsim/work/output_encoder/_primary.vhd
+l0
+L3
+VEK8NDQi08[0FUYe]c0`;E0
+R7
+32
+o-O0
+R11
+!s100 VaFddKj8Li[<5Xzd[Va;X1
+!s108 1550243002.323000
+!s90 ../Quartus/out_encoder/simulation/qsim/work/output_encoder/_primary.vhd|
+!s107 ../Quartus/out_encoder/simulation/qsim/work/output_encoder/_primary.vhd|
+Abdf_type
+R2
+R3
+R55
+l111
+L38
+VUYZW7D:=VZ_9`UScOcW?40
+R7
+32
+o-O0
+R11
+F../Quartus/out_encoder/output_encoder.vhd
+R59
+8../Quartus/out_encoder/output_encoder.vhd
+!s108 1550243001.401000
+!s90 ../Quartus/out_encoder/output_encoder.vhd|
+!s107 ../Quartus/out_encoder/output_encoder.vhd|
+!s100 5?hgZ47VAojC4ko1ZJfnm0
+Eoutput_encoder_tb
+R59
+R57
+R2
+R3
+R4
+R60
+R61
+l0
+L5
+VhaH]k:H[M0G0M<I6<O7OW2
+R7
+32
+R62
+R63
+R64
+o-O0
+R11
+!s100 [nnZK0:@KOm]7fgfNj;VT1
+Abench
+R57
+R2
+R3
+R58
+l36
+L8
+Vem7[26i^_6WzziTg<:<JA3
+R7
+32
+R62
+R63
+R64
+o-O0
+R11
+!s100 Aa@KAi0WgG[?5zG?36E@?0
+Eoutput_encoder_vlg_check_tst
+R126
+R268
+R4
+8../Quartus/out_encoder/simulation/qsim/work/output_encoder_vlg_check_tst/_primary.vhd
+F../Quartus/out_encoder/simulation/qsim/work/output_encoder_vlg_check_tst/_primary.vhd
+l0
+L3
+Vo:HZDST8M;_[?;J28dbjS0
+R7
+32
+o-O0
+R11
+!s100 bZeZ71SdU:;3[zf^WgSSc2
+!s108 1550243002.414000
+!s90 ../Quartus/out_encoder/simulation/qsim/work/output_encoder_vlg_check_tst/_primary.vhd|
+!s107 ../Quartus/out_encoder/simulation/qsim/work/output_encoder_vlg_check_tst/_primary.vhd|
+Eoutput_encoder_vlg_sample_tst
+R126
+R268
+R4
+8../Quartus/out_encoder/simulation/qsim/work/output_encoder_vlg_sample_tst/_primary.vhd
+F../Quartus/out_encoder/simulation/qsim/work/output_encoder_vlg_sample_tst/_primary.vhd
+l0
+L3
+VTGi0ViBn^fk45N?1g6:gK3
+R7
+32
+o-O0
+R11
+!s100 ]4lA>b7`>YTY6C2A_OeXJ3
+!s108 1550243002.509000
+!s90 ../Quartus/out_encoder/simulation/qsim/work/output_encoder_vlg_sample_tst/_primary.vhd|
+!s107 ../Quartus/out_encoder/simulation/qsim/work/output_encoder_vlg_sample_tst/_primary.vhd|
+Eoutput_encoder_vlg_vec_tst
+R126
+R268
+R4
+8../Quartus/out_encoder/simulation/qsim/work/output_encoder_vlg_vec_tst/_primary.vhd
+F../Quartus/out_encoder/simulation/qsim/work/output_encoder_vlg_vec_tst/_primary.vhd
+l0
+L3
+VRk`X6o5SVQU>l]dmVWRC22
+R7
+32
+o-O0
+R11
+!s100 z8:Ydh?JaC?U^fOPjNbV42
+!s108 1550243002.641000
+!s90 ../Quartus/out_encoder/simulation/qsim/work/output_encoder_vlg_vec_tst/_primary.vhd|
+!s107 ../Quartus/out_encoder/simulation/qsim/work/output_encoder_vlg_vec_tst/_primary.vhd|
+Epilotaggio_led2
+R70
+R2
+R3
+R4
+Z269 8../Quartus/pilotaggio_led/Pilotaggio_LED2.vhd
+Z270 F../Quartus/pilotaggio_led/Pilotaggio_LED2.vhd
+l0
+L24
+V10eCXXi^KnON[b^^=UIhc1
+R7
+32
+Z271 !s108 1550243003.094000
+Z272 !s90 ../Quartus/pilotaggio_led/Pilotaggio_LED2.vhd|
+Z273 !s107 ../Quartus/pilotaggio_led/Pilotaggio_LED2.vhd|
+o-O0
+R11
+!s100 _F[SXlGK;7l^TjcA^c_Ib1
+Abdf_type
+R2
+R3
+DEx4 work 15 pilotaggio_led2 0 22 10eCXXi^KnON[b^^=UIhc1
+l64
+L38
+VNC^R[bacPPnjfQBkQ0R:L3
+R7
+32
+R271
+R272
+R273
+o-O0
+R11
+!s100 Ue=JL76=7Nm;az@?:Cc7O0
+Erandom_time_generator
+R70
+R2
+R3
+R4
+Z274 8../Quartus/random_time_gen/Random_Time_Generator.vhd
+Z275 F../Quartus/random_time_gen/Random_Time_Generator.vhd
+l0
+L24
+V:IzZ3?E@e=T;SiWALoS850
+R7
+32
+Z276 !s108 1550243004.143000
+Z277 !s90 ../Quartus/random_time_gen/Random_Time_Generator.vhd|
+Z278 !s107 ../Quartus/random_time_gen/Random_Time_Generator.vhd|
+o-O0
+R11
+!s100 B14PYPMVNMz:XWladoDzl3
+Abdf_type
+R2
+R3
+DEx4 work 21 random_time_generator 0 22 :IzZ3?E@e=T;SiWALoS850
+l92
+L37
+VWgA=n7LeFJW8aNT6LOYU90
+R7
+32
+R276
+R277
+R278
+o-O0
+R11
+!s100 ezjk_51Q5>22U@mRYVj:H1
+Erilevatore_riflessi_completo
+R70
+R2
+R3
+R4
+Z279 8../Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd
+Z280 F../Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd
+l0
+L24
+V]S1EEZ7Zf?8PO=99Q7fO?2
+R7
+32
+Z281 !s108 1550243005.361000
+Z282 !s90 ../Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd|
+Z283 !s107 ../Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd|
+o-O0
+R11
+!s100 e?Tgk1c;kOnLTl`HelS8l2
+Abdf_type
+R2
+R3
+DEx4 work 28 rilevatore_riflessi_completo 0 22 ]S1EEZ7Zf?8PO=99Q7fO?2
+l126
+L42
+VznYN;oRTXP;9hAYPAG6Sn2
+R7
+32
+R281
+R282
+R283
+o-O0
+R11
+!s100 EkD2]`^hI=39V=6lJ`i`i3
+Erx
+R31
+R2
+R3
+R4
+Z284 8../Quartus/uart/quartus/RX/RX.vhd
+Z285 F../Quartus/uart/quartus/RX/RX.vhd
+l0
+L24
+V2<OMKXezPhlWlXmG][84z2
+R7
+32
+Z286 !s108 1550243008.152000
+Z287 !s90 ../Quartus/uart/quartus/RX/RX.vhd|
+Z288 !s107 ../Quartus/uart/quartus/RX/RX.vhd|
+o-O0
+R11
+!s100 a9][c>CSF>@nzDgB4ajW73
+Abdf_type
+R2
+R3
+DEx4 work 2 rx 0 22 2<OMKXezPhlWlXmG][84z2
+l156
+L38
+VUlzfMDz0J]U[VecGdzEbU1
+R7
+32
+R286
+R287
+R288
+o-O0
+R11
+!s100 gGgBET;[0nD8n=^;f;9fO3
+Etb_dec_command
+R59
+R2
+R3
+R4
+Z289 8../Quartus/dec_command/TB_dec_command.vhd
+Z290 F../Quartus/dec_command/TB_dec_command.vhd
+l0
+L4
+VlcS@CKJ5ch@jo653?ji>a0
+R7
+32
+Z291 !s108 1550243000.037000
+Z292 !s90 ../Quartus/dec_command/TB_dec_command.vhd|
+Z293 !s107 ../Quartus/dec_command/TB_dec_command.vhd|
+o-O0
+R11
+!s100 EfnMFfUl9D2i^neg2]Y>G2
+Astructural
+R2
+R3
+DEx4 work 14 tb_dec_command 0 22 lcS@CKJ5ch@jo653?ji>a0
+l22
+L8
+VzHNGQAU0KzSdbzZlnl7i22
+R7
+32
+R291
+R292
+R293
+o-O0
+R11
+!s100 Vl9z;EZLDE_g2cnL:df9G1
+Etb_led
+R70
+R2
+R3
+R4
+Z294 8../Quartus/pilotaggio_led/TB_Pilotaggio_LED_new.vhd
+Z295 F../Quartus/pilotaggio_led/TB_Pilotaggio_LED_new.vhd
+l0
+L7
+VMD=n^PbiND?_[??6^;PVZ1
+R7
+32
+Z296 !s108 1550243003.351000
+Z297 !s90 ../Quartus/pilotaggio_led/TB_Pilotaggio_LED_new.vhd|
+Z298 !s107 ../Quartus/pilotaggio_led/TB_Pilotaggio_LED_new.vhd|
+o-O0
+R11
+!s100 @o5G`d@R]GND:iTOP;BOo3
+Astructural
+R2
+R3
+DEx4 work 6 tb_led 0 22 MD=n^PbiND?_[??6^;PVZ1
+l29
+L10
+Vn0n[J<JZMg51^=GVeG5kW2
+R7
+32
+R296
+R297
+R298
+o-O0
+R11
+!s100 EjbI6N7MABDZ5jMP_;8R00
+Etb_progetto_completo
+R70
+R2
+R3
+R4
+Z299 8../Quartus/rivelatore_riflessi/TB_Progetto_completo.vhd
+Z300 F../Quartus/rivelatore_riflessi/TB_Progetto_completo.vhd
+l0
+L5
+VF>`Qfc19eIc6<N<Fl:NnH3
+R7
+32
+Z301 !s108 1550243005.563000
+Z302 !s90 ../Quartus/rivelatore_riflessi/TB_Progetto_completo.vhd|
+Z303 !s107 ../Quartus/rivelatore_riflessi/TB_Progetto_completo.vhd|
+o-O0
+R11
+!s100 <M8kejMHZ3;FZLN=N@;gW3
+Astructural
+R2
+R3
+DEx4 work 20 tb_progetto_completo 0 22 F>`Qfc19eIc6<N<Fl:NnH3
+l36
+L8
+VF9G=n?3=CKcDKFkPfhD3o1
+R7
+32
+R301
+R302
+R303
+o-O0
+R11
+!s100 >X;jZFgB[4M3VHfD^O>9_3
+Etb_random_number
+R70
+R19
+R20
+R2
+R3
+R4
+Z304 8../Quartus/random_time_gen/TB_Random_Number.vhd
+Z305 F../Quartus/random_time_gen/TB_Random_Number.vhd
+l0
+L5
+VbM8eTiiC2mmPX:PB1iOio1
+R7
+32
+Z306 !s108 1550243004.285000
+Z307 !s90 ../Quartus/random_time_gen/TB_Random_Number.vhd|
+Z308 !s107 ../Quartus/random_time_gen/TB_Random_Number.vhd|
+o-O0
+R11
+!s100 d<OHiOkmJ0cMZ9OOjdQam1
+Astructural
+R19
+R20
+R2
+R3
+DEx4 work 16 tb_random_number 0 22 bM8eTiiC2mmPX:PB1iOio1
+l28
+L9
+VF^oTJ6dWO<[aOKo@4Kjjm1
+R7
+32
+R306
+R307
+R308
+o-O0
+R11
+!s100 @lZld:FIOSme>_MTP9F9H0
+Etb_rx
+R31
+R2
+R3
+R4
+Z309 8../Quartus/uart/quartus/RX/TB_RX.vhd
+Z310 F../Quartus/uart/quartus/RX/TB_RX.vhd
+l0
+L4
+VjgdnKS5]a^C5DBQQTG41V1
+R7
+32
+Z311 !s108 1550243008.309000
+Z312 !s90 ../Quartus/uart/quartus/RX/TB_RX.vhd|
+Z313 !s107 ../Quartus/uart/quartus/RX/TB_RX.vhd|
+o-O0
+R11
+!s100 AjfjTfI8Ic:SLB=KmAdM:2
+Astructural
+R2
+R3
+DEx4 work 5 tb_rx 0 22 jgdnKS5]a^C5DBQQTG41V1
+l24
+L8
+VEi:0jI@Jz[dTTF_T4ZZnZ2
+R7
+32
+R311
+R312
+R313
+o-O0
+R11
+!s100 MX5gD3Y@JBAHgNRB_kZOB0
+Etb_tx
+R31
+R19
+R37
+R2
+R3
+R4
+Z314 8../Quartus/uart/quartus/TX/TB_TX.vhd
+Z315 F../Quartus/uart/quartus/TX/TB_TX.vhd
+l0
+L6
+V30lB@CKSV[flYS:hgc_bm2
+R7
+32
+Z316 !s108 1550243010.403000
+Z317 !s90 ../Quartus/uart/quartus/TX/TB_TX.vhd|
+Z318 !s107 ../Quartus/uart/quartus/TX/TB_TX.vhd|
+o-O0
+R11
+!s100 FFMZ9h3hl:[77m8j=RbOc1
+Astructural
+R19
+R37
+R2
+R3
+DEx4 work 5 tb_tx 0 22 30lB@CKSV[flYS:hgc_bm2
+l27
+L12
+VHdbcC=Xo7HS]d6163aeOd0
+R7
+32
+R316
+R317
+R318
+o-O0
+R11
+!s100 m0YG;[TPl=IQ9@iJ^F6T^2
+Etb_uart
+R1
+R19
+R37
+R2
+R3
+R4
+Z319 8../Quartus/uart/quartus/UART/TB_UART.vhd
+Z320 F../Quartus/uart/quartus/UART/TB_UART.vhd
+l0
+L6
+VCR3G8W`ZKkEBFQI]SYVi:1
+R7
+32
+Z321 !s108 1550243011.287000
+Z322 !s90 ../Quartus/uart/quartus/UART/TB_UART.vhd|
+Z323 !s107 ../Quartus/uart/quartus/UART/TB_UART.vhd|
+o-O0
+R11
+!s100 hBTA<^@;;>JIaSh5WjTD32
+Astructural
+R19
+R37
+R2
+R3
+DEx4 work 7 tb_uart 0 22 CR3G8W`ZKkEBFQI]SYVi:1
+l28
+L10
+VN>VW:D2HnJi8lBJo_dc0f2
+R7
+32
+R321
+R322
+R323
+o-O0
+R11
+!s100 =@RDF]e:7dlK4l?Ea5k^G2
+Etc_tempo_attesa
+R70
+R19
+R20
+R2
+R3
+R4
+Z324 8../Quartus/random_time_gen/TC_tempo_attesa.vhd
+Z325 F../Quartus/random_time_gen/TC_tempo_attesa.vhd
+l0
+L5
+VHof`mT8B>XdNS?IU:oBHh1
+R7
+32
+Z326 !s108 1550243004.440000
+Z327 !s90 ../Quartus/random_time_gen/TC_tempo_attesa.vhd|
+Z328 !s107 ../Quartus/random_time_gen/TC_tempo_attesa.vhd|
+o-O0
+R11
+!s100 CH^Li8QE]DZTS5a9d<f=?2
+Abehavioural
+R19
+R20
+R2
+R3
+DEx4 work 15 tc_tempo_attesa 0 22 Hof`mT8B>XdNS?IU:oBHh1
+l13
+L12
+VBf7F17la9j5f[YEIZ7DA[0
+R7
+32
+R326
+R327
+R328
+o-O0
+R11
+!s100 bCJ>NK17[RmcKGHo0o]H42
+Etx
+R31
+R2
+R3
+R4
+Z329 8../Quartus/uart/quartus/TX/TX.vhd
+Z330 F../Quartus/uart/quartus/TX/TX.vhd
+l0
+L24
+V<TYDE7J9Rc=FBPTLiQjMX2
+R7
+32
+Z331 !s108 1550243010.600000
+Z332 !s90 ../Quartus/uart/quartus/TX/TX.vhd|
+Z333 !s107 ../Quartus/uart/quartus/TX/TX.vhd|
+o-O0
+R11
+!s100 I[PcCZZHl7Z0JLb0V0kO=0
+Abdf_type
+R2
+R3
+DEx4 work 2 tx 0 22 <TYDE7J9Rc=FBPTLiQjMX2
+l127
+L36
+VO^;PE^_2T4cD8@[`gnbkl0
+R7
+32
+R331
+R332
+R333
+o-O0
+R11
+!s100 UG`C@aJ^4[^T;0_iZ1aMh1
+Euart
+R1
+R2
+R3
+R4
+Z334 8../Quartus/uart/quartus/UART/UART.vhd
+Z335 F../Quartus/uart/quartus/UART/UART.vhd
+l0
+L24
+VoDczRhnP40m0kZ7Nh^2Td0
+!s100 CB`mE7Z;]bfJmgClhBDBQ1
+R7
+32
+Z336 !s108 1550243011.589000
+Z337 !s90 ../Quartus/uart/quartus/UART/UART.vhd|
+Z338 !s107 ../Quartus/uart/quartus/UART/UART.vhd|
+o-O0
+R11
+Abdf_type
+R2
+R3
+Z339 DEx4 work 4 uart 0 22 oDczRhnP40m0kZ7Nh^2Td0
+l69
+L43
+Z340 Ve2;=[n`heW_cQOi@L010]2
+Z341 !s100 D?KY^0N1Bid<DHK4cLlD70
+R7
+32
+R336
+R337
+R338
+o-O0
+R11
+Euartprogetto_comp
+Z342 w1549810406
+R2
+R3
+R4
+Z343 8../Quartus/UartProgetto_comp.vhd
+Z344 F../Quartus/UartProgetto_comp.vhd
+l0
+L24
+V=Ig5l8hK_RXM7n2HdXoIz0
+R7
+32
+Z345 !s108 1550242997.805000
+Z346 !s90 ../Quartus/UartProgetto_comp.vhd|
+Z347 !s107 ../Quartus/UartProgetto_comp.vhd|
+o-O0
+R11
+!s100 Z>4fRzNMaHX?45^7Be[_d1
+Abdf_type
+R2
+R3
+DEx4 work 17 uartprogetto_comp 0 22 =Ig5l8hK_RXM7n2HdXoIz0
+l86
+L38
+Vh3jAOGA6A455m7b9YcNj33
+R7
+32
+R345
+R346
+R347
+o-O0
+R11
+!s100 ff0^;W9[dzIkh]0:;L1?X2
+Exor_lfsr
+R70
+R19
+R20
+R2
+R3
+R4
+Z348 8../Quartus/random_time_gen/XOR_LFSR.vhd
+Z349 F../Quartus/random_time_gen/XOR_LFSR.vhd
+l0
+L5
+VaQKLkBT[C=nGlPQjUdGQh2
+R7
+32
+Z350 !s108 1550243004.606000
+Z351 !s90 ../Quartus/random_time_gen/XOR_LFSR.vhd|
+Z352 !s107 ../Quartus/random_time_gen/XOR_LFSR.vhd|
+o-O0
+R11
+!s100 o=YFk859zR;F_kAJ9TS0n2
+Abehavioural
+R19
+R20
+R2
+R3
+DEx4 work 8 xor_lfsr 0 22 aQKLkBT[C=nGlPQjUdGQh2
+l13
+L12
+VGojTAJ]zD:j@=;m7JNjFT1
+R7
+32
+R350
+R351
+R352
+o-O0
+R11
+!s100 1FV1ZXU^i`ElD>ed`>99]1
