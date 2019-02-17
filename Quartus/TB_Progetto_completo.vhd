@@ -35,6 +35,7 @@ signal 		t_LEDS_OUT :   STD_LOGIC_VECTOR(3 DOWNTO 0);
 --signal		t_wait : std_logic;
 
 file file_command : text;
+file file_tx : text;
 
 begin
 
@@ -49,13 +50,13 @@ U1: UartProgetto_comp port map(
 	leds_output =>	t_LEDS_OUT 
 );
 
---clock generation
+--clock generation 25 MHz
 process
 begin
 t_clock<='1';
-wait for 10ns;
+wait for 20ns;
 t_clock<='0';
-wait for 10ns;
+wait for 20ns;
 end process;
 
 --reset
@@ -81,21 +82,40 @@ begin
 	wait;
 end process;
 
---leds report
-process (t_LEDS_OUT)
-	variable dec : integer;
+--button press
+process
 begin
-	if t_LEDS_OUT'event then
-		dec := to_integer(unsigned(t_LEDS_OUT));
-		report "LED: " & integer'image(dec);
-	end if;
+	t_Buttons <= "1111";
+	wait until t_LEDS_OUT/="0000";
+	wait for 20 us; --attesa pressione pulsanti
+	t_Buttons <= not t_LEDS_OUT;
+	wait for 10 us;
+	t_Buttons <= "1111";
+	wait;
 end process;
 
 --report time
 process
 begin
 	wait for 100us;
-	report "Tempo: " & time'image(now);
+	--report "Tempo: " & time'image(now);
 end process;
+
+----Scrivo TX su di un file
+file_open(file_tx,"t_out.txt",write_mode);
+process
+	variable v_TX	: line;
+begin
+	wait until t_TX = '0'; --aspetta start bit
+	wait for 4.3403 us; --campiono a metà bit
+	for i in 0 to 50 loop --campiono 50 caratteri (Thhhh)
+		write(v_TX, t_TX, right, 1);
+	    writeline(file_tx, v_TX);
+	    report "Scrittura: " & integer'image(i);
+	    wait for 8.6806 us; --baud rate 115200
+	end loop;
+	wait;
+end process;
+file_close(file_tx);
 	
 end structural;

@@ -49,10 +49,10 @@ def write_command(msg):
         f_din.write("1") #stop bit
         if i<len(msg)-1: f_din.write('\n')
     f_din.close()
-    return
+    #return
     exit()
     
-write_command("L3")    
+write_command("L1")    
 load_vhd()
 run_simulation()
 proc=subprocess.Popen(('vsim -do waveform.do').split())

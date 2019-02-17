@@ -44,7 +44,7 @@ when wait_start2 =>
 			 if inizio_attesa_fsm ='1' then
 			 next_state <= wait_start3;
 			 else
-			 next_state <= wait_start;
+			 next_state <= wait_start2;
 			 end if;
 
 	 when wait_start3 =>
@@ -54,7 +54,7 @@ when wait_start2 =>
 	 next_state <= wait_tc;
 
 when wait_tc=>
-			
+			 cnt_ld<='0';
 			 fine_attesa_fsm<='0';		 
 		if tc='1' then	next_state <= fine_attesa;
 		else next_state <= wait_tc;
