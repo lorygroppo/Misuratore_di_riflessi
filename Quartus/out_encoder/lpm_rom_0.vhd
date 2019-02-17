@@ -42,7 +42,7 @@ BEGIN
 -- instantiate LPM macrofunction 
 
 b2v_inst13 : lpm_rom
-GENERIC MAP(LPM_FILE => "C:/SDI_project/out_encoder/HEX2ASCII.hex",
+GENERIC MAP(LPM_FILE => "C:\Users\Lorenzo\Desktop\Misuratore_di_riflessi\Quartus\out_encoder\HEX2ASCII.hex",
 			LPM_NUMWORDS => 32,
 			LPM_OUTDATA => "UNREGISTERED",
 			LPM_WIDTH => 8,

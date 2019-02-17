@@ -13,8 +13,8 @@
 -- applicable agreement for further details.
 
 -- PROGRAM		"Quartus II 32-bit"
--- VERSION		"Version 11.1 Build 173 11/01/2011 SJ Web Edition"
--- CREATED		"Fri Jan 11 09:23:52 2019"
+-- VERSION		"Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition"
+-- CREATED		"Sat Feb 16 18:32:54 2019"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
@@ -33,9 +33,6 @@ ENTITY UART IS
 		TXRDY :  OUT  STD_LOGIC;
 		DAV :  OUT  STD_LOGIC;
 		TX_UART :  OUT  STD_LOGIC;
-		Rx_sonda :  OUT  STD_LOGIC;
-		campionamento :  OUT  STD_LOGIC;
-		stop_bit_output :  OUT  STD_LOGIC;
 		DOUT :  OUT  STD_LOGIC_VECTOR(7 DOWNTO 0)
 	);
 END UART;
@@ -47,9 +44,7 @@ COMPONENT rx
 		 RX_UART : IN STD_LOGIC;
 		 RD : IN STD_LOGIC;
 		 RESETn : IN STD_LOGIC;
-		 Campionamento_out : OUT STD_LOGIC;
 		 DAV : OUT STD_LOGIC;
-		 stop_bit_out : OUT STD_LOGIC;
 		 DOUT : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
 	);
 END COMPONENT;
@@ -67,7 +62,6 @@ END COMPONENT;
 
 
 BEGIN 
-Rx_sonda <= RX_UART;
 
 
 
@@ -76,9 +70,7 @@ PORT MAP(CK => CK,
 		 RX_UART => RX_UART,
 		 RD => RD,
 		 RESETn => RESETn,
-		 Campionamento_out => campionamento,
 		 DAV => DAV,
-		 stop_bit_out => stop_bit_output,
 		 DOUT => DOUT);
 
 

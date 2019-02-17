@@ -36,5 +36,24 @@ def run_simulation():
         exit("ERRORE nella simulazione")
     else:
         return
+    
+def write_command(msg):
+    f_din=open("command_in.txt","w")
+    for i in range(len(msg)):
+        carattere="{0:08b}".format(ord(msg[i]))
+        carattere=carattere[::-1] #inverto i bit del carattere
+        f_din.write("0\n") #start bit
+        for bit in carattere:
+            f_din.write(bit)
+            f_din.write('\n')
+        f_din.write("1") #stop bit
+        if i<len(msg)-1: f_din.write('\n')
+    f_din.close()
+    return
+    exit()
+    
+write_command("L3")    
 load_vhd()
 run_simulation()
+proc=subprocess.Popen(('vsim -do waveform.do').split())
+exit()

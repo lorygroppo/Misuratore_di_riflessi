@@ -14,7 +14,7 @@
 
 -- PROGRAM		"Quartus II 32-bit"
 -- VERSION		"Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition"
--- CREATED		"Fri Jan 18 10:31:14 2019"
+-- CREATED		"Sat Feb 16 18:44:38 2019"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
@@ -32,9 +32,7 @@ ENTITY Rilevatore_Riflessi_Completo IS
 		Command :  IN  STD_LOGIC_VECTOR(7 DOWNTO 0);
 		WR :  OUT  STD_LOGIC;
 		RD :  OUT  STD_LOGIC;
-		Inizio_attesa_jtag :  OUT  STD_LOGIC;
 		Data_to_TX :  OUT  STD_LOGIC_VECTOR(7 DOWNTO 0);
-		LED_deb :  OUT  STD_LOGIC_VECTOR(1 DOWNTO 0);
 		LEDS_OUT :  OUT  STD_LOGIC_VECTOR(3 DOWNTO 0)
 	);
 END Rilevatore_Riflessi_Completo;
@@ -93,10 +91,9 @@ COMPONENT dec_command
 END COMPONENT;
 
 COMPONENT random_time_generator
-	PORT(RESET : IN STD_LOGIC;
-		 Inizio_Attesa : IN STD_LOGIC;
+	PORT(Inizio_Attesa : IN STD_LOGIC;
+		 RESET : IN STD_LOGIC;
 		 CK_25MHz : IN STD_LOGIC;
-		 Inizio_attesa_in : OUT STD_LOGIC;
 		 Termine_Attesa : OUT STD_LOGIC
 	);
 END COMPONENT;
@@ -124,7 +121,6 @@ SIGNAL	SYNTHESIZED_WIRE_13 :  STD_LOGIC;
 
 
 BEGIN 
-LED_deb <= SYNTHESIZED_WIRE_9;
 
 
 
@@ -175,10 +171,9 @@ PORT MAP(CK => CLOCK,
 
 
 b2v_inst5 : random_time_generator
-PORT MAP(RESET => SYNTHESIZED_WIRE_19,
-		 Inizio_Attesa => SYNTHESIZED_WIRE_13,
+PORT MAP(Inizio_Attesa => SYNTHESIZED_WIRE_19,
+		 RESET => SYNTHESIZED_WIRE_13,
 		 CK_25MHz => CLOCK,
-		 Inizio_attesa_in => Inizio_attesa_jtag,
 		 Termine_Attesa => SYNTHESIZED_WIRE_8);
 
 

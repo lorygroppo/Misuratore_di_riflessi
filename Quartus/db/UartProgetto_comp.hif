@@ -18,33 +18,7795 @@ VRSM_ON
 VHSM_ON
 0
 -- Start Library Paths --
-|sdi_project|uart|quartus|tx|
-|sdi_project|uart|quartus|rx|
-|sdi_project|uart|quartus|uart|
-|sdi_project|rivelatore_riflessi|
-|sdi_project|random_time_gen|
-|sdi_project|pilotaggio_led|
-|sdi_project|out_encoder|
-|sdi_project|dec_command|
+uart|quartus|uart|
+uart|quartus|tx|
+uart|quartus|rx|
+rivelatore_riflessi|
+random_time_gen|
+pilotaggio_led|
+out_encoder|
+dec_command|
 -- End Library Paths --
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-UartProgetto_comp
+UART
 # storage
-db|UartProgetto_comp.(0).cnf
-db|UartProgetto_comp.(0).cnf
+db|UartProgetto_comp.(1).cnf
+db|UartProgetto_comp.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
 # case_insensitive
 # source_file
-uartprogetto_comp.bdf
-36ac6d84a77388f53659444ca2bb5a59
-26
+uart.vhd
+bb6b867d44c7dec532c11296344cd4
+5
 # internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
 }
 # hierarchies {
-|
+UART:inst
+}
+# macro_sequence
+
+# end
+# entity
+rx
+# storage
+db|UartProgetto_comp.(2).cnf
+db|UartProgetto_comp.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+rx.vhd
+9442397e2c563ad168e0b1bf364f1a32
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(dout)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK
+}
+# macro_sequence
+
+# end
+# entity
+and_edge_detector
+# storage
+db|UartProgetto_comp.(3).cnf
+db|UartProgetto_comp.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+and_edge_detector.vhd
+c51c952aeb5a2542b87b88435e19b6a3
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+6 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|AND_Edge_Detector:b2v_AND_Edge_Detector
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter_rx_mod_16
+# storage
+db|UartProgetto_comp.(4).cnf
+db|UartProgetto_comp.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_counter_rx_mod_16.vhd
+1d86baff854c40ff6a2268e7d5673e24
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(q)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|lpm_counter_RX_MOD_16:b2v_CNT_RX_MOD_16_BIT
+UART:inst|RX:b2v_RX_BLOCK|lpm_counter_RX_MOD_16:b2v_CNT_RX_MOD_16_EDGE
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|UartProgetto_comp.(5).cnf
+db|UartProgetto_comp.(5).cnf
+# case_insensitive
+# source_file
+lpm_counter.tdf
+b243fc5a1355e8ba9c5f2f8eae4612a
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+4
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+UP
+PARAMETER_UNKNOWN
+USR
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_PORT_UPDOWN
+PORT_UNUSED
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_3oi
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sclr
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+cmpconst.inc
+fe4bfdfa5310384231b99c696fe2e348
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+alt_counter_stratix.inc
+3e1db420f0a6e888a1525f4eff14d5be
+dffeea.inc
+f11711657cd42ee78437f4349496034
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|lpm_counter_RX_MOD_16:b2v_CNT_RX_MOD_16_BIT|lpm_counter:LPM_COUNTER_component
+UART:inst|RX:b2v_RX_BLOCK|lpm_counter_RX_MOD_16:b2v_CNT_RX_MOD_16_EDGE|lpm_counter:LPM_COUNTER_component
+UART:inst|TX:b2v_TX_BLOCK|lpm_counter_TX_MOD_10:b2v_CNT_TX_MOD_10|lpm_counter:LPM_COUNTER_component
+}
+# macro_sequence
+
+# end
+# entity
+cntr_3oi
+# storage
+db|UartProgetto_comp.(6).cnf
+db|UartProgetto_comp.(6).cnf
+# case_insensitive
+# source_file
+db|cntr_3oi.tdf
+6a37f2f27d65c84f16bb17012ed4b6
+7
+# used_port {
+sclr
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|lpm_counter_RX_MOD_16:b2v_CNT_RX_MOD_16_BIT|lpm_counter:LPM_COUNTER_component|cntr_3oi:auto_generated
+UART:inst|RX:b2v_RX_BLOCK|lpm_counter_RX_MOD_16:b2v_CNT_RX_MOD_16_EDGE|lpm_counter:LPM_COUNTER_component|cntr_3oi:auto_generated
+UART:inst|TX:b2v_TX_BLOCK|lpm_counter_TX_MOD_10:b2v_CNT_TX_MOD_10|lpm_counter:LPM_COUNTER_component|cntr_3oi:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter_rx_mod_32
+# storage
+db|UartProgetto_comp.(7).cnf
+db|UartProgetto_comp.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_counter_rx_mod_32.vhd
+588a525dc781f75739d6ccfbad53c4
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(q)
+4 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|lpm_counter_RX_MOD_32:b2v_CNT_RX_MOD_32
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|UartProgetto_comp.(8).cnf
+db|UartProgetto_comp.(8).cnf
+# case_insensitive
+# source_file
+lpm_counter.tdf
+b243fc5a1355e8ba9c5f2f8eae4612a
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+5
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+UP
+PARAMETER_UNKNOWN
+USR
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_PORT_UPDOWN
+PORT_UNUSED
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_4oi
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sclr
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+cmpconst.inc
+fe4bfdfa5310384231b99c696fe2e348
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+alt_counter_stratix.inc
+3e1db420f0a6e888a1525f4eff14d5be
+dffeea.inc
+f11711657cd42ee78437f4349496034
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|lpm_counter_RX_MOD_32:b2v_CNT_RX_MOD_32|lpm_counter:LPM_COUNTER_component
+}
+# macro_sequence
+
+# end
+# entity
+cntr_4oi
+# storage
+db|UartProgetto_comp.(9).cnf
+db|UartProgetto_comp.(9).cnf
+# case_insensitive
+# source_file
+db|cntr_4oi.tdf
+974cc04c245e154cf3ced0f5954e74ff
+7
+# used_port {
+sclr
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|lpm_counter_RX_MOD_32:b2v_CNT_RX_MOD_32|lpm_counter:LPM_COUNTER_component|cntr_4oi:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+decisore
+# storage
+db|UartProgetto_comp.(10).cnf
+db|UartProgetto_comp.(10).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+decisore.vhd
+97b03b7f4e779d476a9b82f679a72ef8
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|Decisore:b2v_Decisore
+}
+# macro_sequence
+
+# end
+# entity
+fsm_rx
+# storage
+db|UartProgetto_comp.(11).cnf
+db|UartProgetto_comp.(11).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fsm_rx.vhd
+6621efd66b3d16d21273ee66363f457
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|FSM_RX:b2v_FSM_RX
+}
+# macro_sequence
+
+# end
+# entity
+lpm_shiftreg_rx_right_9
+# storage
+db|UartProgetto_comp.(12).cnf
+db|UartProgetto_comp.(12).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_shiftreg_rx_right_9.vhd
+b4a427b9bfdc9268581bb57404d536f
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(q)
+8 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|lpm_shiftreg_RX_RIGHT_9:b2v_inst2
+}
+# macro_sequence
+
+# end
+# entity
+lpm_shiftreg
+# storage
+db|UartProgetto_comp.(13).cnf
+db|UartProgetto_comp.(13).cnf
+# case_insensitive
+# source_file
+lpm_shiftreg.tdf
+785d51ce6e8bbbd53bb4aa58bf413de
+7
+# user_parameter {
+LPM_WIDTH
+9
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+RIGHT
+PARAMETER_UNKNOWN
+USR
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+shiftin
+-1
+3
+sclr
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+enable
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+dffeea.inc
+f11711657cd42ee78437f4349496034
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|lpm_shiftreg_RX_RIGHT_9:b2v_inst2|lpm_shiftreg:LPM_SHIFTREG_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_shiftreg_rx_left_edge
+# storage
+db|UartProgetto_comp.(14).cnf
+db|UartProgetto_comp.(14).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_shiftreg_rx_left_edge.vhd
+d7b71f472aec344d2f5f9cf4126f1c1
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(q)
+6 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|lpm_shiftreg_RX_LEFT_EDGE:b2v_LEFT_SHIFT_RX_EDGE
+}
+# macro_sequence
+
+# end
+# entity
+lpm_shiftreg
+# storage
+db|UartProgetto_comp.(15).cnf
+db|UartProgetto_comp.(15).cnf
+# case_insensitive
+# source_file
+lpm_shiftreg.tdf
+785d51ce6e8bbbd53bb4aa58bf413de
+7
+# user_parameter {
+LPM_WIDTH
+7
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+RIGHT
+PARAMETER_UNKNOWN
+USR
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+shiftin
+-1
+3
+sclr
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+enable
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+dffeea.inc
+f11711657cd42ee78437f4349496034
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|lpm_shiftreg_RX_LEFT_EDGE:b2v_LEFT_SHIFT_RX_EDGE|lpm_shiftreg:LPM_SHIFTREG_component
+}
+# macro_sequence
+
+# end
+# entity
+lpm_shiftreg_rx_right_8_bit
+# storage
+db|UartProgetto_comp.(16).cnf
+db|UartProgetto_comp.(16).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_shiftreg_rx_right_8_bit.vhd
+74f116d325d52f62ebf3b69eef0961d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(q)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|lpm_shiftreg_RX_RIGHT_8_BIT:b2v_RIGHT_SHIFT_RX_BIT
+}
+# macro_sequence
+
+# end
+# entity
+lpm_shiftreg
+# storage
+db|UartProgetto_comp.(17).cnf
+db|UartProgetto_comp.(17).cnf
+# case_insensitive
+# source_file
+lpm_shiftreg.tdf
+785d51ce6e8bbbd53bb4aa58bf413de
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+RIGHT
+PARAMETER_UNKNOWN
+USR
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+shiftin
+-1
+3
+sclr
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+enable
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+dffeea.inc
+f11711657cd42ee78437f4349496034
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|lpm_shiftreg_RX_RIGHT_8_BIT:b2v_RIGHT_SHIFT_RX_BIT|lpm_shiftreg:LPM_SHIFTREG_component
+}
+# macro_sequence
+
+# end
+# entity
+and_num_bit
+# storage
+db|UartProgetto_comp.(18).cnf
+db|UartProgetto_comp.(18).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+and_num_bit.vhd
+f9bc193421bd79455df62923d1bdb0
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|AND_NUM_BIT:b2v_TC_CNT_9_BIT
+}
+# macro_sequence
+
+# end
+# entity
+and_clk_div
+# storage
+db|UartProgetto_comp.(19).cnf
+db|UartProgetto_comp.(19).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+and_clk_div.vhd
+f4894de6ccfebdc12aadd36731c4b8d6
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+4 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|AND_clk_div:b2v_TC_CNT_MOD_27
+}
+# macro_sequence
+
+# end
+# entity
+and_decisore
+# storage
+db|UartProgetto_comp.(20).cnf
+db|UartProgetto_comp.(20).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+and_decisore.vhd
+57193c750d8e66c20bb8749adcc92d6
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|RX:b2v_RX_BLOCK|AND_Decisore:b2v_TC_CNT_MOD_8_EDGE
+}
+# macro_sequence
+
+# end
+# entity
+tx
+# storage
+db|UartProgetto_comp.(21).cnf
+db|UartProgetto_comp.(21).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+tx.vhd
+151dc580d78addbe1712465631fda72
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(din)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|TX:b2v_TX_BLOCK
+}
+# macro_sequence
+
+# end
+# entity
+and_gate_4
+# storage
+db|UartProgetto_comp.(22).cnf
+db|UartProgetto_comp.(22).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+and_gate_4.vhd
+231bcb6261a5ac9a1dafc56dff4dd71b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|TX:b2v_TX_BLOCK|AND_GATE_4:b2v_AND_GATE_4
+}
+# macro_sequence
+
+# end
+# entity
+and_gate_8
+# storage
+db|UartProgetto_comp.(23).cnf
+db|UartProgetto_comp.(23).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+and_gate_8.vhd
+a3af8ffd57740d01ddbd4b59bd1a7a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|TX:b2v_TX_BLOCK|AND_GATE_8:b2v_AND_GATE_8
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter_tx_mod_10
+# storage
+db|UartProgetto_comp.(24).cnf
+db|UartProgetto_comp.(24).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_counter_tx_mod_10.vhd
+317842a4539629084e733d1f0ca633b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(q)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|TX:b2v_TX_BLOCK|lpm_counter_TX_MOD_10:b2v_CNT_TX_MOD_10
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter_tx
+# storage
+db|UartProgetto_comp.(25).cnf
+db|UartProgetto_comp.(25).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_counter_tx.vhd
+c6b0d3b1822eb545a24c36f72bd22492
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(q)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|TX:b2v_TX_BLOCK|lpm_counter_TX:b2v_CNT_TX_MOD_217
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|UartProgetto_comp.(26).cnf
+db|UartProgetto_comp.(26).cnf
+# case_insensitive
+# source_file
+lpm_counter.tdf
+b243fc5a1355e8ba9c5f2f8eae4612a
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+UP
+PARAMETER_UNKNOWN
+USR
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_PORT_UPDOWN
+PORT_UNUSED
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_7oi
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sclr
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+cmpconst.inc
+fe4bfdfa5310384231b99c696fe2e348
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+alt_counter_stratix.inc
+3e1db420f0a6e888a1525f4eff14d5be
+dffeea.inc
+f11711657cd42ee78437f4349496034
+}
+# hierarchies {
+UART:inst|TX:b2v_TX_BLOCK|lpm_counter_TX:b2v_CNT_TX_MOD_217|lpm_counter:LPM_COUNTER_component
+}
+# macro_sequence
+
+# end
+# entity
+cntr_7oi
+# storage
+db|UartProgetto_comp.(27).cnf
+db|UartProgetto_comp.(27).cnf
+# case_insensitive
+# source_file
+db|cntr_7oi.tdf
+15496e534b7a3bdd5538eff8632b14a8
+7
+# used_port {
+sclr
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+}
+# hierarchies {
+UART:inst|TX:b2v_TX_BLOCK|lpm_counter_TX:b2v_CNT_TX_MOD_217|lpm_counter:LPM_COUNTER_component|cntr_7oi:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+lpm_ff_0
+# storage
+db|UartProgetto_comp.(28).cnf
+db|UartProgetto_comp.(28).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_ff_0.vhd
+90c759886ddd936e4e7c602157e48ec8
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(q)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|TX:b2v_TX_BLOCK|lpm_ff_0:b2v_DATA_FF
+}
+# macro_sequence
+
+# end
+# entity
+LPM_FF
+# storage
+db|UartProgetto_comp.(29).cnf
+db|UartProgetto_comp.(29).cnf
+# case_insensitive
+# source_file
+lpm_ff.tdf
+2d7c817e44295c745ac4957eaae7b6
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_FFTYPE
+DFF
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+Q7
+-1
+3
+Q6
+-1
+3
+Q5
+-1
+3
+Q4
+-1
+3
+Q3
+-1
+3
+Q2
+-1
+3
+Q1
+-1
+3
+Q0
+-1
+3
+DATA7
+-1
+3
+DATA6
+-1
+3
+DATA5
+-1
+3
+DATA4
+-1
+3
+DATA3
+-1
+3
+DATA2
+-1
+3
+DATA1
+-1
+3
+DATA0
+-1
+3
+CLOCK
+-1
+3
+}
+# include_file {
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+}
+# hierarchies {
+UART:inst|TX:b2v_TX_BLOCK|lpm_ff_0:b2v_DATA_FF|lpm_ff:b2v_DATA_FF
+}
+# macro_sequence
+
+# end
+# entity
+fsm_tx
+# storage
+db|UartProgetto_comp.(30).cnf
+db|UartProgetto_comp.(30).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fsm_tx.vhd
+1e2f5dc0d8162b27bb30b894e3cd88f8
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+UART:inst|TX:b2v_TX_BLOCK|FSM_TX:b2v_FSM_TX
+}
+# macro_sequence
+
+# end
+# entity
+lpm_mux0
+# storage
+db|UartProgetto_comp.(31).cnf
+db|UartProgetto_comp.(31).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_mux0.vhd
+6f68d6b0fa83ce28202050996bfaf2b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+UART:inst|TX:b2v_TX_BLOCK|lpm_mux0:b2v_MUX_2_TO_1
+}
+# macro_sequence
+
+# end
+# entity
+LPM_MUX
+# storage
+db|UartProgetto_comp.(32).cnf
+db|UartProgetto_comp.(32).cnf
+# case_insensitive
+# source_file
+lpm_mux.tdf
+8097bab138c4365d841209eee837c
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+1
+PARAMETER_SIGNED_DEC
+USR
+LPM_SIZE
+2
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHS
+1
+PARAMETER_SIGNED_DEC
+USR
+LPM_PIPELINE
+0
+PARAMETER_SIGNED_DEC
+USR
+CBXI_PARAMETER
+mux_03e
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+SEL0
+-1
+3
+RESULT0
+-1
+3
+DATA1_0
+-1
+3
+DATA0_0
+-1
+3
+}
+# include_file {
+altshift.inc
+5c767a29f11db3f131fc886ea42a52bd
+muxlut.inc
+301e88484af1e8d67bcd099bb975882
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+bypassff.inc
+42d08f243d3471f724fd61ea21a0eb9f
+}
+# hierarchies {
+UART:inst|TX:b2v_TX_BLOCK|lpm_mux0:b2v_MUX_2_TO_1|lpm_mux:LPM_MUX_component
+}
+# macro_sequence
+
+# end
+# entity
+mux_03e
+# storage
+db|UartProgetto_comp.(33).cnf
+db|UartProgetto_comp.(33).cnf
+# case_insensitive
+# source_file
+db|mux_03e.tdf
+c5a32ba2e0209aa3f73c66d2ccee24a
+7
+# used_port {
+sel0
+-1
+3
+result0
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+UART:inst|TX:b2v_TX_BLOCK|lpm_mux0:b2v_MUX_2_TO_1|lpm_mux:LPM_MUX_component|mux_03e:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+lpm_shiftreg0
+# storage
+db|UartProgetto_comp.(34).cnf
+db|UartProgetto_comp.(34).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_shiftreg0.vhd
+16f44e413949193ff68a21bdfe8acc7
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+9 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+UART:inst|TX:b2v_TX_BLOCK|lpm_shiftreg0:b2v_TX_SHIFT_REG
+}
+# macro_sequence
+
+# end
+# entity
+lpm_shiftreg
+# storage
+db|UartProgetto_comp.(35).cnf
+db|UartProgetto_comp.(35).cnf
+# case_insensitive
+# source_file
+lpm_shiftreg.tdf
+785d51ce6e8bbbd53bb4aa58bf413de
+7
+# user_parameter {
+LPM_WIDTH
+10
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+RIGHT
+PARAMETER_UNKNOWN
+USR
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+shiftout
+-1
+3
+load
+-1
+3
+enable
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+dffeea.inc
+f11711657cd42ee78437f4349496034
+}
+# hierarchies {
+UART:inst|TX:b2v_TX_BLOCK|lpm_shiftreg0:b2v_TX_SHIFT_REG|lpm_shiftreg:LPM_SHIFTREG_component
+}
+# macro_sequence
+
+# end
+# entity
+Rilevatore_Riflessi_Completo
+# storage
+db|UartProgetto_comp.(36).cnf
+db|UartProgetto_comp.(36).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+rilevatore_riflessi_completo.vhd
+e4d76d65f87f0aa273877e1acfafb91
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2
+}
+# macro_sequence
+
+# end
+# entity
+output_encoder
+# storage
+db|UartProgetto_comp.(37).cnf
+db|UartProgetto_comp.(37).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+output_encoder.vhd
+f87b7302f56e9830e28be758febd
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(timer)
+15 downto 0
+PARAMETER_STRING
+USR
+ constraint(d_out)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst
+}
+# macro_sequence
+
+# end
+# entity
+out_gen_lpm_mux0
+# storage
+db|UartProgetto_comp.(38).cnf
+db|UartProgetto_comp.(38).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+out_gen_lpm_mux0.vhd
+bf60b274b38c39b136e28c6d471e8091
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data0x)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(data1x)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(data2x)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(data3x)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(sel)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(result)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|out_gen_lpm_mux0:b2v_inst
+}
+# macro_sequence
+
+# end
+# entity
+LPM_MUX
+# storage
+db|UartProgetto_comp.(39).cnf
+db|UartProgetto_comp.(39).cnf
+# case_insensitive
+# source_file
+lpm_mux.tdf
+8097bab138c4365d841209eee837c
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+4
+PARAMETER_SIGNED_DEC
+USR
+LPM_SIZE
+4
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHS
+2
+PARAMETER_SIGNED_DEC
+USR
+LPM_PIPELINE
+0
+PARAMETER_SIGNED_DEC
+USR
+CBXI_PARAMETER
+mux_63e
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+SEL1
+-1
+3
+SEL0
+-1
+3
+RESULT3
+-1
+3
+RESULT2
+-1
+3
+RESULT1
+-1
+3
+RESULT0
+-1
+3
+DATA3_3
+-1
+3
+DATA3_2
+-1
+3
+DATA3_1
+-1
+3
+DATA3_0
+-1
+3
+DATA2_3
+-1
+3
+DATA2_2
+-1
+3
+DATA2_1
+-1
+3
+DATA2_0
+-1
+3
+DATA1_3
+-1
+3
+DATA1_2
+-1
+3
+DATA1_1
+-1
+3
+DATA1_0
+-1
+3
+DATA0_3
+-1
+3
+DATA0_2
+-1
+3
+DATA0_1
+-1
+3
+DATA0_0
+-1
+3
+}
+# include_file {
+altshift.inc
+5c767a29f11db3f131fc886ea42a52bd
+muxlut.inc
+301e88484af1e8d67bcd099bb975882
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+bypassff.inc
+42d08f243d3471f724fd61ea21a0eb9f
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|out_gen_lpm_mux0:b2v_inst|lpm_mux:LPM_MUX_component
+}
+# macro_sequence
+
+# end
+# entity
+mux_63e
+# storage
+db|UartProgetto_comp.(40).cnf
+db|UartProgetto_comp.(40).cnf
+# case_insensitive
+# source_file
+db|mux_63e.tdf
+462637b3ae56e8456d7897f2741bef
+7
+# used_port {
+sel1
+-1
+3
+sel0
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|out_gen_lpm_mux0:b2v_inst|lpm_mux:LPM_MUX_component|mux_63e:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+fsm_out_enc
+# storage
+db|UartProgetto_comp.(41).cnf
+db|UartProgetto_comp.(41).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fsm_out_enc.vhd
+d3a6ef55b87c0959765bf19f55430de
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|FSM_out_enc:b2v_inst10
+}
+# macro_sequence
+
+# end
+# entity
+out_gen_lpm_counter0
+# storage
+db|UartProgetto_comp.(42).cnf
+db|UartProgetto_comp.(42).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+out_gen_lpm_counter0.vhd
+ec72a6ae51cdf5657a8dc77d596e6060
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(q)
+2 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|out_gen_lpm_counter0:b2v_inst12
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|UartProgetto_comp.(43).cnf
+db|UartProgetto_comp.(43).cnf
+# case_insensitive
+# source_file
+lpm_counter.tdf
+b243fc5a1355e8ba9c5f2f8eae4612a
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+3
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+UP
+PARAMETER_UNKNOWN
+USR
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_PORT_UPDOWN
+PORT_UNUSED
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_ecj
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sclr
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+clk_en
+-1
+3
+}
+# include_file {
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+cmpconst.inc
+fe4bfdfa5310384231b99c696fe2e348
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+alt_counter_stratix.inc
+3e1db420f0a6e888a1525f4eff14d5be
+dffeea.inc
+f11711657cd42ee78437f4349496034
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|out_gen_lpm_counter0:b2v_inst12|lpm_counter:LPM_COUNTER_component
+}
+# macro_sequence
+
+# end
+# entity
+cntr_ecj
+# storage
+db|UartProgetto_comp.(44).cnf
+db|UartProgetto_comp.(44).cnf
+# case_insensitive
+# source_file
+db|cntr_ecj.tdf
+51916f67c8e87fed69f6adcdc5b73b
+7
+# used_port {
+sclr
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+clk_en
+-1
+3
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|out_gen_lpm_counter0:b2v_inst12|lpm_counter:LPM_COUNTER_component|cntr_ecj:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+LPM_ROM
+# storage
+db|UartProgetto_comp.(46).cnf
+db|UartProgetto_comp.(46).cnf
+# case_insensitive
+# source_file
+lpm_rom.tdf
+849cbbad597d5da7bd61bfcf506fbd
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHAD
+5
+PARAMETER_SIGNED_DEC
+USR
+LPM_NUMWORDS
+32
+PARAMETER_SIGNED_DEC
+USR
+LPM_ADDRESS_CONTROL
+REGISTERED
+PARAMETER_UNKNOWN
+USR
+LPM_OUTDATA
+UNREGISTERED
+PARAMETER_UNKNOWN
+USR
+LPM_FILE
+C:/SDI_project/out_encoder/HEX2ASCII.hex
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+Q7
+-1
+3
+Q6
+-1
+3
+Q5
+-1
+3
+Q4
+-1
+3
+Q3
+-1
+3
+Q2
+-1
+3
+Q1
+-1
+3
+Q0
+-1
+3
+INCLOCK
+-1
+3
+ADDRESS4
+-1
+3
+ADDRESS3
+-1
+3
+ADDRESS2
+-1
+3
+ADDRESS1
+-1
+3
+ADDRESS0
+-1
+3
+}
+# include_file {
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+altrom.inc
+192b74eafa8debf2248ea73881e77f91
+}
+# macro_sequence
+
+# end
+# entity
+altrom
+# storage
+db|UartProgetto_comp.(47).cnf
+db|UartProgetto_comp.(47).cnf
+# case_insensitive
+# source_file
+altrom.tdf
+54f6af84a7494fe38ba6bec1816b02e
+7
+# user_parameter {
+WIDTH_BYTEENA_A
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTH_BYTEENA_B
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTH_ECCSTATUS
+3
+PARAMETER_UNKNOWN
+DEF
+WIDTH
+8
+PARAMETER_UNKNOWN
+USR
+AD_WIDTH
+5
+PARAMETER_UNKNOWN
+USR
+NUMWORDS
+32
+PARAMETER_UNKNOWN
+USR
+FILE
+C:/SDI_project/out_encoder/HEX2ASCII.hex
+PARAMETER_UNKNOWN
+USR
+REGISTERINPUTMODE
+ADDRESS_CONTROL
+PARAMETER_UNKNOWN
+USR
+MAXIMUM_DEPTH
+2048
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+SUPPRESS_MEMORY_CONVERSION_WARNINGS
+OFF
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+clocki
+-1
+3
+address4
+-1
+3
+address3
+-1
+3
+address2
+-1
+3
+address1
+-1
+3
+address0
+-1
+3
+}
+# include_file {
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+altsyncram.inc
+d3277a3930eb9e32e8de6e7e362698e0
+lpm_mux.inc
+dd87bed9959d6126db09970164b7ba6
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+memmodes.inc
+f1581a4e2fdd56d7ebf54625d8eff819
+}
+# macro_sequence
+
+# end
+# entity
+altsyncram
+# storage
+db|UartProgetto_comp.(48).cnf
+db|UartProgetto_comp.(48).cnf
+# case_insensitive
+# source_file
+altsyncram.tdf
+5cfd856cb332de15aff17de3bf7c64
+7
+# user_parameter {
+BYTE_SIZE_BLOCK
+8
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+WIDTH_BYTEENA
+1
+PARAMETER_UNKNOWN
+DEF
+OPERATION_MODE
+ROM
+PARAMETER_UNKNOWN
+USR
+WIDTH_A
+8
+PARAMETER_UNKNOWN
+USR
+WIDTHAD_A
+5
+PARAMETER_UNKNOWN
+USR
+NUMWORDS_A
+32
+PARAMETER_UNKNOWN
+USR
+OUTDATA_REG_A
+UNREGISTERED
+PARAMETER_UNKNOWN
+USR
+ADDRESS_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+USR
+OUTDATA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+USR
+WRCONTROL_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+INDATA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+BYTEENA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+WIDTH_B
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTHAD_B
+1
+PARAMETER_UNKNOWN
+DEF
+NUMWORDS_B
+1
+PARAMETER_UNKNOWN
+DEF
+INDATA_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+WRCONTROL_WRADDRESS_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+RDCONTROL_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+ADDRESS_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+OUTDATA_REG_B
+UNREGISTERED
+PARAMETER_UNKNOWN
+DEF
+BYTEENA_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+INDATA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+WRCONTROL_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+ADDRESS_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+OUTDATA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+RDCONTROL_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+BYTEENA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+WIDTH_BYTEENA_A
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTH_BYTEENA_B
+1
+PARAMETER_UNKNOWN
+DEF
+RAM_BLOCK_TYPE
+AUTO
+PARAMETER_UNKNOWN
+DEF
+BYTE_SIZE
+8
+PARAMETER_UNKNOWN
+DEF
+READ_DURING_WRITE_MODE_MIXED_PORTS
+DONT_CARE
+PARAMETER_UNKNOWN
+DEF
+READ_DURING_WRITE_MODE_PORT_A
+NEW_DATA_NO_NBE_READ
+PARAMETER_UNKNOWN
+DEF
+READ_DURING_WRITE_MODE_PORT_B
+NEW_DATA_NO_NBE_READ
+PARAMETER_UNKNOWN
+DEF
+INIT_FILE
+C:/SDI_project/out_encoder/HEX2ASCII.hex
+PARAMETER_UNKNOWN
+USR
+INIT_FILE_LAYOUT
+PORT_A
+PARAMETER_UNKNOWN
+DEF
+MAXIMUM_DEPTH
+0
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_INPUT_A
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_INPUT_B
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_OUTPUT_A
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_OUTPUT_B
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_CORE_A
+USE_INPUT_CLKEN
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_CORE_B
+USE_INPUT_CLKEN
+PARAMETER_UNKNOWN
+DEF
+ENABLE_ECC
+FALSE
+PARAMETER_UNKNOWN
+DEF
+WIDTH_ECCSTATUS
+3
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+altsyncram_3t21
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+q_a7
+-1
+3
+q_a6
+-1
+3
+q_a5
+-1
+3
+q_a4
+-1
+3
+q_a3
+-1
+3
+q_a2
+-1
+3
+q_a1
+-1
+3
+q_a0
+-1
+3
+clock0
+-1
+3
+address_a4
+-1
+3
+address_a3
+-1
+3
+address_a2
+-1
+3
+address_a1
+-1
+3
+address_a0
+-1
+3
+}
+# include_file {
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+stratix_ram_block.inc
+e3a03868917fb3dd57b6ed1dd195f22
+a_rdenreg.inc
+3fcdce755959d5a8afbe64788d21fb
+lpm_mux.inc
+dd87bed9959d6126db09970164b7ba6
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+altdpram.inc
+2f9e6727b678ffd76e72bc5a95a2630
+altrom.inc
+192b74eafa8debf2248ea73881e77f91
+altram.inc
+ad5518b39ffd3cf1df377e6360d1c9b6
+}
+# macro_sequence
+
+# end
+# entity
+lpm_rom_0
+# storage
+db|UartProgetto_comp.(45).cnf
+db|UartProgetto_comp.(45).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_rom_0.vhd
+c0851bb73acb2625f2d44e41b4c1744
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(address)
+4 downto 0
+PARAMETER_STRING
+USR
+ constraint(q)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_rom_0:b2v_inst13
+}
+# macro_sequence
+
+# end
+# entity
+LPM_ROM
+# storage
+db|UartProgetto_comp.(49).cnf
+db|UartProgetto_comp.(49).cnf
+# case_insensitive
+# source_file
+lpm_rom.tdf
+849cbbad597d5da7bd61bfcf506fbd
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHAD
+5
+PARAMETER_SIGNED_DEC
+USR
+LPM_NUMWORDS
+32
+PARAMETER_SIGNED_DEC
+USR
+LPM_ADDRESS_CONTROL
+REGISTERED
+PARAMETER_UNKNOWN
+USR
+LPM_OUTDATA
+UNREGISTERED
+PARAMETER_UNKNOWN
+USR
+LPM_FILE
+C:\Users\Lorenzo\Desktop\Misuratore_di_riflessi\Quartus\out_encoder\HEX2ASCII.hex
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+Q7
+-1
+3
+Q6
+-1
+3
+Q5
+-1
+3
+Q4
+-1
+3
+Q3
+-1
+3
+Q2
+-1
+3
+Q1
+-1
+3
+Q0
+-1
+3
+INCLOCK
+-1
+3
+ADDRESS4
+-1
+3
+ADDRESS3
+-1
+3
+ADDRESS2
+-1
+3
+ADDRESS1
+-1
+3
+ADDRESS0
+-1
+3
+}
+# include_file {
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+altrom.inc
+192b74eafa8debf2248ea73881e77f91
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_rom_0:b2v_inst13|lpm_rom:b2v_inst13
+}
+# macro_sequence
+
+# end
+# entity
+altrom
+# storage
+db|UartProgetto_comp.(50).cnf
+db|UartProgetto_comp.(50).cnf
+# case_insensitive
+# source_file
+altrom.tdf
+54f6af84a7494fe38ba6bec1816b02e
+7
+# user_parameter {
+WIDTH_BYTEENA_A
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTH_BYTEENA_B
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTH_ECCSTATUS
+3
+PARAMETER_UNKNOWN
+DEF
+WIDTH
+8
+PARAMETER_UNKNOWN
+USR
+AD_WIDTH
+5
+PARAMETER_UNKNOWN
+USR
+NUMWORDS
+32
+PARAMETER_UNKNOWN
+USR
+FILE
+C:\Users\Lorenzo\Desktop\Misuratore_di_riflessi\Quartus\out_encoder\HEX2ASCII.hex
+PARAMETER_UNKNOWN
+USR
+REGISTERINPUTMODE
+ADDRESS_CONTROL
+PARAMETER_UNKNOWN
+USR
+MAXIMUM_DEPTH
+2048
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+SUPPRESS_MEMORY_CONVERSION_WARNINGS
+OFF
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+clocki
+-1
+3
+address4
+-1
+3
+address3
+-1
+3
+address2
+-1
+3
+address1
+-1
+3
+address0
+-1
+3
+}
+# include_file {
+memmodes.inc
+f1581a4e2fdd56d7ebf54625d8eff819
+lpm_mux.inc
+dd87bed9959d6126db09970164b7ba6
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+altsyncram.inc
+d3277a3930eb9e32e8de6e7e362698e0
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_rom_0:b2v_inst13|lpm_rom:b2v_inst13|altrom:srom
+}
+# macro_sequence
+
+# end
+# entity
+altsyncram
+# storage
+db|UartProgetto_comp.(51).cnf
+db|UartProgetto_comp.(51).cnf
+# case_insensitive
+# source_file
+altsyncram.tdf
+5cfd856cb332de15aff17de3bf7c64
+7
+# user_parameter {
+BYTE_SIZE_BLOCK
+8
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+WIDTH_BYTEENA
+1
+PARAMETER_UNKNOWN
+DEF
+OPERATION_MODE
+ROM
+PARAMETER_UNKNOWN
+USR
+WIDTH_A
+8
+PARAMETER_UNKNOWN
+USR
+WIDTHAD_A
+5
+PARAMETER_UNKNOWN
+USR
+NUMWORDS_A
+32
+PARAMETER_UNKNOWN
+USR
+OUTDATA_REG_A
+UNREGISTERED
+PARAMETER_UNKNOWN
+USR
+ADDRESS_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+USR
+OUTDATA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+USR
+WRCONTROL_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+INDATA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+BYTEENA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+WIDTH_B
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTHAD_B
+1
+PARAMETER_UNKNOWN
+DEF
+NUMWORDS_B
+1
+PARAMETER_UNKNOWN
+DEF
+INDATA_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+WRCONTROL_WRADDRESS_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+RDCONTROL_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+ADDRESS_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+OUTDATA_REG_B
+UNREGISTERED
+PARAMETER_UNKNOWN
+DEF
+BYTEENA_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+INDATA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+WRCONTROL_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+ADDRESS_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+OUTDATA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+RDCONTROL_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+BYTEENA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+WIDTH_BYTEENA_A
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTH_BYTEENA_B
+1
+PARAMETER_UNKNOWN
+DEF
+RAM_BLOCK_TYPE
+AUTO
+PARAMETER_UNKNOWN
+DEF
+BYTE_SIZE
+8
+PARAMETER_UNKNOWN
+DEF
+READ_DURING_WRITE_MODE_MIXED_PORTS
+DONT_CARE
+PARAMETER_UNKNOWN
+DEF
+READ_DURING_WRITE_MODE_PORT_A
+NEW_DATA_NO_NBE_READ
+PARAMETER_UNKNOWN
+DEF
+READ_DURING_WRITE_MODE_PORT_B
+NEW_DATA_NO_NBE_READ
+PARAMETER_UNKNOWN
+DEF
+INIT_FILE
+C:\Users\Lorenzo\Desktop\Misuratore_di_riflessi\Quartus\out_encoder\HEX2ASCII.hex
+PARAMETER_UNKNOWN
+USR
+INIT_FILE_LAYOUT
+PORT_A
+PARAMETER_UNKNOWN
+DEF
+MAXIMUM_DEPTH
+0
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_INPUT_A
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_INPUT_B
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_OUTPUT_A
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_OUTPUT_B
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_CORE_A
+USE_INPUT_CLKEN
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_CORE_B
+USE_INPUT_CLKEN
+PARAMETER_UNKNOWN
+DEF
+ENABLE_ECC
+FALSE
+PARAMETER_UNKNOWN
+DEF
+WIDTH_ECCSTATUS
+3
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+altsyncram_5c71
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+q_a7
+-1
+3
+q_a6
+-1
+3
+q_a5
+-1
+3
+q_a4
+-1
+3
+q_a3
+-1
+3
+q_a2
+-1
+3
+q_a1
+-1
+3
+q_a0
+-1
+3
+clock0
+-1
+3
+address_a4
+-1
+3
+address_a3
+-1
+3
+address_a2
+-1
+3
+address_a1
+-1
+3
+address_a0
+-1
+3
+}
+# include_file {
+stratix_ram_block.inc
+e3a03868917fb3dd57b6ed1dd195f22
+lpm_mux.inc
+dd87bed9959d6126db09970164b7ba6
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+altdpram.inc
+2f9e6727b678ffd76e72bc5a95a2630
+altram.inc
+ad5518b39ffd3cf1df377e6360d1c9b6
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+altrom.inc
+192b74eafa8debf2248ea73881e77f91
+a_rdenreg.inc
+3fcdce755959d5a8afbe64788d21fb
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_rom_0:b2v_inst13|lpm_rom:b2v_inst13|altrom:srom|altsyncram:rom_block
+}
+# macro_sequence
+
+# end
+# entity
+altsyncram_5c71
+# storage
+db|UartProgetto_comp.(52).cnf
+db|UartProgetto_comp.(52).cnf
+# case_insensitive
+# source_file
+db|altsyncram_5c71.tdf
+5f1c11fbd6fde7dd7f85c44366b09df5
+7
+# used_port {
+q_a7
+-1
+3
+q_a6
+-1
+3
+q_a5
+-1
+3
+q_a4
+-1
+3
+q_a3
+-1
+3
+q_a2
+-1
+3
+q_a1
+-1
+3
+q_a0
+-1
+3
+clock0
+-1
+3
+address_a4
+-1
+3
+address_a3
+-1
+3
+address_a2
+-1
+3
+address_a1
+-1
+3
+address_a0
+-1
+3
+}
+# memory_file {
+out_encoder|hex2ascii.hex
+c4d4b955b58bbcdc4e4af6f8a7d1bd1
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_rom_0:b2v_inst13|lpm_rom:b2v_inst13|altrom:srom|altsyncram:rom_block|altsyncram_5c71:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+lpm_mux_addr
+# storage
+db|UartProgetto_comp.(53).cnf
+db|UartProgetto_comp.(53).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_mux_addr.vhd
+a6331a81fd21fe4d41014aad102c5e
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data0x)
+4 downto 0
+PARAMETER_STRING
+USR
+ constraint(data1x)
+4 downto 0
+PARAMETER_STRING
+USR
+ constraint(result)
+4 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_mux_addr:b2v_inst5
+}
+# macro_sequence
+
+# end
+# entity
+LPM_MUX
+# storage
+db|UartProgetto_comp.(54).cnf
+db|UartProgetto_comp.(54).cnf
+# case_insensitive
+# source_file
+lpm_mux.tdf
+8097bab138c4365d841209eee837c
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+5
+PARAMETER_SIGNED_DEC
+USR
+LPM_SIZE
+2
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHS
+1
+PARAMETER_SIGNED_DEC
+USR
+LPM_PIPELINE
+0
+PARAMETER_SIGNED_DEC
+USR
+CBXI_PARAMETER
+mux_43e
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+SEL0
+-1
+3
+RESULT4
+-1
+3
+RESULT3
+-1
+3
+RESULT2
+-1
+3
+RESULT1
+-1
+3
+RESULT0
+-1
+3
+DATA1_4
+-1
+3
+DATA1_3
+-1
+3
+DATA1_2
+-1
+3
+DATA1_1
+-1
+3
+DATA1_0
+-1
+3
+DATA0_4
+-1
+3
+DATA0_3
+-1
+3
+DATA0_2
+-1
+3
+DATA0_1
+-1
+3
+DATA0_0
+-1
+3
+}
+# include_file {
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+altshift.inc
+5c767a29f11db3f131fc886ea42a52bd
+muxlut.inc
+301e88484af1e8d67bcd099bb975882
+bypassff.inc
+42d08f243d3471f724fd61ea21a0eb9f
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_mux_addr:b2v_inst5|lpm_mux:LPM_MUX_component
+}
+# macro_sequence
+
+# end
+# entity
+mux_43e
+# storage
+db|UartProgetto_comp.(55).cnf
+db|UartProgetto_comp.(55).cnf
+# case_insensitive
+# source_file
+db|mux_43e.tdf
+7bbb197452b88c7f6f93b6fbf8355732
+7
+# used_port {
+sel0
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result2
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data2
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_mux_addr:b2v_inst5|lpm_mux:LPM_MUX_component|mux_43e:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+const
+# storage
+db|UartProgetto_comp.(56).cnf
+db|UartProgetto_comp.(56).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+const.vhd
+867ed1f21f34fb4d686ec639a813408b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(ones)
+4 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|const:b2v_inst7
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter_ms
+# storage
+db|UartProgetto_comp.(57).cnf
+db|UartProgetto_comp.(57).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_counter_ms.vhd
+f0b445f22bc2693c736026455fa706d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(q)
+14 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|lpm_counter_ms:b2v_inst1
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|UartProgetto_comp.(58).cnf
+db|UartProgetto_comp.(58).cnf
+# case_insensitive
+# source_file
+lpm_counter.tdf
+b243fc5a1355e8ba9c5f2f8eae4612a
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+15
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+UP
+PARAMETER_UNKNOWN
+USR
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_PORT_UPDOWN
+PORT_UNUSED
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_n7j
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sclr
+-1
+3
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q14
+-1
+3
+q13
+-1
+3
+q12
+-1
+3
+q11
+-1
+3
+q10
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+aclr
+-1
+3
+}
+# include_file {
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+cmpconst.inc
+fe4bfdfa5310384231b99c696fe2e348
+dffeea.inc
+f11711657cd42ee78437f4349496034
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+alt_counter_stratix.inc
+3e1db420f0a6e888a1525f4eff14d5be
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|lpm_counter_ms:b2v_inst1|lpm_counter:LPM_COUNTER_component
+}
+# macro_sequence
+
+# end
+# entity
+cntr_n7j
+# storage
+db|UartProgetto_comp.(59).cnf
+db|UartProgetto_comp.(59).cnf
+# case_insensitive
+# source_file
+db|cntr_n7j.tdf
+e44c95e1762e4d8cdefc8f302b61d75
+7
+# used_port {
+sclr
+-1
+3
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q14
+-1
+3
+q13
+-1
+3
+q12
+-1
+3
+q11
+-1
+3
+q10
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+aclr
+-1
+3
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|lpm_counter_ms:b2v_inst1|lpm_counter:LPM_COUNTER_component|cntr_n7j:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+ms_detect
+# storage
+db|UartProgetto_comp.(60).cnf
+db|UartProgetto_comp.(60).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ms_detect.vhd
+9db6f53da953eda722bf3256ba416a4
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+14 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|ms_detect:b2v_inst2
+}
+# macro_sequence
+
+# end
+# entity
+pilotaggio_led2
+# storage
+db|UartProgetto_comp.(61).cnf
+db|UartProgetto_comp.(61).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+pilotaggio_led2.vhd
+3a80ed2bb82fd495c1904f9cb66a43b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(buttons)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(sel_leds_in)
+1 downto 0
+PARAMETER_STRING
+USR
+ constraint(leds_out)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Pilotaggio_LED2:b2v_inst3
+}
+# macro_sequence
+
+# end
+# entity
+fsm_pilotaggio_led
+# storage
+db|UartProgetto_comp.(62).cnf
+db|UartProgetto_comp.(62).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fsm_pilotaggio_led.vhd
+b064eee35b63fcfd377370e53eaf5ef2
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(buttons)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(sel_led)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(leds_out)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Pilotaggio_LED2:b2v_inst3|FSM_Pilotaggio_LED:b2v_inst
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decoder_leds_pilot
+# storage
+db|UartProgetto_comp.(63).cnf
+db|UartProgetto_comp.(63).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_decoder_leds_pilot.vhd
+45ac99d394cbb09ff5c3ba96185542e
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+1 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Pilotaggio_LED2:b2v_inst3|lpm_decoder_LEDS_pilot:b2v_inst4
+}
+# macro_sequence
+
+# end
+# entity
+lpm_decode
+# storage
+db|UartProgetto_comp.(64).cnf
+db|UartProgetto_comp.(64).cnf
+# case_insensitive
+# source_file
+lpm_decode.tdf
+b1f5bdb0352f52b3e171116fcc887cf1
+7
+# user_parameter {
+LPM_WIDTH
+2
+PARAMETER_SIGNED_DEC
+USR
+LPM_DECODES
+4
+PARAMETER_SIGNED_DEC
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+CASCADE_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+decode_n6f
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# include_file {
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+altshift.inc
+5c767a29f11db3f131fc886ea42a52bd
+declut.inc
+64cd55cba1c61523c3f4c888e3932d1
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Pilotaggio_LED2:b2v_inst3|lpm_decoder_LEDS_pilot:b2v_inst4|lpm_decode:LPM_DECODE_component
+}
+# macro_sequence
+
+# end
+# entity
+decode_n6f
+# storage
+db|UartProgetto_comp.(65).cnf
+db|UartProgetto_comp.(65).cnf
+# case_insensitive
+# source_file
+db|decode_n6f.tdf
+b0bef6ff0c111e82cca1c7916b1ef70
+7
+# used_port {
+eq3
+-1
+3
+eq2
+-1
+3
+eq1
+-1
+3
+eq0
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Pilotaggio_LED2:b2v_inst3|lpm_decoder_LEDS_pilot:b2v_inst4|lpm_decode:LPM_DECODE_component|decode_n6f:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+dec_command
+# storage
+db|UartProgetto_comp.(66).cnf
+db|UartProgetto_comp.(66).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+dec_command.vhd
+b69c126c6581ef20c552af07924f52e
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(dout)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(sel_led)
+1 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4
+}
+# macro_sequence
+
+# end
+# entity
+lpm_ff_2
+# storage
+db|UartProgetto_comp.(67).cnf
+db|UartProgetto_comp.(67).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_ff_2.vhd
+22cda01931a646b2ce2297b32354eb
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(q)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|lpm_ff_2:b2v_inst11
+}
+# macro_sequence
+
+# end
+# entity
+LPM_FF
+# storage
+db|UartProgetto_comp.(68).cnf
+db|UartProgetto_comp.(68).cnf
+# case_insensitive
+# source_file
+lpm_ff.tdf
+2d7c817e44295c745ac4957eaae7b6
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_FFTYPE
+DFF
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+Q7
+-1
+3
+Q6
+-1
+3
+Q5
+-1
+3
+Q4
+-1
+3
+Q3
+-1
+3
+Q2
+-1
+3
+Q1
+-1
+3
+Q0
+-1
+3
+ENABLE
+-1
+3
+DATA7
+-1
+3
+DATA6
+-1
+3
+DATA5
+-1
+3
+DATA4
+-1
+3
+DATA3
+-1
+3
+DATA2
+-1
+3
+DATA1
+-1
+3
+DATA0
+-1
+3
+CLOCK
+-1
+3
+ACLR
+-1
+3
+}
+# include_file {
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|lpm_ff_2:b2v_inst11|lpm_ff:b2v_inst11
+Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|lpm_ff_1:b2v_inst12|lpm_ff:b2v_inst12
+}
+# macro_sequence
+
+# end
+# entity
+lpm_ff_1
+# storage
+db|UartProgetto_comp.(69).cnf
+db|UartProgetto_comp.(69).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_ff_1.vhd
+8fa1915643c7c1b478b66289c69ef737
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(q)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|lpm_ff_1:b2v_inst12
+}
+# macro_sequence
+
+# end
+# entity
+l_detect
+# storage
+db|UartProgetto_comp.(70).cnf
+db|UartProgetto_comp.(70).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+l_detect.vhd
+a618f5d61a76c4ffd22bf5a2987eacf0
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|L_Detect:b2v_inst2
+}
+# macro_sequence
+
+# end
+# entity
+detect_1
+# storage
+db|UartProgetto_comp.(71).cnf
+db|UartProgetto_comp.(71).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+detect_1.vhd
+50d4e4b6deb462d347a62d31c25935
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|Detect_1:b2v_inst3
+}
+# macro_sequence
+
+# end
+# entity
+detect_2
+# storage
+db|UartProgetto_comp.(72).cnf
+db|UartProgetto_comp.(72).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+detect_2.vhd
+e8ad61549cd4543b62e87522848334b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|Detect_2:b2v_inst4
+}
+# macro_sequence
+
+# end
+# entity
+detect_3
+# storage
+db|UartProgetto_comp.(73).cnf
+db|UartProgetto_comp.(73).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+detect_3.vhd
+a7b734c92bf59e7f27d475fb65811aaa
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|Detect_3:b2v_inst5
+}
+# macro_sequence
+
+# end
+# entity
+detect_4
+# storage
+db|UartProgetto_comp.(74).cnf
+db|UartProgetto_comp.(74).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+detect_4.vhd
+de8a991015e889773dcb1be9b243caa
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data_in)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|Detect_4:b2v_inst6
+}
+# macro_sequence
+
+# end
+# entity
+fsm_dec_command
+# storage
+db|UartProgetto_comp.(75).cnf
+db|UartProgetto_comp.(75).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fsm_dec_command.vhd
+8a67d55451d2328b65f861abe187371a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(sel_led)
+1 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|dec_command:b2v_inst4|FSM_dec_command:b2v_inst7
+}
+# macro_sequence
+
+# end
+# entity
+random_time_generator
+# storage
+db|UartProgetto_comp.(76).cnf
+db|UartProgetto_comp.(76).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+random_time_generator.vhd
+dc259a29263511c9aac51dbb255da1b
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5
+}
+# macro_sequence
+
+# end
+# entity
+FSM_attesa
+# storage
+db|UartProgetto_comp.(78).cnf
+db|UartProgetto_comp.(78).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+fsm_attesa.vhd
+83412d41c9f22d143bc2e11b3d3c5
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|FSM_attesa:b2v_inst1
+}
+# macro_sequence
+
+# end
+# entity
+lpm_shiftreg0_lfsr_random
+# storage
+db|UartProgetto_comp.(79).cnf
+db|UartProgetto_comp.(79).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_shiftreg0_lfsr_random.vhd
+527ad151491936e5f3829d7c83ee6985
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(q)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|lpm_shiftreg0_LFSR_RANDOM:b2v_inst4
+}
+# macro_sequence
+
+# end
+# entity
+lpm_shiftreg
+# storage
+db|UartProgetto_comp.(80).cnf
+db|UartProgetto_comp.(80).cnf
+# case_insensitive
+# source_file
+lpm_shiftreg.tdf
+785d51ce6e8bbbd53bb4aa58bf413de
+7
+# user_parameter {
+LPM_WIDTH
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+RIGHT
+PARAMETER_UNKNOWN
+USR
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+shiftin
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+dffeea.inc
+f11711657cd42ee78437f4349496034
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|lpm_shiftreg0_LFSR_RANDOM:b2v_inst4|lpm_shiftreg:LPM_SHIFTREG_component
+}
+# macro_sequence
+
+# end
+# entity
+xor_lfsr
+# storage
+db|UartProgetto_comp.(81).cnf
+db|UartProgetto_comp.(81).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+xor_lfsr.vhd
+7a8752887c3823dffe594f346a2528
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(numero_lsfr)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|XOR_LFSR:b2v_inst5
+}
+# macro_sequence
+
+# end
+# entity
+lpm_mult
+# storage
+db|UartProgetto_comp.(83).cnf
+db|UartProgetto_comp.(83).cnf
+# case_insensitive
+# source_file
+lpm_mult.tdf
+b97221725a35c4861cd9ffb6e76d5b42
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTHA
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHB
+22
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHP
+30
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHR
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_WIDTHS
+1
+PARAMETER_UNKNOWN
+DEF
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+LATENCY
+0
+PARAMETER_UNKNOWN
+DEF
+INPUT_A_IS_CONSTANT
+NO
+PARAMETER_UNKNOWN
+DEF
+INPUT_B_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+USE_EAB
+OFF
+PARAMETER_UNKNOWN
+DEF
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+APEX20K_TECHNOLOGY_MAPPER
+LUT
+TECH_MAPPER_APEX20K
+USR
+DEDICATED_MULTIPLIER_CIRCUITRY
+AUTO
+PARAMETER_UNKNOWN
+DEF
+DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO
+0
+PARAMETER_UNKNOWN
+DEF
+DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO
+0
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+INPUT_A_FIXED_VALUE
+Bx
+PARAMETER_UNKNOWN
+DEF
+INPUT_B_FIXED_VALUE
+Bx
+PARAMETER_UNKNOWN
+DEF
+USE_AHDL_IMPLEMENTATION
+OFF
+PARAMETER_UNKNOWN
+DEF
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result29
+-1
+3
+result28
+-1
+3
+result27
+-1
+3
+result26
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+datab9
+-1
+1
+datab6
+-1
+1
+datab4
+-1
+1
+datab21
+-1
+1
+datab20
+-1
+1
+datab2
+-1
+1
+datab16
+-1
+1
+datab11
+-1
+1
+datab1
+-1
+1
+datab0
+-1
+1
+datab8
+-1
+2
+datab7
+-1
+2
+datab5
+-1
+2
+datab3
+-1
+2
+datab19
+-1
+2
+datab18
+-1
+2
+datab17
+-1
+2
+datab15
+-1
+2
+datab14
+-1
+2
+datab13
+-1
+2
+datab12
+-1
+2
+datab10
+-1
+2
+}
+# include_file {
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+multcore.inc
+ee598ea39a3d6bdc35b167eefc3ee3da
+altshift.inc
+5c767a29f11db3f131fc886ea42a52bd
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+bypassff.inc
+42d08f243d3471f724fd61ea21a0eb9f
+}
+# macro_sequence
+
+# end
+# entity
+multcore
+# storage
+db|UartProgetto_comp.(84).cnf
+db|UartProgetto_comp.(84).cnf
+# case_insensitive
+# source_file
+multcore.tdf
+8b2347abd1d9399bfb5a2b4fbd580a7
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+widtha
+8
+PARAMETER_UNKNOWN
+USR
+widthb
+22
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LATENCY
+1
+PARAMETER_UNKNOWN
+USR
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+USE_EAB
+OFF
+PARAMETER_UNKNOWN
+USR
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+OP_MODE
+0
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+DEDICATED_MULTIPLIER_CIRCUITRY
+YES
+PARAMETER_UNKNOWN
+DEF
+SUB_DEDICATED_MULTIPLIER_CIRCUITRY
+NO
+PARAMETER_UNKNOWN
+USR
+DSP_BLOCK_BALANCING
+AUTO
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result29
+-1
+3
+result28
+-1
+3
+result27
+-1
+3
+result26
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab21
+-1
+3
+datab20
+-1
+3
+datab2
+-1
+3
+datab19
+-1
+3
+datab18
+-1
+3
+datab17
+-1
+3
+datab16
+-1
+3
+datab15
+-1
+3
+datab14
+-1
+3
+datab13
+-1
+3
+datab12
+-1
+3
+datab11
+-1
+3
+datab10
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+}
+# include_file {
+alt_ded_mult.inc
+ec98c2a73c1944d24ba8366fc29e8d4
+mul_lfrg.inc
+47f6e380151c8e526b62c6d1f8cd8ec
+csa_add.inc
+2817bc4fb699031583cb64b99d6e64b
+dffpipe.inc
+5471cd80ee441dd293deca0963c9aa0
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+mpar_add.inc
+029862889cd5a4e65712a9cc002ab
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+alt_ded_mult_y.inc
+3e7ed647d36279c93ab781e67a0aeb0
+muleabz.inc
+9022d0f0ac610fb2fcbcdbf329d5b22
+mul_boothc.inc
+865041f39baa34821d68d61a3e2fd457
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core
+}
+# macro_sequence
+
+# end
+# entity
+mpar_add
+# storage
+db|UartProgetto_comp.(85).cnf
+db|UartProgetto_comp.(85).cnf
+# case_insensitive
+# source_file
+mpar_add.tdf
+7cbf24afda73e2f88a1def44e2e3f4c0
+7
+# user_parameter {
+size
+26
+PARAMETER_UNKNOWN
+USR
+width
+2
+PARAMETER_UNKNOWN
+USR
+REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LEVEL
+3
+PARAMETER_UNKNOWN
+USR
+TOT_LEVELS
+4
+PARAMETER_UNKNOWN
+USR
+STAGE
+1
+PARAMETER_UNKNOWN
+USR
+TOT_STAGES
+2
+PARAMETER_UNKNOWN
+USR
+INT_LATENCY
+1
+PARAMETER_UNKNOWN
+USR
+PREV_SING_SIZE
+26
+PARAMETER_UNKNOWN
+USR
+BOOTH_ADDER
+NO
+PARAMETER_UNKNOWN
+DEF
+CREATE_MS_BOOTH_ADDER
+NO
+PARAMETER_UNKNOWN
+DEF
+MPARADD_OP_MODE
+0
+PARAMETER_UNKNOWN
+DEF
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result29
+-1
+3
+result28
+-1
+3
+result27
+-1
+3
+result26
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data1_9
+-1
+3
+data1_8
+-1
+3
+data1_7
+-1
+3
+data1_6
+-1
+3
+data1_5
+-1
+3
+data1_4
+-1
+3
+data1_3
+-1
+3
+data1_25
+-1
+3
+data1_24
+-1
+3
+data1_23
+-1
+3
+data1_22
+-1
+3
+data1_21
+-1
+3
+data1_20
+-1
+3
+data1_2
+-1
+3
+data1_19
+-1
+3
+data1_18
+-1
+3
+data1_17
+-1
+3
+data1_16
+-1
+3
+data1_15
+-1
+3
+data1_14
+-1
+3
+data1_13
+-1
+3
+data1_12
+-1
+3
+data1_11
+-1
+3
+data1_10
+-1
+3
+data1_1
+-1
+3
+data1_0
+-1
+3
+data0_9
+-1
+3
+data0_8
+-1
+3
+data0_7
+-1
+3
+data0_6
+-1
+3
+data0_5
+-1
+3
+data0_4
+-1
+3
+data0_3
+-1
+3
+data0_25
+-1
+3
+data0_24
+-1
+3
+data0_23
+-1
+3
+data0_22
+-1
+3
+data0_21
+-1
+3
+data0_20
+-1
+3
+data0_2
+-1
+3
+data0_19
+-1
+3
+data0_18
+-1
+3
+data0_17
+-1
+3
+data0_16
+-1
+3
+data0_15
+-1
+3
+data0_14
+-1
+3
+data0_13
+-1
+3
+data0_12
+-1
+3
+data0_11
+-1
+3
+data0_10
+-1
+3
+data0_1
+-1
+3
+data0_0
+-1
+3
+}
+# include_file {
+mpar_add.inc
+029862889cd5a4e65712a9cc002ab
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder
+}
+# macro_sequence
+
+# end
+# entity
+lpm_add_sub
+# storage
+db|UartProgetto_comp.(86).cnf
+db|UartProgetto_comp.(86).cnf
+# case_insensitive
+# source_file
+lpm_add_sub.tdf
+949e55aeeca9519b02e7ca837d13e17
+7
+# user_parameter {
+LPM_WIDTH
+26
+PARAMETER_UNKNOWN
+USR
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DIRECTION
+DEFAULT
+PARAMETER_UNKNOWN
+DEF
+ONE_INPUT_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+USR
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+REGISTERED_AT_END
+1
+PARAMETER_UNKNOWN
+USR
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+USE_CS_BUFFERS
+1
+PARAMETER_UNKNOWN
+DEF
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+USE_WYS
+OFF
+PARAMETER_UNKNOWN
+DEF
+STYLE
+FAST
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+add_sub_8ch
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab25
+-1
+3
+datab24
+-1
+3
+datab23
+-1
+3
+datab22
+-1
+3
+datab21
+-1
+3
+datab20
+-1
+3
+datab2
+-1
+3
+datab19
+-1
+3
+datab18
+-1
+3
+datab17
+-1
+3
+datab16
+-1
+3
+datab15
+-1
+3
+datab14
+-1
+3
+datab13
+-1
+3
+datab12
+-1
+3
+datab11
+-1
+3
+datab10
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa21
+-1
+3
+dataa20
+-1
+3
+dataa2
+-1
+3
+dataa19
+-1
+3
+dataa18
+-1
+3
+dataa17
+-1
+3
+dataa16
+-1
+3
+dataa15
+-1
+3
+dataa14
+-1
+3
+dataa13
+-1
+3
+dataa12
+-1
+3
+dataa11
+-1
+3
+dataa10
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+dataa25
+-1
+1
+dataa24
+-1
+1
+dataa23
+-1
+1
+dataa22
+-1
+1
+}
+# include_file {
+look_add.inc
+9091c394592369a07bdf7fbf1ce9ced6
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+addcore.inc
+e15993f131a5367862d6283fbb5a133
+altshift.inc
+5c767a29f11db3f131fc886ea42a52bd
+alt_stratix_add_sub.inc
+16df31198e4f1dce2b8df944fbafaefe
+bypassff.inc
+42d08f243d3471f724fd61ea21a0eb9f
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]
+}
+# macro_sequence
+
+# end
+# entity
+add_sub_8ch
+# storage
+db|UartProgetto_comp.(87).cnf
+db|UartProgetto_comp.(87).cnf
+# case_insensitive
+# source_file
+db|add_sub_8ch.tdf
+c48ade87579e7762f946e254298df21
+7
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+datab9
+-1
+3
+datab8
+-1
+3
+datab7
+-1
+3
+datab6
+-1
+3
+datab5
+-1
+3
+datab4
+-1
+3
+datab3
+-1
+3
+datab25
+-1
+3
+datab24
+-1
+3
+datab23
+-1
+3
+datab22
+-1
+3
+datab21
+-1
+3
+datab20
+-1
+3
+datab2
+-1
+3
+datab19
+-1
+3
+datab18
+-1
+3
+datab17
+-1
+3
+datab16
+-1
+3
+datab15
+-1
+3
+datab14
+-1
+3
+datab13
+-1
+3
+datab12
+-1
+3
+datab11
+-1
+3
+datab10
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa9
+-1
+3
+dataa8
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa25
+-1
+3
+dataa24
+-1
+3
+dataa23
+-1
+3
+dataa22
+-1
+3
+dataa21
+-1
+3
+dataa20
+-1
+3
+dataa2
+-1
+3
+dataa19
+-1
+3
+dataa18
+-1
+3
+dataa17
+-1
+3
+dataa16
+-1
+3
+dataa15
+-1
+3
+dataa14
+-1
+3
+dataa13
+-1
+3
+dataa12
+-1
+3
+dataa11
+-1
+3
+dataa10
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_8ch:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+altshift
+# storage
+db|UartProgetto_comp.(88).cnf
+db|UartProgetto_comp.(88).cnf
+# case_insensitive
+# source_file
+altshift.tdf
+286864babb7884d95a744dc71395bcf4
+7
+# user_parameter {
+WIDTH
+30
+PARAMETER_UNKNOWN
+USR
+DEPTH
+0
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result29
+-1
+3
+result28
+-1
+3
+result27
+-1
+3
+result26
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data29
+-1
+3
+data28
+-1
+3
+data27
+-1
+3
+data26
+-1
+3
+data25
+-1
+3
+data24
+-1
+3
+data23
+-1
+3
+data22
+-1
+3
+data21
+-1
+3
+data20
+-1
+3
+data2
+-1
+3
+data19
+-1
+3
+data18
+-1
+3
+data17
+-1
+3
+data16
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|altshift:external_latency_ffs
+}
+# macro_sequence
+
+# end
+# entity
+contatore_tempo_random
+# storage
+db|UartProgetto_comp.(89).cnf
+db|UartProgetto_comp.(89).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+contatore_tempo_random.vhd
+600a83673694ac70dc4eee3ff1eef2
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(data)
+29 downto 0
+PARAMETER_STRING
+USR
+ constraint(q)
+29 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|Contatore_Tempo_random:b2v_inst8
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|UartProgetto_comp.(90).cnf
+db|UartProgetto_comp.(90).cnf
+# case_insensitive
+# source_file
+lpm_counter.tdf
+b243fc5a1355e8ba9c5f2f8eae4612a
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+30
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+UP
+PARAMETER_UNKNOWN
+USR
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_PORT_UPDOWN
+PORT_UNUSED
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_84j
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sload
+-1
+3
+sclr
+-1
+3
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q29
+-1
+3
+q28
+-1
+3
+q27
+-1
+3
+q26
+-1
+3
+q25
+-1
+3
+q24
+-1
+3
+q23
+-1
+3
+q22
+-1
+3
+q21
+-1
+3
+q20
+-1
+3
+q2
+-1
+3
+q19
+-1
+3
+q18
+-1
+3
+q17
+-1
+3
+q16
+-1
+3
+q15
+-1
+3
+q14
+-1
+3
+q13
+-1
+3
+q12
+-1
+3
+q11
+-1
+3
+q10
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data29
+-1
+3
+data28
+-1
+3
+data27
+-1
+3
+data26
+-1
+3
+data25
+-1
+3
+data24
+-1
+3
+data23
+-1
+3
+data22
+-1
+3
+data21
+-1
+3
+data20
+-1
+3
+data2
+-1
+3
+data19
+-1
+3
+data18
+-1
+3
+data17
+-1
+3
+data16
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+clock
+-1
+3
+}
+# include_file {
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+cmpconst.inc
+fe4bfdfa5310384231b99c696fe2e348
+dffeea.inc
+f11711657cd42ee78437f4349496034
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+alt_counter_stratix.inc
+3e1db420f0a6e888a1525f4eff14d5be
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|Contatore_Tempo_random:b2v_inst8|lpm_counter:LPM_COUNTER_component
+}
+# macro_sequence
+
+# end
+# entity
+cntr_84j
+# storage
+db|UartProgetto_comp.(91).cnf
+db|UartProgetto_comp.(91).cnf
+# case_insensitive
+# source_file
+db|cntr_84j.tdf
+393b99ac9a1ed66f84a6cf083738a70
+7
+# used_port {
+sload
+-1
+3
+sclr
+-1
+3
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q29
+-1
+3
+q28
+-1
+3
+q27
+-1
+3
+q26
+-1
+3
+q25
+-1
+3
+q24
+-1
+3
+q23
+-1
+3
+q22
+-1
+3
+q21
+-1
+3
+q20
+-1
+3
+q2
+-1
+3
+q19
+-1
+3
+q18
+-1
+3
+q17
+-1
+3
+q16
+-1
+3
+q15
+-1
+3
+q14
+-1
+3
+q13
+-1
+3
+q12
+-1
+3
+q11
+-1
+3
+q10
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+data9
+-1
+3
+data8
+-1
+3
+data7
+-1
+3
+data6
+-1
+3
+data5
+-1
+3
+data4
+-1
+3
+data3
+-1
+3
+data29
+-1
+3
+data28
+-1
+3
+data27
+-1
+3
+data26
+-1
+3
+data25
+-1
+3
+data24
+-1
+3
+data23
+-1
+3
+data22
+-1
+3
+data21
+-1
+3
+data20
+-1
+3
+data2
+-1
+3
+data19
+-1
+3
+data18
+-1
+3
+data17
+-1
+3
+data16
+-1
+3
+data15
+-1
+3
+data14
+-1
+3
+data13
+-1
+3
+data12
+-1
+3
+data11
+-1
+3
+data10
+-1
+3
+data1
+-1
+3
+data0
+-1
+3
+clock
+-1
+3
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|Contatore_Tempo_random:b2v_inst8|lpm_counter:LPM_COUNTER_component|cntr_84j:auto_generated
+}
+# macro_sequence
+
+# end
+# entity
+counter_tempo_riflessi
+# storage
+db|UartProgetto_comp.(92).cnf
+db|UartProgetto_comp.(92).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+counter_tempo_riflessi.vhd
+38e6a611f9cfdab1a1f8f96fc4f69f34
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(q)
+15 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|counter_tempo_riflessi:b2v_inst7
+}
+# macro_sequence
+
+# end
+# entity
+lpm_counter
+# storage
+db|UartProgetto_comp.(93).cnf
+db|UartProgetto_comp.(93).cnf
+# case_insensitive
+# source_file
+lpm_counter.tdf
+b243fc5a1355e8ba9c5f2f8eae4612a
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTH
+16
+PARAMETER_SIGNED_DEC
+USR
+LPM_DIRECTION
+UP
+PARAMETER_UNKNOWN
+USR
+LPM_MODULUS
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_AVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_SVALUE
+UNUSED
+PARAMETER_UNKNOWN
+DEF
+LPM_PORT_UPDOWN
+PORT_UNUSED
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN_LENGTH
+48
+CARRY_CHAIN_LENGTH
+USR
+NOT_GATE_PUSH_BACK
+ON
+NOT_GATE_PUSH_BACK
+USR
+CARRY_CNT_EN
+SMART
+PARAMETER_UNKNOWN
+DEF
+LABWIDE_SCLR
+ON
+PARAMETER_UNKNOWN
+DEF
+USE_NEW_VERSION
+TRUE
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+cntr_o7j
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+sclr
+-1
+3
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q15
+-1
+3
+q14
+-1
+3
+q13
+-1
+3
+q12
+-1
+3
+q11
+-1
+3
+q10
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+aclr
+-1
+3
+}
+# include_file {
+lpm_compare.inc
+bbd3e8c93afb7320934629e5fb11566
+lpm_counter.inc
+c5cfeeabc5f2ab60b3453f6abbc42b41
+lpm_constant.inc
+97ffb7e3fef9ce9fce4eff8455d5da5
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+cmpconst.inc
+fe4bfdfa5310384231b99c696fe2e348
+dffeea.inc
+f11711657cd42ee78437f4349496034
+lpm_decode.inc
+10da69a8bbd590d66779e7a142f73790
+alt_counter_stratix.inc
+3e1db420f0a6e888a1525f4eff14d5be
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|counter_tempo_riflessi:b2v_inst7|lpm_counter:LPM_COUNTER_component
+}
+# macro_sequence
+
+# end
+# entity
+cntr_o7j
+# storage
+db|UartProgetto_comp.(94).cnf
+db|UartProgetto_comp.(94).cnf
+# case_insensitive
+# source_file
+db|cntr_o7j.tdf
+7691cac1378aa791b38cfae552aa9
+7
+# used_port {
+sclr
+-1
+3
+q9
+-1
+3
+q8
+-1
+3
+q7
+-1
+3
+q6
+-1
+3
+q5
+-1
+3
+q4
+-1
+3
+q3
+-1
+3
+q2
+-1
+3
+q15
+-1
+3
+q14
+-1
+3
+q13
+-1
+3
+q12
+-1
+3
+q11
+-1
+3
+q10
+-1
+3
+q1
+-1
+3
+q0
+-1
+3
+cnt_en
+-1
+3
+clock
+-1
+3
+aclr
+-1
+3
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|counter_tempo_riflessi:b2v_inst7|lpm_counter:LPM_COUNTER_component|cntr_o7j:auto_generated
 }
 # macro_sequence
 
@@ -52,8 +7814,8 @@ AUTO
 # entity
 altpll_progetto_comp
 # storage
-db|UartProgetto_comp.(1).cnf
-db|UartProgetto_comp.(1).cnf
+db|UartProgetto_comp.(95).cnf
+db|UartProgetto_comp.(95).cnf
 # logic_option {
 AUTO_RAM_RECOGNITION
 ON
@@ -82,8 +7844,8 @@ altpll_progetto_comp:inst5
 # entity
 altpll
 # storage
-db|UartProgetto_comp.(2).cnf
-db|UartProgetto_comp.(2).cnf
+db|UartProgetto_comp.(96).cnf
+db|UartProgetto_comp.(96).cnf
 # case_insensitive
 # source_file
 altpll.tdf
@@ -1569,17 +9331,429 @@ inclk1
 1
 }
 # include_file {
-stratixii_pll.inc
-6797ab505ed70f1a221e4a213e16a6
-stratix_pll.inc
-a9a94c5be18105f7ae8c218a67ec9f7
-aglobal111.inc
-9cc1f9de5ad83fc94dd171c3f7986bd
 cycloneii_pll.inc
 c2ee779f89b3bc181df753ea85b3ef
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+stratix_pll.inc
+a9a94c5be18105f7ae8c218a67ec9f7
+stratixii_pll.inc
+6797ab505ed70f1a221e4a213e16a6
 }
 # hierarchies {
 altpll_progetto_comp:inst5|altpll:altpll_component
+}
+# macro_sequence
+
+# end
+# entity
+UartProgetto_comp
+# storage
+db|UartProgetto_comp.(0).cnf
+db|UartProgetto_comp.(0).cnf
+# case_insensitive
+# source_file
+uartprogetto_comp.bdf
+b718e26d8cb367c5b9a923c93a0f8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+tc_tempo_attesa
+# storage
+db|UartProgetto_comp.(77).cnf
+db|UartProgetto_comp.(77).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+tc_tempo_attesa.vhd
+63f283c709bad1c43e778d2ec352dcc
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(numero_contato)
+29 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|TC_tempo_attesa:b2v_inst
+}
+# macro_sequence
+
+# end
+# entity
+lpm_mult0_random_number_gen
+# storage
+db|UartProgetto_comp.(82).cnf
+db|UartProgetto_comp.(82).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+lpm_mult0_random_number_gen.vhd
+8121fa61a05edb455fad184cfd41873
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(dataa)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(result)
+29 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|lpm_mult0_Random_Number_Gen:b2v_inst6
+}
+# macro_sequence
+
+# end
+# entity
+lpm_mult
+# storage
+db|UartProgetto_comp.(97).cnf
+db|UartProgetto_comp.(97).cnf
+# case_insensitive
+# source_file
+lpm_mult.tdf
+b97221725a35c4861cd9ffb6e76d5b42
+7
+# user_parameter {
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+LPM_WIDTHA
+8
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHB
+22
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHP
+30
+PARAMETER_SIGNED_DEC
+USR
+LPM_WIDTHR
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_WIDTHS
+1
+PARAMETER_UNKNOWN
+DEF
+LPM_REPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+LATENCY
+0
+PARAMETER_UNKNOWN
+DEF
+INPUT_A_IS_CONSTANT
+NO
+PARAMETER_UNKNOWN
+DEF
+INPUT_B_IS_CONSTANT
+YES
+PARAMETER_UNKNOWN
+USR
+USE_EAB
+OFF
+PARAMETER_UNKNOWN
+DEF
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+APEX20K_TECHNOLOGY_MAPPER
+LUT
+TECH_MAPPER_APEX20K
+USR
+DEDICATED_MULTIPLIER_CIRCUITRY
+AUTO
+PARAMETER_UNKNOWN
+DEF
+DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO
+0
+PARAMETER_UNKNOWN
+DEF
+DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO
+0
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+NOTHING
+PARAMETER_UNKNOWN
+DEF
+INPUT_A_FIXED_VALUE
+Bx
+PARAMETER_UNKNOWN
+DEF
+INPUT_B_FIXED_VALUE
+Bx
+PARAMETER_UNKNOWN
+DEF
+USE_AHDL_IMPLEMENTATION
+OFF
+PARAMETER_UNKNOWN
+DEF
+}
+# used_port {
+result9
+-1
+3
+result8
+-1
+3
+result7
+-1
+3
+result6
+-1
+3
+result5
+-1
+3
+result4
+-1
+3
+result3
+-1
+3
+result29
+-1
+3
+result28
+-1
+3
+result27
+-1
+3
+result26
+-1
+3
+result25
+-1
+3
+result24
+-1
+3
+result23
+-1
+3
+result22
+-1
+3
+result21
+-1
+3
+result20
+-1
+3
+result2
+-1
+3
+result19
+-1
+3
+result18
+-1
+3
+result17
+-1
+3
+result16
+-1
+3
+result15
+-1
+3
+result14
+-1
+3
+result13
+-1
+3
+result12
+-1
+3
+result11
+-1
+3
+result10
+-1
+3
+result1
+-1
+3
+result0
+-1
+3
+dataa7
+-1
+3
+dataa6
+-1
+3
+dataa5
+-1
+3
+dataa4
+-1
+3
+dataa3
+-1
+3
+dataa2
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+datab9
+-1
+1
+datab8
+-1
+1
+datab7
+-1
+1
+datab6
+-1
+1
+datab5
+-1
+1
+datab4
+-1
+1
+datab21
+-1
+1
+datab20
+-1
+1
+datab2
+-1
+1
+datab19
+-1
+1
+datab18
+-1
+1
+datab17
+-1
+1
+datab16
+-1
+1
+datab15
+-1
+1
+datab14
+-1
+1
+datab13
+-1
+1
+datab12
+-1
+1
+datab11
+-1
+1
+datab10
+-1
+1
+datab0
+-1
+1
+datab3
+-1
+2
+datab1
+-1
+2
+}
+# include_file {
+bypassff.inc
+42d08f243d3471f724fd61ea21a0eb9f
+aglobal111.inc
+9cc1f9de5ad83fc94dd171c3f7986bd
+lpm_add_sub.inc
+144a73b61081a2a03554ff5acc5e8842
+altshift.inc
+5c767a29f11db3f131fc886ea42a52bd
+multcore.inc
+ee598ea39a3d6bdc35b167eefc3ee3da
+}
+# hierarchies {
+Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component
 }
 # macro_sequence
 

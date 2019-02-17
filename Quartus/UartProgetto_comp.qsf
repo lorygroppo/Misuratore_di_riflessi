@@ -63,19 +63,20 @@ set_location_assignment PIN_Y18 -to LEDS_output[3]
 set_location_assignment PIN_N25 -to Reset
 set_location_assignment PIN_C25 -to RX_in
 set_location_assignment PIN_B25 -to tx_out
-set_location_assignment PIN_AE12 -to led_deb[0]
-set_location_assignment PIN_AD12 -to led_deb[1]
-set_location_assignment PIN_T22 -to Out_inizio_attesa
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name QIP_FILE lpm_counter_ms.qip
-set_global_assignment -name SEARCH_PATH "c:/sdi_project/uart/quartus/tx"
-set_global_assignment -name SEARCH_PATH "c:/sdi_project/uart/quartus/rx"
-set_global_assignment -name SEARCH_PATH "c:/sdi_project/uart/quartus/uart"
-set_global_assignment -name SEARCH_PATH "c:/sdi_project/rivelatore_riflessi"
-set_global_assignment -name SEARCH_PATH "c:/sdi_project/random_time_gen"
-set_global_assignment -name SEARCH_PATH "c:/sdi_project/pilotaggio_led"
-set_global_assignment -name SEARCH_PATH "c:/sdi_project/out_encoder"
-set_global_assignment -name SEARCH_PATH "c:/sdi_project/dec_command"
 set_global_assignment -name VHDL_FILE FSM_attesa.vhd
+set_location_assignment PIN_AE22 -to LED_OUTPUT[0]
+set_location_assignment PIN_W19 -to LED_OUTPUT[1]
+set_location_assignment PIN_U18 -to LED_OUTPUT[2]
+set_location_assignment PIN_AA20 -to LED_OUTPUT[3]
+set_global_assignment -name SEARCH_PATH "c:/users/lorenzo/desktop/misuratore_di_riflessi/quartus/uart/quartus/uart"
+set_global_assignment -name SEARCH_PATH "c:/users/lorenzo/desktop/misuratore_di_riflessi/quartus/uart/quartus/tx"
+set_global_assignment -name SEARCH_PATH "c:/users/lorenzo/desktop/misuratore_di_riflessi/quartus/uart/quartus/rx"
+set_global_assignment -name SEARCH_PATH "c:/users/lorenzo/desktop/misuratore_di_riflessi/quartus/rivelatore_riflessi"
+set_global_assignment -name SEARCH_PATH "c:/users/lorenzo/desktop/misuratore_di_riflessi/quartus/random_time_gen"
+set_global_assignment -name SEARCH_PATH "c:/users/lorenzo/desktop/misuratore_di_riflessi/quartus/pilotaggio_led"
+set_global_assignment -name SEARCH_PATH "c:/users/lorenzo/desktop/misuratore_di_riflessi/quartus/out_encoder"
+set_global_assignment -name SEARCH_PATH "c:/users/lorenzo/desktop/misuratore_di_riflessi/quartus/dec_command"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

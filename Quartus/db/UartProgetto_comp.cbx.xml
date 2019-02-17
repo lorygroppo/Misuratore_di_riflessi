@@ -1,5 +1,20 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="UartProgetto_comp">
+		<CBX_INST_ENTRY INSTANCE_NAME="|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|lpm_counter_ms:b2v_inst1|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_n7j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|out_gen_lpm_counter0:b2v_inst12|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_ecj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|pilotaggio_led2:b2v_inst3|lpm_decoder_leds_pilot:b2v_inst4|lpm_decode:LPM_DECODE_component" CBX_FILE_NAME="decode_n6f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5|lpm_mult0_random_number_gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_8ch.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_counter_rx_mod_16:b2v_CNT_RX_MOD_16_BIT|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_3oi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|lpm_counter_tx:b2v_CNT_TX_MOD_217|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_7oi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|lpm_mux0:b2v_MUX_2_TO_1|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_03e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_mux_addr:b2v_inst5|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_43e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5|contatore_tempo_random:b2v_inst8|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_84j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|counter_tempo_riflessi:b2v_inst7|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_o7j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_rom_0:b2v_inst13|LPM_ROM:b2v_inst13|altrom:srom|altsyncram:rom_block" CBX_FILE_NAME="altsyncram_5c71.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|out_gen_lpm_mux0:b2v_inst|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_63e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_counter_rx_mod_16:b2v_CNT_RX_MOD_16_EDGE|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_3oi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UartProgetto_comp|UART:inst|rx:b2v_RX_BLOCK|lpm_counter_rx_mod_32:b2v_CNT_RX_MOD_32|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_4oi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|UartProgetto_comp|UART:inst|tx:b2v_TX_BLOCK|lpm_counter_tx_mod_10:b2v_CNT_TX_MOD_10|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_3oi.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

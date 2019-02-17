@@ -13,7 +13,10 @@ architecture behavioural of TC_tempo_attesa  is
 begin
 process(numero_contato)
 begin
-	if numero_contato < "011101110011010110010011111111" then
+	-- 20 sec
+	--if numero_contato < "011101110011010110010011111111" then
+	-- 1 ms
+	if numero_contato < "000000000000000110000110101000" then
 	fine_Conteggio<='0' ;
 	else
 	fine_Conteggio<='1';

@@ -17,7 +17,6 @@ CK => tx:b2v_TX_BLOCK.CK
 RESETn => rx:b2v_RX_BLOCK.RESETn
 RESETn => tx:b2v_TX_BLOCK.RESETn
 RX_UART => rx:b2v_RX_BLOCK.RX_UART
-RX_UART => Rx_sonda.DATAIN
 DIN[0] => tx:b2v_TX_BLOCK.DIN[0]
 DIN[1] => tx:b2v_TX_BLOCK.DIN[1]
 DIN[2] => tx:b2v_TX_BLOCK.DIN[2]
@@ -916,15 +915,15 @@ data_a[5] => ~NO_FANOUT~
 data_a[6] => ~NO_FANOUT~
 data_a[7] => ~NO_FANOUT~
 data_b[0] => ~NO_FANOUT~
-address_a[0] => altsyncram_3t21:auto_generated.address_a[0]
-address_a[1] => altsyncram_3t21:auto_generated.address_a[1]
-address_a[2] => altsyncram_3t21:auto_generated.address_a[2]
-address_a[3] => altsyncram_3t21:auto_generated.address_a[3]
-address_a[4] => altsyncram_3t21:auto_generated.address_a[4]
+address_a[0] => altsyncram_5c71:auto_generated.address_a[0]
+address_a[1] => altsyncram_5c71:auto_generated.address_a[1]
+address_a[2] => altsyncram_5c71:auto_generated.address_a[2]
+address_a[3] => altsyncram_5c71:auto_generated.address_a[3]
+address_a[4] => altsyncram_5c71:auto_generated.address_a[4]
 address_b[0] => ~NO_FANOUT~
 addressstall_a => ~NO_FANOUT~
 addressstall_b => ~NO_FANOUT~
-clock0 => altsyncram_3t21:auto_generated.clock0
+clock0 => altsyncram_5c71:auto_generated.clock0
 clock1 => ~NO_FANOUT~
 clocken0 => ~NO_FANOUT~
 clocken1 => ~NO_FANOUT~
@@ -936,7 +935,7 @@ byteena_a[0] => ~NO_FANOUT~
 byteena_b[0] => ~NO_FANOUT~
 
 
-|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_rom_0:b2v_inst13|LPM_ROM:b2v_inst13|altrom:srom|altsyncram:rom_block|altsyncram_3t21:auto_generated
+|UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|output_encoder:b2v_inst|lpm_rom_0:b2v_inst13|LPM_ROM:b2v_inst13|altrom:srom|altsyncram:rom_block|altsyncram_5c71:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -1397,7 +1396,6 @@ END_TX => Selector6.IN1
 
 |UartProgetto_comp|Rilevatore_Riflessi_Completo:inst2|random_time_generator:b2v_inst5
 Inizio_Attesa => fsm_attesa:b2v_inst1.inizio_attesa_fsm
-Inizio_Attesa => Inizio_attesa_in.DATAIN
 CK_25MHz => fsm_attesa:b2v_inst1.clk
 CK_25MHz => lpm_shiftreg0_lfsr_random:b2v_inst4.clock
 CK_25MHz => contatore_tempo_random:b2v_inst8.clock

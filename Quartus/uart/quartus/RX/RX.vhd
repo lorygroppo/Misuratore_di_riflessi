@@ -13,8 +13,8 @@
 -- applicable agreement for further details.
 
 -- PROGRAM		"Quartus II 32-bit"
--- VERSION		"Version 11.1 Build 173 11/01/2011 SJ Web Edition"
--- CREATED		"Fri Jan 11 09:22:04 2019"
+-- VERSION		"Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition"
+-- CREATED		"Sat Feb 16 18:26:48 2019"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
@@ -29,8 +29,6 @@ ENTITY RX IS
 		RX_UART :  IN  STD_LOGIC;
 		RESETn :  IN  STD_LOGIC;
 		DAV :  OUT  STD_LOGIC;
-		Campionamento_out :  OUT  STD_LOGIC;
-		stop_bit_out :  OUT  STD_LOGIC;
 		DOUT :  OUT  STD_LOGIC_VECTOR(7 DOWNTO 0)
 	);
 END RX;
@@ -154,7 +152,6 @@ SIGNAL	SYNTHESIZED_WIRE_27 :  STD_LOGIC_VECTOR(3 DOWNTO 0);
 
 
 BEGIN 
-Campionamento_out <= SYNTHESIZED_WIRE_17;
 
 
 
@@ -255,7 +252,6 @@ b2v_TC_CNT_MOD_8_EDGE : and_decisore
 PORT MAP(data => SYNTHESIZED_WIRE_27,
 		 output => SYNTHESIZED_WIRE_29);
 
-stop_bit_out <= data_out(8);
 DOUT(7 DOWNTO 0) <= data_out(7 DOWNTO 0);
 
 END bdf_type;

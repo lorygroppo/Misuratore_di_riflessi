@@ -20,7 +20,7 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 240 144)
+	(rect 16 16 184 144)
 	(text "RX" (rect 5 0 21 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
@@ -52,34 +52,20 @@ applicable agreement for further details.
 		(line (pt 0 80)(pt 16 80))
 	)
 	(port
-		(pt 224 32)
-		(output)
-		(text "Campionamento_out" (rect 0 0 114 14)(font "Arial" (font_size 8)))
-		(text "Campionamento_out" (rect 89 27 203 41)(font "Arial" (font_size 8)))
-		(line (pt 224 32)(pt 208 32))
-	)
-	(port
-		(pt 224 48)
+		(pt 168 32)
 		(output)
 		(text "DAV" (rect 0 0 27 14)(font "Arial" (font_size 8)))
-		(text "DAV" (rect 176 43 203 57)(font "Arial" (font_size 8)))
-		(line (pt 224 48)(pt 208 48))
+		(text "DAV" (rect 120 27 147 41)(font "Arial" (font_size 8)))
+		(line (pt 168 32)(pt 152 32))
 	)
 	(port
-		(pt 224 64)
+		(pt 168 48)
 		(output)
 		(text "DOUT[7..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
-		(text "DOUT[7..0]" (rect 142 59 203 73)(font "Arial" (font_size 8)))
-		(line (pt 224 64)(pt 208 64)(line_width 3))
-	)
-	(port
-		(pt 224 80)
-		(output)
-		(text "stop_bit_out" (rect 0 0 69 14)(font "Arial" (font_size 8)))
-		(text "stop_bit_out" (rect 134 75 203 89)(font "Arial" (font_size 8)))
-		(line (pt 224 80)(pt 208 80))
+		(text "DOUT[7..0]" (rect 86 43 147 57)(font "Arial" (font_size 8)))
+		(line (pt 168 48)(pt 152 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 208 112))
+		(rectangle (rect 16 16 152 112))
 	)
 )

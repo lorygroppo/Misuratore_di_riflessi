@@ -81,10 +81,10 @@ set_global_assignment -name QIP_FILE altpll0.qip
 set_location_assignment PIN_V2 -to RESETn
 set_location_assignment PIN_C25 -to RX_UART
 set_location_assignment PIN_B25 -to TX_UART
-set_global_assignment -name SEARCH_PATH "c:/users/valer/desktop/progetto_uart/quartus/tx"
-set_global_assignment -name SEARCH_PATH "c:/users/valer/desktop/progetto_uart/quartus/rx"
 set_location_assignment PIN_R24 -to Rx_sonda
 set_location_assignment PIN_T22 -to campionamento
 set_global_assignment -name VHDL_FILE inverter.vhd
 set_location_assignment PIN_Y18 -to stop_bit_output
+set_global_assignment -name SEARCH_PATH "c:/sdi_project/uart/quartus/rx"
+set_global_assignment -name SEARCH_PATH "c:/sdi_project/uart/quartus/tx"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

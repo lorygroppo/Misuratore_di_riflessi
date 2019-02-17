@@ -73,7 +73,7 @@ ARCHITECTURE SYN OF lpm_mult0_random_number_gen IS
 	END COMPONENT;
 
 BEGIN
-	sub_wire1_bv(21 DOWNTO 0) <= "0011101111010110101000";
+	sub_wire1_bv(21 DOWNTO 0) <= "0000000000000000001010";
 	sub_wire1    <= To_stdlogicvector(sub_wire1_bv);
 	result    <= sub_wire0(29 DOWNTO 0);
 
@@ -101,7 +101,7 @@ END SYN;
 -- ============================================================
 -- Retrieval info: PRIVATE: AutoSizeResult NUMERIC "1"
 -- Retrieval info: PRIVATE: B_isConstant NUMERIC "1"
--- Retrieval info: PRIVATE: ConstantB NUMERIC "980392"
+-- Retrieval info: PRIVATE: ConstantB NUMERIC "10"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
 -- Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "0"
 -- Retrieval info: PRIVATE: Latency NUMERIC "0"
@@ -126,7 +126,7 @@ END SYN;
 -- Retrieval info: USED_PORT: dataa 0 0 8 0 INPUT NODEFVAL "dataa[7..0]"
 -- Retrieval info: USED_PORT: result 0 0 30 0 OUTPUT NODEFVAL "result[29..0]"
 -- Retrieval info: CONNECT: @dataa 0 0 8 0 dataa 0 0 8 0
--- Retrieval info: CONNECT: @datab 0 0 22 0 980392 0 0 22 0
+-- Retrieval info: CONNECT: @datab 0 0 22 0 10 0 0 22 0
 -- Retrieval info: CONNECT: result 0 0 30 0 @result 0 0 30 0
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mult0_Random_Number_Gen.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mult0_Random_Number_Gen.inc FALSE

@@ -121,38 +121,6 @@ applicable agreement for further details.
 	)
 	(annotation_block (location)(rect 2376 552 2440 568))
 )
-(pin
-	(output)
-	(rect 1808 384 2005 400)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "Campionamento_out" (rect 90 0 191 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
-	(rect 2232 696 2408 712)
-	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "stop_bit_out" (rect 90 0 150 12)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
 (symbol
 	(rect 1048 688 1112 736)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
@@ -796,7 +764,7 @@ applicable agreement for further details.
 		(pt 224 32)
 		(output)
 		(text "edge_detection" (rect 0 0 74 12)(font "Arial" ))
-		(text "edge_detection" (rect 141 27 203 39)(font "Arial" ))
+		(text "edge_detection" (rect 141 27 215 39)(font "Arial" ))
 		(line (pt 224 32)(pt 208 32))
 	)
 	(drawing
@@ -1293,22 +1261,6 @@ applicable agreement for further details.
 	(pt 824 448)
 )
 (connector
-	(pt 1592 496)
-	(pt 1592 392)
-)
-(connector
-	(pt 1592 392)
-	(pt 1808 392)
-)
-(connector
-	(pt 792 496)
-	(pt 1592 496)
-)
-(connector
-	(pt 1592 496)
-	(pt 1608 496)
-)
-(connector
 	(pt 2072 544)
 	(pt 2072 552)
 	(bus)
@@ -1333,23 +1285,10 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2072 704)
-	(pt 2232 704)
-)
-(connector
-	(pt 2072 592)
-	(pt 2072 704)
-)
-(connector
 	(text "data_out[7..0]" (rect 2082 536 2150 548)(font "Arial" ))
 	(pt 2072 552)
 	(pt 2192 552)
 	(bus)
-)
-(connector
-	(text "data_out[8]" (rect 2056 871 2068 926)(font "Arial" )(vertical))
-	(pt 2072 704)
-	(pt 2072 928)
 )
 (connector
 	(pt 2016 640)
@@ -1358,6 +1297,15 @@ applicable agreement for further details.
 (connector
 	(pt 2016 728)
 	(pt 2016 904)
+)
+(connector
+	(pt 792 496)
+	(pt 1608 496)
+)
+(connector
+	(text "data_out[8]" (rect 2056 871 2068 926)(font "Arial" )(vertical))
+	(pt 2072 592)
+	(pt 2072 928)
 )
 (junction (pt 1048 448))
 (junction (pt 1504 752))
@@ -1374,6 +1322,4 @@ applicable agreement for further details.
 (junction (pt 928 416))
 (junction (pt 344 272))
 (junction (pt 2016 728))
-(junction (pt 1592 496))
 (junction (pt 1976 544))
-(junction (pt 2072 704))

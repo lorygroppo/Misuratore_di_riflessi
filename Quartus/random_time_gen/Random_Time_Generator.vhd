@@ -14,7 +14,7 @@
 
 -- PROGRAM		"Quartus II 32-bit"
 -- VERSION		"Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition"
--- CREATED		"Fri Jan 18 11:20:08 2019"
+-- CREATED		"Sat Feb 16 18:39:48 2019"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
@@ -28,8 +28,6 @@ ENTITY Random_Time_Generator IS
 		CK_25MHz :  IN  STD_LOGIC;
 		RESET :  IN  STD_LOGIC;
 		Termine_Attesa :  OUT  STD_LOGIC;
-		Inizio_attesa_in :  OUT  STD_LOGIC;
-		Conteggio_finale :  OUT  STD_LOGIC_VECTOR(29 DOWNTO 0);
 		Random_Number :  OUT  STD_LOGIC_VECTOR(7 DOWNTO 0)
 	);
 END Random_Time_Generator;
@@ -90,8 +88,6 @@ SIGNAL	SYNTHESIZED_WIRE_8 :  STD_LOGIC_VECTOR(29 DOWNTO 0);
 
 
 BEGIN 
-Inizio_attesa_in <= Inizio_Attesa;
-Conteggio_finale <= SYNTHESIZED_WIRE_0;
 Random_Number <= SYNTHESIZED_WIRE_10;
 
 

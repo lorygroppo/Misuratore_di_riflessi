@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Rilevatore_Riflessi_Completo
-Thu Jan 10 21:38:47 2019
+Fri Feb 15 16:18:17 2019
 Quartus II 32-bit Version 11.1 Build 173 11/01/2011 SJ Web Edition
 
 
@@ -19,18 +19,18 @@ Quartus II 32-bit Version 11.1 Build 173 11/01/2011 SJ Web Edition
  11. State Machine - |Rilevatore_Riflessi_Completo|Pilotaggio_LED2:inst3|FSM_Pilotaggio_LED:b2v_inst|state
  12. User-Specified and Inferred Latches
  13. General Register Statistics
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for output_encoder:inst|lpm_rom_0:b2v_inst13|LPM_ROM:b2v_inst13|altrom:srom|altsyncram:rom_block|altsyncram_vl51:auto_generated
- 16. Parameter Settings for User Entity Instance: output_encoder:inst|out_gen_lpm_mux0:b2v_inst|LPM_MUX:LPM_MUX_component
- 17. Parameter Settings for User Entity Instance: output_encoder:inst|out_gen_lpm_counter0:b2v_inst12|lpm_counter:LPM_COUNTER_component
- 18. Parameter Settings for User Entity Instance: output_encoder:inst|lpm_rom_0:b2v_inst13|LPM_ROM:b2v_inst13
- 19. Parameter Settings for User Entity Instance: Pilotaggio_LED2:inst3|lpm_decoder_leds_pilot:b2v_inst4|lpm_decode:LPM_DECODE_component
- 20. Parameter Settings for User Entity Instance: Random_Time_Generator:inst5|lpm_shiftreg0_lfsr_random:b2v_inst4|lpm_shiftreg:LPM_SHIFTREG_component
- 21. Parameter Settings for User Entity Instance: Random_Time_Generator:inst5|lpm_mult0_random_number_gen:b2v_inst6|lpm_mult:lpm_mult_component
- 22. Parameter Settings for User Entity Instance: Random_Time_Generator:inst5|contatore_tempo_random:b2v_inst8|lpm_counter:LPM_COUNTER_component
- 23. Parameter Settings for User Entity Instance: dec_command:inst4|lpm_ff_0:b2v_inst11|LPM_FF:b2v_inst11
- 24. Parameter Settings for User Entity Instance: dec_command:inst4|lpm_ff_1:b2v_inst12|LPM_FF:b2v_inst12
- 25. Parameter Settings for User Entity Instance: counter_tempo_riflessi:inst7|lpm_counter:LPM_COUNTER_component
+ 14. Source assignments for output_encoder:inst|lpm_rom_0:b2v_inst13|LPM_ROM:b2v_inst13|altrom:srom|altsyncram:rom_block|altsyncram_vl51:auto_generated
+ 15. Parameter Settings for User Entity Instance: output_encoder:inst|out_gen_lpm_mux0:b2v_inst|LPM_MUX:LPM_MUX_component
+ 16. Parameter Settings for User Entity Instance: output_encoder:inst|out_gen_lpm_counter0:b2v_inst12|lpm_counter:LPM_COUNTER_component
+ 17. Parameter Settings for User Entity Instance: output_encoder:inst|lpm_rom_0:b2v_inst13|LPM_ROM:b2v_inst13
+ 18. Parameter Settings for User Entity Instance: Pilotaggio_LED2:inst3|lpm_decoder_leds_pilot:b2v_inst4|lpm_decode:LPM_DECODE_component
+ 19. Parameter Settings for User Entity Instance: Random_Time_Generator:inst5|lpm_shiftreg0_lfsr_random:b2v_inst4|lpm_shiftreg:LPM_SHIFTREG_component
+ 20. Parameter Settings for User Entity Instance: Random_Time_Generator:inst5|lpm_mult0_random_number_gen:b2v_inst6|lpm_mult:lpm_mult_component
+ 21. Parameter Settings for User Entity Instance: Random_Time_Generator:inst5|contatore_tempo_random:b2v_inst8|lpm_counter:LPM_COUNTER_component
+ 22. Parameter Settings for User Entity Instance: dec_command:inst4|lpm_ff_0:b2v_inst11|LPM_FF:b2v_inst11
+ 23. Parameter Settings for User Entity Instance: dec_command:inst4|lpm_ff_1:b2v_inst12|LPM_FF:b2v_inst12
+ 24. Parameter Settings for User Entity Instance: counter_tempo_riflessi:inst7|lpm_counter:LPM_COUNTER_component
+ 25. Parameter Settings for User Entity Instance: lpm_counter_ms:inst1|lpm_counter:LPM_COUNTER_component
  26. lpm_shiftreg Parameter Settings by Entity Instance
  27. lpm_mult Parameter Settings by Entity Instance
  28. Elapsed Time Per Partition
@@ -60,16 +60,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jan 10 21:38:47 2019    ;
+; Analysis & Synthesis Status        ; Successful - Fri Feb 15 16:18:17 2019    ;
 ; Quartus II 32-bit Version          ; 11.1 Build 173 11/01/2011 SJ Web Edition ;
 ; Revision Name                      ; Rilevatore_Riflessi_Completo             ;
 ; Top-level Entity Name              ; Rilevatore_Riflessi_Completo             ;
 ; Family                             ; Cyclone II                               ;
-; Total logic elements               ; 253                                      ;
-;     Total combinational functions  ; 228                                      ;
-;     Dedicated logic registers      ; 90                                       ;
-; Total registers                    ; 90                                       ;
-; Total pins                         ; 30                                       ;
+; Total logic elements               ; 241                                      ;
+;     Total combinational functions  ; 223                                      ;
+;     Dedicated logic registers      ; 98                                       ;
+; Total registers                    ; 98                                       ;
+; Total pins                         ; 33                                       ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 128                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                        ;
@@ -171,90 +171,93 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                  ;
-+----------------------------------------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------+
-; File Name with User-Entered Path                                     ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                          ;
-+----------------------------------------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------+
-; Rilevatore_Riflessi_Completo.bdf                                     ; yes             ; User Block Diagram/Schematic File      ; C:/Users/valer/Desktop/RR_Progetto/Progetto_Completo/Rilevatore_Riflessi_Completo.bdf ;
-; counter_tempo_riflessi.vhd                                           ; yes             ; User Wizard-Generated File             ; C:/Users/valer/Desktop/RR_Progetto/Progetto_Completo/counter_tempo_riflessi.vhd       ;
-; output_encoder.vhd                                                   ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/rilevatore riflessi/output_encoder.vhd             ;
-; out_gen_lpm_mux0.vhd                                                 ; yes             ; Auto-Found Wizard-Generated File       ; c:/users/valer/desktop/rr_progetto/rilevatore riflessi/out_gen_lpm_mux0.vhd           ;
-; lpm_mux.tdf                                                          ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_mux.tdf                            ;
-; aglobal111.inc                                                       ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/aglobal111.inc                         ;
-; muxlut.inc                                                           ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/muxlut.inc                             ;
-; bypassff.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/bypassff.inc                           ;
-; altshift.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/altshift.inc                           ;
-; db/mux_63e.tdf                                                       ; yes             ; Auto-Generated Megafunction            ; C:/Users/valer/Desktop/RR_Progetto/Progetto_Completo/db/mux_63e.tdf                   ;
-; out_gen_lpm_counter0.vhd                                             ; yes             ; Auto-Found Wizard-Generated File       ; c:/users/valer/desktop/rr_progetto/rilevatore riflessi/out_gen_lpm_counter0.vhd       ;
-; lpm_counter.tdf                                                      ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_counter.tdf                        ;
-; lpm_constant.inc                                                     ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_constant.inc                       ;
-; lpm_decode.inc                                                       ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_decode.inc                         ;
-; lpm_add_sub.inc                                                      ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_add_sub.inc                        ;
-; cmpconst.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/cmpconst.inc                           ;
-; lpm_compare.inc                                                      ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_compare.inc                        ;
-; lpm_counter.inc                                                      ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_counter.inc                        ;
-; dffeea.inc                                                           ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/dffeea.inc                             ;
-; alt_counter_stratix.inc                                              ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/alt_counter_stratix.inc                ;
-; db/cntr_ecj.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; C:/Users/valer/Desktop/RR_Progetto/Progetto_Completo/db/cntr_ecj.tdf                  ;
-; lpm_rom_0.vhd                                                        ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/rilevatore riflessi/lpm_rom_0.vhd                  ;
-; lpm_rom.tdf                                                          ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_rom.tdf                            ;
-; altrom.inc                                                           ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/altrom.inc                             ;
-; altrom.tdf                                                           ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/altrom.tdf                             ;
-; memmodes.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/others/maxplus2/memmodes.inc                         ;
-; lpm_mux.inc                                                          ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_mux.inc                            ;
-; altsyncram.inc                                                       ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/altsyncram.inc                         ;
-; altsyncram.tdf                                                       ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/altsyncram.tdf                         ;
-; stratix_ram_block.inc                                                ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/stratix_ram_block.inc                  ;
-; a_rdenreg.inc                                                        ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/a_rdenreg.inc                          ;
-; altram.inc                                                           ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/altram.inc                             ;
-; altdpram.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/altdpram.inc                           ;
-; db/altsyncram_vl51.tdf                                               ; yes             ; Auto-Generated Megafunction            ; C:/Users/valer/Desktop/RR_Progetto/Progetto_Completo/db/altsyncram_vl51.tdf           ;
-; C:/Users/valer/Desktop/RR_Progetto/Rilevatore Riflessi/HEX2ASCII.hex ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/valer/Desktop/RR_Progetto/Rilevatore Riflessi/HEX2ASCII.hex                  ;
-; pilotaggio_led2.vhd                                                  ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/pilotaggio_led2/pilotaggio_led2.vhd                ;
-; fsm_pilotaggio_led.vhd                                               ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/pilotaggio_led2/fsm_pilotaggio_led.vhd             ;
-; lpm_decoder_leds_pilot.vhd                                           ; yes             ; Auto-Found Wizard-Generated File       ; c:/users/valer/desktop/rr_progetto/pilotaggio_led2/lpm_decoder_leds_pilot.vhd         ;
-; lpm_decode.tdf                                                       ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_decode.tdf                         ;
-; declut.inc                                                           ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/declut.inc                             ;
-; db/decode_n6f.tdf                                                    ; yes             ; Auto-Generated Megafunction            ; C:/Users/valer/Desktop/RR_Progetto/Progetto_Completo/db/decode_n6f.tdf                ;
-; random_time_generator.vhd                                            ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/random_time_gen/random_time_generator.vhd          ;
-; tc_tempo_attesa.vhd                                                  ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/random_time_gen/tc_tempo_attesa.vhd                ;
-; lpm_shiftreg0_lfsr_random.vhd                                        ; yes             ; Auto-Found Wizard-Generated File       ; c:/users/valer/desktop/rr_progetto/random_time_gen/lpm_shiftreg0_lfsr_random.vhd      ;
-; lpm_shiftreg.tdf                                                     ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_shiftreg.tdf                       ;
-; xor_lfsr.vhd                                                         ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/random_time_gen/xor_lfsr.vhd                       ;
-; lpm_mult0_random_number_gen.vhd                                      ; yes             ; Auto-Found Wizard-Generated File       ; c:/users/valer/desktop/rr_progetto/random_time_gen/lpm_mult0_random_number_gen.vhd    ;
-; lpm_mult.tdf                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_mult.tdf                           ;
-; multcore.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/multcore.inc                           ;
-; multcore.tdf                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/multcore.tdf                           ;
-; csa_add.inc                                                          ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/csa_add.inc                            ;
-; mpar_add.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/mpar_add.inc                           ;
-; muleabz.inc                                                          ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/muleabz.inc                            ;
-; mul_lfrg.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/mul_lfrg.inc                           ;
-; mul_boothc.inc                                                       ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/mul_boothc.inc                         ;
-; alt_ded_mult.inc                                                     ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/alt_ded_mult.inc                       ;
-; alt_ded_mult_y.inc                                                   ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/alt_ded_mult_y.inc                     ;
-; dffpipe.inc                                                          ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/dffpipe.inc                            ;
-; mpar_add.tdf                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/mpar_add.tdf                           ;
-; lpm_add_sub.tdf                                                      ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_add_sub.tdf                        ;
-; addcore.inc                                                          ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/addcore.inc                            ;
-; look_add.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/look_add.inc                           ;
-; alt_stratix_add_sub.inc                                              ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                ;
-; db/add_sub_8ch.tdf                                                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/valer/Desktop/RR_Progetto/Progetto_Completo/db/add_sub_8ch.tdf               ;
-; altshift.tdf                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/altshift.tdf                           ;
-; contatore_tempo_random.vhd                                           ; yes             ; Auto-Found Wizard-Generated File       ; c:/users/valer/desktop/rr_progetto/random_time_gen/contatore_tempo_random.vhd         ;
-; db/cntr_84j.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; C:/Users/valer/Desktop/RR_Progetto/Progetto_Completo/db/cntr_84j.tdf                  ;
-; dec_command.vhd                                                      ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/dec_command.vhd                        ;
-; lpm_ff_0.vhd                                                         ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/lpm_ff_0.vhd                           ;
-; lpm_ff.tdf                                                           ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_ff.tdf                             ;
-; lpm_ff_1.vhd                                                         ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/lpm_ff_1.vhd                           ;
-; l_detect.vhd                                                         ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/l_detect.vhd                           ;
-; detect_1.vhd                                                         ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/detect_1.vhd                           ;
-; detect_2.vhd                                                         ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/detect_2.vhd                           ;
-; detect_3.vhd                                                         ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/detect_3.vhd                           ;
-; detect_4.vhd                                                         ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/detect_4.vhd                           ;
-; fsm_dec_command.vhd                                                  ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/fsm_dec_command.vhd                    ;
-; db/cntr_mpi.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; C:/Users/valer/Desktop/RR_Progetto/Progetto_Completo/db/cntr_mpi.tdf                  ;
-+----------------------------------------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                               ;
++----------------------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------+
+; File Name with User-Entered Path                                     ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                       ;
++----------------------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------+
+; Rilevatore_Riflessi_Completo.bdf                                     ; yes             ; User Block Diagram/Schematic File      ; C:/SDI_project/rivelatore_riflessi/Rilevatore_Riflessi_Completo.bdf                ;
+; counter_tempo_riflessi.vhd                                           ; yes             ; User Wizard-Generated File             ; C:/SDI_project/rivelatore_riflessi/counter_tempo_riflessi.vhd                      ;
+; ms_detect.vhd                                                        ; yes             ; User VHDL File                         ; C:/SDI_project/rivelatore_riflessi/ms_detect.vhd                                   ;
+; output_encoder.vhd                                                   ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/rilevatore riflessi/output_encoder.vhd          ;
+; out_gen_lpm_mux0.vhd                                                 ; yes             ; Auto-Found Wizard-Generated File       ; c:/users/valer/desktop/rr_progetto/rilevatore riflessi/out_gen_lpm_mux0.vhd        ;
+; lpm_mux.tdf                                                          ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_mux.tdf                         ;
+; aglobal111.inc                                                       ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/aglobal111.inc                      ;
+; muxlut.inc                                                           ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/muxlut.inc                          ;
+; bypassff.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/bypassff.inc                        ;
+; altshift.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/altshift.inc                        ;
+; db/mux_63e.tdf                                                       ; yes             ; Auto-Generated Megafunction            ; C:/SDI_project/rivelatore_riflessi/db/mux_63e.tdf                                  ;
+; out_gen_lpm_counter0.vhd                                             ; yes             ; Auto-Found Wizard-Generated File       ; c:/users/valer/desktop/rr_progetto/rilevatore riflessi/out_gen_lpm_counter0.vhd    ;
+; lpm_counter.tdf                                                      ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_counter.tdf                     ;
+; lpm_constant.inc                                                     ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_constant.inc                    ;
+; lpm_decode.inc                                                       ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_decode.inc                      ;
+; lpm_add_sub.inc                                                      ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_add_sub.inc                     ;
+; cmpconst.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/cmpconst.inc                        ;
+; lpm_compare.inc                                                      ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_compare.inc                     ;
+; lpm_counter.inc                                                      ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_counter.inc                     ;
+; dffeea.inc                                                           ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/dffeea.inc                          ;
+; alt_counter_stratix.inc                                              ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/alt_counter_stratix.inc             ;
+; db/cntr_ecj.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; C:/SDI_project/rivelatore_riflessi/db/cntr_ecj.tdf                                 ;
+; lpm_rom_0.vhd                                                        ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/rilevatore riflessi/lpm_rom_0.vhd               ;
+; lpm_rom.tdf                                                          ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_rom.tdf                         ;
+; altrom.inc                                                           ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/altrom.inc                          ;
+; altrom.tdf                                                           ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/altrom.tdf                          ;
+; memmodes.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/others/maxplus2/memmodes.inc                      ;
+; lpm_mux.inc                                                          ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_mux.inc                         ;
+; altsyncram.inc                                                       ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/altsyncram.inc                      ;
+; altsyncram.tdf                                                       ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/altsyncram.tdf                      ;
+; stratix_ram_block.inc                                                ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/stratix_ram_block.inc               ;
+; a_rdenreg.inc                                                        ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/a_rdenreg.inc                       ;
+; altram.inc                                                           ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/altram.inc                          ;
+; altdpram.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/altdpram.inc                        ;
+; db/altsyncram_vl51.tdf                                               ; yes             ; Auto-Generated Megafunction            ; C:/SDI_project/rivelatore_riflessi/db/altsyncram_vl51.tdf                          ;
+; C:/Users/valer/Desktop/RR_Progetto/Rilevatore Riflessi/HEX2ASCII.hex ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/valer/Desktop/RR_Progetto/Rilevatore Riflessi/HEX2ASCII.hex               ;
+; pilotaggio_led2.vhd                                                  ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/pilotaggio_led2/pilotaggio_led2.vhd             ;
+; fsm_pilotaggio_led.vhd                                               ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/pilotaggio_led2/fsm_pilotaggio_led.vhd          ;
+; lpm_decoder_leds_pilot.vhd                                           ; yes             ; Auto-Found Wizard-Generated File       ; c:/users/valer/desktop/rr_progetto/pilotaggio_led2/lpm_decoder_leds_pilot.vhd      ;
+; lpm_decode.tdf                                                       ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_decode.tdf                      ;
+; declut.inc                                                           ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/declut.inc                          ;
+; db/decode_n6f.tdf                                                    ; yes             ; Auto-Generated Megafunction            ; C:/SDI_project/rivelatore_riflessi/db/decode_n6f.tdf                               ;
+; random_time_generator.vhd                                            ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/random_time_gen/random_time_generator.vhd       ;
+; tc_tempo_attesa.vhd                                                  ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/random_time_gen/tc_tempo_attesa.vhd             ;
+; lpm_shiftreg0_lfsr_random.vhd                                        ; yes             ; Auto-Found Wizard-Generated File       ; c:/users/valer/desktop/rr_progetto/random_time_gen/lpm_shiftreg0_lfsr_random.vhd   ;
+; lpm_shiftreg.tdf                                                     ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_shiftreg.tdf                    ;
+; xor_lfsr.vhd                                                         ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/random_time_gen/xor_lfsr.vhd                    ;
+; lpm_mult0_random_number_gen.vhd                                      ; yes             ; Auto-Found Wizard-Generated File       ; c:/users/valer/desktop/rr_progetto/random_time_gen/lpm_mult0_random_number_gen.vhd ;
+; lpm_mult.tdf                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_mult.tdf                        ;
+; multcore.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/multcore.inc                        ;
+; multcore.tdf                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/multcore.tdf                        ;
+; csa_add.inc                                                          ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/csa_add.inc                         ;
+; mpar_add.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/mpar_add.inc                        ;
+; muleabz.inc                                                          ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/muleabz.inc                         ;
+; mul_lfrg.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/mul_lfrg.inc                        ;
+; mul_boothc.inc                                                       ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/mul_boothc.inc                      ;
+; alt_ded_mult.inc                                                     ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/alt_ded_mult.inc                    ;
+; alt_ded_mult_y.inc                                                   ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/alt_ded_mult_y.inc                  ;
+; dffpipe.inc                                                          ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/dffpipe.inc                         ;
+; mpar_add.tdf                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/mpar_add.tdf                        ;
+; lpm_add_sub.tdf                                                      ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_add_sub.tdf                     ;
+; addcore.inc                                                          ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/addcore.inc                         ;
+; look_add.inc                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/look_add.inc                        ;
+; alt_stratix_add_sub.inc                                              ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc             ;
+; db/add_sub_8ch.tdf                                                   ; yes             ; Auto-Generated Megafunction            ; C:/SDI_project/rivelatore_riflessi/db/add_sub_8ch.tdf                              ;
+; altshift.tdf                                                         ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/altshift.tdf                        ;
+; contatore_tempo_random.vhd                                           ; yes             ; Auto-Found Wizard-Generated File       ; c:/users/valer/desktop/rr_progetto/random_time_gen/contatore_tempo_random.vhd      ;
+; db/cntr_84j.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; C:/SDI_project/rivelatore_riflessi/db/cntr_84j.tdf                                 ;
+; dec_command.vhd                                                      ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/dec_command.vhd                     ;
+; lpm_ff_0.vhd                                                         ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/lpm_ff_0.vhd                        ;
+; lpm_ff.tdf                                                           ; yes             ; Megafunction                           ; c:/altera/11.1/quartus/libraries/megafunctions/lpm_ff.tdf                          ;
+; lpm_ff_1.vhd                                                         ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/lpm_ff_1.vhd                        ;
+; l_detect.vhd                                                         ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/l_detect.vhd                        ;
+; detect_1.vhd                                                         ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/detect_1.vhd                        ;
+; detect_2.vhd                                                         ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/detect_2.vhd                        ;
+; detect_3.vhd                                                         ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/detect_3.vhd                        ;
+; detect_4.vhd                                                         ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/detect_4.vhd                        ;
+; fsm_dec_command.vhd                                                  ; yes             ; Auto-Found VHDL File                   ; c:/users/valer/desktop/rr_progetto/dec_command/fsm_dec_command.vhd                 ;
+; db/cntr_o7j.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; C:/SDI_project/rivelatore_riflessi/db/cntr_o7j.tdf                                 ;
+; lpm_counter_ms.vhd                                                   ; yes             ; Auto-Found Wizard-Generated File       ; C:/SDI_project/rivelatore_riflessi/lpm_counter_ms.vhd                              ;
+; db/cntr_n7j.tdf                                                      ; yes             ; Auto-Generated Megafunction            ; C:/SDI_project/rivelatore_riflessi/db/cntr_n7j.tdf                                 ;
++----------------------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -262,28 +265,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 253   ;
+; Estimated Total logic elements              ; 241   ;
 ;                                             ;       ;
-; Total combinational functions               ; 228   ;
+; Total combinational functions               ; 223   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 92    ;
-;     -- 3 input functions                    ; 74    ;
-;     -- <=2 input functions                  ; 62    ;
+;     -- 4 input functions                    ; 75    ;
+;     -- 3 input functions                    ; 66    ;
+;     -- <=2 input functions                  ; 82    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 157   ;
-;     -- arithmetic mode                      ; 71    ;
+;     -- normal mode                          ; 139   ;
+;     -- arithmetic mode                      ; 84    ;
 ;                                             ;       ;
-; Total registers                             ; 90    ;
-;     -- Dedicated logic registers            ; 90    ;
+; Total registers                             ; 98    ;
+;     -- Dedicated logic registers            ; 98    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 30    ;
+; I/O pins                                    ; 33    ;
 ; Total memory bits                           ; 128   ;
 ; Maximum fan-out node                        ; CLOCK ;
-; Maximum fan-out                             ; 60    ;
-; Total fan-out                               ; 1103  ;
-; Average fan-out                             ; 3.10  ;
+; Maximum fan-out                             ; 106   ;
+; Total fan-out                               ; 1129  ;
+; Average fan-out                             ; 3.12  ;
 +---------------------------------------------+-------+
 
 
@@ -292,38 +295,36 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                            ; Library Name ;
 +----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |Rilevatore_Riflessi_Completo                      ; 228 (2)           ; 90 (0)       ; 128         ; 0            ; 0       ; 0         ; 30   ; 0            ; |Rilevatore_Riflessi_Completo                                                                                                                                                                                  ;              ;
-;    |Pilotaggio_LED2:inst3|                         ; 16 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Pilotaggio_LED2:inst3                                                                                                                                                            ;              ;
-;       |FSM_Pilotaggio_LED:b2v_inst|                ; 15 (15)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Pilotaggio_LED2:inst3|FSM_Pilotaggio_LED:b2v_inst                                                                                                                                ;              ;
-;       |lpm_decoder_LEDS_pilot:b2v_inst4|           ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Pilotaggio_LED2:inst3|lpm_decoder_LEDS_pilot:b2v_inst4                                                                                                                           ;              ;
-;          |lpm_decode:LPM_DECODE_component|         ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Pilotaggio_LED2:inst3|lpm_decoder_LEDS_pilot:b2v_inst4|lpm_decode:LPM_DECODE_component                                                                                           ;              ;
-;             |decode_n6f:auto_generated|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Pilotaggio_LED2:inst3|lpm_decoder_LEDS_pilot:b2v_inst4|lpm_decode:LPM_DECODE_component|decode_n6f:auto_generated                                                                 ;              ;
-;    |Random_Time_Generator:inst5|                   ; 143 (0)           ; 38 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5                                                                                                                                                      ;              ;
+; |Rilevatore_Riflessi_Completo                      ; 223 (2)           ; 98 (0)       ; 128         ; 0            ; 0       ; 0         ; 33   ; 0            ; |Rilevatore_Riflessi_Completo                                                                                                                                                                                  ;              ;
+;    |Pilotaggio_LED2:inst3|                         ; 11 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Pilotaggio_LED2:inst3                                                                                                                                                            ;              ;
+;       |FSM_Pilotaggio_LED:b2v_inst|                ; 11 (11)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Pilotaggio_LED2:inst3|FSM_Pilotaggio_LED:b2v_inst                                                                                                                                ;              ;
+;    |Random_Time_Generator:inst5|                   ; 131 (0)           ; 38 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5                                                                                                                                                      ;              ;
 ;       |Contatore_Tempo_random:b2v_inst8|           ; 35 (0)            ; 30 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|Contatore_Tempo_random:b2v_inst8                                                                                                                     ;              ;
 ;          |lpm_counter:LPM_COUNTER_component|       ; 35 (0)            ; 30 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|Contatore_Tempo_random:b2v_inst8|lpm_counter:LPM_COUNTER_component                                                                                   ;              ;
 ;             |cntr_84j:auto_generated|              ; 35 (35)           ; 30 (30)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|Contatore_Tempo_random:b2v_inst8|lpm_counter:LPM_COUNTER_component|cntr_84j:auto_generated                                                           ;              ;
-;       |TC_tempo_attesa:b2v_inst|                   ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|TC_tempo_attesa:b2v_inst                                                                                                                             ;              ;
+;       |TC_tempo_attesa:b2v_inst|                   ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|TC_tempo_attesa:b2v_inst                                                                                                                             ;              ;
 ;       |XOR_LFSR:b2v_inst5|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|XOR_LFSR:b2v_inst5                                                                                                                                   ;              ;
-;       |lpm_mult0_Random_Number_Gen:b2v_inst6|      ; 97 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6                                                                                                                ;              ;
-;          |lpm_mult:lpm_mult_component|             ; 97 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component                                                                                    ;              ;
-;             |multcore:mult_core|                   ; 97 (45)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core                                                                 ;              ;
-;                |mpar_add:padder|                   ; 52 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder                                                 ;              ;
-;                   |lpm_add_sub:adder[0]|           ; 52 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                            ;              ;
-;                      |add_sub_8ch:auto_generated|  ; 52 (52)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_8ch:auto_generated ;              ;
+;       |lpm_mult0_Random_Number_Gen:b2v_inst6|      ; 87 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6                                                                                                                ;              ;
+;          |lpm_mult:lpm_mult_component|             ; 87 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component                                                                                    ;              ;
+;             |multcore:mult_core|                   ; 87 (37)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core                                                                 ;              ;
+;                |mpar_add:padder|                   ; 50 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder                                                 ;              ;
+;                   |lpm_add_sub:adder[0]|           ; 50 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                            ;              ;
+;                      |add_sub_8ch:auto_generated|  ; 50 (50)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_8ch:auto_generated ;              ;
 ;       |lpm_shiftreg0_LFSR_RANDOM:b2v_inst4|        ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|lpm_shiftreg0_LFSR_RANDOM:b2v_inst4                                                                                                                  ;              ;
 ;          |lpm_shiftreg:LPM_SHIFTREG_component|     ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|lpm_shiftreg0_LFSR_RANDOM:b2v_inst4|lpm_shiftreg:LPM_SHIFTREG_component                                                                              ;              ;
 ;    |counter_tempo_riflessi:inst7|                  ; 17 (0)            ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|counter_tempo_riflessi:inst7                                                                                                                                                     ;              ;
 ;       |lpm_counter:LPM_COUNTER_component|          ; 17 (0)            ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|counter_tempo_riflessi:inst7|lpm_counter:LPM_COUNTER_component                                                                                                                   ;              ;
-;          |cntr_mpi:auto_generated|                 ; 17 (17)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|counter_tempo_riflessi:inst7|lpm_counter:LPM_COUNTER_component|cntr_mpi:auto_generated                                                                                           ;              ;
-;    |dec_command:inst4|                             ; 34 (0)            ; 26 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|dec_command:inst4                                                                                                                                                                ;              ;
-;       |Detect_1:b2v_inst3|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|dec_command:inst4|Detect_1:b2v_inst3                                                                                                                                             ;              ;
-;       |Detect_2:b2v_inst4|                         ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|dec_command:inst4|Detect_2:b2v_inst4                                                                                                                                             ;              ;
-;       |FSM_dec_command:b2v_inst7|                  ; 27 (27)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|dec_command:inst4|FSM_dec_command:b2v_inst7                                                                                                                                      ;              ;
-;       |L_Detect:b2v_inst2|                         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|dec_command:inst4|L_Detect:b2v_inst2                                                                                                                                             ;              ;
-;       |lpm_ff_0:b2v_inst11|                        ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|dec_command:inst4|lpm_ff_0:b2v_inst11                                                                                                                                            ;              ;
-;          |lpm_ff:b2v_inst11|                       ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|dec_command:inst4|lpm_ff_0:b2v_inst11|lpm_ff:b2v_inst11                                                                                                                          ;              ;
+;          |cntr_o7j:auto_generated|                 ; 17 (17)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|counter_tempo_riflessi:inst7|lpm_counter:LPM_COUNTER_component|cntr_o7j:auto_generated                                                                                           ;              ;
+;    |dec_command:inst4|                             ; 25 (0)            ; 19 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|dec_command:inst4                                                                                                                                                                ;              ;
+;       |Detect_1:b2v_inst3|                         ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|dec_command:inst4|Detect_1:b2v_inst3                                                                                                                                             ;              ;
+;       |Detect_4:b2v_inst6|                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|dec_command:inst4|Detect_4:b2v_inst6                                                                                                                                             ;              ;
+;       |FSM_dec_command:b2v_inst7|                  ; 22 (22)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|dec_command:inst4|FSM_dec_command:b2v_inst7                                                                                                                                      ;              ;
 ;       |lpm_ff_1:b2v_inst12|                        ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|dec_command:inst4|lpm_ff_1:b2v_inst12                                                                                                                                            ;              ;
 ;          |lpm_ff:b2v_inst12|                       ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|dec_command:inst4|lpm_ff_1:b2v_inst12|lpm_ff:b2v_inst12                                                                                                                          ;              ;
+;    |lpm_counter_ms:inst1|                          ; 16 (0)            ; 15 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|lpm_counter_ms:inst1                                                                                                                                                             ;              ;
+;       |lpm_counter:LPM_COUNTER_component|          ; 16 (0)            ; 15 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|lpm_counter_ms:inst1|lpm_counter:LPM_COUNTER_component                                                                                                                           ;              ;
+;          |cntr_n7j:auto_generated|                 ; 16 (16)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|lpm_counter_ms:inst1|lpm_counter:LPM_COUNTER_component|cntr_n7j:auto_generated                                                                                                   ;              ;
+;    |ms_detect:inst2|                               ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|ms_detect:inst2                                                                                                                                                                  ;              ;
 ;    |output_encoder:inst|                           ; 16 (4)            ; 6 (3)        ; 128         ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|output_encoder:inst                                                                                                                                                              ;              ;
 ;       |lpm_rom_0:b2v_inst13|                       ; 0 (0)             ; 0 (0)        ; 128         ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|output_encoder:inst|lpm_rom_0:b2v_inst13                                                                                                                                         ;              ;
 ;          |lpm_rom:b2v_inst13|                      ; 0 (0)             ; 0 (0)        ; 128         ; 0            ; 0       ; 0         ; 0    ; 0            ; |Rilevatore_Riflessi_Completo|output_encoder:inst|lpm_rom_0:b2v_inst13|lpm_rom:b2v_inst13                                                                                                                      ;              ;
@@ -358,29 +359,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Altera ; LPM_COUNTER  ; N/A     ; N/A          ; N/A          ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|Contatore_Tempo_random:b2v_inst8      ; c:/users/valer/desktop/rr_progetto/random_time_gen/contatore_tempo_random.vhd      ;
 ; Altera ; LPM_MULT     ; N/A     ; N/A          ; N/A          ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|lpm_mult0_Random_Number_Gen:b2v_inst6 ; c:/users/valer/desktop/rr_progetto/random_time_gen/lpm_mult0_random_number_gen.vhd ;
 ; Altera ; LPM_SHIFTREG ; N/A     ; N/A          ; N/A          ; |Rilevatore_Riflessi_Completo|Random_Time_Generator:inst5|lpm_shiftreg0_LFSR_RANDOM:b2v_inst4   ; c:/users/valer/desktop/rr_progetto/random_time_gen/lpm_shiftreg0_lfsr_random.vhd   ;
-; Altera ; LPM_COUNTER  ; 11.1    ; N/A          ; N/A          ; |Rilevatore_Riflessi_Completo|counter_tempo_riflessi:inst7                                      ; C:/Users/valer/Desktop/RR_Progetto/Progetto_Completo/counter_tempo_riflessi.vhd    ;
+; Altera ; LPM_COUNTER  ; 11.1    ; N/A          ; N/A          ; |Rilevatore_Riflessi_Completo|counter_tempo_riflessi:inst7                                      ; C:/SDI_project/rivelatore_riflessi/counter_tempo_riflessi.vhd                      ;
+; Altera ; LPM_COUNTER  ; N/A     ; N/A          ; N/A          ; |Rilevatore_Riflessi_Completo|lpm_counter_ms:inst1                                              ; C:/SDI_project/rivelatore_riflessi/lpm_counter_ms.vhd                              ;
 ; Altera ; LPM_COUNTER  ; N/A     ; N/A          ; N/A          ; |Rilevatore_Riflessi_Completo|output_encoder:inst|out_gen_lpm_counter0:b2v_inst12               ; c:/users/valer/desktop/rr_progetto/rilevatore riflessi/out_gen_lpm_counter0.vhd    ;
 ; Altera ; LPM_MUX      ; N/A     ; N/A          ; N/A          ; |Rilevatore_Riflessi_Completo|output_encoder:inst|out_gen_lpm_mux0:b2v_inst                     ; c:/users/valer/desktop/rr_progetto/rilevatore riflessi/out_gen_lpm_mux0.vhd        ;
 +--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |Rilevatore_Riflessi_Completo|dec_command:inst4|FSM_dec_command:b2v_inst7|present_state                                                                                                                                                                         ;
-+------------------------------+---------------------+---------------------+---------------------+---------------------+------------------------------+---------------------------+-------------------------+------------------------+----------------------+---------------------+
-; Name                         ; present_state.Led_4 ; present_state.Led_3 ; present_state.Led_2 ; present_state.Led_1 ; present_state.Decode_command ; present_state.Led_command ; present_state.L_command ; present_state.Wait_led ; present_state.Wait_L ; present_state.Reset ;
-+------------------------------+---------------------+---------------------+---------------------+---------------------+------------------------------+---------------------------+-------------------------+------------------------+----------------------+---------------------+
-; present_state.Reset          ; 0                   ; 0                   ; 0                   ; 0                   ; 0                            ; 0                         ; 0                       ; 0                      ; 0                    ; 0                   ;
-; present_state.Wait_L         ; 0                   ; 0                   ; 0                   ; 0                   ; 0                            ; 0                         ; 0                       ; 0                      ; 1                    ; 1                   ;
-; present_state.Wait_led       ; 0                   ; 0                   ; 0                   ; 0                   ; 0                            ; 0                         ; 0                       ; 1                      ; 0                    ; 1                   ;
-; present_state.L_command      ; 0                   ; 0                   ; 0                   ; 0                   ; 0                            ; 0                         ; 1                       ; 0                      ; 0                    ; 1                   ;
-; present_state.Led_command    ; 0                   ; 0                   ; 0                   ; 0                   ; 0                            ; 1                         ; 0                       ; 0                      ; 0                    ; 1                   ;
-; present_state.Decode_command ; 0                   ; 0                   ; 0                   ; 0                   ; 1                            ; 0                         ; 0                       ; 0                      ; 0                    ; 1                   ;
-; present_state.Led_1          ; 0                   ; 0                   ; 0                   ; 1                   ; 0                            ; 0                         ; 0                       ; 0                      ; 0                    ; 1                   ;
-; present_state.Led_2          ; 0                   ; 0                   ; 1                   ; 0                   ; 0                            ; 0                         ; 0                       ; 0                      ; 0                    ; 1                   ;
-; present_state.Led_3          ; 0                   ; 1                   ; 0                   ; 0                   ; 0                            ; 0                         ; 0                       ; 0                      ; 0                    ; 1                   ;
-; present_state.Led_4          ; 1                   ; 0                   ; 0                   ; 0                   ; 0                            ; 0                         ; 0                       ; 0                      ; 0                    ; 1                   ;
-+------------------------------+---------------------+---------------------+---------------------+---------------------+------------------------------+---------------------------+-------------------------+------------------------+----------------------+---------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Rilevatore_Riflessi_Completo|dec_command:inst4|FSM_dec_command:b2v_inst7|present_state                                                                                                                                                                                                  ;
++------------------------------+------------------------+---------------------+---------------------+---------------------+---------------------+------------------------------+---------------------------+-------------------------+------------------------+----------------------+---------------------+
+; Name                         ; present_state.WAIT_END ; present_state.Led_4 ; present_state.Led_3 ; present_state.Led_2 ; present_state.Led_1 ; present_state.Decode_command ; present_state.Led_command ; present_state.L_command ; present_state.Wait_led ; present_state.Wait_L ; present_state.Reset ;
++------------------------------+------------------------+---------------------+---------------------+---------------------+---------------------+------------------------------+---------------------------+-------------------------+------------------------+----------------------+---------------------+
+; present_state.Reset          ; 0                      ; 0                   ; 0                   ; 0                   ; 0                   ; 0                            ; 0                         ; 0                       ; 0                      ; 0                    ; 0                   ;
+; present_state.Wait_L         ; 0                      ; 0                   ; 0                   ; 0                   ; 0                   ; 0                            ; 0                         ; 0                       ; 0                      ; 1                    ; 1                   ;
+; present_state.Wait_led       ; 0                      ; 0                   ; 0                   ; 0                   ; 0                   ; 0                            ; 0                         ; 0                       ; 1                      ; 0                    ; 1                   ;
+; present_state.L_command      ; 0                      ; 0                   ; 0                   ; 0                   ; 0                   ; 0                            ; 0                         ; 1                       ; 0                      ; 0                    ; 1                   ;
+; present_state.Led_command    ; 0                      ; 0                   ; 0                   ; 0                   ; 0                   ; 0                            ; 1                         ; 0                       ; 0                      ; 0                    ; 1                   ;
+; present_state.Decode_command ; 0                      ; 0                   ; 0                   ; 0                   ; 0                   ; 1                            ; 0                         ; 0                       ; 0                      ; 0                    ; 1                   ;
+; present_state.Led_1          ; 0                      ; 0                   ; 0                   ; 0                   ; 1                   ; 0                            ; 0                         ; 0                       ; 0                      ; 0                    ; 1                   ;
+; present_state.Led_2          ; 0                      ; 0                   ; 0                   ; 1                   ; 0                   ; 0                            ; 0                         ; 0                       ; 0                      ; 0                    ; 1                   ;
+; present_state.Led_3          ; 0                      ; 0                   ; 1                   ; 0                   ; 0                   ; 0                            ; 0                         ; 0                       ; 0                      ; 0                    ; 1                   ;
+; present_state.Led_4          ; 0                      ; 1                   ; 0                   ; 0                   ; 0                   ; 0                            ; 0                         ; 0                       ; 0                      ; 0                    ; 1                   ;
+; present_state.WAIT_END       ; 1                      ; 0                   ; 0                   ; 0                   ; 0                   ; 0                            ; 0                         ; 0                       ; 0                      ; 0                    ; 1                   ;
++------------------------------+------------------------+---------------------+---------------------+---------------------+---------------------+------------------------------+---------------------------+-------------------------+------------------------+----------------------+---------------------+
 
 
 Encoding Type:  One-Hot
@@ -396,22 +399,18 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------+-----------------------+----------------------+-----------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                                                         ;
-+---------------------------------------------------------------------------+--------------------------------------------------------+------------------------+
-; Latch Name                                                                ; Latch Enable Signal                                    ; Free of Timing Hazards ;
-+---------------------------------------------------------------------------+--------------------------------------------------------+------------------------+
-; dec_command:inst4|FSM_dec_command:b2v_inst7|next_state.Wait_L_355         ; dec_command:inst4|FSM_dec_command:b2v_inst7|Selector17 ; yes                    ;
-; dec_command:inst4|FSM_dec_command:b2v_inst7|next_state.Wait_led_337       ; dec_command:inst4|FSM_dec_command:b2v_inst7|Selector17 ; yes                    ;
-; dec_command:inst4|FSM_dec_command:b2v_inst7|next_state.Led_4_211          ; dec_command:inst4|FSM_dec_command:b2v_inst7|Selector17 ; yes                    ;
-; dec_command:inst4|FSM_dec_command:b2v_inst7|next_state.Led_2_247          ; dec_command:inst4|FSM_dec_command:b2v_inst7|Selector17 ; yes                    ;
-; dec_command:inst4|FSM_dec_command:b2v_inst7|next_state.Led_3_229          ; dec_command:inst4|FSM_dec_command:b2v_inst7|Selector17 ; yes                    ;
-; dec_command:inst4|FSM_dec_command:b2v_inst7|next_state.Led_1_265          ; dec_command:inst4|FSM_dec_command:b2v_inst7|Selector17 ; yes                    ;
-; dec_command:inst4|FSM_dec_command:b2v_inst7|next_state.Decode_command_283 ; dec_command:inst4|FSM_dec_command:b2v_inst7|Selector17 ; yes                    ;
-; dec_command:inst4|FSM_dec_command:b2v_inst7|next_state.L_command_319      ; dec_command:inst4|FSM_dec_command:b2v_inst7|Selector17 ; yes                    ;
-; dec_command:inst4|FSM_dec_command:b2v_inst7|next_state.Led_command_301    ; dec_command:inst4|FSM_dec_command:b2v_inst7|Selector17 ; yes                    ;
-; Number of user-specified and inferred latches = 9                         ;                                                        ;                        ;
-+---------------------------------------------------------------------------+--------------------------------------------------------+------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                                  ;
++--------------------------------------------------------+--------------------------------------------------------------------+------------------------+
+; Latch Name                                             ; Latch Enable Signal                                                ; Free of Timing Hazards ;
++--------------------------------------------------------+--------------------------------------------------------------------+------------------------+
+; dec_command:inst4|FSM_dec_command:b2v_inst7|RD         ; dec_command:inst4|FSM_dec_command:b2v_inst7|present_state.WAIT_END ; yes                    ;
+; dec_command:inst4|FSM_dec_command:b2v_inst7|SEL_LED[1] ; dec_command:inst4|FSM_dec_command:b2v_inst7|present_state.WAIT_END ; yes                    ;
+; dec_command:inst4|FSM_dec_command:b2v_inst7|SEL_LED[0] ; dec_command:inst4|FSM_dec_command:b2v_inst7|present_state.WAIT_END ; yes                    ;
+; dec_command:inst4|FSM_dec_command:b2v_inst7|Clear_reg  ; dec_command:inst4|FSM_dec_command:b2v_inst7|present_state.WAIT_END ; yes                    ;
+; dec_command:inst4|FSM_dec_command:b2v_inst7|En_reg     ; dec_command:inst4|FSM_dec_command:b2v_inst7|present_state.WAIT_END ; yes                    ;
+; Number of user-specified and inferred latches = 5      ;                                                                    ;                        ;
++--------------------------------------------------------+--------------------------------------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -420,23 +419,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 90    ;
-; Number of registers using Synchronous Clear  ; 1     ;
-; Number of registers using Synchronous Load   ; 49    ;
-; Number of registers using Asynchronous Clear ; 29    ;
+; Total registers                              ; 98    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 64    ;
+; Number of registers using Asynchronous Clear ; 53    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 35    ;
+; Number of registers using Clock Enable       ; 42    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+--------------------------------------------------------------------------------------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                                                                 ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+--------------------------------------------------------------------------------------------+----------------------------+
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; |Rilevatore_Riflessi_Completo|dec_command:inst4|FSM_dec_command:b2v_inst7|next_state.Led_3 ;                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+--------------------------------------------------------------------------------------------+----------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -673,8 +663,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CARRY_CNT_EN           ; SMART       ; Untyped                                                              ;
 ; LABWIDE_SCLR           ; ON          ; Untyped                                                              ;
 ; USE_NEW_VERSION        ; TRUE        ; Untyped                                                              ;
-; CBXI_PARAMETER         ; cntr_mpi    ; Untyped                                                              ;
+; CBXI_PARAMETER         ; cntr_o7j    ; Untyped                                                              ;
 +------------------------+-------------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_counter_ms:inst1|lpm_counter:LPM_COUNTER_component ;
++------------------------+-------------+--------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                         ;
++------------------------+-------------+--------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                   ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                 ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                 ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                               ;
+; LPM_WIDTH              ; 15          ; Signed Integer                                               ;
+; LPM_DIRECTION          ; UP          ; Untyped                                                      ;
+; LPM_MODULUS            ; 0           ; Untyped                                                      ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                      ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                                      ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                      ;
+; DEVICE_FAMILY          ; Cyclone II  ; Untyped                                                      ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                      ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                           ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                           ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                      ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                      ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                      ;
+; CBXI_PARAMETER         ; cntr_n7j    ; Untyped                                                      ;
++------------------------+-------------+--------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -725,7 +742,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 11.1 Build 173 11/01/2011 SJ Web Edition
-    Info: Processing started: Thu Jan 10 21:38:37 2019
+    Info: Processing started: Fri Feb 15 16:18:11 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Rilevatore_Riflessi_Completo -c Rilevatore_Riflessi_Completo
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file rilevatore_riflessi_completo.bdf
@@ -736,13 +753,16 @@ Info (12021): Found 2 design units, including 1 entities, in source file counter
 Info (12021): Found 2 design units, including 1 entities, in source file tb_progetto_completo.vhd
     Info (12022): Found design unit 1: TB_Progetto_completo-structural
     Info (12023): Found entity 1: TB_Progetto_completo
+Info (12021): Found 2 design units, including 1 entities, in source file ms_detect.vhd
+    Info (12022): Found design unit 1: ms_detect-behavioural
+    Info (12023): Found entity 1: ms_detect
 Info (12127): Elaborating entity "Rilevatore_Riflessi_Completo" for the top level hierarchy
 Warning (10335): Unrecognized synthesis attribute "noopt" at output_encoder.vhd(49)
 Warning (12125): Using design file /users/valer/desktop/rr_progetto/rilevatore riflessi/output_encoder.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: output_encoder-bdf_type
     Info (12023): Found entity 1: output_encoder
 Warning (12300): Found the following files while searching for definition of entity "output_encoder", but did not use these files because already using a different file containing the entity definition
-    Warning (12126): File: ../rilevatore riflessi/output_encoder.bdf
+    Warning (12126): File: ../../users/valer/desktop/rr_progetto/rilevatore riflessi/output_encoder.bdf
 Info (12128): Elaborating entity "output_encoder" for hierarchy "output_encoder:inst"
 Warning (12125): Using design file /users/valer/desktop/rr_progetto/rilevatore riflessi/out_gen_lpm_mux0.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: out_gen_lpm_mux0-SYN
@@ -802,7 +822,7 @@ Warning (12125): Using design file /users/valer/desktop/rr_progetto/pilotaggio_l
     Info (12022): Found design unit 1: Pilotaggio_LED2-bdf_type
     Info (12023): Found entity 1: Pilotaggio_LED2
 Warning (12300): Found the following files while searching for definition of entity "Pilotaggio_LED2", but did not use these files because already using a different file containing the entity definition
-    Warning (12126): File: ../pilotaggio_led2/Pilotaggio_LED2.bdf
+    Warning (12126): File: ../../users/valer/desktop/rr_progetto/pilotaggio_led2/Pilotaggio_LED2.bdf
 Info (12128): Elaborating entity "Pilotaggio_LED2" for hierarchy "Pilotaggio_LED2:inst3"
 Warning (12125): Using design file /users/valer/desktop/rr_progetto/pilotaggio_led2/fsm_pilotaggio_led.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: FSM_Pilotaggio_LED-Behavioral
@@ -828,7 +848,7 @@ Warning (12125): Using design file /users/valer/desktop/rr_progetto/random_time_
     Info (12022): Found design unit 1: Random_Time_Generator-bdf_type
     Info (12023): Found entity 1: Random_Time_Generator
 Warning (12300): Found the following files while searching for definition of entity "Random_Time_Generator", but did not use these files because already using a different file containing the entity definition
-    Warning (12126): File: ../random_time_gen/Random_Time_Generator.bdf
+    Warning (12126): File: ../../users/valer/desktop/rr_progetto/random_time_gen/Random_Time_Generator.bdf
 Info (12128): Elaborating entity "Random_Time_Generator" for hierarchy "Random_Time_Generator:inst5"
 Warning (12125): Using design file /users/valer/desktop/rr_progetto/random_time_gen/tc_tempo_attesa.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: TC_tempo_attesa-behavioural
@@ -893,7 +913,7 @@ Warning (12125): Using design file /users/valer/desktop/rr_progetto/dec_command/
     Info (12022): Found design unit 1: dec_command-bdf_type
     Info (12023): Found entity 1: dec_command
 Warning (12300): Found the following files while searching for definition of entity "dec_command", but did not use these files because already using a different file containing the entity definition
-    Warning (12126): File: ../dec_command/dec_command.bdf
+    Warning (12126): File: ../../users/valer/desktop/rr_progetto/dec_command/dec_command.bdf
 Info (12128): Elaborating entity "dec_command" for hierarchy "dec_command:inst4"
 Warning (12125): Using design file /users/valer/desktop/rr_progetto/dec_command/lpm_ff_0.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: lpm_ff_0-bdf_type
@@ -937,17 +957,15 @@ Warning (12125): Using design file /users/valer/desktop/rr_progetto/dec_command/
     Info (12022): Found design unit 1: FSM_dec_command-Behavioural
     Info (12023): Found entity 1: FSM_dec_command
 Info (12128): Elaborating entity "fsm_dec_command" for hierarchy "dec_command:inst4|fsm_dec_command:b2v_inst7"
-Warning (10631): VHDL Process Statement warning at fsm_dec_command.vhd(27): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "next_state.Led_4" at fsm_dec_command.vhd(27)
-Info (10041): Inferred latch for "next_state.Led_3" at fsm_dec_command.vhd(27)
-Info (10041): Inferred latch for "next_state.Led_2" at fsm_dec_command.vhd(27)
-Info (10041): Inferred latch for "next_state.Led_1" at fsm_dec_command.vhd(27)
-Info (10041): Inferred latch for "next_state.Decode_command" at fsm_dec_command.vhd(27)
-Info (10041): Inferred latch for "next_state.Led_command" at fsm_dec_command.vhd(27)
-Info (10041): Inferred latch for "next_state.L_command" at fsm_dec_command.vhd(27)
-Info (10041): Inferred latch for "next_state.Wait_led" at fsm_dec_command.vhd(27)
-Info (10041): Inferred latch for "next_state.Wait_L" at fsm_dec_command.vhd(27)
-Info (10041): Inferred latch for "next_state.Reset" at fsm_dec_command.vhd(27)
+Warning (10631): VHDL Process Statement warning at fsm_dec_command.vhd(27): inferring latch(es) for signal or variable "Clear_reg", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at fsm_dec_command.vhd(27): inferring latch(es) for signal or variable "RD", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at fsm_dec_command.vhd(27): inferring latch(es) for signal or variable "En_reg", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at fsm_dec_command.vhd(27): inferring latch(es) for signal or variable "SEL_LED", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "SEL_LED[0]" at fsm_dec_command.vhd(27)
+Info (10041): Inferred latch for "SEL_LED[1]" at fsm_dec_command.vhd(27)
+Info (10041): Inferred latch for "En_reg" at fsm_dec_command.vhd(27)
+Info (10041): Inferred latch for "RD" at fsm_dec_command.vhd(27)
+Info (10041): Inferred latch for "Clear_reg" at fsm_dec_command.vhd(27)
 Info (12128): Elaborating entity "counter_tempo_riflessi" for hierarchy "counter_tempo_riflessi:inst7"
 Info (12128): Elaborating entity "lpm_counter" for hierarchy "counter_tempo_riflessi:inst7|lpm_counter:LPM_COUNTER_component"
 Info (12130): Elaborated megafunction instantiation "counter_tempo_riflessi:inst7|lpm_counter:LPM_COUNTER_component"
@@ -956,9 +974,24 @@ Info (12133): Instantiated megafunction "counter_tempo_riflessi:inst7|lpm_counte
     Info (12134): Parameter "lpm_port_updown" = "PORT_UNUSED"
     Info (12134): Parameter "lpm_type" = "LPM_COUNTER"
     Info (12134): Parameter "lpm_width" = "16"
-Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_mpi.tdf
-    Info (12023): Found entity 1: cntr_mpi
-Info (12128): Elaborating entity "cntr_mpi" for hierarchy "counter_tempo_riflessi:inst7|lpm_counter:LPM_COUNTER_component|cntr_mpi:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_o7j.tdf
+    Info (12023): Found entity 1: cntr_o7j
+Info (12128): Elaborating entity "cntr_o7j" for hierarchy "counter_tempo_riflessi:inst7|lpm_counter:LPM_COUNTER_component|cntr_o7j:auto_generated"
+Info (12128): Elaborating entity "ms_detect" for hierarchy "ms_detect:inst2"
+Warning (12125): Using design file lpm_counter_ms.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: lpm_counter_ms-SYN
+    Info (12023): Found entity 1: lpm_counter_ms
+Info (12128): Elaborating entity "lpm_counter_ms" for hierarchy "lpm_counter_ms:inst1"
+Info (12128): Elaborating entity "lpm_counter" for hierarchy "lpm_counter_ms:inst1|lpm_counter:LPM_COUNTER_component"
+Info (12130): Elaborated megafunction instantiation "lpm_counter_ms:inst1|lpm_counter:LPM_COUNTER_component"
+Info (12133): Instantiated megafunction "lpm_counter_ms:inst1|lpm_counter:LPM_COUNTER_component" with the following parameter:
+    Info (12134): Parameter "lpm_direction" = "UP"
+    Info (12134): Parameter "lpm_port_updown" = "PORT_UNUSED"
+    Info (12134): Parameter "lpm_type" = "LPM_COUNTER"
+    Info (12134): Parameter "lpm_width" = "15"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_n7j.tdf
+    Info (12023): Found entity 1: cntr_n7j
+Info (12128): Elaborating entity "cntr_n7j" for hierarchy "lpm_counter_ms:inst1|lpm_counter:LPM_COUNTER_component|cntr_n7j:auto_generated"
 Warning (13044): Always-enabled tri-state buffer(s) removed
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "output_encoder:inst|lpm_rom_0:b2v_inst13|lpm_rom:b2v_inst13|otri[7]" to the node "Data_to_TX[7]" into a wire
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "output_encoder:inst|lpm_rom_0:b2v_inst13|lpm_rom:b2v_inst13|otri[6]" to the node "Data_to_TX[6]" into a wire
@@ -968,26 +1001,16 @@ Warning (13044): Always-enabled tri-state buffer(s) removed
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "output_encoder:inst|lpm_rom_0:b2v_inst13|lpm_rom:b2v_inst13|otri[2]" to the node "Data_to_TX[2]" into a wire
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "output_encoder:inst|lpm_rom_0:b2v_inst13|lpm_rom:b2v_inst13|otri[1]" to the node "Data_to_TX[1]" into a wire
     Warning (13045): Converted the fanout from the always-enabled tri-state buffer "output_encoder:inst|lpm_rom_0:b2v_inst13|lpm_rom:b2v_inst13|otri[0]" to the node "Data_to_TX[0]" into a wire
-Warning (13012): Latch dec_command:inst4|FSM_dec_command:b2v_inst7|next_state.Wait_L_355 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dec_command:inst4|L_Detect:b2v_inst2|L_out
-Warning (13012): Latch dec_command:inst4|FSM_dec_command:b2v_inst7|next_state.Led_4_211 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dec_command:inst4|FSM_dec_command:b2v_inst7|present_state.Decode_command
-Warning (13012): Latch dec_command:inst4|FSM_dec_command:b2v_inst7|next_state.Led_2_247 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dec_command:inst4|L_Detect:b2v_inst2|L_out
-Warning (13012): Latch dec_command:inst4|FSM_dec_command:b2v_inst7|next_state.Led_3_229 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dec_command:inst4|FSM_dec_command:b2v_inst7|present_state.Decode_command
-Warning (13012): Latch dec_command:inst4|FSM_dec_command:b2v_inst7|next_state.Led_1_265 has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal dec_command:inst4|L_Detect:b2v_inst2|L_out
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-Info (21057): Implemented 301 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 283 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
-    Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 263 logic cells
+    Info (21059): Implemented 17 output pins
+    Info (21061): Implemented 242 logic cells
     Info (21064): Implemented 8 RAM segments
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 59 warnings
-    Info: Peak virtual memory: 381 megabytes
-    Info: Processing ended: Thu Jan 10 21:38:47 2019
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:09
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 53 warnings
+    Info: Peak virtual memory: 382 megabytes
+    Info: Processing ended: Fri Feb 15 16:18:17 2019
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:05
 
 

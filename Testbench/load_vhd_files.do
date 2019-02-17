@@ -21,11 +21,6 @@ vcom ../Quartus/out_encoder/lpm_rom_0.vhd
 vcom ../Quartus/out_encoder/output_encoder.vhd
 vcom ../Quartus/out_encoder/out_gen_lpm_counter0.vhd
 vcom ../Quartus/out_encoder/out_gen_lpm_mux0.vhd
-vcom ../Quartus/out_encoder/tb_output_encoder.vhd
-vcom ../Quartus/out_encoder/simulation/qsim/work/output_encoder/_primary.vhd
-vcom ../Quartus/out_encoder/simulation/qsim/work/output_encoder_vlg_check_tst/_primary.vhd
-vcom ../Quartus/out_encoder/simulation/qsim/work/output_encoder_vlg_sample_tst/_primary.vhd
-vcom ../Quartus/out_encoder/simulation/qsim/work/output_encoder_vlg_vec_tst/_primary.vhd
 vcom ../Quartus/pilotaggio_led/FSM_Pilotaggio_LED.vhd
 vcom ../Quartus/pilotaggio_led/lpm_decoder_LEDS_pilot.vhd
 vcom ../Quartus/pilotaggio_led/Pilotaggio_LED2.vhd
