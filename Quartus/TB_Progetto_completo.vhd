@@ -19,7 +19,7 @@ component UartProgetto_comp IS
 		buttons_in :  IN  STD_LOGIC_VECTOR(3 DOWNTO 0);
 		tx_out :  OUT  STD_LOGIC;
 		--------------------------------
-		Out_inizio_attesa :  OUT  STD_LOGIC;
+		--Out_inizio_attesa :  OUT  STD_LOGIC;
 		--led_deb :  OUT  STD_LOGIC_VECTOR(1 DOWNTO 0);
 		LEDS_output :  OUT  STD_LOGIC_VECTOR(3 DOWNTO 0)
 	);
@@ -32,7 +32,7 @@ signal 		t_RESET :    STD_LOGIC;
 signal 		t_Buttons :   STD_LOGIC_VECTOR(3 DOWNTO 0);
 signal 		t_LEDS_OUT :   STD_LOGIC_VECTOR(3 DOWNTO 0);
 -----------------------------------
-signal		t_wait : std_logic;
+--signal		t_wait : std_logic;
 
 file file_command : text;
 
@@ -45,16 +45,9 @@ U1: UartProgetto_comp port map(
 	buttons_in => t_Buttons ,
 	RX_in	=>	t_RX,
 	-----------------------------
-	Out_inizio_attesa => t_wait,
+	--Out_inizio_attesa => t_wait,
 	leds_output =>	t_LEDS_OUT 
 );
-
---wait report
-process
-begin
-	wait until t_wait = '1';
-	report "Inizio attesa";
-end process;
 
 --clock generation
 process

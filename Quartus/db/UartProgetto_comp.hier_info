@@ -1,5 +1,6 @@
 |UartProgetto_comp
-CK => altpll_progetto_comp:inst5.inclk0
+CK => Rilevatore_Riflessi_Completo:inst2.CLOCK
+CK => UART:inst.CK
 Reset => inst3.IN0
 Reset => UART:inst.RESETn
 buttons_in[0] => Rilevatore_Riflessi_Completo:inst2.Buttons[0]
@@ -2640,44 +2641,5 @@ cnt_en => _.IN1
 sclr => _.IN0
 sclr => _.IN0
 sclr => _.IN0
-
-
-|UartProgetto_comp|altpll_progetto_comp:inst5
-areset => altpll:altpll_component.areset
-inclk0 => altpll:altpll_component.inclk[0]
-
-
-|UartProgetto_comp|altpll_progetto_comp:inst5|altpll:altpll_component
-inclk[0] => pll.CLK
-inclk[1] => ~NO_FANOUT~
-fbin => ~NO_FANOUT~
-pllena => ~NO_FANOUT~
-clkswitch => ~NO_FANOUT~
-areset => pll.ARESET
-pfdena => ~NO_FANOUT~
-clkena[0] => ~NO_FANOUT~
-clkena[1] => ~NO_FANOUT~
-clkena[2] => ~NO_FANOUT~
-clkena[3] => ~NO_FANOUT~
-clkena[4] => ~NO_FANOUT~
-clkena[5] => ~NO_FANOUT~
-extclkena[0] => ~NO_FANOUT~
-extclkena[1] => ~NO_FANOUT~
-extclkena[2] => ~NO_FANOUT~
-extclkena[3] => ~NO_FANOUT~
-scanclk => ~NO_FANOUT~
-scanclkena => ~NO_FANOUT~
-scanaclr => ~NO_FANOUT~
-scanread => ~NO_FANOUT~
-scanwrite => ~NO_FANOUT~
-scandata => ~NO_FANOUT~
-phasecounterselect[0] => ~NO_FANOUT~
-phasecounterselect[1] => ~NO_FANOUT~
-phasecounterselect[2] => ~NO_FANOUT~
-phasecounterselect[3] => ~NO_FANOUT~
-phaseupdown => ~NO_FANOUT~
-phasestep => ~NO_FANOUT~
-configupdate => ~NO_FANOUT~
-fbmimicbidir <> <GND>
 
 

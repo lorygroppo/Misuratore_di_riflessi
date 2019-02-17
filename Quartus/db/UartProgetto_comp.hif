@@ -7835,9 +7835,6 @@ ON
 AUTO_ROM_RECOGNITION
 ON
 }
-# hierarchies {
-altpll_progetto_comp:inst5
-}
 # macro_sequence
 
 # end
@@ -9340,29 +9337,6 @@ a9a94c5be18105f7ae8c218a67ec9f7
 stratixii_pll.inc
 6797ab505ed70f1a221e4a213e16a6
 }
-# hierarchies {
-altpll_progetto_comp:inst5|altpll:altpll_component
-}
-# macro_sequence
-
-# end
-# entity
-UartProgetto_comp
-# storage
-db|UartProgetto_comp.(0).cnf
-db|UartProgetto_comp.(0).cnf
-# case_insensitive
-# source_file
-uartprogetto_comp.bdf
-b718e26d8cb367c5b9a923c93a0f8
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
 # macro_sequence
 
 # end
@@ -9754,6 +9728,26 @@ ee598ea39a3d6bdc35b167eefc3ee3da
 }
 # hierarchies {
 Rilevatore_Riflessi_Completo:inst2|Random_Time_Generator:b2v_inst5|lpm_mult0_Random_Number_Gen:b2v_inst6|lpm_mult:lpm_mult_component
+}
+# macro_sequence
+
+# end
+# entity
+UartProgetto_comp
+# storage
+db|UartProgetto_comp.(0).cnf
+db|UartProgetto_comp.(0).cnf
+# case_insensitive
+# source_file
+uartprogetto_comp.bdf
+4a1b13eb5578f312820db193ff1f59e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 

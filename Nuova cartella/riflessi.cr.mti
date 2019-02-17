@@ -25,11 +25,11 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package NUMERIC_STD
 -- Compiling entity TB_Progetto_completo
 -- Compiling architecture structural of TB_Progetto_completo
-** Warning: [4] C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd(63): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-** Warning: [4] C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd(65): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-** Warning: [4] C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd(69): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-** Warning: [4] C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd(77): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-** Warning: [4] C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd(104): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd(56): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd(58): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd(62): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd(70): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd(97): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/and_gate_8.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/and_gate_8.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
@@ -112,6 +112,14 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Compiling entity lpm_counter_TX
 -- Compiling architecture SYN of lpm_counter_tx
 
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_counter0.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_counter0.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity lpm_counter0
+-- Compiling architecture SYN of lpm_counter0
+
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/UART/UART.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/UART/UART.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD
@@ -129,13 +137,23 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Compiling entity lpm_ff_2
 -- Compiling architecture bdf_type of lpm_ff_2
 
-} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_counter0.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_counter0.vhd
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/invert.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/invert.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity lpm_counter0
--- Compiling architecture SYN of lpm_counter0
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity invert
+-- Compiling architecture behavioural of invert
+
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/counter_tempo_riflessi.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/counter_tempo_riflessi.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity counter_tempo_riflessi
+-- Compiling architecture SYN of counter_tempo_riflessi
 
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/FSM_dec_command.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/FSM_dec_command.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
@@ -147,33 +165,6 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Compiling entity FSM_dec_command
 -- Compiling architecture Behavioural of FSM_dec_command
 
-} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/counter_tempo_riflessi.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/counter_tempo_riflessi.vhd
-Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity counter_tempo_riflessi
--- Compiling architecture SYN of counter_tempo_riflessi
-
-} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/invert.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/invert.vhd
-Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity invert
--- Compiling architecture behavioural of invert
-
-} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_mux_addr.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_mux_addr.vhd
-Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package LPM_COMPONENTS
--- Compiling entity lpm_mux_addr
--- Compiling architecture SYN of lpm_mux_addr
-
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/Detect_1.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/Detect_1.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD
@@ -184,15 +175,14 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Compiling entity Detect_1
 -- Compiling architecture behavioural of Detect_1
 
-} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/ms_detect.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/ms_detect.vhd
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_mux_addr.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_mux_addr.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity ms_detect
--- Compiling architecture behavioural of ms_detect
+-- Loading package LPM_COMPONENTS
+-- Compiling entity lpm_mux_addr
+-- Compiling architecture SYN of lpm_mux_addr
 
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_counter_TX_MOD_10.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_counter_TX_MOD_10.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
@@ -211,6 +201,16 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity Detect_3
 -- Compiling architecture behavioural of Detect_3
+
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/ms_detect.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/ms_detect.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ms_detect
+-- Compiling architecture behavioural of ms_detect
 
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_ff_0.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_ff_0.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
@@ -253,15 +253,6 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Compiling entity lpm_shiftreg_RX_LEFT_EDGE
 -- Compiling architecture SYN of lpm_shiftreg_rx_left_edge
 
-} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_mux0.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_mux0.vhd
-Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package LPM_COMPONENTS
--- Compiling entity out_gen_lpm_mux0
--- Compiling architecture SYN of out_gen_lpm_mux0
-
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/AND_NUM_BIT.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/AND_NUM_BIT.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD
@@ -271,6 +262,15 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity AND_NUM_BIT
 -- Compiling architecture behavioural of AND_NUM_BIT
+
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_mux0.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_mux0.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package LPM_COMPONENTS
+-- Compiling entity out_gen_lpm_mux0
+-- Compiling architecture SYN of out_gen_lpm_mux0
 
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/lpm_counter_ms.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/lpm_counter_ms.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
@@ -288,14 +288,6 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Compiling entity const
 -- Compiling architecture gate of const
 
-} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_shiftreg0.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_shiftreg0.vhd
-Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity lpm_shiftreg0
--- Compiling architecture SYN of lpm_shiftreg0
-
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_counter_RX_MOD_16.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_counter_RX_MOD_16.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD
@@ -303,6 +295,14 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package std_logic_1164
 -- Compiling entity lpm_counter_RX_MOD_16
 -- Compiling architecture SYN of lpm_counter_rx_mod_16
+
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_shiftreg0.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_shiftreg0.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity lpm_shiftreg0
+-- Compiling architecture SYN of lpm_shiftreg0
 
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/pilotaggio_led/Pilotaggio_LED2.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/pilotaggio_led/Pilotaggio_LED2.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
@@ -312,14 +312,6 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Compiling entity Pilotaggio_LED2
 -- Compiling architecture bdf_type of Pilotaggio_LED2
 
-} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd
-Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity lpm_shiftreg_RX_RIGHT_9
--- Compiling architecture SYN of lpm_shiftreg_rx_right_9
-
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/altpll_progetto_comp.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/altpll_progetto_comp.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD
@@ -328,15 +320,13 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Compiling entity altpll_progetto_comp
 -- Compiling architecture SYN of altpll_progetto_comp
 
-} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/TC_tempo_attesa.vhd {1 {vcom -work work -2002 -explicit {C:\Users\Lorenzo\Desktop\Misuratore_di_riflessi\Quartus\random_time_gen\TC_tempo_attesa.vhd}
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity TC_tempo_attesa
--- Compiling architecture behavioural of TC_tempo_attesa
+-- Compiling entity lpm_shiftreg_RX_RIGHT_9
+-- Compiling architecture SYN of lpm_shiftreg_rx_right_9
 
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/dec_command.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/dec_command.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
@@ -345,6 +335,16 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package std_logic_1164
 -- Compiling entity dec_command
 -- Compiling architecture bdf_type of dec_command
+
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/TC_tempo_attesa.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/TC_tempo_attesa.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity TC_tempo_attesa
+-- Compiling architecture behavioural of TC_tempo_attesa
 
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/lpm_ff_1.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/lpm_ff_1.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
@@ -355,14 +355,6 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Compiling entity lpm_ff_1
 -- Compiling architecture bdf_type of lpm_ff_1
 
-} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/TX.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/TX.vhd
-Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity TX
--- Compiling architecture bdf_type of TX
-
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/pilotaggio_led/lpm_decoder_LEDS_pilot.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/pilotaggio_led/lpm_decoder_LEDS_pilot.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD
@@ -370,6 +362,14 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package std_logic_1164
 -- Compiling entity lpm_decoder_LEDS_pilot
 -- Compiling architecture SYN of lpm_decoder_leds_pilot
+
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/TX.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/TX.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity TX
+-- Compiling architecture bdf_type of TX
 
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/FSM_attesa.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/FSM_attesa.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
@@ -381,14 +381,6 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Compiling entity FSM_attesa
 -- Compiling architecture Behavioral of FSM_attesa
 
-} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/FSM_out_enc.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/FSM_out_enc.vhd
-Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity FSM_out_enc
--- Compiling architecture FSM of FSM_out_enc
-
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/AND_Edge_Detector.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/AND_Edge_Detector.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD
@@ -398,6 +390,14 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity AND_Edge_Detector
 -- Compiling architecture behavioural of AND_Edge_Detector
+
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/FSM_out_enc.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/FSM_out_enc.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FSM_out_enc
+-- Compiling architecture FSM of FSM_out_enc
 
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/UART/altpll0.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/UART/altpll0.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
@@ -425,16 +425,6 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Compiling entity lpm_counter_RX_MOD_32
 -- Compiling architecture SYN of lpm_counter_rx_mod_32
 
-} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/Detect_4.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/Detect_4.vhd
-Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity Detect_4
--- Compiling architecture behavioural of Detect_4
-
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/L_Detect.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/L_Detect.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD
@@ -445,15 +435,15 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Compiling entity L_Detect
 -- Compiling architecture behavioural of L_Detect
 
-} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/XOR_LFSR.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/XOR_LFSR.vhd
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/Detect_4.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/Detect_4.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity XOR_LFSR
--- Compiling architecture behavioural of XOR_LFSR
+-- Compiling entity Detect_4
+-- Compiling architecture behavioural of Detect_4
 
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/AND_clk_div.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/AND_clk_div.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
@@ -465,13 +455,15 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Compiling entity AND_clk_div
 -- Compiling architecture behavioural of AND_clk_div
 
-} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/XOR_LFSR.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/XOR_LFSR.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity lpm_shiftreg_RX_RIGHT_8_BIT
--- Compiling architecture SYN of lpm_shiftreg_rx_right_8_bit
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity XOR_LFSR
+-- Compiling architecture behavioural of XOR_LFSR
 
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/FSM_RX.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/FSM_RX.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
@@ -483,6 +475,14 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Compiling entity FSM_RX
 -- Compiling architecture Behavioural of FSM_RX
 
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity lpm_shiftreg_RX_RIGHT_8_BIT
+-- Compiling architecture SYN of lpm_shiftreg_rx_right_8_bit
+
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/Contatore_Tempo_random.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/Contatore_Tempo_random.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD
@@ -490,23 +490,6 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package std_logic_1164
 -- Compiling entity Contatore_Tempo_random
 -- Compiling architecture SYN of contatore_tempo_random
-
-} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_rom_0.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_rom_0.vhd
-Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package LPM_COMPONENTS
--- Compiling entity lpm_rom_0
--- Compiling architecture bdf_type of lpm_rom_0
-
-} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd
-Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity Rilevatore_Riflessi_Completo
--- Compiling architecture bdf_type of Rilevatore_Riflessi_Completo
 
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/tb_output_encoder.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/tb_output_encoder.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
@@ -525,13 +508,22 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading architecture bench of output_encoder_tb
 -- Loading entity output_encoder
 
-} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_counter0.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_counter0.vhd
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity out_gen_lpm_counter0
--- Compiling architecture SYN of out_gen_lpm_counter0
+-- Compiling entity Rilevatore_Riflessi_Completo
+-- Compiling architecture bdf_type of Rilevatore_Riflessi_Completo
+
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_rom_0.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_rom_0.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package LPM_COMPONENTS
+-- Compiling entity lpm_rom_0
+-- Compiling architecture bdf_type of lpm_rom_0
 
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/Decisore.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/Decisore.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
@@ -542,5 +534,13 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity Decisore
 -- Compiling architecture behavioural of Decisore
+
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_counter0.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_counter0.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity out_gen_lpm_counter0
+-- Compiling architecture SYN of out_gen_lpm_counter0
 
 } {} {}}
