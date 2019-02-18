@@ -13,7 +13,6 @@ def print_log(stringa):
     print("###", stringa, "###")
     print("".join(separatore))
     print('\n')
-    #exit()
     return
 
 def load_vhd():
@@ -62,7 +61,10 @@ def output_decode():
             try:
                 bit_read=file_out.readline()[0] #elimina '\n'
             except:
-                exit(" --- NESSUN OUTPUT GENERATO --- ")
+                print(" --- NESSUN OUTPUT GENERATO --- ")
+                if input("\nAprire risultati in modelsim [s/n] ? ").upper()=="S":
+                    proc=subprocess.run(('vsim -do waveform.do').split())
+                exit()
             else:
                 bit_rx.append(bit_read)
         byte_read="".join(bit_rx[1:9]) # LSB...MSB
@@ -75,13 +77,41 @@ def output_decode():
     print_log(log_msg)
     return char_rx
 
-#os.remove("t_out.txt")
+def button_manager():
+    file_button=open("button.txt","w")
+    tempo_di_reazione=input("Inserire il tempo di reazione (0 : 1000) [us]: ")
+    try:
+        int(tempo_di_reazione)
+    except:
+        exit("INSERITO VALORE NON INTERO")
+    else:
+        if 0<=int(tempo_di_reazione)<=1000:
+            file_button.write(tempo_di_reazione)
+            file_button.write(" us\n")
+        else:
+            exit("VALORE NON VALIDO")
+    pulsanti_disponibili=["1","2","3","4"]
+    pulsante=input("QUALE PULSANTE SI DESIDERA PREMERE (1,2,3,4) ?\n")
+    if pulsante in pulsanti_disponibili:
+        file_button.write(pulsante)
+    else:
+        exit("PULSANTE INESISTENTE")
+    file_button.close()
+    return tempo_di_reazione
+    
+
+##############################################################################
 comando=input("\n Comando da inviare: ")
-write_command(comando)    
+write_command(comando)  
+reaction_time_tb=int(button_manager())  
 load_vhd()
 run_simulation()
 stringa_ricevuta=output_decode()
-print("Tempo di reazione imposto al testbench: 42 us")
-print("Tempo di reazione ricevuto: ",int(stringa_ricevuta[1:5],16),"us")
-#proc=subprocess.run(('vsim -do waveform.do').split())
+reaction_time_rx=int(stringa_ricevuta[1:5],16)
+print("Tempo di reazione imposto al testbench:", reaction_time_tb,"us")
+print("Tempo di reazione ricevuto: ",reaction_time_rx,"us\n")
+if reaction_time_rx!=reaction_time_tb: print_log("ESITO TESTBENCH: NEGATIVO")
+else: print_log("ESITO TESTBENCH: POSITIVO")
+if input("Aprire risultati in modelsim [s/n] ? ").upper()=="S":
+    proc=subprocess.run(('vsim -do waveform.do').split())
 exit()

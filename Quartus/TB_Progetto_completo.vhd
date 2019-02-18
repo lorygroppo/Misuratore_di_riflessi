@@ -36,6 +36,7 @@ signal 		t_LEDS_OUT :   STD_LOGIC_VECTOR(3 DOWNTO 0);
 
 file file_command : text;
 file file_tx : text;
+file file_button : text;
 
 begin
 
@@ -84,12 +85,27 @@ end process;
 
 --buttons
 process
+	variable v_LINE : line;
+	variable reaction_time: time;
+	variable button_select : integer;
 begin
 	t_Buttons <= "1111";
 	wait until t_LEDS_OUT/="0000";
-	wait for 42 us; --attesa pressione pulsanti
-	t_Buttons <= not t_LEDS_OUT;
-	wait for 60 us;
+	file_open(file_button, "button.txt", read_mode);
+	--leggo tempo di reazione da file
+	readline(file_button, v_LINE);
+	read(v_LINE, reaction_time); 
+	wait for reaction_time; --attesa pressione pulsanti
+	readline(file_button, v_LINE);
+	read(v_LINE, button_select);
+	case button_select is --preme il pulsante selezionato
+		when 1 => t_Buttons <= "1110";
+		when 2 => t_Buttons <= "1101";
+		when 3 => t_Buttons <= "1011";
+		when 4 => t_Buttons <= "0111";
+		when others => t_Buttons <= "1111";
+	end case;
+	wait for 60 us; --rilascia il pulsante
 	t_Buttons <= "1111";
 	wait;
 end process;
