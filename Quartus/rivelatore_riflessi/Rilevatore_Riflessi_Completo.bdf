@@ -398,28 +398,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 232 -160 424 -64)
-	(text "ms_detect" (rect 5 0 56 12)(font "Arial" ))
-	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "data_in[14..0]" (rect 0 0 67 12)(font "Arial" ))
-		(text "data_in[14..0]" (rect 21 27 88 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 192 32)
-		(output)
-		(text "ms_out" (rect 0 0 36 12)(font "Arial" ))
-		(text "ms_out" (rect 141 27 177 39)(font "Arial" ))
-		(line (pt 192 32)(pt 176 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 176 80))
-	)
-)
-(symbol
 	(rect 824 -40 968 88)
 	(text "counter_tempo_riflessi" (rect 2 0 155 16)(font "Arial" (font_size 10)))
 	(text "inst7" (rect 8 112 31 124)(font "Arial" ))
@@ -608,6 +586,28 @@ applicable agreement for further details.
 	)
 	(drawing
 		(rectangle (rect 16 16 240 80))
+	)
+)
+(symbol
+	(rect 232 -160 424 -64)
+	(text "ms_detect" (rect 5 0 56 12)(font "Arial" ))
+	(text "inst2" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "data_in[14..0]" (rect 0 0 67 12)(font "Arial" ))
+		(text "data_in[14..0]" (rect 21 27 88 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 192 32)
+		(output)
+		(text "ms_out" (rect 0 0 36 12)(font "Arial" ))
+		(text "ms_out" (rect 141 27 171 39)(font "Arial" ))
+		(line (pt 192 32)(pt 176 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 176 80))
 	)
 )
 (connector

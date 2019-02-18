@@ -52,6 +52,13 @@ def write_command(msg):
     #return
     exit()
     
+def output_decode():
+    char_rx=[];
+    for line in open("dout.txt","r"):
+        char_rx.append(chr(int(line,2)))
+    str_rx="".join(char_rx)
+    return str_rx
+    
 write_command("L1")    
 load_vhd()
 run_simulation()

@@ -10,5 +10,5 @@ end ms_detect ;
 
 architecture behavioural of ms_detect is 
 begin
-	ms_out <= data_in(14) and data_in(13) and not(data_in(12)) and not(data_in(11)) and not(data_in(10)) and not(data_in(9)) and data_in(8) and data_in(7) and not(data_in(6)) and data_in(5) and not(data_in(4)) and not(data_in(3)) and data_in(2) and data_in(1) and data_in(0);
+	ms_out <= not data_in(14) and not data_in(13) and not(data_in(12)) and not(data_in(11)) and not(data_in(10)) and not(data_in(9)) and not data_in(8) and not data_in(7) and not(data_in(6)) and not data_in(5) and (data_in(4)) and (data_in(3)) and not data_in(2) and not data_in(1) and not data_in(0);
 end behavioural;

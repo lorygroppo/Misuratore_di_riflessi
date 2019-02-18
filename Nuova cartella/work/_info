@@ -15,7 +15,7 @@ L42
 Vfi_oE;H54ijV8znoT74lV1
 Z6 OV;C;10.0c;49
 32
-Z7 !s108 1550423836.238000
+Z7 !s108 1550482861.049000
 Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/UART/altpll0.vhd|
 Z9 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/UART/altpll0.vhd|
 Z10 o-work work -2002 -explicit -O0
@@ -48,7 +48,7 @@ L42
 V8dACnFUEISNN[8kzT0Q7O1
 R6
 32
-Z15 !s108 1550423830.922000
+Z15 !s108 1550482856.292000
 Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/altpll_progetto_comp.vhd|
 Z17 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/altpll_progetto_comp.vhd|
 R10
@@ -83,7 +83,7 @@ L6
 VG[?1PQ9R7cCzoEXG=F0o`0
 R6
 32
-Z23 !s108 1550423834.167000
+Z23 !s108 1550482859.149000
 Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/AND_clk_div.vhd|
 Z25 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/AND_clk_div.vhd|
 R10
@@ -120,7 +120,7 @@ L6
 VTA9mi>ae`e[?4]0iRdbhg2
 R6
 32
-Z28 !s108 1550423834.274000
+Z28 !s108 1550482859.234000
 Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/AND_Decisore.vhd|
 Z30 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/AND_Decisore.vhd|
 R10
@@ -157,7 +157,7 @@ L6
 VJjXZn:=94[Zdkl3FgP<SF2
 R6
 32
-Z33 !s108 1550423834.367000
+Z33 !s108 1550482859.321000
 Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/AND_Edge_Detector.vhd|
 Z35 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/AND_Edge_Detector.vhd|
 R10
@@ -194,7 +194,7 @@ L5
 VEehSgZAlQZI@Q6cSL6[j>2
 R6
 32
-Z39 !s108 1550423835.409000
+Z39 !s108 1550482860.231000
 Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/and_gate_4.vhd|
 Z41 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/and_gate_4.vhd|
 R10
@@ -231,7 +231,7 @@ L5
 VZk=LB<RdRWY4@I84m7G[X1
 R6
 32
-Z44 !s108 1550423835.503000
+Z44 !s108 1550482860.337000
 Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/and_gate_8.vhd|
 Z46 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/and_gate_8.vhd|
 R10
@@ -268,7 +268,7 @@ L6
 V;MGn3`b1^zzV?zHL7QG1m1
 R6
 32
-Z49 !s108 1550423834.461000
+Z49 !s108 1550482859.404000
 Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/AND_NUM_BIT.vhd|
 Z51 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/AND_NUM_BIT.vhd|
 R10
@@ -309,7 +309,7 @@ L102
 Vhh3iIooniEgQ[z`N8^8Y81
 R6
 32
-Z60 !s108 1550423832.816000
+Z60 !s108 1550482857.979000
 Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/tb_output_encoder.vhd|
 Z62 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/tb_output_encoder.vhd|
 R10
@@ -351,7 +351,7 @@ L4
 V4;UIGDaLABofGNX9`h8:R2
 R6
 32
-Z65 !s108 1550423832.032000
+Z65 !s108 1550482857.281000
 Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/const.vhd|
 Z67 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/const.vhd|
 R10
@@ -384,7 +384,7 @@ L42
 V]F6M^PPeZ_bHcIiR8hAn?0
 R6
 32
-Z70 !s108 1550423833.222000
+Z70 !s108 1550482858.328000
 Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/Contatore_Tempo_random.vhd|
 Z72 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/Contatore_Tempo_random.vhd|
 R10
@@ -417,7 +417,7 @@ L42
 V4SXXFhKY>_8F6mjZ=R=0Y2
 R6
 32
-Z75 !s108 1550423833.800000
+Z75 !s108 1550482858.831000
 Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/counter_tempo_riflessi.vhd|
 Z77 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/counter_tempo_riflessi.vhd|
 R10
@@ -450,7 +450,7 @@ L24
 Vd<]`cR@W=l[aUPl5o?VH]3
 R6
 32
-Z80 !s108 1550423831.187000
+Z80 !s108 1550482856.525000
 Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/dec_command.vhd|
 Z82 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/dec_command.vhd|
 R10
@@ -485,7 +485,7 @@ L6
 VLCFjZb:8_H<aHaHDj[]H^1
 R6
 32
-Z85 !s108 1550423834.571000
+Z85 !s108 1550482859.489000
 Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/Decisore.vhd|
 Z87 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/Decisore.vhd|
 R10
@@ -522,7 +522,7 @@ L5
 VVzWhTAL^[9A`mPZ^<>Xln3
 R6
 32
-Z91 !s108 1550423831.281000
+Z91 !s108 1550482856.611000
 Z92 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/Detect_1.vhd|
 Z93 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/Detect_1.vhd|
 R10
@@ -559,7 +559,7 @@ L5
 VX7H3gnO_WmRf[?hjA9h`P3
 R6
 32
-Z96 !s108 1550423831.359000
+Z96 !s108 1550482856.695000
 Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/Detect_2.vhd|
 Z98 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/Detect_2.vhd|
 R10
@@ -596,7 +596,7 @@ L5
 V?`=oTlDh7nV@=M8ceMOA63
 R6
 32
-Z101 !s108 1550423831.453000
+Z101 !s108 1550482856.777000
 Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/Detect_3.vhd|
 Z103 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/Detect_3.vhd|
 R10
@@ -633,7 +633,7 @@ L5
 VB8KL=3H]KEGhJJIc2>_NL1
 R6
 32
-Z106 !s108 1550423831.546000
+Z106 !s108 1550482856.860000
 Z107 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/Detect_4.vhd|
 Z108 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/Detect_4.vhd|
 R10
@@ -670,7 +670,7 @@ L6
 V;BY9L[Uao=hM8=D20]S940
 R6
 32
-Z112 !s108 1550423831.015000
+Z112 !s108 1550482856.369000
 Z113 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/FSM_attesa.vhd|
 Z114 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/FSM_attesa.vhd|
 R10
@@ -707,7 +707,7 @@ L5
 VN>e=EWNV9?]MS@Ab5Fl7[2
 R6
 32
-Z117 !s108 1550423831.656000
+Z117 !s108 1550482856.947000
 Z118 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/FSM_dec_command.vhd|
 Z119 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/FSM_dec_command.vhd|
 R10
@@ -742,7 +742,7 @@ L4
 VOz6f^N1B^d`QK0XPiHQ0e0
 R6
 32
-Z122 !s108 1550423832.141000
+Z122 !s108 1550482857.367000
 Z123 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/FSM_out_enc.vhd|
 Z124 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/FSM_out_enc.vhd|
 R10
@@ -777,7 +777,7 @@ L6
 VQf:EU;HQOMIgRl7[;XMR23
 R6
 32
-Z127 !s108 1550423832.955000
+Z127 !s108 1550482858.094000
 Z128 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/pilotaggio_led/FSM_Pilotaggio_LED.vhd|
 Z129 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/pilotaggio_led/FSM_Pilotaggio_LED.vhd|
 R10
@@ -814,7 +814,7 @@ L5
 VeTncgczKR<82FkmgHLb6b2
 R6
 32
-Z132 !s108 1550423834.664000
+Z132 !s108 1550482859.574000
 Z133 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/FSM_RX.vhd|
 Z134 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/FSM_RX.vhd|
 R10
@@ -851,7 +851,7 @@ L5
 VVUQ0i?HnVbim`aRc<?4]T1
 R6
 32
-Z137 !s108 1550423835.596000
+Z137 !s108 1550482860.428000
 Z138 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/FSM_TX.vhd|
 Z139 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/FSM_TX.vhd|
 R10
@@ -888,7 +888,7 @@ L6
 V@YHZ]hYzC4gL?T@F]3Lb^3
 R6
 32
-Z142 !s108 1550423834.742000
+Z142 !s108 1550482859.657000
 Z143 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/invert.vhd|
 Z144 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/invert.vhd|
 R10
@@ -923,7 +923,7 @@ L4
 Vg^=JEz6m@GaZc4M?=<[2e0
 R6
 32
-Z147 !s108 1550423836.331000
+Z147 !s108 1550482861.127000
 Z148 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/UART/inverter.vhd|
 Z149 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/UART/inverter.vhd|
 R10
@@ -958,7 +958,7 @@ L5
 VS2Q_>=ULk3ZR<GQR:Pbf21
 R6
 32
-Z152 !s108 1550423831.749000
+Z152 !s108 1550482857.027000
 Z153 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/L_Detect.vhd|
 Z154 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/L_Detect.vhd|
 R10
@@ -993,7 +993,7 @@ L42
 VAO?4HXJL8WfbgB0OIPU]F1
 R6
 32
-Z157 !s108 1550423832.269000
+Z157 !s108 1550482857.477000
 Z158 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_counter0.vhd|
 Z159 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_counter0.vhd|
 R10
@@ -1026,7 +1026,7 @@ L42
 VVH7kE2jnd;fjhniih2O_N1
 R6
 32
-Z162 !s108 1550423833.902000
+Z162 !s108 1550482858.910000
 Z163 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/lpm_counter_ms.vhd|
 Z164 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/lpm_counter_ms.vhd|
 R10
@@ -1059,7 +1059,7 @@ L42
 VZzRR8?2`G8LQJ=aRgF]aT3
 R6
 32
-Z167 !s108 1550423834.850000
+Z167 !s108 1550482859.744000
 Z168 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_counter_RX_MOD_16.vhd|
 Z169 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_counter_RX_MOD_16.vhd|
 R10
@@ -1092,7 +1092,7 @@ L42
 VYPZPz:c1VRdGfTH2;DI[D0
 R6
 32
-Z172 !s108 1550423834.924000
+Z172 !s108 1550482859.825000
 Z173 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_counter_RX_MOD_32.vhd|
 Z174 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_counter_RX_MOD_32.vhd|
 R10
@@ -1125,7 +1125,7 @@ L42
 Vm6F2JDUB2XW[h`6LS1K7h1
 R6
 32
-Z177 !s108 1550423835.690000
+Z177 !s108 1550482860.527000
 Z178 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_counter_TX.vhd|
 Z179 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_counter_TX.vhd|
 R10
@@ -1158,7 +1158,7 @@ L42
 VInXXbCEWQm7MahG66LI[22
 R6
 32
-Z182 !s108 1550423835.793000
+Z182 !s108 1550482860.610000
 Z183 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_counter_TX_MOD_10.vhd|
 Z184 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_counter_TX_MOD_10.vhd|
 R10
@@ -1191,7 +1191,7 @@ L42
 VPTH_>fTP7aZ@SH[I69`zF0
 R6
 32
-Z187 !s108 1550423833.049000
+Z187 !s108 1550482858.174000
 Z188 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/pilotaggio_led/lpm_decoder_LEDS_pilot.vhd|
 Z189 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/pilotaggio_led/lpm_decoder_LEDS_pilot.vhd|
 R10
@@ -1225,7 +1225,7 @@ L30
 VSFZoUG@h51RL^0RIaSHAD1
 R6
 32
-Z193 !s108 1550423835.877000
+Z193 !s108 1550482860.693000
 Z194 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_ff_0.vhd|
 Z195 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_ff_0.vhd|
 R10
@@ -1260,7 +1260,7 @@ L30
 VX0@lC^<BkC]8^ZGd]KJAo3
 R6
 32
-Z198 !s108 1550423831.844000
+Z198 !s108 1550482857.111000
 Z199 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/lpm_ff_1.vhd|
 Z200 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/lpm_ff_1.vhd|
 R10
@@ -1295,7 +1295,7 @@ L30
 Ve7E]9A8eleRGn3dS7J^gQ0
 R6
 32
-Z203 !s108 1550423831.938000
+Z203 !s108 1550482857.198000
 Z204 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/lpm_ff_2.vhd|
 Z205 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/dec_command/lpm_ff_2.vhd|
 R10
@@ -1329,7 +1329,7 @@ L42
 VEzV[?A<IUdkIHHa0jo_<A0
 R6
 32
-Z208 !s108 1550423833.331000
+Z208 !s108 1550482858.409000
 Z209 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/lpm_mult0_Random_Number_Gen.vhd|
 Z210 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/lpm_mult0_Random_Number_Gen.vhd|
 R10
@@ -1363,7 +1363,7 @@ L42
 VIYTi;_YGD7SXlB1PI5T<I0
 R6
 32
-Z213 !s108 1550423835.971000
+Z213 !s108 1550482860.784000
 Z214 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_mux0.vhd|
 Z215 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_mux0.vhd|
 R10
@@ -1398,7 +1398,7 @@ L42
 VzFU3[?JmM<[F=fmg21S>51
 R6
 32
-Z218 !s108 1550423832.347000
+Z218 !s108 1550482857.579000
 Z219 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_mux_addr.vhd|
 Z220 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_mux_addr.vhd|
 R10
@@ -1433,7 +1433,7 @@ L30
 VYl?J0jBb]Bb4Q;JQ[;S2c3
 R6
 32
-Z223 !s108 1550423832.441000
+Z223 !s108 1550482857.659000
 Z224 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_rom_0.vhd|
 Z225 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/lpm_rom_0.vhd|
 R10
@@ -1467,7 +1467,7 @@ L42
 V4b:d2gzABVMaa;AjN;N`Y2
 R6
 32
-Z228 !s108 1550423836.065000
+Z228 !s108 1550482860.867000
 Z229 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_shiftreg0.vhd|
 Z230 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/lpm_shiftreg0.vhd|
 R10
@@ -1500,7 +1500,7 @@ L42
 V;4eoH7SlNY=E4Ki3?JVU>3
 R6
 32
-Z233 !s108 1550423833.409000
+Z233 !s108 1550482858.491000
 Z234 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/lpm_shiftreg0_LFSR_RANDOM.vhd|
 Z235 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/lpm_shiftreg0_LFSR_RANDOM.vhd|
 R10
@@ -1533,7 +1533,7 @@ L42
 V4:9]E;GNP27kBk3Rk_UlF0
 R6
 32
-Z238 !s108 1550423835.033000
+Z238 !s108 1550482859.908000
 Z239 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_shiftreg_RX_LEFT_EDGE.vhd|
 Z240 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_shiftreg_RX_LEFT_EDGE.vhd|
 R10
@@ -1566,7 +1566,7 @@ L42
 VD5A3A48GM>n;ciW@b?A5g3
 R6
 32
-Z243 !s108 1550423835.143000
+Z243 !s108 1550482859.990000
 Z244 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd|
 Z245 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd|
 R10
@@ -1599,7 +1599,7 @@ L42
 VGU[d0K[;WcL9cQk_52kEF2
 R6
 32
-Z248 !s108 1550423835.221000
+Z248 !s108 1550482860.070000
 Z249 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd|
 Z250 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd|
 R10
@@ -1621,22 +1621,22 @@ R10
 R11
 !s100 d:9C=cmL0FFH1O@gh5jVR3
 Ems_detect
-R18
+Z251 w1550483205
 R19
 R20
 R1
 R2
 R3
-Z251 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/ms_detect.vhd
-Z252 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/ms_detect.vhd
+Z252 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/ms_detect.vhd
+Z253 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/ms_detect.vhd
 l0
 L5
 V@1c2[@flgGVRE0Z4CB0:90
 R6
 32
-Z253 !s108 1550423833.980000
-Z254 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/ms_detect.vhd|
-Z255 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/ms_detect.vhd|
+Z254 !s108 1550483213.264000
+Z255 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/ms_detect.vhd|
+Z256 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/ms_detect.vhd|
 R10
 R11
 !s100 f^HHET1FK>LRZDG=AAlD=3
@@ -1648,30 +1648,30 @@ R2
 DEx4 work 9 ms_detect 0 22 @1c2[@flgGVRE0Z4CB0:90
 l12
 L11
-V7:d2NcjiOVDH?lU4N^:1H1
+VZChIZMeSemVJZ@clg@U5[0
 R6
 32
-R253
 R254
 R255
+R256
 R10
 R11
-!s100 m26ULQXiCnSWa[QJlO1DL3
+!s100 W>Ze9nAm7M1DIZEL?a[mc0
 Eout_gen_lpm_counter0
 R18
 R1
 R2
 R3
-Z256 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_counter0.vhd
-Z257 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_counter0.vhd
+Z257 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_counter0.vhd
+Z258 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_counter0.vhd
 l0
 L42
 VoCGl55FWe6zKZALXKjzFA3
 R6
 32
-Z258 !s108 1550423832.535000
-Z259 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_counter0.vhd|
-Z260 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_counter0.vhd|
+Z259 !s108 1550482857.741000
+Z260 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_counter0.vhd|
+Z261 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_counter0.vhd|
 R10
 R11
 !s100 eJU9JCJjhFlB3P_;d2^oO3
@@ -1684,9 +1684,9 @@ L54
 ViNJQaPmYI1mS6G0Y1@_Xh1
 R6
 32
-R258
 R259
 R260
+R261
 R10
 R11
 !s100 zjL<[n>J=>VRaFzl>EU6<0
@@ -1696,16 +1696,16 @@ R190
 R1
 R2
 R3
-Z261 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_mux0.vhd
-Z262 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_mux0.vhd
+Z262 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_mux0.vhd
+Z263 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_mux0.vhd
 l0
 L42
 VM4O8P8;V>PEgK?ieVZTb_0
 R6
 32
-Z263 !s108 1550423832.628000
-Z264 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_mux0.vhd|
-Z265 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_mux0.vhd|
+Z264 !s108 1550482857.821000
+Z265 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_mux0.vhd|
+Z266 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/out_gen_lpm_mux0.vhd|
 R10
 R11
 !s100 G47CfNW[CW_5UV]ohHB0U1
@@ -1719,9 +1719,9 @@ L55
 VTK?>>C:O]V0Ff>FH<5l=_3
 R6
 32
-R263
 R264
 R265
+R266
 R10
 R11
 !s100 M33EF4nOC:9<[HGR];I3S0
@@ -1730,16 +1730,16 @@ R18
 R1
 R2
 R3
-Z266 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/output_encoder.vhd
-Z267 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/output_encoder.vhd
+Z267 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/output_encoder.vhd
+Z268 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/output_encoder.vhd
 l0
 L24
 VRFkF>bKkM8^n01F5iGYcg3
 R6
 32
-Z268 !s108 1550423832.722000
-Z269 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/output_encoder.vhd|
-Z270 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/output_encoder.vhd|
+Z269 !s108 1550482857.902000
+Z270 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/output_encoder.vhd|
+Z271 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/out_encoder/output_encoder.vhd|
 R10
 R11
 !s100 gbB]2J?al1415jY`=Ua0G2
@@ -1752,9 +1752,9 @@ L38
 VnAU5T54VNZU[cL`zEm`U40
 R6
 32
-R268
 R269
 R270
+R271
 R10
 R11
 !s100 5?hgZ47VAojC4ko1ZJfnm0
@@ -1798,16 +1798,16 @@ R18
 R1
 R2
 R3
-Z271 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/pilotaggio_led/Pilotaggio_LED2.vhd
-Z272 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/pilotaggio_led/Pilotaggio_LED2.vhd
+Z272 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/pilotaggio_led/Pilotaggio_LED2.vhd
+Z273 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/pilotaggio_led/Pilotaggio_LED2.vhd
 l0
 L24
 VFj7];_UZ4_O:`jlB:cnn<3
 R6
 32
-Z273 !s108 1550423833.143000
-Z274 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/pilotaggio_led/Pilotaggio_LED2.vhd|
-Z275 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/pilotaggio_led/Pilotaggio_LED2.vhd|
+Z274 !s108 1550482858.251000
+Z275 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/pilotaggio_led/Pilotaggio_LED2.vhd|
+Z276 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/pilotaggio_led/Pilotaggio_LED2.vhd|
 R10
 R11
 !s100 _F[SXlGK;7l^TjcA^c_Ib1
@@ -1820,9 +1820,9 @@ L38
 VL1_7YB<;E3fzB^XPba1mN2
 R6
 32
-R273
 R274
 R275
+R276
 R10
 R11
 !s100 Ue=JL76=7Nm;az@?:Cc7O0
@@ -1831,16 +1831,16 @@ R18
 R1
 R2
 R3
-Z276 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/Random_Time_Generator.vhd
-Z277 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/Random_Time_Generator.vhd
+Z277 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/Random_Time_Generator.vhd
+Z278 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/Random_Time_Generator.vhd
 l0
 L24
 VcNKii]hQamABe^i?ea<jP3
 R6
 32
-Z278 !s108 1550423833.503000
-Z279 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/Random_Time_Generator.vhd|
-Z280 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/Random_Time_Generator.vhd|
+Z279 !s108 1550482858.574000
+Z280 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/Random_Time_Generator.vhd|
+Z281 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/Random_Time_Generator.vhd|
 R10
 R11
 !s100 RXJZCaDJ]4NAZI2o_SM>d3
@@ -1853,27 +1853,27 @@ L35
 V`Yn?95Fm6GkX1i`_aiOlb0
 R6
 32
-R278
 R279
 R280
+R281
 R10
 R11
 !s100 ]l5Yf[=2_ZX7adHE?@T@b3
 Erilevatore_riflessi_completo
-Z281 w1550420992
+Z282 w1550420992
 R1
 R2
 R3
-Z282 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd
-Z283 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd
+Z283 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd
+Z284 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd
 l0
 L24
 VhFTJ@`mBPSV8oi5ITFXJJ1
 R6
 32
-Z284 !s108 1550423834.074000
-Z285 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd|
-Z286 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd|
+Z285 !s108 1550482859.072000
+Z286 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd|
+Z287 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd|
 R10
 R11
 !s100 `cYPG^A@kjND55mM^7I6@2
@@ -1886,9 +1886,9 @@ L40
 V2o]6F<PzT^kkBI;TJiNn`2
 R6
 32
-R284
 R285
 R286
+R287
 R10
 R11
 !s100 PzHTW=S0Z>ianZaAOT9F41
@@ -1897,16 +1897,16 @@ R18
 R1
 R2
 R3
-Z287 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/RX.vhd
-Z288 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/RX.vhd
+Z288 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/RX.vhd
+Z289 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/RX.vhd
 l0
 L24
 V;Cg_@XPcIWZ9lNX`VM2[z0
 R6
 32
-Z289 !s108 1550423835.315000
-Z290 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/RX.vhd|
-Z291 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/RX.vhd|
+Z290 !s108 1550482860.152000
+Z291 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/RX.vhd|
+Z292 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/RX/RX.vhd|
 R10
 R11
 !s100 cjL0h``S_=a7PTlm2UIPW2
@@ -1919,66 +1919,66 @@ L36
 V]B3eGDEJk]>^Y?;S0>Tdl3
 R6
 32
-R289
 R290
 R291
+R292
 R10
 R11
 !s100 M[NPSVW]ADc3OJ:Ang6^@1
 Etb_progetto_completo
-Z292 w1550425828
+Z293 w1550483806
 R56
-Z293 DPx4 ieee 16 std_logic_textio 0 22 nS@;e8VD1o]DCVjBMSZYk3
+Z294 DPx4 ieee 16 std_logic_textio 0 22 nS@;e8VD1o]DCVjBMSZYk3
 R1
 R2
 R3
-Z294 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd
-Z295 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd
+Z295 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd
+Z296 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd
 l0
 L8
 Vlg5:_j=K=RHYnT3Mflajd3
 !s100 HWe2PdUiF4TLZM3Wa47JO2
 R6
 32
-Z296 !s108 1550425837.774000
-Z297 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd|
-Z298 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd|
+Z297 !s108 1550483812.795000
+Z298 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd|
+Z299 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd|
 R10
 R11
 Astructural
 R56
-R293
+R294
 R1
 R2
-Z299 DEx4 work 20 tb_progetto_completo 0 22 lg5:_j=K=RHYnT3Mflajd3
+Z300 DEx4 work 20 tb_progetto_completo 0 22 lg5:_j=K=RHYnT3Mflajd3
 l40
 L12
-VmI]F]1PDATa=QCao>bZK91
-!s100 `5BL7eQ40f_klR^aJf_Ho3
+V9cURbH7n]gXQ:eT0ac[YJ1
+!s100 >n2R8`d6`SW0j@Fe]<TSz3
 R6
 32
-R296
 R297
 R298
+R299
 R10
 R11
 Etc_tempo_attesa
-Z300 w1550423814
+Z301 w1550423814
 R19
 R20
 R1
 R2
 R3
-Z301 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/TC_tempo_attesa.vhd
-Z302 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/TC_tempo_attesa.vhd
+Z302 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/TC_tempo_attesa.vhd
+Z303 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/TC_tempo_attesa.vhd
 l0
 L5
 VATC9:6TeziW4D8`H2b[<J3
 R6
 32
-Z303 !s108 1550423833.597000
-Z304 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/TC_tempo_attesa.vhd|
-Z305 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/TC_tempo_attesa.vhd|
+Z304 !s108 1550482858.652000
+Z305 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/TC_tempo_attesa.vhd|
+Z306 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/TC_tempo_attesa.vhd|
 R10
 R11
 !s100 CH^Li8QE]DZTS5a9d<f=?2
@@ -1993,9 +1993,9 @@ L12
 VFYQIMHkFjnTeK6dQ_F01T0
 R6
 32
-R303
 R304
 R305
+R306
 R10
 R11
 !s100 >`=5fi?;2g_Z1d^XdPeNP2
@@ -2004,16 +2004,16 @@ R18
 R1
 R2
 R3
-Z306 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/TX.vhd
-Z307 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/TX.vhd
+Z307 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/TX.vhd
+Z308 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/TX.vhd
 l0
 L24
 V6n0Z8B>=mX2Vk?z0bQKzE2
 R6
 32
-Z308 !s108 1550423836.159000
-Z309 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/TX.vhd|
-Z310 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/TX.vhd|
+Z309 !s108 1550482860.968000
+Z310 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/TX.vhd|
+Z311 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/TX.vhd|
 R10
 R11
 !s100 I[PcCZZHl7Z0JLb0V0kO=0
@@ -2026,9 +2026,9 @@ L36
 VdOBhN5;Jc0YSI58Q3oF^c3
 R6
 32
-R308
 R309
 R310
+R311
 R10
 R11
 !s100 UG`C@aJ^4[^T;0_iZ1aMh1
@@ -2037,16 +2037,16 @@ R18
 R1
 R2
 R3
-Z311 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/UART/UART.vhd
-Z312 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/UART/UART.vhd
+Z312 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/UART/UART.vhd
+Z313 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/UART/UART.vhd
 l0
 L24
 VT=`S]^M]F:IEF`2`W_KAG3
 R6
 32
-Z313 !s108 1550423836.441000
-Z314 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/UART/UART.vhd|
-Z315 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/UART/UART.vhd|
+Z314 !s108 1550482861.211000
+Z315 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/UART/UART.vhd|
+Z316 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/UART/UART.vhd|
 R10
 R11
 !s100 Xhg5T4RDUIj=DVC>ZU=3H2
@@ -2059,27 +2059,27 @@ L40
 VzM74YX2Zl8Y72f^EHDz:P1
 R6
 32
-R313
 R314
 R315
+R316
 R10
 R11
 !s100 `=M06b:[_ZhfOC[zdDBKT1
 Euartprogetto_comp
-Z316 w1550419795
+Z317 w1550419795
 R1
 R2
 R3
-Z317 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/UartProgetto_comp.vhd
-Z318 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/UartProgetto_comp.vhd
+Z318 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/UartProgetto_comp.vhd
+Z319 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/UartProgetto_comp.vhd
 l0
 L24
 VJ4M:P4R5jA0f0YI^S_Ojc2
 R6
 32
-Z319 !s108 1550423831.093000
-Z320 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/UartProgetto_comp.vhd|
-Z321 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/UartProgetto_comp.vhd|
+Z320 !s108 1550482856.448000
+Z321 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/UartProgetto_comp.vhd|
+Z322 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/UartProgetto_comp.vhd|
 R10
 R11
 !s100 T`@Z[RR:d[IWBUOi[hDTI3
@@ -2092,9 +2092,9 @@ L37
 V?j@mD6T0^=bHl@omiIj683
 R6
 32
-R319
 R320
 R321
+R322
 R10
 R11
 !s100 KRI@df13RM@1>S[GY2PPQ2
@@ -2105,16 +2105,16 @@ R20
 R1
 R2
 R3
-Z322 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/XOR_LFSR.vhd
-Z323 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/XOR_LFSR.vhd
+Z323 8C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/XOR_LFSR.vhd
+Z324 FC:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/XOR_LFSR.vhd
 l0
 L5
 VMIJNfX=bUQ=TQPV:Uh7f_1
 R6
 32
-Z324 !s108 1550423833.690000
-Z325 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/XOR_LFSR.vhd|
-Z326 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/XOR_LFSR.vhd|
+Z325 !s108 1550482858.742000
+Z326 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/XOR_LFSR.vhd|
+Z327 !s107 C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/random_time_gen/XOR_LFSR.vhd|
 R10
 R11
 !s100 o=YFk859zR;F_kAJ9TS0n2
@@ -2129,9 +2129,9 @@ L12
 VJo<fUQ5NbhB4Z8A85a9Fo0
 R6
 32
-R324
 R325
 R326
+R327
 R10
 R11
 !s100 1FV1ZXU^i`ElD>ed`>99]1

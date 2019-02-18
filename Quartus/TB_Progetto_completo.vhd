@@ -87,9 +87,9 @@ process
 begin
 	t_Buttons <= "1111";
 	wait until t_LEDS_OUT/="0000";
-	wait for 20 us; --attesa pressione pulsanti
+	wait for 42 us; --attesa pressione pulsanti
 	t_Buttons <= not t_LEDS_OUT;
-	wait for 10 us;
+	wait for 60 us;
 	t_Buttons <= "1111";
 	wait;
 end process;
@@ -106,13 +106,17 @@ file_open(file_tx,"t_out.txt",write_mode);
 process
 	variable v_TX	: line;
 begin
-	wait until t_TX = '0'; --aspetta start bit
-	wait for 4.3403 us; --campiono a metà bit
-	for i in 0 to 50 loop --campiono 50 caratteri (Thhhh)
-		write(v_TX, t_TX, right, 1);
-	    writeline(file_tx, v_TX);
-	    report "Scrittura: " & integer'image(i);
-	    wait for 8.6806 us; --baud rate 115200
+	for j in 0 to 5 loop -- campiono 5 bytes
+		wait until t_TX = '0'; --aspetta start bit
+		wait for 4.3403 us; --campiono a metà bit
+		for i in 0 to 9 loop --campiono 10 bit
+			write(v_TX, t_TX, right, 1);
+		    writeline(file_tx, v_TX);
+		    report "Scrittura " & integer'image(j) & "." & integer'image(i);
+		    if i<9 then
+		    	wait for 8.6806 us; --baud rate 115200
+		    end if;
+		end loop;
 	end loop;
 	wait;
 end process;
