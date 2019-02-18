@@ -545,7 +545,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 176 120 432 216)
+	(rect 176 136 432 232)
 	(text "Random_Time_Generator" (rect 5 0 148 14)(font "Arial" (font_size 8)))
 	(text "inst5" (rect 8 80 31 92)(font "Arial" ))
 	(port
@@ -603,7 +603,7 @@ applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "ms_out" (rect 0 0 36 12)(font "Arial" ))
-		(text "ms_out" (rect 141 27 171 39)(font "Arial" ))
+		(text "ms_out" (rect 141 27 177 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32))
 	)
 	(drawing
@@ -832,18 +832,6 @@ applicable agreement for further details.
 	(pt -48 -192)
 )
 (connector
-	(pt 64 184)
-	(pt 176 184)
-)
-(connector
-	(pt 64 -120)
-	(pt 64 40)
-)
-(connector
-	(pt 64 40)
-	(pt 64 184)
-)
-(connector
 	(pt 224 -128)
 	(pt 232 -128)
 	(bus)
@@ -968,36 +956,40 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 544 168)
-	(pt 464 168)
+	(pt 64 200)
+	(pt 176 200)
 )
 (connector
-	(pt 464 168)
-	(pt 464 152)
-)
-(connector
-	(pt 464 152)
-	(pt 432 152)
-)
-(connector
-	(pt 176 152)
-	(pt 160 152)
-)
-(connector
-	(pt 160 152)
-	(pt 160 240)
-)
-(connector
+	(pt 160 168)
 	(pt 176 168)
-	(pt 96 168)
+)
+(connector
+	(pt 160 240)
+	(pt 160 168)
+)
+(connector
+	(pt 96 184)
+	(pt 176 184)
 )
 (connector
 	(pt 96 120)
-	(pt 96 168)
+	(pt 96 184)
 )
 (connector
-	(pt 96 168)
+	(pt 96 184)
 	(pt 96 232)
+)
+(connector
+	(pt 432 168)
+	(pt 544 168)
+)
+(connector
+	(pt 64 -120)
+	(pt 64 40)
+)
+(connector
+	(pt 64 40)
+	(pt 64 200)
 )
 (junction (pt 448 40))
 (junction (pt 136 40))
@@ -1010,4 +1002,4 @@ applicable agreement for further details.
 (junction (pt 160 -32))
 (junction (pt 96 232))
 (junction (pt 1216 424))
-(junction (pt 96 168))
+(junction (pt 96 184))

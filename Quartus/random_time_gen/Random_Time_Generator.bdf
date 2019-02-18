@@ -346,7 +346,7 @@ applicable agreement for further details.
 		(line (pt 168 56)(pt 104 56)(line_width 3))
 	)
 	(drawing
-		(text "10" (rect 10 58 24 72)(font "Arial" (font_size 8)))
+		(text "50" (rect 10 58 24 72)(font "Arial" (font_size 8)))
 		(text "Unsigned" (rect 104 56 150 68)(font "Arial" ))
 		(text "multiplication" (rect 104 66 167 78)(font "Arial" ))
 		(line (pt 82 50)(pt 94 62)(line_width 3))

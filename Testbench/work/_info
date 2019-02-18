@@ -15,7 +15,7 @@ L42
 VQPzOQ:^EYB]e=RQ<CF[Al2
 Z7 OV;C;10.0c;49
 32
-Z8 !s108 1550499414.636000
+Z8 !s108 1550500154.982000
 Z9 !s90 ../Quartus/uart/quartus/UART/altpll0.vhd|
 Z10 !s107 ../Quartus/uart/quartus/UART/altpll0.vhd|
 o-O0
@@ -48,7 +48,7 @@ L42
 VRfPT^CflCSO]Db;Nnl[9B2
 R7
 32
-Z15 !s108 1550499409.936000
+Z15 !s108 1550500150.028000
 Z16 !s90 ../Quartus/altpll_progetto_comp.vhd|
 Z17 !s107 ../Quartus/altpll_progetto_comp.vhd|
 o-O0
@@ -83,7 +83,7 @@ L6
 VMB[Bf4mQid?ebcAdeDHM[3
 R7
 32
-Z22 !s108 1550499412.774000
+Z22 !s108 1550500153.010000
 Z23 !s90 ../Quartus/uart/quartus/RX/AND_clk_div.vhd|
 Z24 !s107 ../Quartus/uart/quartus/RX/AND_clk_div.vhd|
 o-O0
@@ -120,7 +120,7 @@ L6
 VlU9^L<5Qi26?79bJlT4Cl2
 R7
 32
-Z27 !s108 1550499412.854000
+Z27 !s108 1550500153.096000
 Z28 !s90 ../Quartus/uart/quartus/RX/AND_Decisore.vhd|
 Z29 !s107 ../Quartus/uart/quartus/RX/AND_Decisore.vhd|
 o-O0
@@ -157,7 +157,7 @@ L6
 VD<Ke8CiQ`[dU[3ZVg6OID2
 R7
 32
-Z32 !s108 1550499412.935000
+Z32 !s108 1550500153.175000
 Z33 !s90 ../Quartus/uart/quartus/RX/AND_Edge_Detector.vhd|
 Z34 !s107 ../Quartus/uart/quartus/RX/AND_Edge_Detector.vhd|
 o-O0
@@ -194,7 +194,7 @@ L5
 V>el0;Tz`ME70<V_XIm[K]1
 R7
 32
-Z38 !s108 1550499413.861000
+Z38 !s108 1550500154.147000
 Z39 !s90 ../Quartus/uart/quartus/TX/and_gate_4.vhd|
 Z40 !s107 ../Quartus/uart/quartus/TX/and_gate_4.vhd|
 o-O0
@@ -231,7 +231,7 @@ L5
 VEzWa4KOc9SCI4@FnFRb4=1
 R7
 32
-Z43 !s108 1550499413.943000
+Z43 !s108 1550500154.235000
 Z44 !s90 ../Quartus/uart/quartus/TX/and_gate_8.vhd|
 Z45 !s107 ../Quartus/uart/quartus/TX/and_gate_8.vhd|
 o-O0
@@ -268,7 +268,7 @@ L6
 VA]7<MYQ<9MG[OFB`Rm]Na3
 R7
 32
-Z48 !s108 1550499413.013000
+Z48 !s108 1550500153.251000
 Z49 !s90 ../Quartus/uart/quartus/RX/AND_NUM_BIT.vhd|
 Z50 !s107 ../Quartus/uart/quartus/RX/AND_NUM_BIT.vhd|
 o-O0
@@ -303,7 +303,7 @@ L4
 V306MD^=6Im_o1YYPCm@9L0
 R7
 32
-Z53 !s108 1550499411.059000
+Z53 !s108 1550500151.201000
 Z54 !s90 ../Quartus/out_encoder/const.vhd|
 Z55 !s107 ../Quartus/out_encoder/const.vhd|
 o-O0
@@ -336,7 +336,7 @@ L42
 V8ENf_AGl<O8H?9RSXM`^:1
 R7
 32
-Z58 !s108 1550499411.948000
+Z58 !s108 1550500152.103000
 Z59 !s90 ../Quartus/random_time_gen/Contatore_Tempo_random.vhd|
 Z60 !s107 ../Quartus/random_time_gen/Contatore_Tempo_random.vhd|
 o-O0
@@ -369,7 +369,7 @@ L42
 VmT_n?0MGbf2M2h5[9N1=R2
 R7
 32
-Z63 !s108 1550499412.480000
+Z63 !s108 1550500152.713000
 Z64 !s90 ../Quartus/rivelatore_riflessi/counter_tempo_riflessi.vhd|
 Z65 !s107 ../Quartus/rivelatore_riflessi/counter_tempo_riflessi.vhd|
 o-O0
@@ -402,7 +402,7 @@ L24
 V@RFbOKJGAIha@@i[7`5Sb2
 R7
 32
-Z68 !s108 1550499410.279000
+Z68 !s108 1550500150.332000
 Z69 !s90 ../Quartus/dec_command/dec_command.vhd|
 Z70 !s107 ../Quartus/dec_command/dec_command.vhd|
 o-O0
@@ -437,7 +437,7 @@ L6
 V@`[@K_Uf<=[^R@;ZoDAkl2
 R7
 32
-Z73 !s108 1550499413.095000
+Z73 !s108 1550500153.331000
 Z74 !s90 ../Quartus/uart/quartus/RX/Decisore.vhd|
 Z75 !s107 ../Quartus/uart/quartus/RX/Decisore.vhd|
 o-O0
@@ -474,7 +474,7 @@ L5
 V6KAY7c833bfj<8VZzmJIZ2
 R7
 32
-Z79 !s108 1550499410.360000
+Z79 !s108 1550500150.401000
 Z80 !s90 ../Quartus/dec_command/Detect_1.vhd|
 Z81 !s107 ../Quartus/dec_command/Detect_1.vhd|
 o-O0
@@ -511,7 +511,7 @@ L5
 VG15;?5?Qm?2R<BGhk2D7n1
 R7
 32
-Z84 !s108 1550499410.437000
+Z84 !s108 1550500150.483000
 Z85 !s90 ../Quartus/dec_command/Detect_2.vhd|
 Z86 !s107 ../Quartus/dec_command/Detect_2.vhd|
 o-O0
@@ -548,7 +548,7 @@ L5
 V]9OAA92V63@CKUKZ<bkoJ1
 R7
 32
-Z89 !s108 1550499410.517000
+Z89 !s108 1550500150.558000
 Z90 !s90 ../Quartus/dec_command/Detect_3.vhd|
 Z91 !s107 ../Quartus/dec_command/Detect_3.vhd|
 o-O0
@@ -585,7 +585,7 @@ L5
 Vhck8G]7hXe?T_C1]<DKn<0
 R7
 32
-Z94 !s108 1550499410.612000
+Z94 !s108 1550500150.637000
 Z95 !s90 ../Quartus/dec_command/Detect_4.vhd|
 Z96 !s107 ../Quartus/dec_command/Detect_4.vhd|
 o-O0
@@ -622,7 +622,7 @@ L6
 VWoE`HR94K[c:L3S6W=dA:0
 R7
 32
-Z100 !s108 1550499410.017000
+Z100 !s108 1550500150.111000
 Z101 !s90 ../Quartus/FSM_attesa.vhd|
 Z102 !s107 ../Quartus/FSM_attesa.vhd|
 o-O0
@@ -659,7 +659,7 @@ L5
 VJ][nVRBXVQ]lOHM;Xh9fL1
 R7
 32
-Z105 !s108 1550499410.688000
+Z105 !s108 1550500150.722000
 Z106 !s90 ../Quartus/dec_command/FSM_dec_command.vhd|
 Z107 !s107 ../Quartus/dec_command/FSM_dec_command.vhd|
 o-O0
@@ -694,7 +694,7 @@ L4
 V7UfPZ3TSP5@X8c]glXi=i3
 R7
 32
-Z110 !s108 1550499411.136000
+Z110 !s108 1550500151.281000
 Z111 !s90 ../Quartus/out_encoder/FSM_out_enc.vhd|
 Z112 !s107 ../Quartus/out_encoder/FSM_out_enc.vhd|
 o-O0
@@ -729,7 +729,7 @@ L6
 VBDXjehO=L?d]R_4X6hZW[2
 R7
 32
-Z115 !s108 1550499411.661000
+Z115 !s108 1550500151.807000
 Z116 !s90 ../Quartus/pilotaggio_led/FSM_Pilotaggio_LED.vhd|
 Z117 !s107 ../Quartus/pilotaggio_led/FSM_Pilotaggio_LED.vhd|
 o-O0
@@ -766,7 +766,7 @@ L5
 VMFm0k75E_l<2Fm0MoX8_P0
 R7
 32
-Z120 !s108 1550499413.169000
+Z120 !s108 1550500153.408000
 Z121 !s90 ../Quartus/uart/quartus/RX/FSM_RX.vhd|
 Z122 !s107 ../Quartus/uart/quartus/RX/FSM_RX.vhd|
 o-O0
@@ -803,7 +803,7 @@ L5
 V5IY9@ZeiR:JDCG<:cP@W=3
 R7
 32
-Z125 !s108 1550499414.039000
+Z125 !s108 1550500154.312000
 Z126 !s90 ../Quartus/uart/quartus/TX/FSM_TX.vhd|
 Z127 !s107 ../Quartus/uart/quartus/TX/FSM_TX.vhd|
 o-O0
@@ -840,7 +840,7 @@ L6
 VSC6Zz4H^N]B>UCg^MC::_3
 R7
 32
-Z130 !s108 1550499413.243000
+Z130 !s108 1550500153.494000
 Z131 !s90 ../Quartus/uart/quartus/RX/invert.vhd|
 Z132 !s107 ../Quartus/uart/quartus/RX/invert.vhd|
 o-O0
@@ -875,7 +875,7 @@ L4
 VU`eHB;b2Gh[U]8oB1?:^i3
 R7
 32
-Z135 !s108 1550499414.726000
+Z135 !s108 1550500155.057000
 Z136 !s90 ../Quartus/uart/quartus/UART/inverter.vhd|
 Z137 !s107 ../Quartus/uart/quartus/UART/inverter.vhd|
 o-O0
@@ -910,7 +910,7 @@ L5
 V:a4clOdMF`E@_JLf`4jmR1
 R7
 32
-Z140 !s108 1550499410.912000
+Z140 !s108 1550500151.050000
 Z141 !s90 ../Quartus/dec_command/L_Detect.vhd|
 Z142 !s107 ../Quartus/dec_command/L_Detect.vhd|
 o-O0
@@ -945,7 +945,7 @@ L42
 VdDZaSjzSFC3=n`=kdMHcT1
 R7
 32
-Z145 !s108 1550499411.214000
+Z145 !s108 1550500151.356000
 Z146 !s90 ../Quartus/out_encoder/lpm_counter0.vhd|
 Z147 !s107 ../Quartus/out_encoder/lpm_counter0.vhd|
 o-O0
@@ -978,7 +978,7 @@ L42
 Vk;TOU=M;=8@C5VJa7@Ul>1
 R7
 32
-Z150 !s108 1550499412.555000
+Z150 !s108 1550500152.786000
 Z151 !s90 ../Quartus/rivelatore_riflessi/lpm_counter_ms.vhd|
 Z152 !s107 ../Quartus/rivelatore_riflessi/lpm_counter_ms.vhd|
 o-O0
@@ -1011,7 +1011,7 @@ L42
 VnoomSP_5QHNR`[Ghn`V^R3
 R7
 32
-Z155 !s108 1550499413.318000
+Z155 !s108 1550500153.572000
 Z156 !s90 ../Quartus/uart/quartus/RX/lpm_counter_RX_MOD_16.vhd|
 Z157 !s107 ../Quartus/uart/quartus/RX/lpm_counter_RX_MOD_16.vhd|
 o-O0
@@ -1044,7 +1044,7 @@ L42
 VkJLo`l5^E03L2ec52Thd42
 R7
 32
-Z160 !s108 1550499413.394000
+Z160 !s108 1550500153.652000
 Z161 !s90 ../Quartus/uart/quartus/RX/lpm_counter_RX_MOD_32.vhd|
 Z162 !s107 ../Quartus/uart/quartus/RX/lpm_counter_RX_MOD_32.vhd|
 o-O0
@@ -1077,7 +1077,7 @@ L42
 VGel[Y_92lE>WRcfCWAF6m2
 R7
 32
-Z165 !s108 1550499414.116000
+Z165 !s108 1550500154.389000
 Z166 !s90 ../Quartus/uart/quartus/TX/lpm_counter_TX.vhd|
 Z167 !s107 ../Quartus/uart/quartus/TX/lpm_counter_TX.vhd|
 o-O0
@@ -1110,7 +1110,7 @@ L42
 V[SKe@5if_fo=A@;^Cfl632
 R7
 32
-Z170 !s108 1550499414.188000
+Z170 !s108 1550500154.486000
 Z171 !s90 ../Quartus/uart/quartus/TX/lpm_counter_TX_MOD_10.vhd|
 Z172 !s107 ../Quartus/uart/quartus/TX/lpm_counter_TX_MOD_10.vhd|
 o-O0
@@ -1143,7 +1143,7 @@ L42
 V4TV;`I8^mL]f_n_:6V[h60
 R7
 32
-Z175 !s108 1550499411.734000
+Z175 !s108 1550500151.883000
 Z176 !s90 ../Quartus/pilotaggio_led/lpm_decoder_LEDS_pilot.vhd|
 Z177 !s107 ../Quartus/pilotaggio_led/lpm_decoder_LEDS_pilot.vhd|
 o-O0
@@ -1177,7 +1177,7 @@ L30
 V>z9Dz;DZiN<KE1MFDCPzQ0
 R7
 32
-Z181 !s108 1550499414.261000
+Z181 !s108 1550500154.602000
 Z182 !s90 ../Quartus/uart/quartus/TX/lpm_ff_0.vhd|
 Z183 !s107 ../Quartus/uart/quartus/TX/lpm_ff_0.vhd|
 o-O0
@@ -1212,7 +1212,7 @@ L30
 VT<znfQ3^k0A:[?ai2cBTT0
 R7
 32
-Z186 !s108 1550499410.761000
+Z186 !s108 1550500150.848000
 Z187 !s90 ../Quartus/dec_command/lpm_ff_1.vhd|
 Z188 !s107 ../Quartus/dec_command/lpm_ff_1.vhd|
 o-O0
@@ -1247,7 +1247,7 @@ L30
 VRIRbShQY2j^gjgIMdJ5ZV0
 R7
 32
-Z191 !s108 1550499410.836000
+Z191 !s108 1550500150.950000
 Z192 !s90 ../Quartus/dec_command/lpm_ff_2.vhd|
 Z193 !s107 ../Quartus/dec_command/lpm_ff_2.vhd|
 o-O0
@@ -1270,20 +1270,20 @@ o-O0
 R11
 !s100 ?11@A]Vkk?]BE[:0cU>lz2
 Elpm_mult0_random_number_gen
-R1
+Z194 w1550499616
 R2
 R3
 R4
-Z194 8../Quartus/random_time_gen/lpm_mult0_Random_Number_Gen.vhd
-Z195 F../Quartus/random_time_gen/lpm_mult0_Random_Number_Gen.vhd
+Z195 8../Quartus/random_time_gen/lpm_mult0_Random_Number_Gen.vhd
+Z196 F../Quartus/random_time_gen/lpm_mult0_Random_Number_Gen.vhd
 l0
 L42
 VNG?RaOU]P3fdOG?jBa^@72
 R7
 32
-Z196 !s108 1550499412.026000
-Z197 !s90 ../Quartus/random_time_gen/lpm_mult0_Random_Number_Gen.vhd|
-Z198 !s107 ../Quartus/random_time_gen/lpm_mult0_Random_Number_Gen.vhd|
+Z197 !s108 1550500152.206000
+Z198 !s90 ../Quartus/random_time_gen/lpm_mult0_Random_Number_Gen.vhd|
+Z199 !s107 ../Quartus/random_time_gen/lpm_mult0_Random_Number_Gen.vhd|
 o-O0
 R11
 !s100 bFc6OVd0@g;UM4o8YNfD:2
@@ -1293,31 +1293,31 @@ R3
 DEx4 work 27 lpm_mult0_random_number_gen 0 22 NG?RaOU]P3fdOG?jBa^@72
 l75
 L51
-VVoHoX4Eaj7_FGfEQO_ZjT2
+V[Xe[[kzlQM?mE;n^5kN3I3
 R7
 32
-R196
 R197
 R198
+R199
 o-O0
 R11
-!s100 VYN3lPR<N>NAeo3FB=R8i2
+!s100 oljOT5R>bKG`C6NXhOim:2
 Elpm_mux0
 R1
 R178
 R2
 R3
 R4
-Z199 8../Quartus/uart/quartus/TX/lpm_mux0.vhd
-Z200 F../Quartus/uart/quartus/TX/lpm_mux0.vhd
+Z200 8../Quartus/uart/quartus/TX/lpm_mux0.vhd
+Z201 F../Quartus/uart/quartus/TX/lpm_mux0.vhd
 l0
 L42
 VaoSIGO9^gh`0nMhNERbLo1
 R7
 32
-Z201 !s108 1550499414.340000
-Z202 !s90 ../Quartus/uart/quartus/TX/lpm_mux0.vhd|
-Z203 !s107 ../Quartus/uart/quartus/TX/lpm_mux0.vhd|
+Z202 !s108 1550500154.686000
+Z203 !s90 ../Quartus/uart/quartus/TX/lpm_mux0.vhd|
+Z204 !s107 ../Quartus/uart/quartus/TX/lpm_mux0.vhd|
 o-O0
 R11
 !s100 @`=F2K4mXA8m?HP3OGbQ21
@@ -1331,9 +1331,9 @@ L53
 VLHJgzlQGaTR9bHcL6VPSl2
 R7
 32
-R201
 R202
 R203
+R204
 o-O0
 R11
 !s100 OzE3<RkN@`3Cm>[J<g3Y51
@@ -1343,16 +1343,16 @@ R178
 R2
 R3
 R4
-Z204 8../Quartus/out_encoder/lpm_mux_addr.vhd
-Z205 F../Quartus/out_encoder/lpm_mux_addr.vhd
+Z205 8../Quartus/out_encoder/lpm_mux_addr.vhd
+Z206 F../Quartus/out_encoder/lpm_mux_addr.vhd
 l0
 L42
 VF@5zndhEAzF_AnmmGe<[e0
 R7
 32
-Z206 !s108 1550499411.293000
-Z207 !s90 ../Quartus/out_encoder/lpm_mux_addr.vhd|
-Z208 !s107 ../Quartus/out_encoder/lpm_mux_addr.vhd|
+Z207 !s108 1550500151.429000
+Z208 !s90 ../Quartus/out_encoder/lpm_mux_addr.vhd|
+Z209 !s107 ../Quartus/out_encoder/lpm_mux_addr.vhd|
 o-O0
 R11
 !s100 J8;f>`YazochHU_h=a3FL3
@@ -1366,9 +1366,9 @@ L53
 VTbGW<m5Z<oXCd45=P:oj71
 R7
 32
-R206
 R207
 R208
+R209
 o-O0
 R11
 !s100 o@Fo9nZFLzUVZG<jc6;M52
@@ -1378,16 +1378,16 @@ R178
 R2
 R3
 R4
-Z209 8../Quartus/out_encoder/lpm_rom_0.vhd
-Z210 F../Quartus/out_encoder/lpm_rom_0.vhd
+Z210 8../Quartus/out_encoder/lpm_rom_0.vhd
+Z211 F../Quartus/out_encoder/lpm_rom_0.vhd
 l0
 L30
 VKPgZkogg5lo_ThidWAE1_3
 R7
 32
-Z211 !s108 1550499411.371000
-Z212 !s90 ../Quartus/out_encoder/lpm_rom_0.vhd|
-Z213 !s107 ../Quartus/out_encoder/lpm_rom_0.vhd|
+Z212 !s108 1550500151.501000
+Z213 !s90 ../Quartus/out_encoder/lpm_rom_0.vhd|
+Z214 !s107 ../Quartus/out_encoder/lpm_rom_0.vhd|
 o-O0
 R11
 !s100 ;6K^KHCEIzkl7NoPXbVke3
@@ -1401,9 +1401,9 @@ L39
 VFDcfO4dS;HilOg>fA7??S2
 R7
 32
-R211
 R212
 R213
+R214
 o-O0
 R11
 !s100 ]8mVbEZC>Mm^=033;7^_d3
@@ -1412,16 +1412,16 @@ R1
 R2
 R3
 R4
-Z214 8../Quartus/uart/quartus/TX/lpm_shiftreg0.vhd
-Z215 F../Quartus/uart/quartus/TX/lpm_shiftreg0.vhd
+Z215 8../Quartus/uart/quartus/TX/lpm_shiftreg0.vhd
+Z216 F../Quartus/uart/quartus/TX/lpm_shiftreg0.vhd
 l0
 L42
 VhR6dYINgbOJg`?CE_Gb@61
 R7
 32
-Z216 !s108 1550499414.418000
-Z217 !s90 ../Quartus/uart/quartus/TX/lpm_shiftreg0.vhd|
-Z218 !s107 ../Quartus/uart/quartus/TX/lpm_shiftreg0.vhd|
+Z217 !s108 1550500154.763000
+Z218 !s90 ../Quartus/uart/quartus/TX/lpm_shiftreg0.vhd|
+Z219 !s107 ../Quartus/uart/quartus/TX/lpm_shiftreg0.vhd|
 o-O0
 R11
 !s100 m8VA]zenN=J>NIkCZ<@m63
@@ -1434,9 +1434,9 @@ L54
 VBTMP7[i^6RRoRVfJM;MgZ1
 R7
 32
-R216
 R217
 R218
+R219
 o-O0
 R11
 !s100 UnPCIQjYhF5A<K_;f3_<=1
@@ -1445,16 +1445,16 @@ R1
 R2
 R3
 R4
-Z219 8../Quartus/random_time_gen/lpm_shiftreg0_LFSR_RANDOM.vhd
-Z220 F../Quartus/random_time_gen/lpm_shiftreg0_LFSR_RANDOM.vhd
+Z220 8../Quartus/random_time_gen/lpm_shiftreg0_LFSR_RANDOM.vhd
+Z221 F../Quartus/random_time_gen/lpm_shiftreg0_LFSR_RANDOM.vhd
 l0
 L42
 VF_>X45IUEU69iFP[8:IO=1
 R7
 32
-Z221 !s108 1550499412.110000
-Z222 !s90 ../Quartus/random_time_gen/lpm_shiftreg0_LFSR_RANDOM.vhd|
-Z223 !s107 ../Quartus/random_time_gen/lpm_shiftreg0_LFSR_RANDOM.vhd|
+Z222 !s108 1550500152.295000
+Z223 !s90 ../Quartus/random_time_gen/lpm_shiftreg0_LFSR_RANDOM.vhd|
+Z224 !s107 ../Quartus/random_time_gen/lpm_shiftreg0_LFSR_RANDOM.vhd|
 o-O0
 R11
 !s100 3=ePXmaPb?;BogT>fSbYB3
@@ -1467,9 +1467,9 @@ L52
 Vk9zGbi8TCV[gGLBRWm@7O1
 R7
 32
-R221
 R222
 R223
+R224
 o-O0
 R11
 !s100 6mZVF7m^aDL^1996kK?oi2
@@ -1478,16 +1478,16 @@ R1
 R2
 R3
 R4
-Z224 8../Quartus/uart/quartus/RX/lpm_shiftreg_RX_LEFT_EDGE.vhd
-Z225 F../Quartus/uart/quartus/RX/lpm_shiftreg_RX_LEFT_EDGE.vhd
+Z225 8../Quartus/uart/quartus/RX/lpm_shiftreg_RX_LEFT_EDGE.vhd
+Z226 F../Quartus/uart/quartus/RX/lpm_shiftreg_RX_LEFT_EDGE.vhd
 l0
 L42
 VUTZ<<hBV1Z`o;@85g_0G42
 R7
 32
-Z226 !s108 1550499413.486000
-Z227 !s90 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_LEFT_EDGE.vhd|
-Z228 !s107 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_LEFT_EDGE.vhd|
+Z227 !s108 1550500153.740000
+Z228 !s90 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_LEFT_EDGE.vhd|
+Z229 !s107 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_LEFT_EDGE.vhd|
 o-O0
 R11
 !s100 ^MCaJM7YWce32SNfFVm6W0
@@ -1500,9 +1500,9 @@ L54
 VlSQ7fU4ne^HQ8ez7Bflck1
 R7
 32
-R226
 R227
 R228
+R229
 o-O0
 R11
 !s100 `CN7iR?F5Qa;zT3al7nAo0
@@ -1511,16 +1511,16 @@ R1
 R2
 R3
 R4
-Z229 8../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd
-Z230 F../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd
+Z230 8../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd
+Z231 F../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd
 l0
 L42
 V8fUHlZ4WL<XAP1Hb_;3[01
 R7
 32
-Z231 !s108 1550499413.565000
-Z232 !s90 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd|
-Z233 !s107 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd|
+Z232 !s108 1550500153.845000
+Z233 !s90 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd|
+Z234 !s107 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_8_BIT.vhd|
 o-O0
 R11
 !s100 2i81D7:9jlO]k^e;_;ag@0
@@ -1533,9 +1533,9 @@ L54
 VLe;PDCBGH[Bfd>eRQVCnO1
 R7
 32
-R231
 R232
 R233
+R234
 o-O0
 R11
 !s100 ``0DR]F?AiTY2<MI>_bZ20
@@ -1544,16 +1544,16 @@ R1
 R2
 R3
 R4
-Z234 8../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd
-Z235 F../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd
+Z235 8../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd
+Z236 F../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd
 l0
 L42
 VFag56cja:g9=eF2SS^L8L2
 R7
 32
-Z236 !s108 1550499413.639000
-Z237 !s90 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd|
-Z238 !s107 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd|
+Z237 !s108 1550500153.923000
+Z238 !s90 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd|
+Z239 !s107 ../Quartus/uart/quartus/RX/lpm_shiftreg_RX_RIGHT_9.vhd|
 o-O0
 R11
 !s100 oSIU0ViY;7j`=FQfmJK7`1
@@ -1566,29 +1566,29 @@ L54
 Vg;[DEJhek[`CGd238m=Gj0
 R7
 32
-R236
 R237
 R238
+R239
 o-O0
 R11
 !s100 d:9C=cmL0FFH1O@gh5jVR3
 Ems_detect
-Z239 w1550483205
+Z240 w1550483205
 R18
 R19
 R2
 R3
 R4
-Z240 8../Quartus/rivelatore_riflessi/ms_detect.vhd
-Z241 F../Quartus/rivelatore_riflessi/ms_detect.vhd
+Z241 8../Quartus/rivelatore_riflessi/ms_detect.vhd
+Z242 F../Quartus/rivelatore_riflessi/ms_detect.vhd
 l0
 L5
 Vl5Ii2Eo7_eTWIf>kao7e61
 R7
 32
-Z242 !s108 1550499412.628000
-Z243 !s90 ../Quartus/rivelatore_riflessi/ms_detect.vhd|
-Z244 !s107 ../Quartus/rivelatore_riflessi/ms_detect.vhd|
+Z243 !s108 1550500152.862000
+Z244 !s90 ../Quartus/rivelatore_riflessi/ms_detect.vhd|
+Z245 !s107 ../Quartus/rivelatore_riflessi/ms_detect.vhd|
 o-O0
 R11
 !s100 f^HHET1FK>LRZDG=AAlD=3
@@ -1603,9 +1603,9 @@ L11
 VC7nWIF3PEal6Un]eIj^Ta0
 R7
 32
-R242
 R243
 R244
+R245
 o-O0
 R11
 !s100 W>Ze9nAm7M1DIZEL?a[mc0
@@ -1614,16 +1614,16 @@ R1
 R2
 R3
 R4
-Z245 8../Quartus/out_encoder/out_gen_lpm_counter0.vhd
-Z246 F../Quartus/out_encoder/out_gen_lpm_counter0.vhd
+Z246 8../Quartus/out_encoder/out_gen_lpm_counter0.vhd
+Z247 F../Quartus/out_encoder/out_gen_lpm_counter0.vhd
 l0
 L42
 V4g1DaK5YGaEAfO>5hZiHN1
 R7
 32
-Z247 !s108 1550499411.515000
-Z248 !s90 ../Quartus/out_encoder/out_gen_lpm_counter0.vhd|
-Z249 !s107 ../Quartus/out_encoder/out_gen_lpm_counter0.vhd|
+Z248 !s108 1550500151.665000
+Z249 !s90 ../Quartus/out_encoder/out_gen_lpm_counter0.vhd|
+Z250 !s107 ../Quartus/out_encoder/out_gen_lpm_counter0.vhd|
 o-O0
 R11
 !s100 eJU9JCJjhFlB3P_;d2^oO3
@@ -1636,9 +1636,9 @@ L54
 V1NOK;RBa>c0ReX;k;4o;O1
 R7
 32
-R247
 R248
 R249
+R250
 o-O0
 R11
 !s100 zjL<[n>J=>VRaFzl>EU6<0
@@ -1648,16 +1648,16 @@ R178
 R2
 R3
 R4
-Z250 8../Quartus/out_encoder/out_gen_lpm_mux0.vhd
-Z251 F../Quartus/out_encoder/out_gen_lpm_mux0.vhd
+Z251 8../Quartus/out_encoder/out_gen_lpm_mux0.vhd
+Z252 F../Quartus/out_encoder/out_gen_lpm_mux0.vhd
 l0
 L42
 V`iGkO^CO3mc`I3dL2_<Ym0
 R7
 32
-Z252 !s108 1550499411.587000
-Z253 !s90 ../Quartus/out_encoder/out_gen_lpm_mux0.vhd|
-Z254 !s107 ../Quartus/out_encoder/out_gen_lpm_mux0.vhd|
+Z253 !s108 1550500151.737000
+Z254 !s90 ../Quartus/out_encoder/out_gen_lpm_mux0.vhd|
+Z255 !s107 ../Quartus/out_encoder/out_gen_lpm_mux0.vhd|
 o-O0
 R11
 !s100 G47CfNW[CW_5UV]ohHB0U1
@@ -1671,9 +1671,9 @@ L55
 VZ89b9^O6K`I9Un[16CLH?0
 R7
 32
-R252
 R253
 R254
+R255
 o-O0
 R11
 !s100 M33EF4nOC:9<[HGR];I3S0
@@ -1682,16 +1682,16 @@ R1
 R2
 R3
 R4
-Z255 8../Quartus/out_encoder/output_encoder.vhd
-Z256 F../Quartus/out_encoder/output_encoder.vhd
+Z256 8../Quartus/out_encoder/output_encoder.vhd
+Z257 F../Quartus/out_encoder/output_encoder.vhd
 l0
 L24
 VVE@>X?dQ7oRlnk>h5Wchz3
 R7
 32
-Z257 !s108 1550499411.450000
-Z258 !s90 ../Quartus/out_encoder/output_encoder.vhd|
-Z259 !s107 ../Quartus/out_encoder/output_encoder.vhd|
+Z258 !s108 1550500151.593000
+Z259 !s90 ../Quartus/out_encoder/output_encoder.vhd|
+Z260 !s107 ../Quartus/out_encoder/output_encoder.vhd|
 o-O0
 R11
 !s100 gbB]2J?al1415jY`=Ua0G2
@@ -1704,9 +1704,9 @@ L38
 VUYZW7D:=VZ_9`UScOcW?40
 R7
 32
-R257
 R258
 R259
+R260
 o-O0
 R11
 !s100 5?hgZ47VAojC4ko1ZJfnm0
@@ -1715,16 +1715,16 @@ R1
 R2
 R3
 R4
-Z260 8../Quartus/pilotaggio_led/Pilotaggio_LED2.vhd
-Z261 F../Quartus/pilotaggio_led/Pilotaggio_LED2.vhd
+Z261 8../Quartus/pilotaggio_led/Pilotaggio_LED2.vhd
+Z262 F../Quartus/pilotaggio_led/Pilotaggio_LED2.vhd
 l0
 L24
 V10eCXXi^KnON[b^^=UIhc1
 R7
 32
-Z262 !s108 1550499411.805000
-Z263 !s90 ../Quartus/pilotaggio_led/Pilotaggio_LED2.vhd|
-Z264 !s107 ../Quartus/pilotaggio_led/Pilotaggio_LED2.vhd|
+Z263 !s108 1550500151.960000
+Z264 !s90 ../Quartus/pilotaggio_led/Pilotaggio_LED2.vhd|
+Z265 !s107 ../Quartus/pilotaggio_led/Pilotaggio_LED2.vhd|
 o-O0
 R11
 !s100 _F[SXlGK;7l^TjcA^c_Ib1
@@ -1737,9 +1737,9 @@ L38
 VNC^R[bacPPnjfQBkQ0R:L3
 R7
 32
-R262
 R263
 R264
+R265
 o-O0
 R11
 !s100 Ue=JL76=7Nm;az@?:Cc7O0
@@ -1748,16 +1748,16 @@ R1
 R2
 R3
 R4
-Z265 8../Quartus/random_time_gen/Random_Time_Generator.vhd
-Z266 F../Quartus/random_time_gen/Random_Time_Generator.vhd
+Z266 8../Quartus/random_time_gen/Random_Time_Generator.vhd
+Z267 F../Quartus/random_time_gen/Random_Time_Generator.vhd
 l0
 L24
 VGH^7g6leWEQK5WIJ65D:>3
 R7
 32
-Z267 !s108 1550499412.177000
-Z268 !s90 ../Quartus/random_time_gen/Random_Time_Generator.vhd|
-Z269 !s107 ../Quartus/random_time_gen/Random_Time_Generator.vhd|
+Z268 !s108 1550500152.404000
+Z269 !s90 ../Quartus/random_time_gen/Random_Time_Generator.vhd|
+Z270 !s107 ../Quartus/random_time_gen/Random_Time_Generator.vhd|
 o-O0
 R11
 !s100 RXJZCaDJ]4NAZI2o_SM>d3
@@ -1770,27 +1770,27 @@ L35
 VBb;hW18k2UY0;7mZbnKB[0
 R7
 32
-R267
 R268
 R269
+R270
 o-O0
 R11
 !s100 ]l5Yf[=2_ZX7adHE?@T@b3
 Erilevatore_riflessi_completo
-Z270 w1550420992
+Z271 w1550420992
 R2
 R3
 R4
-Z271 8../Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd
-Z272 F../Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd
+Z272 8../Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd
+Z273 F../Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd
 l0
 L24
 VAoBCAJNfF^JZEe8bV4Jal2
 R7
 32
-Z273 !s108 1550499412.704000
-Z274 !s90 ../Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd|
-Z275 !s107 ../Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd|
+Z274 !s108 1550500152.938000
+Z275 !s90 ../Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd|
+Z276 !s107 ../Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd|
 o-O0
 R11
 !s100 `cYPG^A@kjND55mM^7I6@2
@@ -1803,9 +1803,9 @@ L40
 Vc7O_Jmklfm15^DlhfDRQ23
 R7
 32
-R273
 R274
 R275
+R276
 o-O0
 R11
 !s100 PzHTW=S0Z>ianZaAOT9F41
@@ -1814,16 +1814,16 @@ R1
 R2
 R3
 R4
-Z276 8../Quartus/uart/quartus/RX/RX.vhd
-Z277 F../Quartus/uart/quartus/RX/RX.vhd
+Z277 8../Quartus/uart/quartus/RX/RX.vhd
+Z278 F../Quartus/uart/quartus/RX/RX.vhd
 l0
 L24
 VbP`m_OzGaYAggHlb5]<Qj0
 R7
 32
-Z278 !s108 1550499413.716000
-Z279 !s90 ../Quartus/uart/quartus/RX/RX.vhd|
-Z280 !s107 ../Quartus/uart/quartus/RX/RX.vhd|
+Z279 !s108 1550500154.001000
+Z280 !s90 ../Quartus/uart/quartus/RX/RX.vhd|
+Z281 !s107 ../Quartus/uart/quartus/RX/RX.vhd|
 o-O0
 R11
 !s100 cjL0h``S_=a7PTlm2UIPW2
@@ -1836,9 +1836,9 @@ L36
 V?]GS_`C7GfEo:hMg_AodG0
 R7
 32
-R278
 R279
 R280
+R281
 o-O0
 R11
 !s100 M[NPSVW]ADc3OJ:Ang6^@1
@@ -1847,16 +1847,16 @@ R1
 R2
 R3
 R4
-Z281 8../Quartus/dec_command/TB_dec_command.vhd
-Z282 F../Quartus/dec_command/TB_dec_command.vhd
+Z282 8../Quartus/dec_command/TB_dec_command.vhd
+Z283 F../Quartus/dec_command/TB_dec_command.vhd
 l0
 L4
 VlcS@CKJ5ch@jo653?ji>a0
 R7
 32
-Z283 !s108 1550499410.987000
-Z284 !s90 ../Quartus/dec_command/TB_dec_command.vhd|
-Z285 !s107 ../Quartus/dec_command/TB_dec_command.vhd|
+Z284 !s108 1550500151.128000
+Z285 !s90 ../Quartus/dec_command/TB_dec_command.vhd|
+Z286 !s107 ../Quartus/dec_command/TB_dec_command.vhd|
 o-O0
 R11
 !s100 EfnMFfUl9D2i^neg2]Y>G2
@@ -1869,9 +1869,9 @@ L8
 VzHNGQAU0KzSdbzZlnl7i22
 R7
 32
-R283
 R284
 R285
+R286
 o-O0
 R11
 !s100 Vl9z;EZLDE_g2cnL:df9G1
@@ -1880,16 +1880,16 @@ R1
 R2
 R3
 R4
-Z286 8../Quartus/pilotaggio_led/TB_Pilotaggio_LED_new.vhd
-Z287 F../Quartus/pilotaggio_led/TB_Pilotaggio_LED_new.vhd
+Z287 8../Quartus/pilotaggio_led/TB_Pilotaggio_LED_new.vhd
+Z288 F../Quartus/pilotaggio_led/TB_Pilotaggio_LED_new.vhd
 l0
 L7
 VMD=n^PbiND?_[??6^;PVZ1
 R7
 32
-Z288 !s108 1550499411.875000
-Z289 !s90 ../Quartus/pilotaggio_led/TB_Pilotaggio_LED_new.vhd|
-Z290 !s107 ../Quartus/pilotaggio_led/TB_Pilotaggio_LED_new.vhd|
+Z289 !s108 1550500152.034000
+Z290 !s90 ../Quartus/pilotaggio_led/TB_Pilotaggio_LED_new.vhd|
+Z291 !s107 ../Quartus/pilotaggio_led/TB_Pilotaggio_LED_new.vhd|
 o-O0
 R11
 !s100 @o5G`d@R]GND:iTOP;BOo3
@@ -1902,35 +1902,35 @@ L10
 Vn0n[J<JZMg51^=GVeG5kW2
 R7
 32
-R288
 R289
 R290
+R291
 o-O0
 R11
 !s100 EjbI6N7MABDZ5jMP_;8R00
 Etb_progetto_completo
-Z291 w1550498152
-Z292 DPx4 ieee 11 numeric_std 0 22 k7B<7GmYYYmX;0X]XHFD10
-Z293 DPx4 ieee 16 std_logic_textio 0 22 nS@;e8VD1o]DCVjBMSZYk3
+Z292 w1550498152
+Z293 DPx4 ieee 11 numeric_std 0 22 k7B<7GmYYYmX;0X]XHFD10
+Z294 DPx4 ieee 16 std_logic_textio 0 22 nS@;e8VD1o]DCVjBMSZYk3
 R2
 R3
 R4
-Z294 8../Quartus/TB_Progetto_completo.vhd
-Z295 F../Quartus/TB_Progetto_completo.vhd
+Z295 8../Quartus/TB_Progetto_completo.vhd
+Z296 F../Quartus/TB_Progetto_completo.vhd
 l0
 L8
 Vf`H8z<1hkzZnBS@]Bk5DR2
 R7
 32
-Z296 !s108 1550499410.184000
-Z297 !s90 ../Quartus/TB_Progetto_completo.vhd|
-Z298 !s107 ../Quartus/TB_Progetto_completo.vhd|
+Z297 !s108 1550500150.255000
+Z298 !s90 ../Quartus/TB_Progetto_completo.vhd|
+Z299 !s107 ../Quartus/TB_Progetto_completo.vhd|
 o-O0
 R11
 !s100 HWe2PdUiF4TLZM3Wa47JO2
 Astructural
-R292
 R293
+R294
 R2
 R3
 DEx4 work 20 tb_progetto_completo 0 22 f`H8z<1hkzZnBS@]Bk5DR2
@@ -1939,9 +1939,9 @@ L12
 V^P:k34>OajWjHFSXAP2<Y3
 R7
 32
-R296
 R297
 R298
+R299
 o-O0
 R11
 !s100 3AT1SA`V948RJz_gWcjBb1
@@ -1952,16 +1952,16 @@ R19
 R2
 R3
 R4
-Z299 8../Quartus/random_time_gen/TB_Random_Number.vhd
-Z300 F../Quartus/random_time_gen/TB_Random_Number.vhd
+Z300 8../Quartus/random_time_gen/TB_Random_Number.vhd
+Z301 F../Quartus/random_time_gen/TB_Random_Number.vhd
 l0
 L5
 VbM8eTiiC2mmPX:PB1iOio1
 R7
 32
-Z301 !s108 1550499412.245000
-Z302 !s90 ../Quartus/random_time_gen/TB_Random_Number.vhd|
-Z303 !s107 ../Quartus/random_time_gen/TB_Random_Number.vhd|
+Z302 !s108 1550500152.482000
+Z303 !s90 ../Quartus/random_time_gen/TB_Random_Number.vhd|
+Z304 !s107 ../Quartus/random_time_gen/TB_Random_Number.vhd|
 o-O0
 R11
 !s100 d<OHiOkmJ0cMZ9OOjdQam1
@@ -1976,9 +1976,9 @@ L9
 VF^oTJ6dWO<[aOKo@4Kjjm1
 R7
 32
-R301
 R302
 R303
+R304
 o-O0
 R11
 !s100 @lZld:FIOSme>_MTP9F9H0
@@ -1987,16 +1987,16 @@ R1
 R2
 R3
 R4
-Z304 8../Quartus/uart/quartus/RX/TB_RX.vhd
-Z305 F../Quartus/uart/quartus/RX/TB_RX.vhd
+Z305 8../Quartus/uart/quartus/RX/TB_RX.vhd
+Z306 F../Quartus/uart/quartus/RX/TB_RX.vhd
 l0
 L4
 VjgdnKS5]a^C5DBQQTG41V1
 R7
 32
-Z306 !s108 1550499413.788000
-Z307 !s90 ../Quartus/uart/quartus/RX/TB_RX.vhd|
-Z308 !s107 ../Quartus/uart/quartus/RX/TB_RX.vhd|
+Z307 !s108 1550500154.074000
+Z308 !s90 ../Quartus/uart/quartus/RX/TB_RX.vhd|
+Z309 !s107 ../Quartus/uart/quartus/RX/TB_RX.vhd|
 o-O0
 R11
 !s100 AjfjTfI8Ic:SLB=KmAdM:2
@@ -2009,9 +2009,9 @@ L8
 VEi:0jI@Jz[dTTF_T4ZZnZ2
 R7
 32
-R306
 R307
 R308
+R309
 o-O0
 R11
 !s100 MX5gD3Y@JBAHgNRB_kZOB0
@@ -2022,16 +2022,16 @@ R35
 R2
 R3
 R4
-Z309 8../Quartus/uart/quartus/TX/TB_TX.vhd
-Z310 F../Quartus/uart/quartus/TX/TB_TX.vhd
+Z310 8../Quartus/uart/quartus/TX/TB_TX.vhd
+Z311 F../Quartus/uart/quartus/TX/TB_TX.vhd
 l0
 L6
 V30lB@CKSV[flYS:hgc_bm2
 R7
 32
-Z311 !s108 1550499414.487000
-Z312 !s90 ../Quartus/uart/quartus/TX/TB_TX.vhd|
-Z313 !s107 ../Quartus/uart/quartus/TX/TB_TX.vhd|
+Z312 !s108 1550500154.833000
+Z313 !s90 ../Quartus/uart/quartus/TX/TB_TX.vhd|
+Z314 !s107 ../Quartus/uart/quartus/TX/TB_TX.vhd|
 o-O0
 R11
 !s100 FFMZ9h3hl:[77m8j=RbOc1
@@ -2046,9 +2046,9 @@ L12
 VHdbcC=Xo7HS]d6163aeOd0
 R7
 32
-R311
 R312
 R313
+R314
 o-O0
 R11
 !s100 m0YG;[TPl=IQ9@iJ^F6T^2
@@ -2059,16 +2059,16 @@ R35
 R2
 R3
 R4
-Z314 8../Quartus/uart/quartus/UART/TB_UART.vhd
-Z315 F../Quartus/uart/quartus/UART/TB_UART.vhd
+Z315 8../Quartus/uart/quartus/UART/TB_UART.vhd
+Z316 F../Quartus/uart/quartus/UART/TB_UART.vhd
 l0
 L6
 VCR3G8W`ZKkEBFQI]SYVi:1
 R7
 32
-Z316 !s108 1550499414.878000
-Z317 !s90 ../Quartus/uart/quartus/UART/TB_UART.vhd|
-Z318 !s107 ../Quartus/uart/quartus/UART/TB_UART.vhd|
+Z317 !s108 1550500155.206000
+Z318 !s90 ../Quartus/uart/quartus/UART/TB_UART.vhd|
+Z319 !s107 ../Quartus/uart/quartus/UART/TB_UART.vhd|
 o-O0
 R11
 !s100 hBTA<^@;;>JIaSh5WjTD32
@@ -2083,29 +2083,29 @@ L10
 VN>VW:D2HnJi8lBJo_dc0f2
 R7
 32
-R316
 R317
 R318
+R319
 o-O0
 R11
 !s100 =@RDF]e:7dlK4l?Ea5k^G2
 Etc_tempo_attesa
-Z319 w1550423814
+Z320 w1550423814
 R18
 R19
 R2
 R3
 R4
-Z320 8../Quartus/random_time_gen/TC_tempo_attesa.vhd
-Z321 F../Quartus/random_time_gen/TC_tempo_attesa.vhd
+Z321 8../Quartus/random_time_gen/TC_tempo_attesa.vhd
+Z322 F../Quartus/random_time_gen/TC_tempo_attesa.vhd
 l0
 L5
 VHof`mT8B>XdNS?IU:oBHh1
 R7
 32
-Z322 !s108 1550499412.320000
-Z323 !s90 ../Quartus/random_time_gen/TC_tempo_attesa.vhd|
-Z324 !s107 ../Quartus/random_time_gen/TC_tempo_attesa.vhd|
+Z323 !s108 1550500152.557000
+Z324 !s90 ../Quartus/random_time_gen/TC_tempo_attesa.vhd|
+Z325 !s107 ../Quartus/random_time_gen/TC_tempo_attesa.vhd|
 o-O0
 R11
 !s100 CH^Li8QE]DZTS5a9d<f=?2
@@ -2120,9 +2120,9 @@ L12
 V95nai<YoTDT_ZoA6f@SHA3
 R7
 32
-R322
 R323
 R324
+R325
 o-O0
 R11
 !s100 >`=5fi?;2g_Z1d^XdPeNP2
@@ -2131,16 +2131,16 @@ R1
 R2
 R3
 R4
-Z325 8../Quartus/uart/quartus/TX/TX.vhd
-Z326 F../Quartus/uart/quartus/TX/TX.vhd
+Z326 8../Quartus/uart/quartus/TX/TX.vhd
+Z327 F../Quartus/uart/quartus/TX/TX.vhd
 l0
 L24
 V<TYDE7J9Rc=FBPTLiQjMX2
 R7
 32
-Z327 !s108 1550499414.563000
-Z328 !s90 ../Quartus/uart/quartus/TX/TX.vhd|
-Z329 !s107 ../Quartus/uart/quartus/TX/TX.vhd|
+Z328 !s108 1550500154.910000
+Z329 !s90 ../Quartus/uart/quartus/TX/TX.vhd|
+Z330 !s107 ../Quartus/uart/quartus/TX/TX.vhd|
 o-O0
 R11
 !s100 I[PcCZZHl7Z0JLb0V0kO=0
@@ -2153,9 +2153,9 @@ L36
 VO^;PE^_2T4cD8@[`gnbkl0
 R7
 32
-R327
 R328
 R329
+R330
 o-O0
 R11
 !s100 UG`C@aJ^4[^T;0_iZ1aMh1
@@ -2164,49 +2164,49 @@ R1
 R2
 R3
 R4
-Z330 8../Quartus/uart/quartus/UART/UART.vhd
-Z331 F../Quartus/uart/quartus/UART/UART.vhd
+Z331 8../Quartus/uart/quartus/UART/UART.vhd
+Z332 F../Quartus/uart/quartus/UART/UART.vhd
 l0
 L24
 Vg7@@89nP9zjTZYJ;[G;?@3
 !s100 Xhg5T4RDUIj=DVC>ZU=3H2
 R7
 32
-Z332 !s108 1550499414.972000
-Z333 !s90 ../Quartus/uart/quartus/UART/UART.vhd|
-Z334 !s107 ../Quartus/uart/quartus/UART/UART.vhd|
+Z333 !s108 1550500155.289000
+Z334 !s90 ../Quartus/uart/quartus/UART/UART.vhd|
+Z335 !s107 ../Quartus/uart/quartus/UART/UART.vhd|
 o-O0
 R11
 Abdf_type
 R2
 R3
-Z335 DEx4 work 4 uart 0 22 g7@@89nP9zjTZYJ;[G;?@3
+Z336 DEx4 work 4 uart 0 22 g7@@89nP9zjTZYJ;[G;?@3
 l64
 L40
-Z336 V`?LN?e_:VQ]P2MQi4kHWM1
-Z337 !s100 `=M06b:[_ZhfOC[zdDBKT1
+Z337 V`?LN?e_:VQ]P2MQi4kHWM1
+Z338 !s100 `=M06b:[_ZhfOC[zdDBKT1
 R7
 32
-R332
 R333
 R334
+R335
 o-O0
 R11
 Euartprogetto_comp
-Z338 w1550419795
+Z339 w1550419795
 R2
 R3
 R4
-Z339 8../Quartus/UartProgetto_comp.vhd
-Z340 F../Quartus/UartProgetto_comp.vhd
+Z340 8../Quartus/UartProgetto_comp.vhd
+Z341 F../Quartus/UartProgetto_comp.vhd
 l0
 L24
 VFH_M60?5kLfM6>i2JWMEI0
 R7
 32
-Z341 !s108 1550499410.107000
-Z342 !s90 ../Quartus/UartProgetto_comp.vhd|
-Z343 !s107 ../Quartus/UartProgetto_comp.vhd|
+Z342 !s108 1550500150.186000
+Z343 !s90 ../Quartus/UartProgetto_comp.vhd|
+Z344 !s107 ../Quartus/UartProgetto_comp.vhd|
 o-O0
 R11
 !s100 T`@Z[RR:d[IWBUOi[hDTI3
@@ -2219,9 +2219,9 @@ L37
 Vl99h8CU8TB5MgU1Mh?g9@1
 R7
 32
-R341
 R342
 R343
+R344
 o-O0
 R11
 !s100 KRI@df13RM@1>S[GY2PPQ2
@@ -2232,16 +2232,16 @@ R19
 R2
 R3
 R4
-Z344 8../Quartus/random_time_gen/XOR_LFSR.vhd
-Z345 F../Quartus/random_time_gen/XOR_LFSR.vhd
+Z345 8../Quartus/random_time_gen/XOR_LFSR.vhd
+Z346 F../Quartus/random_time_gen/XOR_LFSR.vhd
 l0
 L5
 VaQKLkBT[C=nGlPQjUdGQh2
 R7
 32
-Z346 !s108 1550499412.398000
-Z347 !s90 ../Quartus/random_time_gen/XOR_LFSR.vhd|
-Z348 !s107 ../Quartus/random_time_gen/XOR_LFSR.vhd|
+Z347 !s108 1550500152.633000
+Z348 !s90 ../Quartus/random_time_gen/XOR_LFSR.vhd|
+Z349 !s107 ../Quartus/random_time_gen/XOR_LFSR.vhd|
 o-O0
 R11
 !s100 o=YFk859zR;F_kAJ9TS0n2
@@ -2256,9 +2256,9 @@ L12
 VGojTAJ]zD:j@=;m7JNjFT1
 R7
 32
-R346
 R347
 R348
+R349
 o-O0
 R11
 !s100 1FV1ZXU^i`ElD>ed`>99]1
