@@ -82,7 +82,7 @@ begin
 	wait;
 end process;
 
---button press
+--buttons
 process
 begin
 	t_Buttons <= "1111";

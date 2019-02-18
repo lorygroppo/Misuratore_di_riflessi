@@ -16,6 +16,21 @@ Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Compiling entity lpm_shiftreg0_LFSR_RANDOM
 -- Compiling architecture SYN of lpm_shiftreg0_lfsr_random
 
+} {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd {2 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd
+Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package NUMERIC_STD
+-- Compiling entity TB_Progetto_completo
+-- Compiling architecture structural of TB_Progetto_completo
+** Warning: [4] C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd(59): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd(63): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd(71): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: [4] C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/TB_Progetto_completo.vhd(100): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
 } {} {}} C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/and_gate_8.vhd {1 {vcom -work work -2002 -explicit C:/Users/Lorenzo/Desktop/Misuratore_di_riflessi/Quartus/uart/quartus/TX/and_gate_8.vhd
 Model Technology ModelSim ALTERA vcom 10.0c Compiler 2011.09 Sep 21 2011
 -- Loading package STANDARD

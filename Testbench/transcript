@@ -1,0 +1,261 @@
+# do run_tb.do 
+# vsim -c work.tb_progetto_completo 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_progetto_completo(structural)
+# Loading work.uartprogetto_comp(bdf_type)
+# Loading work.uart(bdf_type)
+# Loading work.rx(bdf_type)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.and_edge_detector(behavioural)
+# Loading work.lpm_counter_rx_mod_16(syn)
+# Loading lpm.lpm_components
+# Loading lpm.lpm_common_conversion(body)
+# Loading lpm.lpm_counter(lpm_syn)
+# Loading work.lpm_counter_rx_mod_32(syn)
+# Loading work.decisore(behavioural)
+# Loading ieee.std_logic_signed(body)
+# Loading work.fsm_rx(behavioural)
+# Loading work.lpm_shiftreg_rx_right_9(syn)
+# Loading lpm.lpm_shiftreg(lpm_syn)
+# Loading work.lpm_shiftreg_rx_left_edge(syn)
+# Loading work.lpm_shiftreg_rx_right_8_bit(syn)
+# Loading work.and_num_bit(behavioural)
+# Loading work.and_clk_div(behavioural)
+# Loading work.and_decisore(behavioural)
+# Loading work.tx(bdf_type)
+# Loading work.and_gate_4(behavioural)
+# Loading work.and_gate_8(behavioural)
+# Loading work.lpm_counter_tx_mod_10(syn)
+# Loading work.lpm_counter_tx(syn)
+# Loading work.lpm_ff_0(bdf_type)
+# Loading lpm.lpm_ff(lpm_syn)
+# Loading work.fsm_tx(behavioural)
+# Loading work.lpm_mux0(syn)
+# Loading lpm.lpm_mux(lpm_syn)
+# Loading work.lpm_shiftreg0(syn)
+# Loading work.rilevatore_riflessi_completo(bdf_type)
+# Loading work.output_encoder(bdf_type)
+# Loading work.out_gen_lpm_mux0(syn)
+# Loading work.fsm_out_enc(fsm)
+# Loading work.out_gen_lpm_counter0(syn)
+# Loading work.lpm_rom_0(bdf_type)
+# Loading lpm.lpm_device_families(body)
+# Loading lpm.lpm_rom(lpm_syn)
+# Loading work.lpm_mux_addr(syn)
+# Loading work.const(gate)
+# Loading work.lpm_counter_ms(syn)
+# Loading work.ms_detect(behavioural)
+# Loading work.pilotaggio_led2(bdf_type)
+# Loading work.fsm_pilotaggio_led(behavioral)
+# Loading work.lpm_decoder_leds_pilot(syn)
+# Loading lpm.lpm_decode(lpm_syn)
+# Loading work.dec_command(bdf_type)
+# Loading work.lpm_ff_2(bdf_type)
+# Loading work.lpm_ff_1(bdf_type)
+# Loading work.l_detect(behavioural)
+# Loading work.detect_1(behavioural)
+# Loading work.detect_2(behavioural)
+# Loading work.detect_3(behavioural)
+# Loading work.detect_4(behavioural)
+# Loading work.fsm_dec_command(behavioural)
+# Loading work.random_time_generator(bdf_type)
+# Loading work.tc_tempo_attesa(behavioural)
+# Loading work.fsm_attesa(behavioral)
+# Loading work.lpm_shiftreg0_lfsr_random(syn)
+# Loading work.xor_lfsr(behavioural)
+# Loading work.lpm_mult0_random_number_gen(syn)
+# Loading lpm.lpm_hint_evaluation(body)
+# Loading lpm.lpm_mult(lpm_syn)
+# Loading work.contatore_tempo_random(syn)
+# Loading work.counter_tempo_riflessi(syn)
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst5/b2v_inst6/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst5/b2v_inst6/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst5/b2v_inst6/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst5/b2v_inst
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst3/b2v_inst4/LPM_DECODE_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst3/b2v_inst4/LPM_DECODE_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst3/b2v_inst4/LPM_DECODE_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst3/b2v_inst4/LPM_DECODE_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst3/b2v_inst4/LPM_DECODE_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst3/b2v_inst4/LPM_DECODE_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst3/b2v_inst4/LPM_DECODE_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst3/b2v_inst4/LPM_DECODE_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst/b2v_inst5/LPM_MUX_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst/b2v_inst5/LPM_MUX_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst/b2v_inst13/b2v_inst13
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst/b2v_inst13/b2v_inst13
+# ** Error: Unknown INTENDED_DEVICE_FAMILY UNUSED
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst/b2v_inst13/b2v_inst13
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst/b2v_inst/LPM_MUX_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst/b2v_inst/LPM_MUX_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst/b2v_TX_BLOCK/b2v_MUX_2_TO_1/LPM_MUX_component
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_progetto_completo/U1/b2v_inst/b2v_TX_BLOCK/b2v_MUX_2_TO_1/LPM_MUX_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst5/b2v_inst6/lpm_mult_component
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /tb_progetto_completo/U1/b2v_inst2/b2v_inst5/b2v_inst6/lpm_mult_component
+# ** Note: Lettura'0'
+#    Time: 5 us  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'0'
+#    Time: 13680600 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'0'
+#    Time: 22361200 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'1'
+#    Time: 31041800 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'1'
+#    Time: 39722400 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'0'
+#    Time: 48403 ns  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'0'
+#    Time: 57083600 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'1'
+#    Time: 65764200 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'0'
+#    Time: 74444800 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'1'
+#    Time: 83125400 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'0'
+#    Time: 91806 ns  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'1'
+#    Time: 100486600 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'1'
+#    Time: 109167200 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'0'
+#    Time: 117847800 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'0'
+#    Time: 126528400 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'1'
+#    Time: 135209 ns  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'1'
+#    Time: 143889600 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'0'
+#    Time: 152570200 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'0'
+#    Time: 161250800 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Lettura'1'
+#    Time: 169931400 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 0.0
+#    Time: 652820300 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 0.1
+#    Time: 661500900 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 0.2
+#    Time: 670181500 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 0.3
+#    Time: 678862100 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 0.4
+#    Time: 687542700 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 0.5
+#    Time: 696223300 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 0.6
+#    Time: 704903900 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 0.7
+#    Time: 713584500 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 0.8
+#    Time: 722265100 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 0.9
+#    Time: 730945700 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 1.0
+#    Time: 740220300 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 1.1
+#    Time: 748900900 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 1.2
+#    Time: 757581500 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 1.3
+#    Time: 766262100 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 1.4
+#    Time: 774942700 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 1.5
+#    Time: 783623300 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 1.6
+#    Time: 792303900 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 1.7
+#    Time: 800984500 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 1.8
+#    Time: 809665100 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 1.9
+#    Time: 818345700 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 2.0
+#    Time: 827540300 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 2.1
+#    Time: 836220900 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 2.2
+#    Time: 844901500 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 2.3
+#    Time: 853582100 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 2.4
+#    Time: 862262700 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 2.5
+#    Time: 870943300 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 2.6
+#    Time: 879623900 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 2.7
+#    Time: 888304500 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 2.8
+#    Time: 896985100 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 2.9
+#    Time: 905665700 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 3.0
+#    Time: 914860300 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 3.1
+#    Time: 923540900 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 3.2
+#    Time: 932221500 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 3.3
+#    Time: 940902100 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 3.4
+#    Time: 949582700 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 3.5
+#    Time: 958263300 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 3.6
+#    Time: 966943900 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 3.7
+#    Time: 975624500 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 3.8
+#    Time: 984305100 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 3.9
+#    Time: 992985700 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 4.0
+#    Time: 1002180300 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 4.1
+#    Time: 1010860900 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 4.2
+#    Time: 1019541500 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 4.3
+#    Time: 1028222100 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 4.4
+#    Time: 1036902700 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 4.5
+#    Time: 1045583300 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 4.6
+#    Time: 1054263900 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 4.7
+#    Time: 1062944500 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 4.8
+#    Time: 1071625100 ps  Iteration: 0  Instance: /tb_progetto_completo
+# ** Note: Scrittura 4.9
+#    Time: 1080305700 ps  Iteration: 0  Instance: /tb_progetto_completo

@@ -3,6 +3,7 @@ vlib work
 vcom ../Quartus/altpll_progetto_comp.vhd
 vcom ../Quartus/FSM_attesa.vhd
 vcom ../Quartus/UartProgetto_comp.vhd
+vcom ../Quartus/TB_Progetto_completo.vhd
 vcom ../Quartus/dec_command/dec_command.vhd
 vcom ../Quartus/dec_command/Detect_1.vhd
 vcom ../Quartus/dec_command/Detect_2.vhd
@@ -36,7 +37,6 @@ vcom ../Quartus/rivelatore_riflessi/counter_tempo_riflessi.vhd
 vcom ../Quartus/rivelatore_riflessi/lpm_counter_ms.vhd
 vcom ../Quartus/rivelatore_riflessi/ms_detect.vhd
 vcom ../Quartus/rivelatore_riflessi/Rilevatore_Riflessi_Completo.vhd
-vcom ../Quartus/rivelatore_riflessi/TB_Progetto_completo.vhd
 vcom ../Quartus/uart/quartus/RX/AND_clk_div.vhd
 vcom ../Quartus/uart/quartus/RX/AND_Decisore.vhd
 vcom ../Quartus/uart/quartus/RX/AND_Edge_Detector.vhd
