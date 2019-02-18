@@ -62,6 +62,7 @@ def output_decode():
                 bit_read=file_out.readline()[0] #elimina '\n'
             except:
                 print(" --- NESSUN OUTPUT GENERATO --- ")
+                print_log("ESITO TESTBENCH: NEGATIVO")
                 if input("\nAprire risultati in modelsim [s/n] ? ").upper()=="S":
                     proc=subprocess.run(('vsim -do waveform.do').split())
                 exit()
